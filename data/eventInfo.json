@@ -1,0 +1,35 @@
+[
+    {
+        "id": 1,
+        "title": "Festival Demo 2025",
+        "subtitle": "Festival Demo 2025 App",
+        "short-describtion": "Ein großartiges Rock-Konzert mit vielen bekannten Bands.",
+        "describtion":  "Ein großartiges Rock-Konzert mit vielen bekannten Bands.",
+        "backgroundImage": "demo-festival-bg.jpg",
+        "logo": "demo-festival-bg.jpg",
+        "startDate": "2025-07-24",
+        "endDate": "2025-07-27",
+        "location": {
+            "name": "Stadium X",
+            "address": {
+                "street": "Festivalstraße 123",
+                "postal_code": "12345",
+                "city": "Festivalstadt",
+                "country": "Deutschland"
+              },
+            "gps": {
+                "latitude": 12.345678,
+                "longitude": 23.456789
+            }
+        },
+        "about": [
+        {
+            "id": 1001,
+            "name": "Foto/Videografie",
+            "subtitle": "FotoVideo",
+            "icon": null,
+            "text": "Alle Teilnehmenden erklären sich damit einverstanden, dass die im Zusammenhang mit der Veranstaltung gemachten Fotos und Filmaufnahmen ohne einen Vergütungsanspruch des*der Teilnehmer*in verbreitet und veröffentlicht werden können. Wenn das nicht gewünscht ist, bitte direkt an medien@demo-festival.com schreiben."
+        }
+        ]
+    }
+]

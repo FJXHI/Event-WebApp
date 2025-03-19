@@ -1,0 +1,63 @@
+[
+    {
+      "id": 1,
+      "name": "Mainstage",
+      "id-name": "Mainstage",
+      "short-description": "Main Stage auf der Großenwiese",
+      "description": "Main Stage auf der Großenwiese, bekannt für die größten Acts des Festivals.",
+      "location": [50.9375, 6.9603],
+      "address": {
+        "street": "Festivalstraße 123",
+        "postal_code": "12345",
+        "city": "Festivalstadt",
+        "country": "Deutschland"
+      },
+      "image": "url-mainstage.jpg",
+      "capacity": 5000,
+      "visible": true,
+      "type": "Open-Air",
+      "features": ["Audio-System", "Light-System", "VIP-Area"],
+      "url": "https://www.live-music-festival.com/mainstage"
+    },
+    {
+      "id": 2,
+      "name": "Second Stage",
+      "id-name": "Second-Stage",
+      "short-description": "Nebenbühne mit alternativen Acts",
+      "description": "Die Second Stage bietet eine intime Atmosphäre für aufstrebende Künstler.",
+      "location": [50.9380, 6.9610],
+      "address": {
+        "street": "Hauptstraße 45",
+        "postal_code": "54321",
+        "city": "Kunststadt",
+        "country": "Deutschland"
+      },
+      "image": "url-secondstage.jpg",
+      "capacity": 1500,
+      "visible": true,
+      "type": "Indoor",
+      "features": ["Sound-System", "Licht-System"],
+      "url": "https://www.live-music-festival.com/secondstage"
+    },
+    {
+      "id": 3,
+      "name": "Silent Disco",
+      "id-name": "Silent-Disco",
+      "short-description": "Silent Disco für alle, die es ruhig mögen",
+      "description": "Erlebe die einzigartige Silent Disco mit Kopfhörern und einer tollen Auswahl an DJ-Sets.",
+      "location": [50.9390, 6.9620],
+      "address": {
+        "street": "Einsame-Straße 7",
+        "postal_code": "67890",
+        "city": "Relaxburg",
+        "country": "Deutschland"
+      },
+      "image": "url-disco.jpg",
+      "capacity": 800,
+      "visible": true,
+      "type": "Zelt",
+      "features": ["Kopfhörer", "Licht-System", "Snack-Bar"],
+      "url": "https://www.live-music-festival.com/silentdisco"
+    }
+  ]
+  

@@ -1,0 +1,95 @@
+[
+    {
+      "id": 201,
+      "actsIDArr": [101, 102],
+      "stageID": 1,
+      "id-name": "BASE",
+      "name": "BASE",
+      "short-description": "A night of amazing music with the best bands in the world.",
+      "description": "A night of amazing music with the best bands in the world.",
+      "start_time": "2025-03-21T18:00:00Z",
+      "end_time": "2025-03-21T20:00:00Z",
+      "date": "2025-03-21",
+      "status": "active",
+      "type": "Concert",
+      "tags": ["concert", "music"],
+      "ticket": true,
+      "ticket_info": {
+        "available": true,
+        "price": 20,
+        "currency": "EUR",
+        "url": "https://www.ticketmaster.com/"
+      },
+      "url": "https://www.live-music-festival.com/base"
+    },
+    {
+      "id": 202,
+      "actsIDArr": [103],
+      "stageID": 2,
+      "id-name": "ELECTRO NIGHT",
+      "name": "Electro Night",
+      "short-description": "An electrifying experience with the best DJs.",
+      "description": "Experience the best electronic music with top DJs. A night of high energy and great vibes.",
+      "start_time": "2025-03-21T21:00:00Z",
+      "end_time": "2025-03-22T00:00:00Z",
+      "date": "2025-03-21",
+      "status": "active",
+      "type": "DJ Set",
+      "tags": ["electronic", "dj", "party"],
+      "ticket": true,
+      "ticket_info": {
+        "available": true,
+        "price": 15,
+        "currency": "EUR",
+        "url": "https://www.ticketmaster.com/"
+      },
+      "url": "https://www.live-music-festival.com/electro-night"
+    },
+    {
+      "id": 203,
+      "actsIDArr": [104, 105],
+      "stageID": 3,
+      "id-name": "",
+      "name": "Rock Revolution",
+      "short-description": "A powerful rock night with legendary bands.",
+      "description": "Join us for an explosive rock night featuring legendary bands that have shaped the genre.",
+      "start_time": "2025-03-22T18:00:00Z",
+      "end_time": "2025-03-22T20:30:00Z",
+      "date": "2025-03-22",
+      "status": "active",
+      "type": "Concert",
+      "tags": ["rock", "concert", "music"],
+      "ticket": true,
+      "ticket_info": {
+        "available": true,
+        "price": 25,
+        "currency": "EUR",
+        "url": "https://www.ticketmaster.com/"
+      },
+      "url": "https://www.live-music-festival.com/rock-revolution"
+    },
+    {
+      "id": 204,
+      "actsIDArr": [101, 103],
+      "stageID": 1,
+      "id-name": "INDIE BEATS",
+      "name": "Indie Beats",
+      "short-description": "Indie music with unique sounds from upcoming artists.",
+      "description": "Get ready for an evening of fresh indie beats, featuring some of the most promising new artists.",
+      "start_time": "2025-03-22T21:00:00Z",
+      "end_time": "2025-03-23T00:00:00Z",
+      "date": "2025-03-22",
+      "status": "active",
+      "type": "Concert",
+      "tags": ["indie", "music", "live"],
+      "ticket": true,
+      "ticket_info": {
+        "available": true,
+        "price": 18,
+        "currency": "EUR",
+        "url": "https://www.ticketmaster.com/"
+      },
+      "url": "https://www.live-music-festival.com/indie-beats"
+    }
+]
+  
