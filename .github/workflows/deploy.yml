@@ -20,9 +20,11 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+        working-directory: ./Event-WebApp
 
       - name: Build Vue.js project
         run: npm run build
+        working-directory: ./Event-WebApp
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
