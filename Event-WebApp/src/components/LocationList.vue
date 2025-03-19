@@ -1,0 +1,65 @@
+<!-- LocationList.vue -->
+<!-- A list of locations with a favorite button -->
+
+<template>
+  <div class="locations-list">
+    <ul v-if="filteredStages.length > 0">
+      <li v-for="stage in filteredStages" :key="stage.id">
+        <router-link :to="'/location/' + (stage['id-name']?.trim() ? stage['id-name'] : stage.id)">
+          <strong>{{ stage.name }}</strong>
+        </router-link>
+        <FavoriteButton :itemId="String(stage.id)" itemType="stage" />
+      </li>
+    </ul>
+    <p v-else>{{ $t('no-locations') }}</p>
+  </div>
+</template>
+
+<script setup lang="ts">
+import { computed } from 'vue';
+import { useEventData } from '@/useEventData.ts';
+import FavoriteButton from '@/components/FavBtn.vue';
+
+// load acts from useEventData
+const { stages } = useEventData();
+
+// Define props
+const props = defineProps<{
+  filterID?: number[];
+}>();
+
+// Filter stages by filterID
+const filteredStages = computed(() => {
+  if (!stages.value || stages.value.length === 0) return []; // If stages are not loaded yet, return empty array
+  if (!props.filterID || props.filterID.length === 0) return stages.value; // show all stages if no filter is set
+  return stages.value.filter((stage) => props.filterID?.includes(stage.id));
+});
+</script>
+
+<style scoped>
+.locations-list {
+  padding: 20px;
+}
+
+.locations-list h2 {
+  color: #333;
+}
+
+.locations-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.locations-list li {
+  padding: 10px 0;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+</style>
