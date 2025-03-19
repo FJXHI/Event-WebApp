@@ -9,17 +9,22 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@vue-leaflet/vue-leaflet": "^0.10.1",
+    "leaflet": "^1.9.4",
+    "leaflet.locatecontrol": "^0.84.2",
     "vue": "^3.5.13",
-    "vue-i18n": "^11.1.2"
+    "vue-i18n": "^11.1.2",
+    "vue-router": "^4.5.0"
   },
   "devDependencies": {
+    "@types/node": "^22.13.12",
     "@vite-pwa/assets-generator": "^0.2.6",
-    "@vitejs/plugin-vue": "^5.2.1",
+    "@vitejs/plugin-vue": "^5.2.3",
     "@vue/tsconfig": "^0.7.0",
-    "typescript": "~5.7.2",
-    "vite": "^6.0.11",
-    "vite-plugin-pwa": "^0.21.1",
-    "vue-tsc": "^2.2.0",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.2",
+    "vite-plugin-pwa": "^0.21.2",
+    "vue-tsc": "^2.2.8",
     "workbox-core": "^7.3.0",
     "workbox-precaching": "^7.3.0",
     "workbox-routing": "^7.3.0",

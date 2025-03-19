@@ -1,32 +1,76 @@
-<script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-import PWABadge from './components/PWABadge.vue'
-</script>
+<!-- App.vue -->
 
 <template>
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/favicon.svg" class="logo" alt="Event-App logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <div class="app-container full-height">
+    <header class="app-header">
+      <NavMenu :PageName="currentPage"/>
+    </header>
+
+    <router-view class="router-view full-height"/>
+    <PopupModal />
+    <PWABadge />
   </div>
-  <HelloWorld msg="Event-App" />
-  <PWABadge />
 </template>
 
+<script setup lang="ts">
+import { ref, computed } from 'vue';
+import { useRoute } from 'vue-router';
+import NavMenu from './components/NavMenu.vue';
+import PopupModal from '@/components/PopupModal.vue';
+import PWABadge from '@/components/PWABadge.vue';
+
+const route = useRoute();
+const currentPage = computed(() => {
+  const routeMap: Record<string, string> = {
+    '/': 'nav-home',
+    '/acts': 'nav-acts',
+    '/locations': 'nav-locations',
+    '/favorites': 'nav-favorites',
+    '/about': 'nav-about',
+    '/schedule': 'nav-timetable',
+    '/timetable': 'nav-timetable',
+    '/map': 'nav-map',
+    '/settings': 'nav-settings',
+    '/news': 'nav-news'
+  };
+  // chech if the route starts with '/act/'
+  if (route.path.startsWith('/act/')) {
+    return 'nav-acts';
+  }
+  if (route.path.startsWith('/location/')) {
+    return 'nav-locations';
+  }
+  if (route.path.startsWith('/event/')) {
+    return 'nav-timetable';
+  }
+
+  return routeMap[route.path] || 'nav-unknown-site';
+});
+
+
+</script>
+
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+
+.scroll-old {
+  flex-grow: 1;
+  /*overflow-y: auto;*/
 }
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+
+.router-view {
+  height: 90%;
+  /*overflow: hidden; /* wichtig: die innere Scroll-Area übernimmt */
+  /*height: 90%;
+  position: sticky;*/
+  /* margin-left: 0.5rem;
+  margin-right: 0.5rem;*/
 }
+
+
 </style>

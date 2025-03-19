@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "type": "point",
+        "name": "Veggi Food",
+        "kategori": "Food",
+        "location": [50.840158, 12.915234],
+        "openingTimes": [
+        {
+            "from": "2025-04-30T14:00",
+            "to": "2025-04-30T18:00",
+            "note": "Essensmarkenverkauf"
+        },
+        {
+            "from": "2025-05-01T12:00",
+            "to": "2025-05-01T18:00"
+        }
+        ],
+        "description": "Am Veggi Food Stand gibt es veganes Essen und Getränke."
+    },
+    {
+        "id": 3,
+        "type": "point",
+        "name": "Handbrot",
+        "kategori": "Food",
+        "location": [50.840158, 12.925234],
+        "noinclude": true
+    }
+]

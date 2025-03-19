@@ -1,0 +1,78 @@
+[
+    {
+        "id": 1,
+        "title": "Kosmos 2025",
+        "subtitle": "Festival App",
+        "short-describtion": "Ein großartiges Rock-Konzert mit vielen bekannten Bands.",
+        "describtion":  "Erstmals mehrtägig: Entdecke das KOSMOS Festival 2025 mit über 250 Programmpunkten aus MUSIK, GESELLSCHAFT, KUNST, WIRTSCHAFT UND SPORT.",
+        "backgroundImage": "https://www.kosmos-chemnitz.de/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F6ksmh5sq%2Fproduction%2Fa2c2df95a6fefb1ed0e48e6fcd442dcb08c93678-5225x3501.jpg%3Frect%3D310%2C0%2C4607%2C3501%26w%3D900%26h%3D684%26q%3D80&w=1080&q=75",
+        "logo": "demo-festival-bg.jpg",
+        "startDate": "2025-06-13",
+        "endDate": "2025-06-15",
+        "location": {
+            "name": "Kulturhauptstadt 2025",
+            "address": {
+                "street": "Fabrikstraße 11",
+                "postal_code": "09111",
+                "city": "Chemnitz",
+                "country": "Deutschland"
+              },
+            "gps": {
+                "latitude": 50.837938,
+                "longitude": 12.915030
+            }
+        },
+        "about": [
+        {
+            "id": 1001,
+            "name": "Was ist der KOSMOS?",
+            "subtitle": null,
+            "icon": null,
+            "text": "Der KOSMOS Chemnitz ist ein Festival für Demokratie, ein Netzwerk und eine Plattform für Auseinandersetzungen und Diskussionen. Es ermöglicht einen Austausch zwischen Kulturschaffenden und engagierten Bürger:innen über relevante Themen unserer Gesellschaft und die Zukunft von Chemnitz und Europa. Hier kann die Demokratie von morgen gestaltet werden, indem Ideen und Visionen aller Beteiligten, unabhängig von Herkunft oder Religion, präsentiert werden. Es bietet eine Chance, sich für Weltoffenheit, Toleranz und Zivilcourage einzusetzen und aktiv an der Weiterentwicklung der Stadt und ihrer Bewohner:innen teilzunehmen."
+        },
+        {
+            "id": 1002,
+            "name": "Wann findet das KOSMOS Festival statt?",
+            "subtitle": null,
+            "icon": null,
+            "text": "Das KOSMOS Festival findet in diesem Jahr erstmals mehrtägig statt: Vom 13. – 15. Juni 2025"
+        },
+        {
+            "id": 1003,
+            "name": "Wo findet das Festival statt?",
+            "subtitle": null,
+            "icon": null,
+            "text": "Infos dazu ganz bald <3"
+        },
+        {
+            "id": 1004,
+            "name": "Ist das Festival kostenfrei?",
+            "subtitle": null,
+            "icon": null,
+            "text": "Ja, der Eintritt zum KOSMOS ist auch 2025 kostenfrei"
+        }
+        ],
+        "weblinks": [
+        {
+            "name": "Facebook",
+            "url": "https://www.facebook.com/KosmosChemnitz"
+        },
+        {
+            "name": "Instagram",
+            "url": "https://www.instagram.com/kosmoschemnitz"
+        },
+        {
+            "name": "Tiktok",
+            "url": "https://www.tiktok.com/@kosmoschemnitz"
+        },
+        {
+            "name": "Webseite",
+            "url": "https://www.kosmos-chemnitz.de/de"
+        },
+        {
+            "name": "Zeitplan",
+            "url": "https://www.kosmos-chemnitz.de/de/zeitplan"
+        }
+        ]
+    }
+]

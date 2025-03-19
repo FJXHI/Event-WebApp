@@ -1,0 +1,173 @@
+[
+    {
+        "id": 101,
+        "name": "Classic Band",
+        "subname": "The Band",
+        "act-type": ["Artist"],
+        "tags": [
+        {
+            "name": "Classic",
+            "visible": true
+        },
+        {
+            "name": "Chill",
+            "visible": false
+        },
+        {
+            "name": "Pop",
+            "visible": true
+        }
+        ],
+        "id-name": "Band-A",
+        "short-description": null,
+        "description": "Classic Band is a legendary group known for their vibrant performances and timeless hits. With a mix of classic music and modern flair, they captivate audiences of all ages. Their energy on stage is infectious, making every show a memorable experience.",
+        "image": "images-demo/AdobeStock_97772696_light.jpg",
+        "weblinks": [
+        {
+            "name": "Facebook",
+            "url": "https://www.facebook.com/classicband"
+        },
+        {
+            "name": "Instagram",
+            "url": "https://www.instagram.com/classicband"
+        }
+        ]
+    },
+    {
+        "id": 102,
+        "name": "DJ Electro",
+        "subname": "Markus Electro",
+        "act-type": ["DJ"],
+        "tags": [
+        {
+            "name": "Techno",
+            "visible": true
+        },
+        {
+            "name": "Club",
+            "visible": false
+        },
+        {
+            "name": "Late-Night",
+            "visible": true
+        }
+        ],
+        "id-name": "DJ-Electro",
+        "short-description": "Pioneering techno DJ with a passion for deep bass.",
+        "description": "DJ Electro has been rocking the underground techno scene for over a decade, bringing deep bass and euphoric beats.",
+        "image": "https://as2.ftcdn.net/v2/jpg/00/69/39/29/1000_F_69392962_aAVYsSSDPXhU8nW96PagSFwtIvHOCA9d.jpg",
+        "weblinks": [
+        {
+            "name": "SoundCloud",
+            "url": "https://www.soundcloud.com/dj-electro"
+        },
+        {
+            "name": "Twitter-x",
+            "url": "https://www.twitter.com/dj-electro"
+        }
+        ]
+    },
+    {
+        "id": 103,
+        "name": "The Rockstars",
+        "subname": "",
+        "act-type": ["Artist"],
+        "tags": [
+        {
+            "name": "Rock",
+            "visible": false
+        },
+        {
+            "name": "Hard Rock",
+            "visible": true
+        },
+        {
+            "name": "Mainstage",
+            "visible": false
+        }
+        ],
+        "id-name": "The-Rockstars",
+        "short-description": "High-energy rock band known for their electrifying performances.",
+        "description": "The Rockstars have toured globally, delivering unforgettable performances that get crowds jumping and singing along.",
+        "image": "images-demo/AdobeStock_148366032_light.jpg",
+        "weblinks": [
+        {
+            "name": "Facebook",
+            "url": "https://www.facebook.com/the-rockstars"
+        },
+        {
+            "name": "Instagram",
+            "url": "https://www.instagram.com/the-rockstars"
+        }
+        ]
+    },
+    {
+        "id": 104,
+        "name": "Lucy Sax",
+        "subname": "Saxophonist Lucy",
+        "act-type": ["Artist"],
+        "tags": [
+        {
+            "name": "Jazz",
+            "visible": true
+        },
+        {
+            "name": "Chill",
+            "visible": true
+        },
+        {
+            "name": "Acoustic",
+            "visible": true
+        }
+        ],
+        "id-name": "Lucy-Sax",
+        "short-description": "Sultry saxophone sounds that bring a smooth vibe.",
+        "description": "Lucy Sax combines jazz, blues, and soul for an unforgettable musical experience with a soothing touch.",
+        "image": "https://as1.ftcdn.net/v2/jpg/07/33/12/20/1000_F_733122056_kdsgOJePMEs8bO9pPJ9OM4919Ok5efrK.jpg",
+        "weblinks": [
+        {
+            "name": "YouTube",
+            "url": "https://www.youtube.com/LucySax"
+        },
+        {
+            "name": "Instagram",
+            "url": "https://www.instagram.com/lucysax"
+        }
+        ]
+    },
+    {
+        "id": 105,
+        "name": "Vocal Vibes",
+        "subname": "Vocal Vibes Choir",
+        "act-type": ["Artist"],
+        "tags": [
+        {
+            "name": "Pop",
+            "visible": true
+        },
+        {
+            "name": "Indie",
+            "visible": true
+        },
+        {
+            "name": "Mainstage",
+            "visible": false
+        }
+        ],
+        "id-name": "Vocal-Vibes",
+        "short-description": "Indie pop duo with powerful vocal harmonies.",
+        "description": "Vocal Vibes creates catchy pop anthems with heartfelt lyrics and harmonious vocals that leave a lasting impression.",
+        "image": null,
+        "weblinks": [
+        {
+            "name": "Spotify",
+            "url": "https://www.spotify.com/vocal-vibes"
+        },
+        {
+            "name": "YouTube",
+            "url": "https://www.youtube.com/vocalvibes"
+        }
+        ]
+    }
+]
+  

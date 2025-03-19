@@ -1,3 +1,8 @@
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
+
+JSON-Script/*.json
+JSON-Script/HW*
+# UPDATE-KOSMOS
+JSON-Script/KOSMOS

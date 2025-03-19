@@ -1,10 +1,33 @@
+<!-- PWABadge.vue -->
+<template>
+  <div
+      v-if="offlineReady || needRefresh"
+      class="pwa-toast"
+      aria-labelledby="toast-message"
+      role="alert"
+  >
+    <div class="message">
+      <span id="toast-message">
+        {{ title }}
+      </span>
+    </div>
+    <div class="buttons">
+      <button v-if="needRefresh" type="button" class="reload" @click="updateServiceWorker()">
+        Reload
+      </button>
+      <button type="button" @click="close">
+        Close
+      </button>
+    </div>
+  </div>
+</template>
+
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 import { useRegisterSW } from 'virtual:pwa-register/vue'
 
 // check for updates every hour
 const period = 60 * 60 * 1000
-
 const swActivated = ref(false)
 
 /**
@@ -62,29 +85,6 @@ function close() {
   needRefresh.value = false
 }
 </script>
-
-<template>
-  <div
-      v-if="offlineReady || needRefresh"
-      class="pwa-toast"
-      aria-labelledby="toast-message"
-      role="alert"
-  >
-    <div class="message">
-      <span id="toast-message">
-        {{ title }}
-      </span>
-    </div>
-    <div class="buttons">
-      <button v-if="needRefresh" type="button" class="reload" @click="updateServiceWorker()">
-        Reload
-      </button>
-      <button type="button" @click="close">
-        Close
-      </button>
-    </div>
-  </div>
-</template>
 
 <style scoped>
 .pwa-toast {

@@ -1,3 +1,5 @@
+import { fileURLToPath, URL } from 'node:url'
+
 import { VitePWA } from 'vite-plugin-pwa';
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
@@ -5,6 +7,11 @@ import vue from '@vitejs/plugin-vue'
 // https://vitejs.dev/config/
 export default defineConfig({
   base: '/Event-WebApp/',
+  resolve: {
+    alias: {
+      '@': fileURLToPath(new URL('./src', import.meta.url))
+    },
+  },
   plugins: [vue(), VitePWA({
     strategies: 'injectManifest',
     srcDir: 'src',
@@ -18,9 +25,9 @@ export default defineConfig({
     },
 
     manifest: {
-      name: 'Event-App',
-      short_name: 'Event-App',
-      description: 'App for Events and Festivals',
+      name: 'Kosmos 2025',
+      short_name: 'Kosmos',
+      description: 'Inoffizielle WebApp für Kosmos 2025',
       theme_color: '#ffffff',
     },
 

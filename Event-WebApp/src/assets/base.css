@@ -1,0 +1,194 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --vt-c-white: #ffffff;
+  --vt-c-white-soft: #f8f8f8;
+  --vt-c-white-mute: #f2f2f2;
+
+  --vt-c-black: #181818;
+  --vt-c-black-soft: #222222;
+  --vt-c-black-mute: #282828;
+
+  --vt-c-indigo: #2c3e50;
+
+  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
+  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
+  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
+  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
+
+  --vt-c-text-light-1: var(--vt-c-indigo);
+  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
+  --vt-c-text-dark-1: var(--vt-c-white);
+  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+
+  /* Color Theme */
+  --vt-theme-1: #55295C; /* Theme1 (TopNav+Space) */
+  --vt-theme-1-soft: #9b589e; /* TopNav Button Header */
+  --vt-theme-1-mute: #65306f; /* TopNav (Search) */
+  --vt-theme-2: #F3CA58; /* Theme2 (Header) */
+  --vt-theme-3: #27102c; /* Theme3 (Sidenav) */
+  --vt-body-line: #ddd;
+  --vt-body-bg: var(--vt-c-white-soft); /* Not in use */
+
+  --vt-theme-1-text: var(--vt-c-white); /* Light Text Color */
+  --vt-theme-2-text: var(--vt-c-black); /* Dark Text Color */
+
+  --vt-theme-1-dark: #27102c;
+  --vt-theme-1-dark-mute: #38173f; /* TopNav Button Header */
+  --vt-theme-2-dark: #c38200;
+
+  /*--vt-theme-2-dark: #bb6611;
+  --vt-hw: #55295C #9b589e #27102c #A8A7B7 #F3CA58 #55295C0A #f0506e;
+  -vt-th-org: #0066ff #ffcc00 #993a00 #033a99;*/
+  /*background: #f3f3f3; #f0506e*/
+
+}
+
+/* semantic color variables for this project */
+:root {
+  --color-background: var(--vt-c-white);
+  --color-background-soft: var(--vt-c-white-soft);
+  --color-background-mute: var(--vt-c-white-mute);
+
+  --color-border: var(--vt-c-divider-light-2);
+  --color-border-hover: var(--vt-c-divider-light-1);
+
+  --color-heading: var(--vt-c-text-light-1);
+  --color-text: var(--vt-c-text-light-1);
+
+  --section-gap: 160px;
+
+  /*App Theme Color*/
+  --bg-topnav: var(--vt-theme-1);
+  --text-topnav: var(--vt-theme-1-text);
+  --bg-topnav-head-btn: var(--vt-theme-1-soft);
+  --bg-searchbar: var(--vt-theme-1-mute);
+  --text-searchbar: #ddd; /* theme-1-mute? */
+
+  --text-item-name: var(--vt-theme-2-text);
+  --text-item-sub: var(--vt-c-text-light-1);
+  --taglabel-border: var(--vt-body-line);
+  --taglabel-bg: var(--color-background);
+  --taglabel-text: var(--text-item-sub);
+
+  --bg-sidenav: var(--vt-theme-3);
+  --text-sidenav: var(--text-topnav);
+  --bg-sidenav-hover: #444; /* theme-1-mute? */
+  
+
+  --bg-space: var(--vt-theme-1);
+  --bg-header: var(--vt-theme-2);
+  --oval-line: black;
+
+  --divid-line: var(--vt-c-black-mute);
+  --line-soft: var(--vt-body-line);
+  --list-group: var(--vt-body-line);
+  --list-group-text: var(--vt-c-black);
+
+  --bg-body-hover: var(--vt-c-white-soft);
+
+  /* Home Nav */
+  --home-hover: lightgreen; /* not in use */
+  
+  --home-title: var(--vt-theme-2-text);
+  --home-sub: var(--vt-theme-1);
+  --home-icon: var(--vt-theme-1);
+
+  /* Buttons */
+  --btn-reset: #007bff;
+  --btn-apply-bg: #28a745;
+  --btn-apply-text: white;
+  --btn-active-bg: #007bff;
+  --btn-active-text: var(--vt-c-white);
+  --btn-normal-bg: #d3d3d3;
+  --btn-normal-text: var(--vt-c-black);
+  --filter-line: #ddd;
+}
+
+
+/* Dark Mode */
+.dark {
+  --color-background: var(--vt-c-black);
+  --color-background-soft: var(--vt-c-black-soft);
+  --color-background-mute: var(--vt-c-black-mute);
+
+  --color-border: var(--vt-c-divider-dark-2);
+  --color-border-hover: var(--vt-c-divider-dark-1);
+
+  --color-heading: var(--vt-c-text-dark-1);
+  --color-text: var(--vt-c-text-dark-2);
+
+  /*Darkmode App Theme Color*/
+  --bg-topnav: var(--vt-theme-1-dark);
+  --text-topnav: var(--vt-theme-1-text); /* same at light-mode */
+  --bg-topnav-head-btn: var(--vt-theme-1);
+  --bg-searchbar: var(--vt-theme-1-dark-mute); /* change */
+  /* --text-searchbar: #ddd; /* theme-1-mute? */
+  --text-item-name: var(--vt-theme-1-text);
+  --text-item-sub: var(--vt-c-text-dark-2);
+  --taglabel-border: var(--vt-body-line);
+  --taglabel-bg: var(--color-background);
+  --taglabel-text: var(--text-item-sub);
+
+  --bg-sidenav: var(--vt-c-black-soft); /* theme-1-mute? or black */
+  /* --text-sidenav: var(--text-topnav);
+  --bg-sidenav-hover: #444; /* theme-1-mute? */
+
+  --bg-space: var(--vt-theme-1-dark);
+  --bg-header: var(--vt-theme-2-dark);
+  --oval-line: white;
+
+  --divid-line: var(--vt-c-white-mute);
+  --line-soft: var(--vt-c-text-dark-2);
+  --list-group: var(--vt-c-black-soft);
+  --list-group-text: var(--vt-c-white-mute);
+  --bg-body-hover: var(--vt-c-wight-soft);  
+  
+  --home-title: var(--vt-theme-1-text);
+  --home-sub: var(--vt-theme-1-soft);
+  --home-icon: var(--vt-theme-1-soft);
+
+  /*--btn-reset: #007bff;*/
+  /*--btn-apply-bg: #28a745;*/
+  --btn-apply-text: var(--vt-c-white-mute);
+  --btn-active-bg: #033a99;
+  --btn-active-text: var(--vt-c-white);
+  --btn-normal-bg: var(--vt-c-text-dark-2);
+  --btn-normal-text: var(--vt-c-black);
+  --filter-line: var(--vt-c-text-dark-2);
+
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
