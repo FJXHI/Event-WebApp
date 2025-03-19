@@ -1,0 +1,173 @@
+[
+    {
+        "id": 101,
+        "name": "Band A",
+        "subname": "",
+        "act-type": ["Artist"],
+        "tags": [
+        {
+            "name": "Electro",
+            "visible": true
+        },
+        {
+            "name": "Outdoor",
+            "visible": false
+        },
+        {
+            "name": "Late-Night",
+            "visible": true
+        }
+        ],
+        "id-name": "Band-A",
+        "short-description": null,
+        "description": "Band A is known for their energetic performances and catchy tunes.",
+        "image": "url-to-band-a-image.jpg",
+        "weblinks": [
+        {
+            "name": "Facebook",
+            "url": "https://www.facebook.com/banda"
+        },
+        {
+            "name": "Instagram",
+            "url": "https://www.instagram.com/banda"
+        }
+        ]
+    },
+    {
+        "id": 102,
+        "name": "DJ Electro",
+        "subname": "Markus Electro",
+        "act-type": ["DJ"],
+        "tags": [
+        {
+            "name": "Techno",
+            "visible": true
+        },
+        {
+            "name": "Club",
+            "visible": false
+        },
+        {
+            "name": "Late-Night",
+            "visible": true
+        }
+        ],
+        "id-name": "DJ-Electro",
+        "short-description": "Pioneering techno DJ with a passion for deep bass.",
+        "description": "DJ Electro has been rocking the underground techno scene for over a decade, bringing deep bass and euphoric beats.",
+        "image": "url-to-dj-electro-image.jpg",
+        "weblinks": [
+        {
+            "name": "SoundCloud",
+            "url": "https://www.soundcloud.com/dj-electro"
+        },
+        {
+            "name": "Twitter",
+            "url": "https://www.twitter.com/dj-electro"
+        }
+        ]
+    },
+    {
+        "id": 103,
+        "name": "The Rockstars",
+        "subname": "The Rockband",
+        "act-type": ["Artist"],
+        "tags": [
+        {
+            "name": "Rock",
+            "visible": true
+        },
+        {
+            "name": "Live",
+            "visible": true
+        },
+        {
+            "name": "Mainstage",
+            "visible": false
+        }
+        ],
+        "id-name": "The-Rockstars",
+        "short-description": "High-energy rock band known for their electrifying performances.",
+        "description": "The Rockstars have toured globally, delivering unforgettable performances that get crowds jumping and singing along.",
+        "image": "url-to-rockstars-image.jpg",
+        "weblinks": [
+        {
+            "name": "Facebook",
+            "url": "https://www.facebook.com/rockstars"
+        },
+        {
+            "name": "Instagram",
+            "url": "https://www.instagram.com/rockstars"
+        }
+        ]
+    },
+    {
+        "id": 104,
+        "name": "Lucy Sax",
+        "subname": "Saxophonist Lucy",
+        "act-type": ["Artist"],
+        "tags": [
+        {
+            "name": "Jazz",
+            "visible": true
+        },
+        {
+            "name": "Chill",
+            "visible": true
+        },
+        {
+            "name": "Acoustic",
+            "visible": true
+        }
+        ],
+        "id-name": "Lucy-Sax",
+        "short-description": "Sultry saxophone sounds that bring a smooth vibe.",
+        "description": "Lucy Sax combines jazz, blues, and soul for an unforgettable musical experience with a soothing touch.",
+        "image": "url-to-lucy-sax-image.jpg",
+        "weblinks": [
+        {
+            "name": "YouTube",
+            "url": "https://www.youtube.com/LucySax"
+        },
+        {
+            "name": "Instagram",
+            "url": "https://www.instagram.com/lucysax"
+        }
+        ]
+    },
+    {
+        "id": 105,
+        "name": "Vocal Vibes",
+        "subname": "Vocal Vibes Choir",
+        "act-type": ["Artist"],
+        "tags": [
+        {
+            "name": "Pop",
+            "visible": true
+        },
+        {
+            "name": "Indie",
+            "visible": true
+        },
+        {
+            "name": "Mainstage",
+            "visible": true
+        }
+        ],
+        "id-name": "Vocal-Vibes",
+        "short-description": "Indie pop duo with powerful vocal harmonies.",
+        "description": "Vocal Vibes creates catchy pop anthems with heartfelt lyrics and harmonious vocals that leave a lasting impression.",
+        "image": "url-to-vocal-vibes-image.jpg",
+        "weblinks": [
+        {
+            "name": "Spotify",
+            "url": "https://www.spotify.com/vocal-vibes"
+        },
+        {
+            "name": "YouTube",
+            "url": "https://www.youtube.com/vocalvibes"
+        }
+        ]
+    }
+]
+  
