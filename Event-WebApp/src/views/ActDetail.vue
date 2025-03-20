@@ -1,15 +1,16 @@
 <template>
-  <div v-if="act" class="act-detail-view">
+  <div v-if="act" class="detail-view">
     <h3>{{ act.name }}</h3>
 
-    <!-- Sicherstellen, dass `act.image` existiert und nicht leer ist -->
+    <!-- Safty check if `act.image` exists and is not empty -->
     <img 
       :src="baseUrl + 'images/' + (act.image && act.image.trim() !== '' ? act.image : 'default-image.jpg')" 
       alt="Act Image" 
-      class="act-image" 
+      class="detail-view-img" 
     />
 
     <p><strong>{{ $t('bio') }}:</strong> {{ act.description }}</p>
+    <p><span v-if="act.subname">{{ act.subname }}</span></p>
     <p>
       <strong>{{ $t('genre') }}: </strong> 
       <span v-for="(tag, index) in act.tags.filter(tag => tag.visible)" :key="index">
@@ -17,9 +18,6 @@
       </span>
     </p>
 
-
-
-    <!-- Favorite-Button mit string-konvertierter ID -->
     <FavoriteButton :itemId="String(act.id)" itemType="act" />
 
     <h4>{{ $t('appearances') }}:</h4>
@@ -43,18 +41,16 @@ import BackBtn from '@/components/BackBtn.vue';
 import ProgrammList from '@/components/ProgrammList.vue';
 import FavoriteButton from '@/components/FavBtn.vue';
 
-// Routen-Parameter abrufen
-const route = useRoute();
 
-// Event-Daten abrufen
+const route = useRoute();
 const { acts, performances, stages } = useEventData();
 
-// Berechnung des aktuellen Acts
+// calculate the current act
 const act = computed(() => {
-  // Prüfen, ob die Daten geladen sind
+  // Check if the data is loaded
   if (!acts.value || !performances.value || !stages.value) return null;
 
-  const actId = route.params.id as string; // actId ist ein String (von der URL)
+  const actId = route.params.id as string; // actId is a string (from the URL)
   
   const selectedAct = acts.value.find(
     (act) => act['id-name'] === actId || act.id.toString() === actId
@@ -74,3 +70,4 @@ const act = computed(() => {
 });
 
 </script>
+

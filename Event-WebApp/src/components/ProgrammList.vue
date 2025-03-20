@@ -4,23 +4,27 @@
 <template>
   <div>
     <ul>
-      <li v-for="performance in filteredPerformances" :key="performance.id" class="performance-item">
-        <div class="performance-header">
-          <span>{{ performance.start_time }} - {{ performance.end_time }}</span>
-        </div>
-        <div class="performance-content">
-          <router-link :to="'/event/' + (performance['id-name'] && performance['id-name'].trim() !== '' ? performance['id-name'] : performance.id)">
-            <div>              
-              <span class="performance-title">
-                Title: {{ performance.name }}
-                Acts: {{ getActNames(performance.actsIDArr) }}
+      <li v-for="performance in filteredPerformances" :key="performance.id" class="list-item-obj">
+        <router-link 
+          :to="'/event/' + (performance['id-name'] && performance['id-name'].trim() !== '' ? performance['id-name'] : performance.id)"
+          class="list-item-link">
+          
+          <div class="list-item-info">
+            <strong class="list-item-name">
+              {{ performance.name }} ({{ getActNames(performance.actsIDArr) }})
+              <!-- ERROR-FIX Maybe EventName is NULL -->
+            </strong>
+            <span class="list-item-tags">
+              <span>{{ getStageName(performance.stageID) }}: </span>
+              <span>
+                {{ formatDateTime(performance.start_time, 'Date Long') }}, 
+                {{ formatDateTime(performance.start_time, 'Time') }} – 
+                {{ formatDateTime(performance.end_time, 'Time') }}
               </span>
-            
-              <div class="performance-location">{{ getStageName(performance.stageID) }}</div>
-            </div>
-          </router-link>
-          <FavoriteButton :itemId="performance.id.toString()" itemType="event" class="fav-btn"/><!-- ERROR-FIX fix FavBtn to work with int -->
-        </div>
+            </span>
+          </div>
+        </router-link>
+        <FavoriteButton :itemId="performance.id.toString()" itemType="event" class="list-item-fav-btn"/>
       </li>
     </ul>
   </div>
@@ -28,6 +32,7 @@
 
 <script setup lang="ts">
 import { computed } from 'vue';
+import { formatDateTime } from '@/config.ts';
 import { useEventData } from '@/useEventData.ts';
 import FavoriteButton from '@/components/FavBtn.vue';
 import type { Act, Stage, Performance } from '@/useEventData.ts';
@@ -74,6 +79,11 @@ const filteredPerformances = computed((): Performance[] => {
       });
     }
 
+    if (props.filter === 'event') {
+      // If filter is "event", check if the performance.id is in filterID
+      return props.filterID?.includes(String(performance.id));
+    }
+
     // otherwise, filter by tags
     return performance.actsIDArr.some((actID) => {
       const act = acts.value.find((act: Act) => act.id === actID);
@@ -81,19 +91,44 @@ const filteredPerformances = computed((): Performance[] => {
     });
   });
 });
+
+/* //other implementation of filteredPerformances
+const filteredPerformances = computed((): Performance[] => {
+  // log the filter type and filter IDs
+  console.log("Filter Type:", props.filter);
+  console.log("Filter IDs:", props.filterID); 
+
+  if (props.filter === 'all' || !props.filterID?.length) {
+    return performances.value;
+  }
+
+  return performances.value.filter(performance => {
+    if (props.filter === 'location') {
+      return props.filterID?.includes(performance.stageID.toString());
+    }
+    if (props.filter === 'act') {
+      return performance.actsIDArr.some(actID => props.filterID?.includes(actID.toString()));
+    }
+    if (props.filter === 'event') {
+      return props.filterID?.includes(performance.id.toString());
+    }
+    return performance.actsIDArr.some(actID => {
+      const act = acts.value.find(act => act.id === actID);
+      return act?.tags.some(tag => tag.visible && props.filterID?.includes(tag.name));
+    });
+  });
+});
+*/
+
 </script>
 
 <style scoped>
 ul {
-  width: 100%;
+  list-style-type: none;
   padding: 0;
-  margin: 0;
 }
 
-div {
-  width: 100%;
-}
-
+/*
 .performance-item {
   display: flex;
   flex-direction: column;
@@ -137,4 +172,5 @@ div {
   flex-shrink: 0;
   margin-left: 10px;
 }
+*/
 </style>
