@@ -12,7 +12,7 @@
         "city": "Festivalstadt",
         "country": "Deutschland"
       },
-      "image": "url-mainstage.jpg",
+      "image": "demo-festival-bg.jpg",
       "capacity": 5000,
       "visible": true,
       "type": "Open-Air",

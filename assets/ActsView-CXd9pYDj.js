@@ -1,1 +1,0 @@
-import{A as e}from"./ActList-UgM6x7uu.js";import{d as o,c as a,a as s,f as r,t as c,o as i}from"./index-BgWNFov8.js";import"./useEventData-CztJfjsB.js";import"./FavBtn-Bes61ZIC.js";import"./IconHeart-BiJSGRWM.js";const n={class:"text-xl font-bold"},h=o({__name:"ActsView",setup(p){return(t,m)=>(i(),a("div",null,[s("h2",n,c(t.$t("actview")),1),r(e)]))}});export{h as default};
