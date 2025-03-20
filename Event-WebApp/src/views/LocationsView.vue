@@ -1,6 +1,5 @@
 <template>
   <div class="locations-view">
-    <h2>Ortsübersicht</h2>
     <div v-if="stages.length > 0">
       <LocationList />
     </div>

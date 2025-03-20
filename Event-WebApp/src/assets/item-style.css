@@ -1,0 +1,259 @@
+.list-item-ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list-item-obj {
+  display: flex;
+  align-items: center;
+  padding: 0px 5px;
+  border-bottom: 1px solid #ddd;
+  transition: background 0.2s;
+  min-height: 55px;
+}
+
+.list-item-obj:hover {
+  background: #f8f8f8;
+}
+
+.list-item-link {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  padding: 5px 0;
+}
+
+.list-item-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.list-item-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.list-item-tags {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.list-item-fav-btn {
+  margin-left: auto;
+}
+
+/* ERROR-FIX */
+/* This dont work because of "a, .green" in main.css */
+/*
+.LinkItem-list {
+  width: 100%;
+  padding: 10px 0;
+  box-sizing: border-box;
+  margin-top: auto;
+}
+
+.LinkItem-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+*/
+
+.detail-view {
+  overflow: hidden;
+}
+
+.act-detail-view-img {
+  /* Ring-color in base.css */
+  border: 4px solid var(--color-bg-theme-space);
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: -60px;
+
+  /*left: 40%;
+  top: -70px;*/ /* Dont Work ??? */
+
+  /*width: 100%;
+  height: auto;
+  /*display: block;*/
+}
+
+.detail-space {
+  background-color: var(--color-bg-theme-space);
+  height: 70px;
+}
+
+.detail-header {
+  background-color: var(--color-bg-theme-header);
+  padding-bottom: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.detail-header h3 {
+  font-size: 30px; /* ERROR-FIX change size */
+}
+
+.detail-header h4 {
+  font-size: 16px;
+}
+
+/* Maybe no longer needed */
+.detail-view h3, 
+.detail-view h4 {
+  /*font-size: large;*/
+  /*color: red;*/
+  /*background-color: lightgreen;*/
+}
+
+.detail-content-text {
+  padding: 20px; /* % */
+}
+
+.detail-content p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* ERROR-FIX Do Styling in favBtn.vue and do restyle */
+.detail-view-favBtn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.detail-line {
+  border-bottom: 2px solid var(--color-theme-line);
+}
+
+.oval-link-div  {
+  margin-top: 10px;
+}
+
+.oval-link-item {
+  /* Color in base.css */
+  color: var(--color-theme-oval); 
+  border: var(--color-theme-oval) 2px solid;
+  display: inline-flex;
+  width: auto;
+  align-items: center;
+  margin-left: 0;
+  margin-bottom: 0;
+  margin-right: 0;
+  padding: 8px 12px;
+  height: 36px;
+  border-radius: 20vw;
+}
+
+.oval-link-item-span {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.event-detail-time, h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filter-modal {
+  background: var(--color-background-mute);
+  border-radius: 8px;
+  width: 24rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.filter-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.filter-close-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #666;
+}
+
+.filter-modal-body {
+  padding: 1rem;
+}
+
+.filter-reset-btn {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.filter-group {
+  margin-bottom: 1rem;
+}
+
+.filter-group h3 {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.filter-button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.filter-button-group button {
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  border: 1px solid #ddd;
+  /*background: #f3f3f3;*/
+  cursor: pointer;
+}
+
+.filter-button-group button.selected {
+  background: #007bff;
+  color: white;
+}
+
+.filter-modal-footer {
+  padding: 1rem;
+  border-top: 1px solid #ddd;
+}
+
+.filter-apply-btn {
+  width: 100%;
+  background: #28a745;
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}

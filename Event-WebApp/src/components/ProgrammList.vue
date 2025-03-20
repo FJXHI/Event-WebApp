@@ -4,23 +4,49 @@
 <template>
   <div>
     <ul>
-      <li v-for="performance in filteredPerformances" :key="performance.id" class="performance-item">
-        <div class="performance-header">
-          <span>{{ performance.start_time }} - {{ performance.end_time }}</span>
-        </div>
-        <div class="performance-content">
-          <router-link :to="'/event/' + (performance['id-name'] && performance['id-name'].trim() !== '' ? performance['id-name'] : performance.id)">
-            <div>              
-              <span class="performance-title">
-                Title: {{ performance.name }}
-                Acts: {{ getActNames(performance.actsIDArr) }}
+      <li v-for="performance in filteredPerformances" :key="performance.id" class="list-item-obj">
+        <router-link 
+          :to="'/event/' + (performance['id-name'] && performance['id-name'].trim() !== '' ? performance['id-name'] : performance.id)"
+          class="list-item-link">
+          
+          <div class="list-item-info">
+            <!-- (Other way to show Name and Acts) --
+            <strong class="list-item-name">
+              <div v-if="performance.name">
+                {{ performance.name }}
+              </div>
+              <div v-else-if="performance.actsIDArr.length">
+                {{ getActNames(performance.actsIDArr) }}
+              </div>
+              <div v-else>
+                Unknown Name
+              </div>
+            </strong>-->
+
+            <strong class="list-item-name">
+              <!-- Show only Name if no Acts or add the Acts-->
+              <div v-if="performance.name">
+                {{ performance.name }} <span v-if="performance.actsIDArr.length">({{ getActNames(performance.actsIDArr) }})</span>
+              </div>
+              <!-- Show only Acts if no Name -->
+              <div v-else-if="performance.actsIDArr.length">
+                {{ getActNames(performance.actsIDArr) }}
+              </div>
+              <div v-else>
+                Unknown Name
+              </div>
+            </strong>
+            <span class="list-item-tags">
+              <span>{{ getStageName(performance.stageID) }}: </span>
+              <span>
+                {{ formatDateTime(performance.start_time, 'Date Long') }}, 
+                {{ formatDateTime(performance.start_time, 'Time') }} – 
+                {{ formatDateTime(performance.end_time, 'Time') }}
               </span>
-            
-              <div class="performance-location">{{ getStageName(performance.stageID) }}</div>
-            </div>
-          </router-link>
-          <FavoriteButton :itemId="performance.id.toString()" itemType="event" class="fav-btn"/><!-- ERROR-FIX fix FavBtn to work with int -->
-        </div>
+            </span>
+          </div>
+        </router-link>
+        <FavoriteButton :itemId="performance.id.toString()" itemType="event" class="list-item-fav-btn"/>
       </li>
     </ul>
   </div>
@@ -28,6 +54,7 @@
 
 <script setup lang="ts">
 import { computed } from 'vue';
+import { formatDateTime } from '@/config.ts';
 import { useEventData } from '@/useEventData.ts';
 import FavoriteButton from '@/components/FavBtn.vue';
 import type { Act, Stage, Performance } from '@/useEventData.ts';
@@ -57,43 +84,44 @@ const getActNames = (actsArr: number[] = []): string => {
 
 // **main logic** to filter performances
 const filteredPerformances = computed((): Performance[] => {
-  if (props.filter === 'all' || !props.filterID?.length) {
-    return performances.value;
+  let filtered = performances.value;
+
+  if (props.filter !== 'all' && props.filterID?.length) {
+    filtered = performances.value.filter((performance: Performance) => {
+      // If filter is "location", check if the performance's stageID is in filterID
+      if (props.filter === 'location') {
+        return props.filterID.includes(String(performance.stageID));
+      }
+      // If filter is "act", check if any of the acts in the performance match the filterID
+      if (props.filter === 'act') {
+        return performance.actsIDArr.some((actID) =>
+          props.filterID.includes(String(actID))
+        );
+      }
+      // If filter is "event", check if the performance.id is in filterID
+      if (props.filter === 'event') {
+        return props.filterID.includes(String(performance.id));
+      }
+      // otherwise, filter by tags
+      return performance.actsIDArr.some((actID) => {
+        const act = acts.value.find((act: Act) => act.id === actID);
+        return act?.tags.some((tag) => tag.visible && props.filterID?.includes(tag.name));
+      });
+    });
   }
 
-  return performances.value.filter((performance: Performance) => {
-    if (props.filter === 'location') {
-      // If filter is "location", check if the performance's stageID is in filterID
-      return props.filterID?.includes(String(performance.stageID));
-    }
-
-    if (props.filter === 'act') {
-      // If filter is "act", check if any of the acts in the performance match the filterID
-      return performance.actsIDArr.some((actID) => {
-        return props.filterID?.includes(String(actID)); // filterID contains the Act-IDs
-      });
-    }
-
-    // otherwise, filter by tags
-    return performance.actsIDArr.some((actID) => {
-      const act = acts.value.find((act: Act) => act.id === actID);
-      return act?.tags.some((tag) => tag.visible && props.filterID?.includes(tag.name));
-    });
-  });
+  // sort by start_time (ascending)
+  return filtered.sort((a, b) => new Date(a.start_time).getTime() - new Date(b.start_time).getTime());
 });
 </script>
 
 <style scoped>
 ul {
-  width: 100%;
+  list-style-type: none;
   padding: 0;
-  margin: 0;
 }
 
-div {
-  width: 100%;
-}
-
+/*
 .performance-item {
   display: flex;
   flex-direction: column;
@@ -137,4 +165,5 @@ div {
   flex-shrink: 0;
   margin-left: 10px;
 }
+*/
 </style>

@@ -1,43 +1,46 @@
 <!-- FilterMenu.vue -->
 
 <template>
-  <div class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
-    <div class="bg-white rounded-lg w-96 shadow-lg">
-      <div class="p-4 border-b flex justify-between items-center">
-        <h2 class="text-lg font-semibold">Filter</h2>
-        <button @click="$emit('close')" class="text-gray-500 hover:text-black">&times;</button>
+  <div class="overlay">
+    <div class="filter-modal">
+      <div class="filter-modal-header">
+        <h2>Filter</h2>
+        <button @click="$emit('close')" class="filter-close-btn">&times;</button>
       </div>
       
-      <div class="p-4">
-        <button @click="resetFilters" class="text-blue-500 flex items-center mb-4">
+      <div class="filter-modal-body">
+        <button @click="resetFilters" class="filter-reset-btn">
           &#x21bb; Filter zurücksetzen
         </button>
         
-        <div class="mb-4">
-          <h3 class="font-semibold mb-2">Kategorien</h3>
-          <div class="flex gap-2 flex-wrap">
+        <div class="filter-group">
+          <h3>Kategorien</h3>
+          <div class="filter-button-group">
             <button v-for="category in categories" :key="category"
                     @click="toggleCategory(category)"
-                    :class="['px-3 py-1 rounded-full border', selectedCategories.includes(category) ? 'bg-blue-500 text-white' : 'bg-gray-100']">
+                    :class="{'selected': selectedCategories.includes(category)}">
               {{ category }}
             </button>
           </div>
         </div>
-        
-        <div>
-          <h3 class="font-semibold mb-2">Bühnen</h3>
-          <div class="flex gap-2 flex-wrap">
+
+        <!-- ERROR-FIX -- This don't work at the moment --
+        <div class="filter-group">
+          <h3>Bühnen</h3>
+          <div class="button-group">
             <button v-for="stage in stages" :key="stage.id"
                     @click="toggleStage(stage)"
-                    :class="['px-3 py-1 rounded-full border flex items-center', selectedStages.includes(stage.id) ? 'bg-green-500 text-white' : 'bg-gray-100']">
-              <span class="mr-1">&#x1F4CD;</span> {{ stage.name }}
+                    :class="{'selected': selectedStages.includes(stage.id)}">
+              <span>&#x1F4CD;</span> {{ stage.name }}
             </button>
           </div>
         </div>
+        -->
+
       </div>
       
-      <div class="p-4 border-t">
-        <button @click="applyFilters" class="w-full bg-green-500 text-white py-2 rounded-lg">Filter anwenden</button>
+      <div class="filter-modal-footer">
+        <button @click="applyAndClose" class="filter-apply-btn">Filter anwenden</button>
       </div>
     </div>
   </div>
@@ -48,7 +51,7 @@ import { ref, computed, defineEmits } from 'vue';
 import { useEventData } from '@/useEventData.ts';
 
 const { stages, acts } = useEventData();
-const emit = defineEmits(['apply']); // define custom event
+const emit = defineEmits(['apply', 'close']); // define custom events
 
 const selectedCategories = ref([]);
 const selectedStages = ref([]);
@@ -98,9 +101,20 @@ const applyFilters = () => {
   };
   emit('apply', filters); // send filter to parent component
 };
+
+const applyAndClose = () => {
+  const filters = {
+    categories: selectedCategories.value,
+    stages: selectedStages.value
+  };
+  emit('apply', filters); // send filter to parent component
+  emit('close') // close modal
+};
 </script>
 
 <style scoped>
+
+
 button {
   transition: all 0.2s;
 }

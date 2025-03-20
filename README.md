@@ -15,8 +15,7 @@ Die App ermöglicht es den Nutzern das Programm, Künstler und Bühnen zu entdec
 
 ### 🏗️ Geplante Features  
 - **Interaktive Karte** – Bühnenstandorte visuell darstellen  
-- **Erweiterte Filter** – Mehrere Filter gleichzeitig kombinieren – Filer-Menü überarbeiten 
-- **Dark Mode** – Theme-Umschaltung für bessere Nutzererfahrung  
+- **Erweiterte Filter** – Mehrere Filter gleichzeitig kombinieren – Filter-Menü überarbeiten 
 
 ## 🛠️ Installation & Setup  
 

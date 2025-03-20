@@ -16,7 +16,6 @@ The app allows users to explore the schedule, artists, and stages and save their
 ### 🏗️ Planned Features  
 - **Interactive Map** – Visually display stage locations  
 - **Advanced Filters** – Combine multiple filters at once – Revamp filter menu  
-- **Dark Mode** – Theme toggle for better user experience  
 
 ## 🛠️ Installation & Setup  
 

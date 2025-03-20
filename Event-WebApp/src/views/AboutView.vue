@@ -19,14 +19,14 @@
 
     <!-- About Section -->
     <div class="event-about">
-      <h3>About</h3>
+      <h3>Info</h3>
       
-      <p>Descrip Short: {{ eventData['short-describtion'] }}</p>
-      <p>Descrip: {{ eventData.describtion }}</p>
+      <!--<p>Descrip Short: {{ eventData['short-describtion'] }}</p>-->
+      <p>{{ eventData.describtion }}</p>
       <p>{{ eventData.startDate }} -- {{ eventData.endDate }}</p>
       <p></p>
 
-      eventData: {{ eventData }}
+      <!--eventData: {{ eventData }}-->
       </div>
 
     
@@ -56,7 +56,6 @@ const filteredTimetable = timetable.value.filter((perf) => perf.startDate === "2
   padding: 20px;
   background-size: cover;
   background-position: center;
-  color: white;
 }
 
 .event-header h1, .event-header h2 {

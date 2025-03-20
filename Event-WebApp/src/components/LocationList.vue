@@ -4,11 +4,17 @@
 <template>
   <div class="locations-list">
     <ul v-if="filteredStages.length > 0">
-      <li v-for="stage in filteredStages" :key="stage.id">
-        <router-link :to="'/location/' + (stage['id-name']?.trim() ? stage['id-name'] : stage.id)">
-          <strong>{{ stage.name }}</strong>
+      <li v-for="stage in filteredStages" :key="stage.id" class="list-item-obj">
+        <router-link 
+          :to="'/location/' + (stage['id-name']?.trim() ? stage['id-name'] : stage.id)"
+          class="list-item-link"
+        >
+          <div class="list-item-info">
+            <strong class="list-item-name">{{ stage.name }}</strong>
+            <!-- Subtext -->
+          </div>
         </router-link>
-        <FavoriteButton :itemId="String(stage.id)" itemType="stage" />
+        <FavoriteButton :itemId="String(stage.id)" itemType="stage" class="list-item-fav-btn" />
       </li>
     </ul>
     <p v-else>{{ $t('no-locations') }}</p>
@@ -37,29 +43,10 @@ const filteredStages = computed(() => {
 </script>
 
 <style scoped>
-.locations-list {
-  padding: 20px;
-}
-
-.locations-list h2 {
-  color: #333;
-}
-
-.locations-list ul {
+ul {
   list-style-type: none;
   padding: 0;
 }
 
-.locations-list li {
-  padding: 10px 0;
-}
 
-a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
 </style>

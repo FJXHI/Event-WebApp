@@ -1,15 +1,79 @@
+<template>
+  <div v-if="isLoading" class="loading-message">
+    <p>Lade Event-Daten...</p>
+  </div>
+
+  <div v-else-if="performance" class="event-detail-view detail-view">
+    <div class="detail-space"></div>
+    <div class="detail-header">
+      <div class="event-detail-time">
+        <h4>
+          {{ formatDateTime(performance.start_time, 'Time') }} – 
+          {{ formatDateTime(performance.end_time, 'Time') }},
+          {{ formatDateTime(performance.start_time, 'Date Long') }}
+        </h4>     
+      </div>
+      <FavoriteButton :itemId="String(performance.id)" itemType="event" class="detail-view-favBtn"/>
+      <div class="detail-title">
+        <h3>
+          <template v-if="performance.name">
+            {{ performance.name }}
+          </template>
+          <template v-else-if="performance.acts.length">
+            <span v-for="(act, index) in performance.acts" :key="act.id">
+              {{ act.name }}<span v-if="index < performance.acts.length - 1">, </span>
+            </span>
+          </template>
+          <template v-else>
+            Unknown Name
+          </template>
+        </h3>
+      </div>
+      <OvalLink :link="'/location/' + (performance.stage['id-name']?.trim() ? performance.stage['id-name'] : performance.stage.id)"
+           :icon="IconGeo"
+           :name="performance.stage.name" />
+    </div>
+    <div class="detail-content">
+      <div v-for="(act, index) in performance.acts" :key="act.id" class="list-item-obj">
+        <router-link 
+          :to="'/act/' + (act['id-name'] && act['id-name'].trim() !== '' ? act['id-name'] : act.id)" 
+          class="list-item-link">
+          <div class="list-item-info">
+            <strong class="list-item-name">{{ act.name }}</strong>
+          </div>
+        </router-link>
+        <FavoriteButton :itemId="String(act.id)" itemType="act" class="list-item-fav-btn" />
+      </div>
+      <div class="detail-content-text">
+        <p> {{ performance.description || 'Keine Beschreibung verfügbar' }}</p>
+        <p v-if="performance?.url">
+          <a :href="performance.url" target="_blank" rel="noopener noreferrer">
+            {{ performance.url.replace(/^(https?:\/\/)?(www\.)?/, '') }}
+          </a>
+        </p>
+        <!-- <p><strong>More:</strong> {{ performance }}</p> -->
+      </div>
+    </div>
+  </div>
+  <div v-else>
+    <p>{{ $t('event') }} {{ $t('not-found') }}</p>
+  </div>
+</template>
+
 <script setup lang="ts">
 import { useRoute } from 'vue-router';
+import { formatDateTime } from '@/config.ts';
 import { useEventData } from '@/useEventData.ts';
 import { computed } from 'vue';
-import BackBtn from '@/components/BackBtn.vue';
+import IconGeo from '@/components/icons/IconGeo.vue';
+import OvalLink from '@/components/OvalLink.vue';
 import FavoriteButton from '@/components/FavBtn.vue';
 import type { Act, Stage, Performance } from '@/useEventData.ts';
 
 const route = useRoute();
 const { performances, stages, acts, isLoading } = useEventData();
 
-// Definiere einen erweiterten Typ für die Performance mit Acts und Stage
+// Define an extended type for the performance with Acts and Stage
 interface ExtendedPerformance extends Omit<Performance, 'actsIDArr' | 'stageID'> {
   acts: Act[];
   stage: Stage;
@@ -38,67 +102,29 @@ const performance = computed<ExtendedPerformance | null>(() => {
 });
 </script>
 
-
-<template>
-  <div v-if="isLoading" class="loading-message">
-    <p>Lade Event-Daten...</p>
-  </div>
-
-  <div v-else-if="performance" class="event-detail-view">
-    <BackBtn />
-    <h5>{{ performance.date }} -- {{ performance.start_time }} -- {{ performance.start_time }}</h5>
-    <h3>
-      {{ performance.name }} mit
-      <span v-for="(act, index) in performance.acts" :key="act.id">
-        {{ act.name }}
-        <span v-if="index < performance.acts.length - 1">, </span>
-      </span>
-      <FavoriteButton :itemId="String(performance.id)" itemType="event" />
-    </h3>
-    
-    <router-link :to="'/act/' + (performance.stage['id-name'] && performance.stage['id-name'].trim() !== '' ? performance.stage['id-name'] : performance.stage.id)">
-      <h4>&#x1F4CD;{{ performance.stage.name }}</h4>
-    </router-link>
-    <span v-for="(act, index) in performance.acts" :key="act.id">
-        <router-link :to="'/act/' + (act['id-name'] && act['id-name'].trim() !== '' ? act['id-name'] : act.id)">
-          {{ act.name }}
-        </router-link>
-        <span v-if="index < performance.acts.length - 1">, </span>
-    </span>
-    <p> {{ performance.description || 'Keine Beschreibung verfügbar' }}</p>
-    <p v-if="performance?.url">
-      <a :href="performance.url" target="_blank" rel="noopener noreferrer">
-        {{ performance.url.replace(/^(https?:\/\/)?(www\.)?/, '') }}
-      </a>
-    </p>
-
-
-    <!-- <p><strong>More:</strong> {{ performance }}</p> -->
-  </div>
-
-  <div v-else>
-    <p>Das Event konnte nicht gefunden werden.</p>
-  </div>
-</template>
-
 <style scoped>
-.event-detail-view {
-  background-color: #f5f5f5;
-  padding: 20px;
-  border-radius: 8px;
-  margin-top: 20px;
+/*
+.list-item-obj {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  background: white;
+  border-radius: 6px;
+  margin-top: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-h3, h4 {
-  color: #333;
+.list-item-name {
+  font-weight: bold;
+  font-size: 1.1rem;
 }
 
-a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
+.list-item-fav-btn {
+  background: white;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 6px;
+}*/
 </style>

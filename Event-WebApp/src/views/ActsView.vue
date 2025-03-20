@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h2 class="text-xl font-bold">{{ $t('actview') }}</h2>
     <ActList />
   </div>
 </template>

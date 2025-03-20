@@ -2,7 +2,7 @@
     {
         "id": 101,
         "name": "Band A",
-        "subname": "",
+        "subname": "The Band",
         "act-type": ["Artist"],
         "tags": [
         {
@@ -21,7 +21,7 @@
         "id-name": "Band-A",
         "short-description": null,
         "description": "Band A is known for their energetic performances and catchy tunes.",
-        "image": "url-to-band-a-image.jpg",
+        "image": "demo-act.jpg",
         "weblinks": [
         {
             "name": "Facebook",
@@ -70,7 +70,7 @@
     {
         "id": 103,
         "name": "The Rockstars",
-        "subname": "The Rockband",
+        "subname": "",
         "act-type": ["Artist"],
         "tags": [
         {

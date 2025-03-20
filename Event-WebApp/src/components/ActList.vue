@@ -3,12 +3,21 @@
 
 <template>
   <div class="act-list">
-    <ul v-if="filteredActs.length > 0">
-      <li v-for="act in filteredActs" :key="act.id">
-        <router-link :to="'/act/' + (act['id-name']?.trim() ? act['id-name'] : act.id)">
-          <strong>{{ act.name }}</strong><span v-if="act.subname"> - {{ act.subname }}</span>
+    <ul v-if="filteredActs.length > 0" class="list-item-ul">
+      <li v-for="act in filteredActs" :key="act.id" class="list-item-obj">
+        <router-link 
+          :to="'/act/' + (act['id-name']?.trim() ? act['id-name'] : act.id)" 
+          class="list-item-link">
+          <div class="list-item-info">
+            <strong class="list-item-name">{{ act.name }}</strong>
+            <span class="list-item-tags">
+              <span v-for="(tag, index) in act.tags.filter(tag => tag.visible)" :key="index">
+                {{ tag.name }}<span v-if="index < act.tags.filter(tag => tag.visible).length - 1">, </span>
+              </span>
+            </span>
+          </div>
         </router-link>
-        <FavoriteButton :itemId="String(act.id)" itemType="act" />
+        <FavoriteButton :itemId="String(act.id)" itemType="act" class="list-item-fav-btn" />
       </li>
     </ul>
     <p v-else>{{ $t('no-acts') }}</p>
@@ -28,8 +37,6 @@ const props = defineProps<{
   filterID?: number[];
 }>();
 
-//const filterID = computed(() => props.filterID ?? []);
-
 // Filter acts by filterID
 const filteredActs = computed(() => {
   if (!acts.value || acts.value.length === 0) return []; // If acts are not loaded yet, return empty array
@@ -39,21 +46,5 @@ const filteredActs = computed(() => {
 </script>
 
 <style scoped>
-ul {
-  list-style-type: none;
-  padding: 0;
-}
 
-ul li {
-  padding: 5px;
-}
-
-a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
 </style>
