@@ -1,130 +1,171 @@
 [
     {
         "id": 101,
-        "name": "Shoot the Cherry",
+        "name": "Band A",
         "subname": "",
         "act-type": ["Artist"],
         "tags": [
         {
-            "name": "Junger Indie-Pop",
+            "name": "Electro",
             "visible": true
         },
         {
-            "name": "Pop",
+            "name": "Outdoor",
+            "visible": false
+        },
+        {
+            "name": "Late-Night",
             "visible": true
         }
         ],
-        "id-name": "shoot-the-cherry",
+        "id-name": "Band-A",
         "short-description": null,
-        "description": "Shoot the Cherry – junger Indie-Pop aus Chemnitz.",
-        "image": "",
+        "description": "Band A is known for their energetic performances and catchy tunes.",
+        "image": "demo-act.jpg",
         "weblinks": [
         {
+            "name": "Facebook",
+            "url": "https://www.facebook.com/banda"
+        },
+        {
             "name": "Instagram",
-            "url": "https://www.instagram.com/shootthecherry/"
+            "url": "https://www.instagram.com/banda"
         }
         ]
     },
     {
         "id": 102,
-        "name": "Me & T",
-        "subname": "",
-        "act-type": ["Artist"],
+        "name": "DJ Electro",
+        "subname": "Markus Electro",
+        "act-type": ["DJ"],
         "tags": [
         {
-            "name": "Experimentaler Pop",
+            "name": "Techno",
             "visible": true
         },
         {
-            "name": "Pop",
+            "name": "Club",
+            "visible": false
+        },
+        {
+            "name": "Late-Night",
             "visible": true
         }
         ],
-        "id-name": "me-t",
-        "short-description": null,
-        "description": "Me & T – experimentaler Pop",
-        "image": null,
+        "id-name": "DJ-Electro",
+        "short-description": "Pioneering techno DJ with a passion for deep bass.",
+        "description": "DJ Electro has been rocking the underground techno scene for over a decade, bringing deep bass and euphoric beats.",
+        "image": "url-to-dj-electro-image.jpg",
         "weblinks": [
         {
-            "name": "Webseite",
-            "url": "https://meandt.de/"
+            "name": "SoundCloud",
+            "url": "https://www.soundcloud.com/dj-electro"
         },
         {
-            "name": "Instagram",
-            "url": "https://www.instagram.com/meandt_official/"
+            "name": "Twitter",
+            "url": "https://www.twitter.com/dj-electro"
         }
         ]
     },
     {
         "id": 103,
-       
-        "name": "Meniak",
-        "subname": "",
+        "name": "The Rockstars",
+        "subname": "The Rockband",
         "act-type": ["Artist"],
         "tags": [
-        {
-            "name": "Latin",
-            "visible": true
-        },
-        {
-            "name": "Ska",
-            "visible": true
-        },
         {
             "name": "Rock",
             "visible": true
         },
         {
-            "name": "Balkan",
+            "name": "Live",
             "visible": true
         },
         {
-            "name": "Drum ’n‘ Bass",
-            "visible": true
-        },
-        {
-            "name": "Reggae",
-            "visible": true
+            "name": "Mainstage",
+            "visible": false
         }
         ],
-        "id-name": "meniak",
-        "short-description": null,
-        "description": "Meniak – Acht Musiker, elf Instrumente und ein musikalischer Fundus der vom Groove Südamerikas bis zur Folklore des Balkans reicht.",
-        "image": null,
+        "id-name": "The-Rockstars",
+        "short-description": "High-energy rock band known for their electrifying performances.",
+        "description": "The Rockstars have toured globally, delivering unforgettable performances that get crowds jumping and singing along.",
+        "image": "url-to-rockstars-image.jpg",
         "weblinks": [
         {
-            "name": "Webseite",
-            "url": "https://meniak.de/"
+            "name": "Facebook",
+            "url": "https://www.facebook.com/rockstars"
         },
         {
             "name": "Instagram",
-            "url": "https://www.instagram.com/meniak_official/"
+            "url": "https://www.instagram.com/rockstars"
         }
         ]
     },
     {
         "id": 104,
-        "name": "Bataclan DJs",
-        "subname": "",
-        "act-type": ["DJ"],
+        "name": "Lucy Sax",
+        "subname": "Saxophonist Lucy",
+        "act-type": ["Artist"],
         "tags": [
         {
-            "name": "Soul",
+            "name": "Jazz",
             "visible": true
         },
         {
-            "name": "Funk",
+            "name": "Chill",
+            "visible": true
+        },
+        {
+            "name": "Acoustic",
             "visible": true
         }
         ],
-        "id-name": "batclan-djs",
-        "short-description": null,
-        "description": "DJ-Bahn: Bataclan DJs spielen Soul und Funk in der Garagen-Campus Bahn.",
-        "image": null,
+        "id-name": "Lucy-Sax",
+        "short-description": "Sultry saxophone sounds that bring a smooth vibe.",
+        "description": "Lucy Sax combines jazz, blues, and soul for an unforgettable musical experience with a soothing touch.",
+        "image": "url-to-lucy-sax-image.jpg",
         "weblinks": [
         {
-            "name": "Webseite",
-            "url": "https://bataclan.de/"
+            "name": "YouTube",
+            "url": "https://www.youtube.com/LucySax"
+        },
+        {
+            "name": "Instagram",
+            "url": "https://www.instagram.com/lucysax"
+        }
+        ]
+    },
+    {
+        "id": 105,
+        "name": "Vocal Vibes",
+        "subname": "Vocal Vibes Choir",
+        "act-type": ["Artist"],
+        "tags": [
+        {
+            "name": "Pop",
+            "visible": true
+        },
+        {
+            "name": "Indie",
+            "visible": true
+        },
+        {
+            "name": "Mainstage",
+            "visible": true
+        }
+        ],
+        "id-name": "Vocal-Vibes",
+        "short-description": "Indie pop duo with powerful vocal harmonies.",
+        "description": "Vocal Vibes creates catchy pop anthems with heartfelt lyrics and harmonious vocals that leave a lasting impression.",
+        "image": "url-to-vocal-vibes-image.jpg",
+        "weblinks": [
+        {
+            "name": "Spotify",
+            "url": "https://www.spotify.com/vocal-vibes"
+        },
+        {
+            "name": "YouTube",
+            "url": "https://www.youtube.com/vocalvibes"
         }
         ]
     }
