@@ -2,7 +2,7 @@
     {
         "id": 101,
         "name": "Band A",
-        "subname": "",
+        "subname": "The Band",
         "act-type": ["Artist"],
         "tags": [
         {
@@ -70,7 +70,7 @@
     {
         "id": 103,
         "name": "The Rockstars",
-        "subname": "The Rockband",
+        "subname": "",
         "act-type": ["Artist"],
         "tags": [
         {
