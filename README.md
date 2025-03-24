@@ -1,84 +1,72 @@
 # Event WebApp  
 
-[README in English](README_EN.md)
+🌐
+[Deutsch][DE],
+[English][EN]
 
-Dies ist eine **moderne WebApp** zur Anzeige von Festival- und Event-Informationen, entwickelt mit **Vue.js**.  
-Die App ermöglicht es den Nutzern das Programm, Künstler und Bühnen zu entdecken und ihre Favoriten speichern.  
+[DE]:Translations/README.de.md
+[EN]:README.md
 
-## 🚀 Features  
-- **Timetable** – Zeigt alle Performances mit Filteroptionen (Genre, Bühne, Künstler)  
-- **Favoriten-Funktion** – Speichert Acts, Bühnen und Auftritte als Favoriten  
-- **Mehrsprachigkeit** – Unterstützung für mehrere Sprachen mit `vue-i18n`  
-- **Event-Detailansicht** – Zeigt ausführliche Informationen zu jeder Performance  
-- **Konfigurierbare Event-Daten** – Titel, Bilder und Zusatzinfos via JSON  
-- **Konfigurierbare Auftritte** – Line-up und Bühneninfos flexibel per JSON verwalten  
+A **modern web app** for displaying festival and event information, developed with **Vue.js**. The app allows users to explore the schedule, artists, and stages and save their favorites. 
 
-### 🏗️ Geplante Features  
-- **Interaktive Karte** – Bühnenstandorte visuell darstellen  
-- **Erweiterte Filter** – Mehrere Filter gleichzeitig kombinieren – Filter-Menü überarbeiten 
+Check it out: [fjxhi.github.io/Event-WebApp/](https://fjxhi.github.io/Event-WebApp/)
+
+## 🚀 Features
+- **🕒 Timetable** – Displays all performances with filtering options (tags (genre)).
+- **⭐ Favorites Function** – Allows users to save acts, stages, and performances as favorites.
+- **ℹ️ Detail Views** – Provides detailed information about each performance, stage, and act.  
+- **📱 PWA Support** – The web app is available as a Progressive Web App (PWA), enabling offline functionality and a native app-like experience.  
+- **📲 Optimized for Mobile Devices** – Features a user-friendly design with an interface optimized for smartphones and smooth navigation.
+- **🌍 Multilingual Support** – Supports multiple languages via [`vue-i18n`](https://github.com/intlify/vue-i18n).  
+- **⚙️ Configurable Event Info** – The event title, image, and additional details can be flexibly managed via JSON. 
+- **🎭 Configurable Performance** – Easily update and customize the lineup and stage information through JSON.
+
+### 🏗️ Planned Features 
+- **🗺️ Interactive Map** – Visually display stage locations.  
+- **🎛️ Advanced Filters** – Combine multiple filters at once.  
+- **🎨 Configurable Color Theme** – Customize the app's appearance with adjustable color themes.  
+- **🌙 Enhanced Dark Mode** – Improved dark mode for better readability and aesthetics.  
+- **🔍 Search** – Search for acts, stages, and performances.  
+- **📆 Calendar Export** – Export performances to a personal calendar.  
 
 ## 🛠️ Installation & Setup  
 
-### 1️⃣ Voraussetzungen  
-- [Node.js](https://nodejs.org/) installiert  
-- [Vue CLI](https://cli.vuejs.org/) oder [Vite](https://vitejs.dev/)  
+### 1️⃣ Requirements  
+- [Node.js](https://nodejs.org/) installed  
+- [Vue CLI](https://cli.vuejs.org/) or [Vite](https://vitejs.dev/)  
 
-### 2️⃣ Installation
+### 2️⃣ Installation  
 ```sh
-# Repository klonen
+# Clone repository
 git clone https://github.com/FJXHI/Event-WebApp
-cd Event-WebApp
+cd Event-WebApp/Event-WebApp
 
-# Abhängigkeiten installieren
+# Install dependencies
 npm install
 ```  
 
-### 3️⃣ Entwicklung starten  
+### 3️⃣ Start Development  
 ```sh
 npm run dev
 ```  
-Die App läuft nun unter [`http://localhost:5173/Event-WebApp`](http://localhost:5173/).  
-
-### 4️⃣ Produktion builden  
+The app will now be available at [`http://localhost:5173/Event-WebApp`](http://localhost:5173/Event-WebApp).
+### 4️⃣ Build for Production  
 ```sh
 npm run build
 ```  
 
-[Weitere Informationen zum VUE Setup mit pnpm](Vue-Setup.md)
+## 🔗 API & Data Sources  
+The app uses JSON files for event data:  
+- **`/data/eventInfo.json`** → Contains event metadata  
+- **`/data/performances.json`** → All performances  
+- **`/data/stages.json`** → Stage information  
+- **`/data/acts.json`** → Artist data  
 
+## 🌍 Multilingual Support  
+Multiple languages are supported via **vue-i18n**. Language files are located in `src/locales/`.
 
-## 📁 Projektstruktur  
-```
-📦 Event-WebApp
-├── 📂 public          # Statische Dateien
-│   ├── 📂 data        # Konfigurierbare JSON-Daten (Event-Infos, Line-up, Bühnen)
-│   ├── 📂 images      # Event- und Künstlerbilder
-├── 📂 src
-│   ├── 📂 components  # Wiederverwendbare Vue-Komponenten
-│   ├── 📂 views       # Seiten der App (Timetable, Künstler, Favoriten)
-│   ├── 📂 router      # Vue-Router-Konfiguration
-│   ├── 📂 store       # Zustandsspeicherung mit Pinia
-│   ├── 📂 assets      # Styles und Icons
-│   ├── App.vue         # Hauptkomponente
-│   ├── i18n.ts         # Sprachverwaltung
-│   ├── main.ts         # Einstiegspunkt der App
-│   ├── useEventData.ts # Daten aus JSON laden
-├── package.json        # Abhängigkeiten & Skripte
-└── README.md           # Dokumentation
-```  
+## 👥 Contributing  
+Pull requests and suggestions are welcome! Create an issue for bugs or feature requests.  
 
-## 🔗 API & Datenquellen  
-Die App nutzt JSON-Dateien für die Event-Daten:  
-- **`/data/eventInfo.json`** → Enthält Event-Metadaten  
-- **`/data/performances.json`** → Alle Performances  
-- **`/data/stages.json`** → Infos zu Bühnen  
-- **`/data/acts.json`** → Künstlerdaten  
-
-## 🌍 Mehrsprachigkeit  
-Mehrere Sprachen werden mit **vue-i18n** unterstützt. Sprachdateien befinden sich in `src/locales/`.  
-
-## 👥 Mitwirken  
-Pull Requests und Vorschläge sind willkommen! Erstelle ein Issue für Fehler oder Feature-Anfragen.
-
-## 📝 Lizenz  
-Apache License 2.0 © 2025 FJXHI  
+## 📝 License  
+[Apache License 2.0](LICENSE) © 2025 [FJXHI](https://github.com/FJXHI)
