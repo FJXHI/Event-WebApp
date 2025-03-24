@@ -1,11 +1,9 @@
+<!-- InfoView-vue -->
+<!-- Shows Information about the Event -->
+
 <template>
-  <div v-if="isLoading">
-    <p>Lade Event-Daten...</p>
-  </div>
-  
-  <div v-else-if="error">
-    <p>{{ error }}</p>
-  </div>
+  <div v-if="isLoading"><p>{{ $t('loading') }}</p></div>
+  <div v-else-if="error"><p>{{ error.message }}</p></div>
   
   <div v-else>
     <!-- Event Title and Background -->
@@ -19,7 +17,7 @@
 
     <!-- About Section -->
     <div class="event-about">
-      <h3>Info</h3>
+      <h3>{{ $t('info') }}:</h3>
       
       <!--<p>Descrip Short: {{ eventData['short-describtion'] }}</p>-->
       <p>{{ eventData.describtion }}</p>
@@ -31,15 +29,14 @@
 
     
   </div>
-  <div>
-    <br>
-    <a href="https://github.com/FJXHI/Event-WebApp">&copy; 2025 by FJXHI</a>
-  </div>
+  <BadgeAuthor position="fixed"/>
 </template>
 
 <script setup lang="ts">
 import { computed } from "vue";
 import { useEventData } from "@/useEventData.ts";
+import BadgeAuthor from "@/components/BadgeAuthor.vue";
+
 const { eventInfo, isLoading, error } = useEventData();
 // shorthand for eventObj
 const eventData = computed(() => eventInfo.value[0] ?? {});

@@ -63,7 +63,7 @@ The app uses JSON files for event data:
 - **`/data/acts.json`** → Artist data  
 
 ## 🌍 Multilingual Support  
-Multiple languages are supported via **vue-i18n**. Language files are located in `src/locales/`.
+Multiple languages are supported via [**vue-i18n**](https://github.com/intlify/vue-i18n). Language files are located in `src/locales/`.
 
 ## 👥 Contributing  
 Pull requests and suggestions are welcome! Create an issue for bugs or feature requests.  

@@ -1,3 +1,6 @@
+<!-- NavMenu.vue -->
+<!-- The side NaviMenu and Header for all Pages -->
+
 <template>
     <div class="topnav">
       <!-- Dont show PageName and BackBtn on Homesite -->
@@ -16,8 +19,10 @@
       <router-link to="/locations" @click="toggleNav" class="nav-link">{{ $t('nav-locations') }}</router-link>
       <router-link to="/favorites" @click="toggleNav" class="nav-link">{{ $t('nav-favorites') }}</router-link>
       <router-link to="/about" @click="toggleNav" class="nav-link">{{ $t('nav-about') }}</router-link>
-      <router-link to="/programm" @click="toggleNav" class="nav-link">{{ $t('nav-timetable') }}</router-link>
+      <router-link to="/schedule" @click="toggleNav" class="nav-link">{{ $t('nav-timetable') }}</router-link>
+      <router-link to="/map" @click="toggleNav" class="nav-link">{{ $t('nav-map') }}</router-link>
       <router-link to="" class="nav-link"><LangSwitch /></router-link>
+      <BadgeAuthor position="static"/>
     </nav>
 </template>
 
@@ -26,6 +31,7 @@ import { ref, computed } from 'vue';
 import { useRoute } from 'vue-router';
 import BackBtn from './BackBtn.vue';
 import LangSwitch from '@/components/LangSwitch.vue';
+import BadgeAuthor from './BadgeAuthor.vue';
 
 const props = withDefaults(defineProps<{ 
   PageName: string; 
@@ -47,6 +53,7 @@ const isHomePage = computed(() => route.path === '/');
 </script>
 
 <style scoped>
+/* ERROR-FIX Improve Styling .topnav on HomeView */
 
 .topnav {
   display: flex;
@@ -88,7 +95,7 @@ const isHomePage = computed(() => route.path === '/');
   flex-direction: column;
   padding: 1rem;
   transition: right 0.3s ease;
-  z-index: 20;
+  z-index: 1000;
   /* include .side-nav a not posible, because of "a" in main.css */
 }
 

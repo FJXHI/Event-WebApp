@@ -1,7 +1,5 @@
 <template>
-  <div v-if="isLoading" class="loading-message">
-    <p>Lade Event-Daten...</p>
-  </div>
+  <div v-if="isLoading"><p>{{ $t('loading') }}</p></div>
 
   <div v-else-if="performance" class="event-detail-view detail-view">
     <div class="detail-space"></div>
@@ -25,7 +23,7 @@
             </span>
           </template>
           <template v-else>
-            Unknown Name
+            {{ $t('Unknown') }}
           </template>
         </h3>
       </div>

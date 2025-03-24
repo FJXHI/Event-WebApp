@@ -9,6 +9,12 @@ overrides:
   sharp-ico: 0.1.5
 
 dependencies:
+  '@vue-leaflet/vue-leaflet':
+    specifier: ^0.10.1
+    version: 0.10.1(leaflet@1.9.4)(typescript@5.8.2)
+  leaflet:
+    specifier: ^1.9.4
+    version: 1.9.4
   vue:
     specifier: ^3.5.13
     version: 3.5.13(typescript@5.8.2)
@@ -1731,6 +1737,21 @@ packages:
       vscode-uri: 3.1.0
     dev: true
 
+  /@vue-leaflet/vue-leaflet@0.10.1(leaflet@1.9.4)(typescript@5.8.2):
+    resolution: {integrity: sha512-RNEDk8TbnwrJl8ujdbKgZRFygLCxd0aBcWLQ05q/pGv4+d0jamE3KXQgQBqGAteE1mbQsk3xoNcqqUgaIGfWVg==}
+    peerDependencies:
+      '@types/leaflet': ^1.5.7
+      leaflet: ^1.6.0
+    peerDependenciesMeta:
+      '@types/leaflet':
+        optional: true
+    dependencies:
+      leaflet: 1.9.4
+      vue: 3.5.13(typescript@5.8.2)
+    transitivePeerDependencies:
+      - typescript
+    dev: false
+
   /@vue/compiler-core@3.5.13:
     resolution: {integrity: sha512-oOdAkwqUfW1WqpwSYJce06wvt6HljgY3fGeM9NcVA1HaYOij3mZG9Rkysn0OHuyUAGMbEbARIpsG+LPVlBJ5/Q==}
     dependencies:
@@ -2945,6 +2966,10 @@ packages:
     resolution: {integrity: sha512-p/nXbhSEcu3pZRdkW1OfJhpsVtW1gd4Wa1fnQc9YLiTfAjn0312eMKimbdIQzuZl9aa9xUGaRlP9T/CJE/ditQ==}
     engines: {node: '>=0.10.0'}
     dev: true
+
+  /leaflet@1.9.4:
+    resolution: {integrity: sha512-nxS1ynzJOmOlHp+iL3FyWqK89GtNL8U8rvlMOsQdTTssxZwCXh8N2NB3GDQOL+YR3XnWyZAxwQixURb+FA74PA==}
+    dev: false
 
   /leven@3.1.0:
     resolution: {integrity: sha512-qsda+H8jTaUaN/x5vzW2rzc+8Rw4TAQ/4KjB46IwK5VH+IlVeeeje/EoZRpiXvIqjFgK84QffqPztGI3VBLG1A==}

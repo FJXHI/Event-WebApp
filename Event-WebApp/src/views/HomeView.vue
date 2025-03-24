@@ -13,10 +13,11 @@
     <div class="center">
       <ul>
         <LinkItem to="/acts" :icon="IconActs" title="nav-acts" subtext="nav-acts-subtext" />
-        <LinkItem to="/programm" :icon="IconClock" title="nav-timetable" :subtext="formattedDateRange" />
+        <LinkItem to="/schedule" :icon="IconClock" title="nav-timetable" :subtext="formattedDateRange" />
         <LinkItem to="/locations" :icon="IconGeo" title="nav-locations" subtext="nav-locations-subtext" /><!-- TODO: Count Stages -->
         <LinkItem to="/favorites" :icon="IconFav" title="nav-favorites" subtext="nav-favorites-subtext" />
         <LinkItem to="/about" :icon="IconInfo" title="nav-about" subtext="nav-about-subtext" />
+        <LinkItem to="/map" :icon="IconGeo" title="nav-map" subtext="nav-map-subtext" />
       </ul>
     </div>
     <div class="footer"></div>

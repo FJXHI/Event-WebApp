@@ -1,6 +1,8 @@
 <!-- BackBtn.vue -->
 <!-- Button component to navigate back in the browser history -->
 
+<!-- ERROR-FIX Improve Style & Size -->
+
 <template>
   <button @click="goBack" class="back-button">
     <IconArrowLeft />

@@ -3,7 +3,7 @@
     <div v-if="stages.length > 0">
       <LocationList />
     </div>
-    <p v-else>Keine Locations gefunden.</p>
+    <p v-else>{{ $t('no-locations') }}</p>
   </div>
 </template>
 

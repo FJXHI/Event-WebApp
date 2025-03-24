@@ -13,7 +13,6 @@ import { useRoute } from 'vue-router';
 import NavMenu from './components/NavMenu.vue';
 import PWABadge from '@/components/PWABadge.vue';
 
-
 const route = useRoute();
 const currentPage = computed(() => {
   const routeMap: Record<string, string> = {
@@ -22,7 +21,8 @@ const currentPage = computed(() => {
     '/locations': 'nav-locations',
     '/favorites': 'nav-favorites',
     '/about': 'nav-about',
-    '/programm': 'nav-timetable'
+    '/schedule': 'nav-timetable',
+    '/map': 'nav-map'
   };
   // chech if the route starts with '/act/'
   if (route.path.startsWith('/act/')) {

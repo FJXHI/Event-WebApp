@@ -44,7 +44,3 @@ const filteredActs = computed(() => {
   return acts.value.filter((act) => props.filterID?.includes(act.id));
 });
 </script>
-
-<style scoped>
-
-</style>

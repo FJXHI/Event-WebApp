@@ -1,4 +1,4 @@
-<!-- ProgrammList.vue -->
+<!-- ScheduleList.vue -->
 <!-- A list of program items with a favorite button -->
 
 <template>
@@ -33,7 +33,7 @@
                 {{ getActNames(performance.actsIDArr) }}
               </div>
               <div v-else>
-                Unknown Name
+                {{ $t('Unknown') }}
               </div>
             </strong>
             <span class="list-item-tags">

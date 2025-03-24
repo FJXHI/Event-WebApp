@@ -16,7 +16,7 @@
         <h3>{{ stage.name }}</h3>
         <p>{{ formatAddress(stage.address, 'noCountry') }}</p>
       </div>
-      <OvalLink 
+      <OvalLink :link="{ name: 'map', query: { stage: stage.id }}"
            :icon="IconGeo"
            :name="stage.location.toString()" />
     </div>
@@ -29,7 +29,7 @@
         </p>
       </div>
       <div class="detail-line"></div>
-      <ProgrammList filter="location" :filterID="[String(stage.id)]" />
+      <ScheduleList filter="location" :filterID="[String(stage.id)]" />
     </div>
   </div>
   <div v-else>
@@ -44,7 +44,7 @@ import { baseUrl, formatAddress } from '@/config.ts';
 import { useEventData } from '@/useEventData.ts';
 import IconGeo from '@/components/icons/IconGeo.vue';
 import OvalLink from '@/components/OvalLink.vue';
-import ProgrammList from '@/components/ProgrammList.vue';
+import ScheduleList from '@/components/ScheduleList.vue';
 import FavoriteButton from '@/components/FavBtn.vue';
 
 const route = useRoute();

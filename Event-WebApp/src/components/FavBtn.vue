@@ -1,6 +1,5 @@
 <!-- FavBtn.vue -->
 <!-- Button component to add or remove an item from favorites  -->
-
 <template>
   <button @click="toggleFavorite" :class="{ 'favorited': isFavorite }">
     <IconHeart :fill="isFavorite ? 'red' : 'white'" />
@@ -59,6 +58,8 @@ onMounted(() => {
 </script>
 
 <style scoped>
+/* ERROR-FIX Improve Style */
+
 button {
   background-color: #007bff; /* Blue */
   color: white;

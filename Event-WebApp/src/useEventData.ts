@@ -40,7 +40,7 @@ export interface Weblink {
 export interface Stage {
   id: number; // Unique identifier for the stage
   name: string; // Name of the stage
-  'id-name': string; // Unique identifier for the stage (used for links)
+  'id-name'?: string; // Unique identifier for the stage (used for links)
   'short-description'?: string; // Optional short description of the stage
   description?: string; // Detailed description of the stage
   location?: number[]; // Optional array of coordinates [latitude, longitude]
@@ -119,7 +119,6 @@ export function useEventData() {
   const performances = ref<Performance[]>([]);
   const stages = ref<Stage[]>([]);
   const acts = ref<Act[]>([]);
-  //const eventInfo = ref<EventInfo[]>([]);
   const eventInfo = ref<Partial<EventInfo>>({});
   const isLoading = ref<boolean>(true);
   const error = ref<{ message: string; code?: number } | null>(null);

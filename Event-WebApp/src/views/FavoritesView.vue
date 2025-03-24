@@ -29,11 +29,11 @@
 
     <div class="center">
       <ul>
-        <LinkItem to="/programm" :icon="IconClock" title="nav-timetable" subtext="" />
+        <LinkItem to="/schedule" :icon="IconClock" title="nav-timetable" subtext="" />
       </ul>
     </div>
     <div v-if="favoriteEvents.length">
-      <ProgrammList :filter="'event'" :filterID="favoriteEvents.map(performance => performance.id.toString())" class="ProgrammList" />
+      <ScheduleList :filter="'event'" :filterID="favoriteEvents.map(performance => performance.id.toString())" class="ProgrammList" />
     </div>
     <div v-else>
       <p>{{ $t('no-event-fav') }}</p>
@@ -48,7 +48,7 @@ import LinkItem from '@/components/LinkItem.vue';
 import IconActs from '@/components/icons/IconPeople.vue';
 import IconClock from '@/components/icons/IconClock.vue';
 import IconGeo from '@/components/icons/IconGeo.vue';
-import ProgrammList from '@/components/ProgrammList.vue';
+import ScheduleList from '@/components/ScheduleList.vue';
 import LocationList from '@/components/LocationList.vue';
 import ActList from '@/components/ActList.vue';
 

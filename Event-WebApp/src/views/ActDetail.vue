@@ -44,7 +44,7 @@
         </li>
       </div>
       
-      <ProgrammList filter="act" :filterID="[String(act.id)]" />
+      <ScheduleList filter="act" :filterID="[String(act.id)]" />
     </div>
   </div>
 
@@ -59,7 +59,7 @@ import { useRoute } from 'vue-router';
 import { computed } from 'vue';
 import { baseUrl } from '@/config.ts';
 import { useEventData } from '@/useEventData.ts';
-import ProgrammList from '@/components/ProgrammList.vue';
+import ScheduleList from '@/components/ScheduleList.vue';
 import FavoriteButton from '@/components/FavBtn.vue';
 
 
