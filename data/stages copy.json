@@ -3,9 +3,9 @@
     "id": 1,
     "name": "Mainstage",
     "id-name": "Mainstage",
-    "short-description": "",
+    "short-description": "Main Stage auf der Großenwiese",
     "description": "Main Stage auf der Großenwiese, bekannt für die größten Acts des Festivals.",
-    "location": [50.7334, 12.7675],
+    "location": [50.9375, 6.9603],
     "address": {
       "street": "Festivalstraße 123",
       "postal_code": "12345",
@@ -21,11 +21,11 @@
   },
   {
     "id": 2,
-    "name": "Backyard",
-    "id-name": "backyard",
+    "name": "Second Stage",
+    "id-name": "Second-Stage",
     "short-description": "Nebenbühne mit alternativen Acts",
     "description": "Die Second Stage bietet eine intime Atmosphäre für aufstrebende Künstler.",
-    "location": [50.73455, 12.7671],
+    "location": [50.9380, 6.9610],
     "address": {
       "street": "Hauptstraße 45",
       "postal_code": "54321",
@@ -41,11 +41,11 @@
   },
   {
     "id": 3,
-    "name": "Wohnzimmer",
+    "name": "Silent Disco",
     "id-name": "",
     "short-description": "Silent Disco für alle, die es ruhig mögen",
     "description": "Erlebe die einzigartige Silent Disco mit Kopfhörern und einer tollen Auswahl an DJ-Sets.",
-    "location": [50.7343, 12.7672],
+    "location": [50.9390, 6.9620],
     "address": {
       "street": "Einsame-Straße 7",
       "postal_code": "67890",
