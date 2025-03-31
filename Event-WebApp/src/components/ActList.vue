@@ -5,15 +5,19 @@
   <div class="act-list">
     <ul v-if="filteredActs.length > 0" class="list-item-ul">
       <li v-for="act in filteredActs" :key="act.id" class="list-item-obj">
+        <!-- ERROR-FIX Style Link on hole line, text with padding -->
         <router-link 
           :to="'/act/' + (act['id-name']?.trim() ? act['id-name'] : act.id)" 
           class="list-item-link">
-          <div class="list-item-info">
+          <div class="list-item-info pad">
             <strong class="list-item-name">{{ act.name }}</strong>
             <span class="list-item-tags">
-              <span v-for="(tag, index) in act.tags.filter(tag => tag.visible)" :key="index">
-                {{ tag.name }}<span v-if="index < act.tags.filter(tag => tag.visible).length - 1">, </span>
-              </span>
+              <TagLabel 
+                v-for="(tag, index) in act.tags.filter(tag => tag.visible)" 
+                :key="index"
+                :name=tag.name
+                class="tag-label-item TagLabel"
+              />
             </span>
           </div>
         </router-link>
@@ -26,8 +30,9 @@
 
 <script setup lang="ts">
 import { computed } from 'vue';
-import { useEventData } from "@/useEventData.ts";
+import { useEventData } from "@/scripts/useEventData";
 import FavoriteButton from '@/components/FavBtn.vue';
+import TagLabel from '@/components/tagLabel.vue';
 
 // load acts from useEventData
 const { acts } = useEventData();

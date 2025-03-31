@@ -1,5 +1,8 @@
 <template>
   <div class="filter-buttons">
+    <button @click="toggleStages" :class="{ active: showStages }">
+      {{ $t('stages') }}
+    </button>
     <button
       v-for="category in categories"
       :key="category"
@@ -8,9 +11,6 @@
     >
       {{ category }}
     </button>
-    <button @click="toggleStages" :class="{ active: showStages }">
-      Bühnen
-    </button>
   </div>
 
   <l-map
@@ -18,13 +18,13 @@
     :center="mapCenter"
     :zoom="zoom"
     style="height: 500px"
-  >
+  ><!-- ERROR-FIX Fix l-map auto height -->
     <l-tile-layer
       url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       attribution="&copy; OpenStreetMap contributors"
     />
 
-    <!-- Bühnen-Marker -->
+    <!-- Stage Markers -->
     <l-marker v-if="showStages" v-for="(stage, index) in stages" :key="stage.id" :lat-lng="stage.location">
       <l-popup>
         <router-link :to="'/location/' + (stage['id-name'] || stage.id)" target="_blank">
@@ -33,7 +33,7 @@
       </l-popup>
     </l-marker>
 
-    <!-- Gefilterte POI-Marker -->
+    <!-- Filtered POI Markers -->
     <l-marker
       v-for="(item, index) in filteredMapData"
       :key="'map-' + item.id"
@@ -51,8 +51,8 @@
 <script setup lang="ts">
 import { ref, watchEffect, computed } from "vue";
 import { useRoute } from "vue-router";
-import { useEventData } from "@/useEventData";
-import { useMapData } from "@/script/useMapData";
+import { useEventData } from "@/scripts/useEventData";
+import { useMapData } from "@/scripts/useMapData";
 import { LMap, LTileLayer, LMarker, LPopup } from "@vue-leaflet/vue-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
@@ -78,7 +78,7 @@ const fitMapToStages = (map: L.Map) => {
   const allLocations = [
     ...stages.value.map(stage => stage.location as [number, number]),
     ...mapData.value
-      .filter(item => !item.noinclude) // Filter für andere Map-Objekte mit noinclude
+      .filter(item => !item.noinclude) // Filter out items with "noinclude"
       .map(item => item.location as [number, number]),
   ];
   const bounds = L.latLngBounds(allLocations);
@@ -143,10 +143,6 @@ watchEffect(() => {
   } else {
     fitMapToStages(mapInstance.value);
   }
-
-  /*if (mapInstance.value) {
-    fitMapToStages(mapInstance.value);
-  }*/
 });
 
 </script>

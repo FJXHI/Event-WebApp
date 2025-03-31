@@ -36,7 +36,7 @@
         <router-link 
           :to="'/act/' + (act['id-name'] && act['id-name'].trim() !== '' ? act['id-name'] : act.id)" 
           class="list-item-link">
-          <div class="list-item-info">
+          <div class="list-item-info pad">
             <strong class="list-item-name">{{ act.name }}</strong>
           </div>
         </router-link>
@@ -60,13 +60,13 @@
 
 <script setup lang="ts">
 import { useRoute } from 'vue-router';
-import { formatDateTime } from '@/config.ts';
-import { useEventData } from '@/useEventData.ts';
+import { formatDateTime } from '@/scripts/config';
+import { useEventData } from '@/scripts/useEventData';
 import { computed } from 'vue';
 import IconGeo from '@/components/icons/IconGeo.vue';
 import OvalLink from '@/components/OvalLink.vue';
 import FavoriteButton from '@/components/FavBtn.vue';
-import type { Act, Stage, Performance } from '@/useEventData.ts';
+import type { Act, Stage, Performance } from '@/scripts/useEventData';
 
 const route = useRoute();
 const { performances, stages, acts, isLoading } = useEventData();

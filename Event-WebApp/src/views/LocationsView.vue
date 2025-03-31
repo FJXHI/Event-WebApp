@@ -8,7 +8,7 @@
 </template>
 
 <script setup lang="ts">
-import { useEventData } from '@/useEventData.ts';
+import { useEventData } from '@/scripts/useEventData';
 import LocationList from '@/components/LocationList.vue';
 
 const { stages } = useEventData(); 

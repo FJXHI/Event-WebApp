@@ -9,7 +9,7 @@
           :to="'/location/' + (stage['id-name']?.trim() ? stage['id-name'] : stage.id)"
           class="list-item-link"
         >
-          <div class="list-item-info">
+          <div class="list-item-info pad">
             <strong class="list-item-name">{{ stage.name }}</strong>
             <!-- Subtext -->
           </div>
@@ -23,7 +23,7 @@
 
 <script setup lang="ts">
 import { computed } from 'vue';
-import { useEventData } from '@/useEventData.ts';
+import { useEventData } from '@/scripts/useEventData';
 import FavoriteButton from '@/components/FavBtn.vue';
 
 // load acts from useEventData

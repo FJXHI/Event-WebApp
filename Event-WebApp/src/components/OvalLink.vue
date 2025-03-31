@@ -20,7 +20,7 @@ const props = defineProps({
   },
   icon: {
     type: [Object, String],
-    required: true,
+    required: false,
   },
   name: {
     type: String,

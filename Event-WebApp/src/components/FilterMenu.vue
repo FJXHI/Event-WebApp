@@ -1,5 +1,5 @@
 <!-- FilterMenu.vue -->
-<!-- A filter menu for the "tags" in ScheduleList -->
+<!-- A filter menu for the ScheduleList -->
 
 <template>
   <div class="overlay">
@@ -13,107 +13,169 @@
         <button @click="resetFilters" class="filter-reset-btn">
           &#x21bb; {{ $t('reset-filter') }}
         </button>
-        
-        <div class="filter-group">
-          <h3>{{ $t('kategorien') }}</h3>
-          <div class="filter-button-group">
-            <button v-for="category in categories" :key="category"
-                    @click="toggleCategory(category)"
-                    :class="{'selected': selectedCategories.includes(category)}">
-              {{ category }}
-            </button>
-          </div>
-        </div>
 
-        <!-- ERROR-FIX -- This don't work at the moment --
+        <!-- Stages -->
         <div class="filter-group">
-          <h3>Bühnen</h3>
-          <div class="button-group">
+          <h3>{{ $t('stages')}}</h3>
+          <div class="filter-button-group">
             <button v-for="stage in stages" :key="stage.id"
-                    @click="toggleStage(stage)"
-                    :class="{'selected': selectedStages.includes(stage.id)}">
+                    @click="toggleStage(stage.id)"
+                    :class="{ 'selected': selectedStages.includes(stage.id) }">
               <span>&#x1F4CD;</span> {{ stage.name }}
             </button>
           </div>
         </div>
-        -->
+
+        <!-- Act-Tags -->
+        <div class="filter-group">
+          <h3>{{ $t('kategorien') }}</h3>
+          <div class="filter-button-group">
+            <TagLabel
+              v-for="category in categories"
+              :key="category"
+              :name="category"
+              tag="button"
+              @click="toggleCategory(category)"
+              :class="{ selected: selectedCategories.includes(category) }"
+            />
+          </div>
+        </div>
+
+        <!-- Performance Types -->
+        <div class="filter-group">
+          <h3>{{ $t('Performance-Types') }}</h3>
+          <div class="filter-button-group">
+            <TagLabel
+              v-for="type in availableTypes"
+              :key="type"
+              :name="type"
+              tag="button"
+              @click="toggleType(type)"
+              :class="{ selected: selectedTypes.includes(type) }"
+            />
+          </div>
+        </div>
+
+        <!-- Performance Tags -->
+        <div class="filter-group">
+          <h3>{{ $t('Performance-Tags') }}</h3>
+          <div class="filter-button-group">
+            <TagLabel
+              v-for="tag in availablePerformanceTags"
+              :key="tag"
+              :name="tag"
+              tag="button"
+              @click="togglePerformanceTag(tag)"
+              :class="{ selected: selectedPerformanceTags.includes(tag) }"
+            />
+          </div>
+        </div>
 
       </div>
       
       <div class="filter-modal-footer">
-        <button @click="applyAndClose" class="filter-apply-btn">{{ $t('apply-filter') }}</button>
+        <button @click="applyAndClose" class="filter-apply-btn">
+          {{ $t('apply-filter') }}
+        </button>
       </div>
     </div>
   </div>
 </template>
 
-<script setup>
-import { ref, computed, defineEmits } from 'vue';
-import { useEventData } from '@/useEventData.ts';
+<script setup lang="ts">
+import { ref, computed } from 'vue';
+import { useEventData } from '@/scripts/useEventData';
+import TagLabel from '@/components/tagLabel.vue';
 
-const { stages, acts } = useEventData();
-const emit = defineEmits(['apply', 'close']); // define custom events
+const emit = defineEmits(['apply', 'close']);
+const { stages, acts, performances } = useEventData();
 
-const selectedCategories = ref([]);
-const selectedStages = ref([]);
+// Neue Props für initiale Filterzustände
+const props = defineProps({
+  initialStages: { type: Array as () => number[], default: () => [] },
+  initialCategories: { type: Array as () => string[], default: () => [] },
+  initialTypes: { type: Array as () => string[], default: () => [] },
+  initialPerformanceTags: { type: Array as () => string[], default: () => [] },
+  initialSearchQuery: { type: String, default: '' }
+});
 
+// Reactive states – initialisiert mit Props
+const selectedStages = ref<number[]>([...props.initialStages.map(Number)]);
+const selectedCategories = ref([...props.initialCategories]);
+const selectedTypes = ref([...props.initialTypes]);
+const selectedPerformanceTags = ref([...props.initialPerformanceTags]);
+const searchQuery = ref(props.initialSearchQuery);
+
+// Kategorien von Acts
 const categories = computed(() => {
-  if (!Array.isArray(acts.value)) return [];
-  const tagSet = new Set();
-  
-  acts.value.forEach(act => {
-    if (Array.isArray(act.tags)) {
-      act.tags.forEach(tag => {
-        if (tag.visible) {
-          tagSet.add(tag.name);
-        }
-      });
-    }
+  const tagSet = new Set<string>();
+  acts.value.forEach((act) => {
+    act.tags?.forEach((tag) => {
+      if (tag.visible) tagSet.add(tag.name);
+    });
   });
-
   return Array.from(tagSet);
 });
 
-const toggleCategory = (category) => {
-  if (selectedCategories.value.includes(category)) {
-    selectedCategories.value = selectedCategories.value.filter(c => c !== category);
-  } else {
-    selectedCategories.value.push(category);
-  }
+// Performance Types
+const availableTypes = computed(() => {
+  const typeSet = new Set<string>();
+  performances.value.forEach((perf) => {
+    if (perf.type) typeSet.add(perf.type);
+  });
+  return Array.from(typeSet);
+});
+
+// Performance Tags
+const availablePerformanceTags = computed(() => {
+  const tagSet = new Set<string>();
+  performances.value.forEach((perf) => {
+    perf.tags?.forEach((tag) => tagSet.add(tag));
+  });
+  return Array.from(tagSet);
+});
+
+// Toggle helpers
+const toggleItem = <T>(list: T[], item: T) => {
+  const index = list.indexOf(item);
+  if (index >= 0) list.splice(index, 1);
+  else list.push(item);
 };
 
-const toggleStage = (stage) => {
-  if (selectedStages.value.includes(stage.id)) {
-    selectedStages.value = selectedStages.value.filter(id => id !== stage.id);
-  } else {
-    selectedStages.value.push(stage.id);
-  }
-};
+const toggleStage = (stageID: number) => toggleItem(selectedStages.value, stageID);
+const toggleCategory = (category: string) => toggleItem(selectedCategories.value, category);
+const toggleType = (type: string) => toggleItem(selectedTypes.value, type);
+const togglePerformanceTag = (tag: string) => toggleItem(selectedPerformanceTags.value, tag);
 
+// Reset
 const resetFilters = () => {
-  selectedCategories.value = [];
   selectedStages.value = [];
+  selectedCategories.value = [];
+  selectedTypes.value = [];
+  selectedPerformanceTags.value = [];
+  searchQuery.value = '';
 };
 
-const applyFilters = () => {
-  const filters = {
-    categories: selectedCategories.value,
-    stages: selectedStages.value
-  };
-  emit('apply', filters); // send filter to parent component
-};
-
+// Apply & Close
 const applyAndClose = () => {
-  const filters = {
+  emit('apply', {
+    stages: selectedStages.value.map(String),
     categories: selectedCategories.value,
-    stages: selectedStages.value
-  };
-  emit('apply', filters); // send filter to parent component
-  emit('close') // close modal
+    types: selectedTypes.value,
+    performanceTags: selectedPerformanceTags.value,
+    searchQuery: searchQuery.value.trim()
+  });
+  emit('close');
 };
 </script>
 
 <style scoped>
+input {
+  width: 100%;
+  padding: 0.4em;
+  font-size: 1em;
+}
+
 .overlay {
   position: fixed;
   inset: 0;
@@ -126,7 +188,7 @@ const applyAndClose = () => {
 .filter-modal {
   background: var(--color-background-mute);
   border-radius: 8px;
-  width: 24rem;
+  width: 30rem; /* ERROR-FIX responsive */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -148,6 +210,8 @@ const applyAndClose = () => {
 
 .filter-modal-body {
   padding: 1rem;
+  max-height: 70vh; /* Setze die maximale Höhe des Modals auf 70% der Bildschirmhöhe */
+  overflow-y: auto; /* Ermöglicht das Scrollen, wenn der Inhalt zu groß wird */
 }
 
 .filter-reset-btn {

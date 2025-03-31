@@ -33,7 +33,9 @@
       </ul>
     </div>
     <div v-if="favoriteEvents.length">
-      <ScheduleList :filter="'event'" :filterID="favoriteEvents.map(performance => performance.id.toString())" class="ProgrammList" />
+      <ScheduleListItem :filters="{
+        ...eventFilters, performanceIDs: favoriteEvents.map(performance => String(performance.id))
+      }" />
     </div>
     <div v-else>
       <p>{{ $t('no-event-fav') }}</p>
@@ -41,14 +43,15 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { computed } from 'vue';
-import { useEventData } from '@/useEventData.ts';
+import { useEventData } from '@/scripts/useEventData';
+import { eventFilters } from '@/scripts/config';
 import LinkItem from '@/components/LinkItem.vue';
 import IconActs from '@/components/icons/IconPeople.vue';
 import IconClock from '@/components/icons/IconClock.vue';
 import IconGeo from '@/components/icons/IconGeo.vue';
-import ScheduleList from '@/components/ScheduleList.vue';
+import ScheduleListItem from '@/components/ScheduleListItem.vue';
 import LocationList from '@/components/LocationList.vue';
 import ActList from '@/components/ActList.vue';
 

@@ -10,7 +10,7 @@
         "id": 2,
         "type": "point",
         "name": "WC-1",
-        "kategori": "sanitary",
+        "kategori": "Sanitär",
         "location": [50.9390, 6.9610]
     },
     {

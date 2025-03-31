@@ -4,7 +4,9 @@
       <div v-if="isLoading"><p>{{ $t('loading') }}</p></div>
       <div v-else-if="error"><p>{{ error.message }}</p></div>
       <div v-else>
-        <div v-if="eventData.title" :style="{ backgroundImage: 'url(' + baseUrl + 'images/' + eventData.backgroundImage + ')' }" class="event-header">
+        <!--<div :style="{ backgroundImage: 'url(' + baseUrl + 'images/' + eventData.backgroundImage + ')' }" class="event-header">-->
+        <div :style="{ backgroundImage: 'url(' + (eventData.backgroundImage.startsWith('http') ? eventData.backgroundImage : baseUrl + eventData.backgroundImage) + ')' }" class="event-header">
+
           <h1 class="titlemain glow">{{ eventData.title }}</h1>
           <h2 class="subtitle glow">{{ eventData.subtitle }}</h2>
         </div>
@@ -17,7 +19,7 @@
         <LinkItem to="/locations" :icon="IconGeo" title="nav-locations" subtext="nav-locations-subtext" /><!-- TODO: Count Stages -->
         <LinkItem to="/favorites" :icon="IconFav" title="nav-favorites" subtext="nav-favorites-subtext" />
         <LinkItem to="/about" :icon="IconInfo" title="nav-about" subtext="nav-about-subtext" />
-        <LinkItem to="/map" :icon="IconGeo" title="nav-map" subtext="nav-map-subtext" />
+        <LinkItem to="/map" :icon="IconMap" title="nav-map" subtext="nav-map-subtext" />
       </ul>
     </div>
     <div class="footer"></div>
@@ -26,14 +28,15 @@
 
 <script setup lang="ts">
 import { computed } from "vue";
-import { baseUrl, formatDateTime } from '@/config.ts';
-import { useEventData } from "@/useEventData.ts";
+import { baseUrl, formatDateTime } from '@/scripts/config';
+import { useEventData } from "@/scripts/useEventData";
 import LinkItem from '@/components/LinkItem.vue';
 import IconActs from '@/components/icons/IconPeople.vue';
 import IconClock from '@/components/icons/IconClock.vue';
 import IconGeo from '@/components/icons/IconGeo.vue';
 import IconFav from '@/components/icons/IconHeart.vue';
 import IconInfo from '@/components/icons/IconInfo.vue';
+import IconMap from '@/components/icons/IconMap.vue';
 
 const { eventInfo, isLoading, error } = useEventData();
 const eventData = computed(() => eventInfo.value[0] ?? {});
@@ -67,7 +70,8 @@ main {
   padding: 40px;
   background-size: cover;
   background-position: center;
-  color: white;
+  background-color: var(--color-bg-theme-topnav);
+  color: var(--color-text-theme-topnav);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -96,6 +100,5 @@ main {
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 10px;
 }
 </style>

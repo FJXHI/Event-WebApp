@@ -2,7 +2,9 @@
 <!-- Showing the Map from MapItem -->
 
 <template>
-  <MapItem />
+  <div>
+    <MapItem />
+  </div>
 </template>
 
 <script setup lang="ts">
