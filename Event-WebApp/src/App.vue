@@ -1,16 +1,19 @@
 <template>
-  <header>
-    <NavMenu :PageName="currentPage"/>
-  </header>
-  
-  <router-view class="router-view"/>
-  <PWABadge />
+  <div class="app-container">
+    <header class="app-header">
+      <NavMenu :PageName="currentPage"/>
+    </header>
+    <router-view class="router-view scroll-area"/>
+    <DisclaimerModal />
+    <PWABadge />
+  </div>
 </template>
 
 <script setup lang="ts">
 import { ref, computed } from 'vue';
 import { useRoute } from 'vue-router';
 import NavMenu from './components/NavMenu.vue';
+import DisclaimerModal from '@/components/DisclaimerModal.vue';
 import PWABadge from '@/components/PWABadge.vue';
 
 const route = useRoute();
@@ -22,7 +25,9 @@ const currentPage = computed(() => {
     '/favorites': 'nav-favorites',
     '/about': 'nav-about',
     '/schedule': 'nav-timetable',
-    '/map': 'nav-map'
+    '/timetable': 'nav-timetable',
+    '/map': 'nav-map',
+    '/settings': 'nav-settings'
   };
   // chech if the route starts with '/act/'
   if (route.path.startsWith('/act/')) {
@@ -35,16 +40,31 @@ const currentPage = computed(() => {
     return 'nav-timetable';
   }
 
-  return routeMap[route.path] || 'Unbekannte Seite';
+  return routeMap[route.path] || 'nav-unknown-site';
 });
 
 
 </script>
 
 <style scoped>
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+.scroll-area {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+
 .router-view {
   height: 90%;
+  position: sticky;
   /* margin-left: 0.5rem;
   margin-right: 0.5rem;*/
 }
+
+
 </style>

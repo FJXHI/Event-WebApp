@@ -1,4 +1,5 @@
 import { ref, onMounted } from 'vue';
+import { performancesUrl, stagesUrl, actsUrl, eventInfoUrl } from '@/scripts/config'; // Import JSON URLs from config
 
 // Address interface shared by EventInfo and Stage
 export interface Address {
@@ -128,10 +129,10 @@ export function useEventData() {
     try {
       // load all data in parallel
       const [performancesResponse, stagesResponse, actsResponse, eventInfoResponse] = await Promise.allSettled([
-        fetch(`${import.meta.env.BASE_URL}data/performances.json`),
-        fetch(`${import.meta.env.BASE_URL}data/stages.json`),
-        fetch(`${import.meta.env.BASE_URL}data/acts.json`),
-        fetch(`${import.meta.env.BASE_URL}data/eventInfo.json`)
+        fetch(performancesUrl),
+        fetch(stagesUrl),
+        fetch(actsUrl),
+        fetch(eventInfoUrl)
       ]);
         
       // check if all fetch calls were successful

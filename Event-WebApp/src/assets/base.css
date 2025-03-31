@@ -4,9 +4,6 @@
   --vt-c-white-soft: #f8f8f8;
   --vt-c-white-mute: #f2f2f2;
 
-  --vt-theme-light: #FFD700;
-  --vt-theme-dark: #a48b00;
-
   --vt-c-black: #181818;
   --vt-c-black-soft: #222222;
   --vt-c-black-mute: #282828;
@@ -22,6 +19,21 @@
   --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
   --vt-c-text-dark-1: var(--vt-c-white);
   --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+
+  /* Color Theme */
+  --vt-theme-1: #55295C; /* Theme1 (TopNav+Space) */
+  --vt-theme-2: #F3CA58; /* Theme2 (Header) */
+  --vt-theme-3: #27102c; /* Theme3 (Sidenav) */
+  --vt-theme-1-text: var(--vt-c-white); /* Theme1 Text Color */
+  --vt-theme-2-text: var(--vt-c-black); /* Theme2 Text Color */
+
+  --vt-theme-1-dark: #27102c;
+  --vt-theme-2-dark: #993a00;
+
+  /*--vt-theme-2-dark: #bb6611;*/
+  --vt-hw: #55295C #9b589e #27102c #A8A7B7 #F3CA58 #55295C0A #f0506e;
+  -vt-th-org: #0066ff #ffcc00 #993a00 #033a99;
+
 }
 
 /* semantic color variables for this project */
@@ -30,12 +42,6 @@
   --color-background-soft: var(--vt-c-white-soft);
   --color-background-mute: var(--vt-c-white-mute);
 
-  --color-bg-theme-top: #333;
-  --color-bg-theme-header: var(--vt-theme-light);
-  --color-bg-theme-space: var(--vt-c-white);
-  --color-theme-line: var(--vt-c-black-mute);
-  --color-theme-oval: black;
-
   --color-border: var(--vt-c-divider-light-2);
   --color-border-hover: var(--vt-c-divider-light-1);
 
@@ -43,26 +49,60 @@
   --color-text: var(--vt-c-text-light-1);
 
   --section-gap: 160px;
+
+  /*App Theme Color*/
+  --color-bg-theme-topnav: var(--vt-theme-1);
+  --color-text-theme-topnav: var(--vt-theme-1-text);
+  --color-bg-theme-searchbar: var(--vt-theme-2-dark); /* theme-1-mute? */
+  --color-text-theme-searchbar: #ddd; /* theme-1-mute? */
+
+  --color-bg-theme-sidenav: var(--vt-theme-3); /* theme-1-mute? */
+  --color-text-theme-sidenav: var(--color-text-theme-topnav);
+  --color-bg-theme-sidenav-hover: #444; /* theme-1-mute? */
+  --color-bg-theme-space: var(--vt-theme-1);
+  --color-bg-theme-header: var(--vt-theme-2);
+  --color-theme-oval: black;
+
+  --color-theme-line: var(--vt-c-black-mute);
+  --color-theme-line-soft: #ddd;
+  --color-theme-list-group: #ddd;
+  --color-theme-list-group-text: var(--vt-c-black);
+  --color-bg-theme-body-hover: var(--vt-c-wight-soft);
+  --color-subtext-body: #555;
+
+  --color-home-nav-hover: lightgreen; /* not in use */
+  --color-home-nav-title: var(--vt-theme-2-text);
+  --color-home-nav-sub: var(--vt-theme-1);
+  --color-home-nav-icon: var(--vt-theme-1);
+
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-background: var(--vt-c-black);
-    --color-background-soft: var(--vt-c-black-soft);
-    --color-background-mute: var(--vt-c-black-mute);
 
-    --color-bg-theme-top: var(--vt-c-black);
-    --color-bg-theme-header: var(--vt-theme-dark);
-    --color-bg-theme-space: var(--vt-c-black);
-    --color-theme-line: var(--vt-c-white-mute);
-    --color-theme-oval: white;
+/* Dark Mode */
+.dark {
+  --color-background: var(--vt-c-black);
+  --color-background-soft: var(--vt-c-black-soft);
+  --color-background-mute: var(--vt-c-black-mute);
 
-    --color-border: var(--vt-c-divider-dark-2);
-    --color-border-hover: var(--vt-c-divider-dark-1);
+  --color-border: var(--vt-c-divider-dark-2);
+  --color-border-hover: var(--vt-c-divider-dark-1);
 
-    --color-heading: var(--vt-c-text-dark-1);
-    --color-text: var(--vt-c-text-dark-2);
-  }
+  --color-heading: var(--vt-c-text-dark-1);
+  --color-text: var(--vt-c-text-dark-2);
+
+  /*Darkmode App Theme Color*/
+  --color-bg-theme-topnav: var(--vt-theme-1-dark);
+  --color-text-theme-topnav: var(--vt-theme-1-text);
+  --color-bg-theme-sidenav: var(--vt-c-black-soft); /* theme-1-mute? */
+  --color-bg-theme-space: var(--vt-theme-1-dark);
+  --color-bg-theme-header: var(--vt-theme-2-dark);
+  --color-theme-oval: white;
+
+  --color-theme-line: var(--vt-c-white-mute);
+  --color-home-nav-title: var(--vt-theme-1-text);
+
+  --color-theme-list-group: var(--vt-c-black-soft);
+  --color-theme-list-group-text: var(--vt-c-white-mute);
 }
 
 *,

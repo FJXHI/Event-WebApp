@@ -1,169 +1,141 @@
 <!-- ScheduleList.vue -->
-<!-- A list of program items with a favorite button -->
+<!-- Show the schedule list with filter options --> 
 
 <template>
   <div>
-    <ul>
-      <li v-for="performance in filteredPerformances" :key="performance.id" class="list-item-obj">
-        <router-link 
-          :to="'/event/' + (performance['id-name'] && performance['id-name'].trim() !== '' ? performance['id-name'] : performance.id)"
-          class="list-item-link">
-          
-          <div class="list-item-info">
-            <!-- (Other way to show Name and Acts) --
-            <strong class="list-item-name">
-              <div v-if="performance.name">
-                {{ performance.name }}
-              </div>
-              <div v-else-if="performance.actsIDArr.length">
-                {{ getActNames(performance.actsIDArr) }}
-              </div>
-              <div v-else>
-                Unknown Name
-              </div>
-            </strong>-->
+    <div>
+      <SearchBar v-show="showSearch === 'true'" @apply="updateSearch"/>
+    </div> 
+    <div class="btn-header">
+      <FilterMenu v-if="showFilterMenu"
+        :initial-stages="activeFilters.stages"
+        :initial-categories="activeFilters.categories"
+        :initial-types="activeFilters.types"
+        :initial-performance-tags="activeFilters.performanceTags"
+        :initial-search-query="activeFilters.searchQuery"
+        @apply="updateFilters"
+        @close="showFilterMenu = false"
+      />
 
-            <strong class="list-item-name">
-              <!-- Show only Name if no Acts or add the Acts-->
-              <div v-if="performance.name">
-                {{ performance.name }} <span v-if="performance.actsIDArr.length">({{ getActNames(performance.actsIDArr) }})</span>
-              </div>
-              <!-- Show only Acts if no Name -->
-              <div v-else-if="performance.actsIDArr.length">
-                {{ getActNames(performance.actsIDArr) }}
-              </div>
-              <div v-else>
-                {{ $t('Unknown') }}
-              </div>
-            </strong>
-            <span class="list-item-tags">
-              <span>{{ getStageName(performance.stageID) }}: </span>
-              <span>
-                {{ formatDateTime(performance.start_time, 'Date Long') }}, 
-                {{ formatDateTime(performance.start_time, 'Time') }} – 
-                {{ formatDateTime(performance.end_time, 'Time') }}
-              </span>
-            </span>
-          </div>
-        </router-link>
-        <FavoriteButton :itemId="performance.id.toString()" itemType="event" class="list-item-fav-btn"/>
-      </li>
-    </ul>
+      <ToggleViewButton targetView="table" class="schedul-btn"/>
+
+      <button @click="showFilterMenu = true" class="open-filter schedul-btn">
+        {{ $t('open-filter') }}
+      </button>
+    </div>
+
+    <ScheduleListItem
+      :filters="computedFilters"
+      class="ProgrammList"
+    />
   </div>
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue';
-import { formatDateTime } from '@/config.ts';
-import { useEventData } from '@/useEventData.ts';
-import FavoriteButton from '@/components/FavBtn.vue';
-import type { Act, Stage, Performance } from '@/useEventData.ts';
+import { ref, computed, reactive } from 'vue';
+import { eventFilters } from '@/scripts/functions';
+import { useRoute } from 'vue-router'
+import ToggleViewButton from '@/components/SwitchView.vue';
+import ScheduleListItem from '@/components/ScheduleListItem.vue';
+import FilterMenu from '@/components/FilterMenu.vue';
+import SearchBar from '@/components/SearchBar.vue';
+import { useEventData } from '@/scripts/useEventData';
 
-const { performances, acts, stages } = useEventData();
+const { performances } = useEventData();
 
-const props = defineProps<{
-  filter: 'act' | 'location' | 'event' | 'tags' | 'all';
-  filterID?: string[]; // Array of tag names
-}>();
+// Function to show the SearchBar
+const route = useRoute()
+const showSearch = computed(() => route.query.search ?? 'false')
+const favOnly = computed(() => route.query.fav === 'true');
 
-// fuction to get the stage name
-const getStageName = (stageID: number): string => { 
-  const stage = stages.value.find((stage: Stage) => stage.id === stageID);
-  return stage ? stage.name : 'Stage not found';
+const showFilterMenu = ref(false);
+
+const activeFilters = reactive({
+  stages: [],
+  categories: [],
+  types: [],
+  performanceTags: [],
+  searchQuery: ''
+});
+
+const updateSearch = (searchQuery: string) => {
+  eventFilters.value.searchQuery = searchQuery;
+  eventFilters.value.stages = [];
+  eventFilters.value.categories = [];
+  eventFilters.value.types = [];
+  eventFilters.value.performanceTags = [];
+  eventFilters.value.actIDs = [];
+  eventFilters.value.performanceIDs = [];
 };
 
-// function to get the act names
-const getActNames = (actsArr: number[] = []): string => {
-  return actsArr
-    .map((actID) => {
-      const act = acts.value.find((act: Act) => act.id === actID);
-      return act ? act.name : 'Unknown Artist';
-    })
-    .join(', ');
+const updateFilters = (newFilters: any) => {
+  // update global filter
+  eventFilters.value.stages = newFilters.stages || [];
+  eventFilters.value.categories = newFilters.categories || [];
+  eventFilters.value.types = newFilters.types || [];
+  eventFilters.value.performanceTags = newFilters.performanceTags || [];
+  eventFilters.value.searchQuery = newFilters.searchQuery || "";
+  eventFilters.value.actIDs = newFilters.actIDs || [];
+  eventFilters.value.performanceIDs = newFilters.performanceIDs || [];
+
+  // Update local activeFilters - need for the filter menu retains the values
+  activeFilters.stages = [...eventFilters.value.stages];
+  activeFilters.categories = [...eventFilters.value.categories];
+  activeFilters.types = [...eventFilters.value.types];
+  activeFilters.performanceTags = [...eventFilters.value.performanceTags];
+  activeFilters.searchQuery = eventFilters.value.searchQuery;
 };
 
-// **main logic** to filter performances
-const filteredPerformances = computed((): Performance[] => {
-  let filtered = performances.value;
+const computedFilters = computed(() => {
+  if (favOnly.value) {
+    return {
+      ...eventFilters.value,
+      performanceIDs: favoriteEvents.value.map((p) => String(p.id))
+    };
+  }
+  return eventFilters.value;
+});
 
-  if (props.filter !== 'all' && props.filterID?.length) {
-    filtered = performances.value.filter((performance: Performance) => {
-      // If filter is "location", check if the performance's stageID is in filterID
-      if (props.filter === 'location') {
-        return props.filterID.includes(String(performance.stageID));
-      }
-      // If filter is "act", check if any of the acts in the performance match the filterID
-      if (props.filter === 'act') {
-        return performance.actsIDArr.some((actID) =>
-          props.filterID.includes(String(actID))
-        );
-      }
-      // If filter is "event", check if the performance.id is in filterID
-      if (props.filter === 'event') {
-        return props.filterID.includes(String(performance.id));
-      }
-      // otherwise, filter by tags
-      return performance.actsIDArr.some((actID) => {
-        const act = acts.value.find((act: Act) => act.id === actID);
-        return act?.tags.some((tag) => tag.visible && props.filterID?.includes(tag.name));
-      });
-    });
+const favoriteEvents = computed(() => {
+  const favoriteEventIds = JSON.parse(localStorage.getItem('event') || '[]');
+
+  if (!performances.value || performances.value.length === 0) {
+    console.warn("Performances data not available yet!");
+    return [];
   }
 
-  // sort by start_time (ascending)
-  return filtered.sort((a, b) => new Date(a.start_time).getTime() - new Date(b.start_time).getTime());
+  return performances.value.filter(perf =>
+    favoriteEventIds.includes(perf.id.toString())
+  );
 });
+
 </script>
-
+  
+  
 <style scoped>
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-/*
-.performance-item {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  margin-bottom: 10px;
-  background: #fff;
-  list-style: none;
-}
-
-.performance-header {
+.btn-header {
   display: flex;
   justify-content: space-between;
-  font-size: 0.9rem;
-  color: #666;
+  background-color: var(--color-theme-list-group);
 }
 
-.performance-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
+/* Update Button from SwichtView.vue */
+.btn-view-chang {
+  border-radius: 0px 0px 15px 0px;
 }
 
-.performance-content a {
-  flex-grow: 1;
-  display: flex;
-  text-decoration: none;
-  color: inherit;
+.schedul-btn {
+  width: 50%;
+  color: var(--color-text-theme-topnav); 
+  background-color: var(--color-bg-theme-searchbar);
 }
 
-.performance-location {
-  font-size: 0.9rem;
-  color: #444;
-  margin-top: 5px;
-}
+.open-filter {
+  border-radius: 0px 0px 0px 15px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem; 
+  padding-left: 1rem;
+  padding-right: 1rem;
 
-.fav-btn {
-  flex-shrink: 0;
-  margin-left: 10px;
 }
-*/
-</style>
+</style>  
