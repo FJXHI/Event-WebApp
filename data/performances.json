@@ -30,8 +30,8 @@
     "name": "ElectroNight",
     "short-description": "An electrifying experience with the best DJs.",
     "description": "Experience the best electronic music with top DJs. A night of high energy and great vibes.",
-    "start_time": "2025-03-21T21:00:00Z",
-    "end_time": "2025-03-21T22:00:00Z",
+    "start_time": "2025-03-21T20:30:00Z",
+    "end_time": "2025-03-21T23:00:00Z",
     "date": "2025-03-21",
     "status": "active",
     "type": "DJ Set",
@@ -94,7 +94,7 @@
   {
     "id": 205,
     "actsIDArr": [],
-    "stageID": 3,
+    "stageID": 1,
     "id-name": "",
     "name": "",
     "short-description": "Indie music with unique sounds from upcoming artists.",
@@ -113,6 +113,23 @@
       "url": "https://www.ticketmaster.com/"
     },
     "url": "https://www.live-music-festival.com/indie-beats"
+  },
+  {
+    "id": 299,
+    "actsIDArr": [],
+    "stageID": 2,
+    "id-name": "",
+    "name": "Openingshow",
+    "short-description": "",
+    "description": "Laser Openingshow",
+    "start_time": "2025-03-21T20:15:00Z",
+    "end_time": "2025-03-21T20:30:00Z",
+    "date": "2025-03-21",
+    "status": "active",
+    "type": "Concert",
+    "tags": ["indie", "music", "live"],
+    "ticket": false,
+    "url": ""
   }
 ]
   
