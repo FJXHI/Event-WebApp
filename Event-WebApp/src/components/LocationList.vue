@@ -23,7 +23,7 @@
 
 <script setup lang="ts">
 import { computed } from 'vue';
-import { useEventData } from '@/useEventData.ts';
+import { useEventData } from '@/scripts/useEventData';
 import FavoriteButton from '@/components/FavBtn.vue';
 
 // load acts from useEventData

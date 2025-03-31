@@ -40,8 +40,8 @@
 <script setup>
 import { useRoute } from 'vue-router';
 import { computed } from 'vue';
-import { baseUrl, formatAddress } from '@/config.ts';
-import { useEventData } from '@/useEventData.ts';
+import { baseUrl, formatAddress } from '@/scripts/config';
+import { useEventData } from '@/scripts/useEventData';
 import IconGeo from '@/components/icons/IconGeo.vue';
 import OvalLink from '@/components/OvalLink.vue';
 import ScheduleList from '@/components/ScheduleList.vue';

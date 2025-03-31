@@ -1,13 +1,15 @@
+<!-- ScheduleView.vue -->
 <template>
   <div>
-    <FilterMenu v-if="showFilterMenu" @apply="updateFilters" @close="showFilterMenu = false" />
-    
-    <button @click="showFilterMenu = true" class="open-filter">
-      {{ $t('open-filter') }}
-    </button>
-
+    <div class="btn-header">
+      <button @click="$router.push('/timetable')" class="btn-view-chang">{{ $t('change-view') }}</button>
+      <FilterMenu v-if="showFilterMenu" @apply="updateFilters" @close="showFilterMenu = false" />
+      
+      <button @click="showFilterMenu = true" class="open-filter">
+        {{ $t('open-filter') }}
+      </button>
+    </div>
     <ScheduleList :filter="filterType" :filterID="filterID" class="ProgrammList" />
-
   </div>
 </template>
 
@@ -31,8 +33,24 @@ const updateFilters = (filters) => {
 
 <style scoped>
 
+.btn-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-view-chang {
+  width: 50%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem; 
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 0;
+  background-color: #3B82F6;
+}
+
+
 .open-filter {
-  width: 100%;
+  width: 50%;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem; 
   padding-left: 1rem;

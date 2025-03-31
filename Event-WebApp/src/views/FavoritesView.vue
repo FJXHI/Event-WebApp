@@ -43,7 +43,7 @@
 
 <script setup>
 import { computed } from 'vue';
-import { useEventData } from '@/useEventData.ts';
+import { useEventData } from '@/scripts/useEventData';
 import LinkItem from '@/components/LinkItem.vue';
 import IconActs from '@/components/icons/IconPeople.vue';
 import IconClock from '@/components/icons/IconClock.vue';

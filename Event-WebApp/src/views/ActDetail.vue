@@ -37,13 +37,16 @@
           </span>
         </p>
 
-        <li v-for="link in act.weblinks" :key="link.url">
-            <a :href="link.url" target="_blank" rel="noopener noreferrer">
-              {{ link.name }}
-            </a>
-        </li>
+        <ul class="detail-social-media">
+          <SocialMediaLink
+            v-for="link in act.weblinks"
+            :key="link.url"
+            :name="link.name"
+            :url="link.url"
+          />
+        </ul>
       </div>
-      
+      <div class="detail-line"></div>
       <ScheduleList filter="act" :filterID="[String(act.id)]" />
     </div>
   </div>
@@ -57,9 +60,10 @@
 <script setup lang="ts">
 import { useRoute } from 'vue-router';
 import { computed } from 'vue';
-import { baseUrl } from '@/config.ts';
-import { useEventData } from '@/useEventData.ts';
+import { baseUrl } from '@/scripts/config';
+import { useEventData } from '@/scripts/useEventData';
 import ScheduleList from '@/components/ScheduleList.vue';
+import SocialMediaLink from '@/components/SocialMediaLink.vue';
 import FavoriteButton from '@/components/FavBtn.vue';
 
 
@@ -91,3 +95,14 @@ const act = computed(() => {
 });
 
 </script>
+
+<style>
+.detail-social-media {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+</style>

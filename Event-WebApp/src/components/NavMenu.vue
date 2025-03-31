@@ -4,16 +4,18 @@
 <template>
     <div class="topnav">
       <!-- Dont show PageName and BackBtn on Homesite -->
-      <div v-if="!isHomePage && showBack" class="back-btn"><BackBtn/></div>
       <!-- Show BackBtn and PageName on all other sites -->
+      <button v-if="!isHomePage && showBack" @click="goBack" class="topnav-btn back-btn">
+        <IconArrowLeft class="icon-size"/>
+      </button>
       <div class="pagename" v-if="!isHomePage">{{ $t(PageName) }}</div>
-      <button class="menu-btn" @click="toggleNav">☰</button>
+      <button class="topnav-btn menu-btn" @click="toggleNav"><IconList class="icon-size" /><!--☰--></button>
     </div>
     
     <div class="nav-overlay" v-if="isNavOpen" @click="toggleNav"></div>
     
     <nav class="side-nav" :class="{ open: isNavOpen }">
-      <button class="close-btn" @click="toggleNav">✖</button>
+      <button class="close-btn" @click="toggleNav"><!--<IconXlarg />-->✖</button>
       <router-link to="/" @click="toggleNav" class="nav-link">{{ $t('nav-home') }}</router-link>
       <router-link to="/acts" @click="toggleNav" class="nav-link">{{ $t('nav-acts') }}</router-link>
       <router-link to="/locations" @click="toggleNav" class="nav-link">{{ $t('nav-locations') }}</router-link>
@@ -28,10 +30,18 @@
 
 <script setup lang="ts">
 import { ref, computed } from 'vue';
-import { useRoute } from 'vue-router';
-import BackBtn from './BackBtn.vue';
+import { useRoute, useRouter } from 'vue-router';
 import LangSwitch from '@/components/LangSwitch.vue';
 import BadgeAuthor from './BadgeAuthor.vue';
+import IconList from './icons/IconList.vue';
+import IconArrowLeft from './icons/IconArrowLeft.vue';
+
+const router = useRouter();
+// Method to navigate back
+const goBack = () => {
+  router.go(-1); // Go back one step in the history
+};
+
 
 const props = withDefaults(defineProps<{ 
   PageName: string; 
@@ -55,18 +65,33 @@ const isHomePage = computed(() => route.path === '/');
 <style scoped>
 /* ERROR-FIX Improve Styling .topnav on HomeView */
 
+.icon-size {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
+
 .topnav {
   display: flex;
   height: 10%;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  background-color: var(--color-bg-theme-top);
-  color: var(--vt-c-white);
+  background-color: var(--color-bg-theme-topnav);
+  color: var(--color-text-theme-topnav);
 }
 
+.topnav-btn {
+  background: none;
+  border: none;
+  padding: 0.1rem;
+  color: var(--color-text-theme-topnav);
+  cursor: pointer;
+}
+
+
 .back-btn {
-  margin-right: 10px; /* add space between back button and page name */
+  margin-right: 10px; /* add space between back button and page name, not necessary any more */
 }
 
 .pagename {
@@ -76,11 +101,6 @@ const isHomePage = computed(() => route.path === '/');
 }
 
 .menu-btn {
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  color: var(--vt-c-white);
-  cursor: pointer;
   margin-left: auto; /* the menu button is always on the right side */
 }
 
@@ -90,7 +110,7 @@ const isHomePage = computed(() => route.path === '/');
   right: -55%;
   width: 55%;
   height: 100%;
-  background-color: var(--vt-c-black-soft);
+  background-color: var(--color-bg-theme-sidenav);
   display: flex;
   flex-direction: column;
   padding: 1rem;
@@ -104,20 +124,20 @@ const isHomePage = computed(() => route.path === '/');
 }
 
 .side-nav a {
-  color: var(--vt-c-white);
+  color: var(--color-text-theme-sidenav);
   text-decoration: none;
   padding: 0.75rem 0;
   font-size: 1.2rem;
 }
 
 .side-nav a:hover {
-  background-color: #444;
+  background-color: var(--color-bg-theme-sidenav-hover); 
 }
 
 .close-btn {
   background: none;
   border: none;
-  color: var(--vt-c-white);
+  color: var(--color-text-theme-sidenav);
   font-size: 1.5rem;
   align-self: flex-end;
   cursor: pointer;

@@ -54,10 +54,10 @@
 
 <script setup lang="ts">
 import { computed } from 'vue';
-import { formatDateTime } from '@/config.ts';
-import { useEventData } from '@/useEventData.ts';
+import { formatDateTime } from '@/scripts/config';
+import { useEventData } from '@/scripts/useEventData';
 import FavoriteButton from '@/components/FavBtn.vue';
-import type { Act, Stage, Performance } from '@/useEventData.ts';
+import type { Act, Stage, Performance } from '@/scripts/useEventData';
 
 const { performances, acts, stages } = useEventData();
 

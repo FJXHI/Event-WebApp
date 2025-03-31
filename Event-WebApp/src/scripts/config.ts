@@ -1,11 +1,23 @@
+// config.ts
+// This file contains the configuration for the data paths
+// And utility functions that are needed everywhere
+
 export const baseUrl = import.meta.env.BASE_URL;
+export const mapDataUrl = `${baseUrl}data/mapData.json`;
+export const actsUrl = `${baseUrl}data/acts.json`;
+export const stagesUrl = `${baseUrl}data/stages.json`;
+export const eventInfoUrl = `${baseUrl}data/eventInfo.json`;
+export const performancesUrl = `${baseUrl}data/performances.json`;
+export const dayStartTime = 8; // Start time of the day
 
-export function formatDateTime(dateTimeString, formatType = 'Date Time', hour12 = false, locale = 'de-DE') {
-    const date = new Date(dateTimeString);
-
+// Function to format date and time ignoring timezone
+export function formatDateTime(dateTimeString: string, formatType = 'Date Time', hour12 = false, locale = 'de-DE') {
+    // use parseDateIgnoringTimezone function
+    const date = parseDateIgnoringTimezone(dateTimeString);
+    
     let options;
 
-    switch(formatType) {
+    switch (formatType) {
         case 'Date Long':
             options = {
                 day: '2-digit',
@@ -62,6 +74,20 @@ export function formatDateTime(dateTimeString, formatType = 'Date Time', hour12 
     return new Intl.DateTimeFormat(locale, options).format(date);
 }
 
+
+// Function to parse date ignoring timezone
+export function parseDateIgnoringTimezone(dateTimeString: string): Date {
+    const [datePart, timePart] = dateTimeString.split('T');
+    const [year, month, day] = datePart.split('-').map(Number);
+
+    // if no time part is present, set hour and minute to 0
+    const [hour, minute] = timePart ? timePart.replace('Z', '').split(':').map(Number) : [0, 0];
+
+    return new Date(year, month - 1, day, hour, minute);
+}
+
+
+// Function to format address
 export function formatAddress(address, type = 'full') {
     switch (type) {
         case 'noCountry':

@@ -5,6 +5,7 @@
   <div class="act-list">
     <ul v-if="filteredActs.length > 0" class="list-item-ul">
       <li v-for="act in filteredActs" :key="act.id" class="list-item-obj">
+        <!-- ERROR-FIX Style Link on hole line, text with padding -->
         <router-link 
           :to="'/act/' + (act['id-name']?.trim() ? act['id-name'] : act.id)" 
           class="list-item-link">
@@ -26,7 +27,7 @@
 
 <script setup lang="ts">
 import { computed } from 'vue';
-import { useEventData } from "@/useEventData.ts";
+import { useEventData } from "@/scripts/useEventData";
 import FavoriteButton from '@/components/FavBtn.vue';
 
 // load acts from useEventData

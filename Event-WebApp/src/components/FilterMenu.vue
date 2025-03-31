@@ -49,7 +49,7 @@
 
 <script setup>
 import { ref, computed, defineEmits } from 'vue';
-import { useEventData } from '@/useEventData.ts';
+import { useEventData } from '@/scripts/useEventData';
 
 const { stages, acts } = useEventData();
 const emit = defineEmits(['apply', 'close']); // define custom events

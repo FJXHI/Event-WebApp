@@ -34,7 +34,7 @@
 
 <script setup lang="ts">
 import { computed } from "vue";
-import { useEventData } from "@/useEventData.ts";
+import { useEventData } from "@/scripts/useEventData";
 import BadgeAuthor from "@/components/BadgeAuthor.vue";
 
 const { eventInfo, isLoading, error } = useEventData();

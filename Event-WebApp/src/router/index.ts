@@ -52,12 +52,17 @@ const router = createRouter({
     {
       path: '/about',
       name: 'about',
-      component: () => import('../views/AboutView.vue'),
+      component: () => import('../views/InfoView.vue'),
     },
     {
       path: '/map',
       name: 'map',
       component: () => import('../views/MapView.vue'),
+    },
+    {
+      path: '/timetable',
+      name: 'timetable',
+      component: () => import('../views/TimeTableView.vue'),
     },
   ],
 });
