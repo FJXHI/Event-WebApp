@@ -4,23 +4,35 @@
 <template>
     <div class="topnav">
       <!-- Dont show PageName and BackBtn on Homesite -->
-      <div v-if="!isHomePage && showBack" class="back-btn"><BackBtn/></div>
       <!-- Show BackBtn and PageName on all other sites -->
+      <button v-if="!isHomePage && showBack" @click="goBack" class="topnav-btn back-btn">
+        <IconArrowLeft class="icon-size"/>
+      </button>
       <div class="pagename" v-if="!isHomePage">{{ $t(PageName) }}</div>
-      <button class="menu-btn" @click="toggleNav">☰</button>
+      <button class="topnav-btn" v-if="showSearch" @click="openSearch">
+        <IconSearch class="icon-size"/>
+      </button>
+      <button class="topnav-btn" v-if="showFavQuery" @click="openFav">
+        <IconHeart class="icon-size"/>
+      </button>
+      <router-link v-if="showFav" to="/favorites" class="topnav-btn">
+        <IconHeart class="icon-size"/>
+      </router-link>
+      <button class="topnav-btn menu-btn" @click="toggleNav"><IconList class="icon-size" /></button>
     </div>
     
     <div class="nav-overlay" v-if="isNavOpen" @click="toggleNav"></div>
     
     <nav class="side-nav" :class="{ open: isNavOpen }">
-      <button class="close-btn" @click="toggleNav">✖</button>
-      <router-link to="/" @click="toggleNav" class="nav-link">{{ $t('nav-home') }}</router-link>
-      <router-link to="/acts" @click="toggleNav" class="nav-link">{{ $t('nav-acts') }}</router-link>
-      <router-link to="/locations" @click="toggleNav" class="nav-link">{{ $t('nav-locations') }}</router-link>
-      <router-link to="/favorites" @click="toggleNav" class="nav-link">{{ $t('nav-favorites') }}</router-link>
-      <router-link to="/about" @click="toggleNav" class="nav-link">{{ $t('nav-about') }}</router-link>
-      <router-link to="/schedule" @click="toggleNav" class="nav-link">{{ $t('nav-timetable') }}</router-link>
-      <router-link to="/map" @click="toggleNav" class="nav-link">{{ $t('nav-map') }}</router-link>
+      <button class="close-btn" @click="toggleNav"><!--<IconXlarg />-->✖</button>
+      <NavItem to="/" :label="t('nav-home')" :icon="IconHome" @click="toggleNav" />
+      <NavItem to="/favorites" :label="t('nav-favorites')" :icon="IconHeart" @click="toggleNav" />
+      <NavItem to="/schedule" :label="t('nav-timetable')" :icon="IconClock" @click="toggleNav" />
+      <NavItem to="/acts" :label="t('nav-acts')" :icon="IconActs" @click="toggleNav" />
+      <NavItem to="/locations" :label="t('nav-locations')" :icon="IconGeo" @click="toggleNav" />
+      <NavItem to="/map" :label="t('nav-map')" :icon="IconMap" @click="toggleNav" />
+      <NavItem to="/about" :label="t('nav-about')" :icon="IconInfo" @click="toggleNav" />
+      <NavItem to="/settings" :label="t('nav-settings')" :icon="IconSetting" @click="toggleNav" />
       <router-link to="" class="nav-link"><LangSwitch /></router-link>
       <BadgeAuthor position="static"/>
     </nav>
@@ -28,10 +40,54 @@
 
 <script setup lang="ts">
 import { ref, computed } from 'vue';
-import { useRoute } from 'vue-router';
-import BackBtn from './BackBtn.vue';
+import { useRoute, useRouter } from 'vue-router';
+import { useI18n } from 'vue-i18n'
+import NavItem from './NavItem.vue';
 import LangSwitch from '@/components/LangSwitch.vue';
 import BadgeAuthor from './BadgeAuthor.vue';
+
+import IconHome from '@/components/icons/IconHome.vue'
+import IconActs from '@/components/icons/IconPeople.vue'
+import IconClock from '@/components/icons/IconClock.vue'
+import IconGeo from '@/components/icons/IconGeo.vue'
+import IconInfo from '@/components/icons/IconInfo.vue'
+import IconMap from '@/components/icons/IconMap.vue'
+import IconHeart from './icons/IconHeart.vue';
+import IconList from './icons/IconList.vue';
+import IconArrowLeft from './icons/IconArrowLeft.vue';
+import IconSearch from './icons/IconSearch.vue';
+import IconSetting from './icons/IconSetting.vue';
+
+const { t } = useI18n()
+
+const router = useRouter();
+// Method to navigate back
+const goBack = () => {
+  router.go(-1); // Go back one step in the history
+};
+
+const search = computed(() => route.query.search ?? 'false')
+const fav = computed(() => route.query.fav ?? 'false')
+
+function openSearch() {
+  const newStatus = search.value === 'false' ? 'true' : 'false';
+  if (newStatus === 'true') {
+    router.replace({ query: { ...route.query, search: newStatus } });
+  } else {
+    const { search, ...rest } = route.query; 
+    router.replace({ query: rest });
+  }
+}
+
+function openFav() {
+  const newStatus = fav.value === 'false' ? 'true' : 'false';
+  if (newStatus === 'true') {
+    router.replace({ query: { ...route.query, fav: newStatus } });
+  } else {
+    const { fav, ...rest } = route.query; 
+    router.replace({ query: rest });
+  }
+}
 
 const props = withDefaults(defineProps<{ 
   PageName: string; 
@@ -49,38 +105,52 @@ const toggleNav = () => {
 // check if the current page is the home page
 const route = useRoute();
 const isHomePage = computed(() => route.path === '/');
-
+const showSearch = computed(() => route.path === '/schedule' || route.path === '/acts' || route.path === '/locations');
+const showFav = computed(() => route.path !== '/favorites' && route.path !== '/' && !showFavQuery.value);
+const showFavQuery = computed(() => route.path === '/schedule' || route.path === '/acts' || route.path === '/locations');
 </script>
 
 <style scoped>
-/* ERROR-FIX Improve Styling .topnav on HomeView */
+.icon-size {
+  width: 1.9rem;
+  height: 1.9rem;
+  vertical-align: middle;
+}
 
 .topnav {
   display: flex;
-  height: 10%;
+  height: 3.5rem;  
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  background-color: var(--color-bg-theme-top);
-  color: var(--vt-c-white);
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  background-color: var(--color-bg-theme-topnav);
+  color: var(--color-text-theme-topnav);
+  gap: 0.1rem;
 }
 
-.back-btn {
-  margin-right: 10px; /* add space between back button and page name */
+.topnav-btn {
+  display: inline-flex;
+  align-items: center;
+  background: none;
+  border: none;
+  padding: 0.3rem;
+  height: 3.5rem;
+  color: var(--color-text-theme-topnav);
+  cursor: pointer;
+}
+
+.topnav-btn:focus {
+  outline: none; /* remove the default focus outline */
 }
 
 .pagename {
   flex-grow: 1;
-  text-align: center;
-  font-size: 1.8rem;
+  padding-left: 0.5rem;
+  font-size: min(6vw, 1.5rem);
 }
 
 .menu-btn {
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  color: var(--vt-c-white);
-  cursor: pointer;
   margin-left: auto; /* the menu button is always on the right side */
 }
 
@@ -90,7 +160,7 @@ const isHomePage = computed(() => route.path === '/');
   right: -55%;
   width: 55%;
   height: 100%;
-  background-color: var(--vt-c-black-soft);
+  background-color: var(--color-bg-theme-sidenav);
   display: flex;
   flex-direction: column;
   padding: 1rem;
@@ -104,20 +174,20 @@ const isHomePage = computed(() => route.path === '/');
 }
 
 .side-nav a {
-  color: var(--vt-c-white);
+  color: var(--color-text-theme-sidenav);
   text-decoration: none;
   padding: 0.75rem 0;
   font-size: 1.2rem;
 }
 
 .side-nav a:hover {
-  background-color: #444;
+  background-color: var(--color-bg-theme-sidenav-hover); 
 }
 
 .close-btn {
   background: none;
   border: none;
-  color: var(--vt-c-white);
+  color: var(--color-text-theme-sidenav);
   font-size: 1.5rem;
   align-self: flex-end;
   cursor: pointer;

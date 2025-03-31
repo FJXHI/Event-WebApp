@@ -6,6 +6,7 @@
   margin: 0 auto;
   /*padding: 2rem;*/
   font-weight: normal;
+  
 }
 
 a,
@@ -27,12 +28,14 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+
+/* Desktop styles */
+@media screen and (min-width: 1000px) {
+  #app {
+    /* For Style Debugging */
+    border-left: 15px solid purple;
+    border-right: 15px solid purple;
+  }
 }
 
 @media (hover: hover) {

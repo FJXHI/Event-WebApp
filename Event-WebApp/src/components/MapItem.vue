@@ -1,58 +1,79 @@
+<!-- MapItem.vue -->
+<!-- View for displaying a map with stages and points of interest (POIs) -->
+<!-- ERROR-FIX 
+      -Auto height of map not realy working.
+      -Button Design with theme color, maybe use Btn Design from other components.
+      -->
+
 <template>
-  <div class="filter-buttons">
-    <button
-      v-for="category in categories"
-      :key="category"
-      @click="toggleCategory(category)"
-      :class="{ active: selectedCategories.includes(category) }"
-    >
-      {{ category }}
-    </button>
-    <button @click="toggleStages" :class="{ active: showStages }">
-      Bühnen
-    </button>
-  </div>
+  <div class="map-view">
+    <div class="filter-buttons">
+      <button @click="toggleStages" :class="{ active: showStages }">
+        {{ $t('stages') }}
+      </button>
+      <button
+        v-for="category in categories"
+        :key="category"
+        @click="toggleCategory(category)"
+        :class="{ active: selectedCategories.includes(category) }"
+      >
+        {{ category }}
+      </button>
+    </div>
+    <div class="map-container">
+      <l-map
+        @ready="onMapReady"
+        :center="mapCenter"
+        :zoom="zoom"
+        class="map-area"
+        
+      ><!-- ERROR-FIX Fix l-map auto height (style="height: 500px")
+        Maybe map should be fixed at the bottom. -->
+        <l-tile-layer
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          attribution="&copy; OpenStreetMap contributors"
+        />
 
-  <l-map
-    @ready="onMapReady"
-    :center="mapCenter"
-    :zoom="zoom"
-    style="height: 500px"
-  >
-    <l-tile-layer
-      url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-      attribution="&copy; OpenStreetMap contributors"
-    />
+        <!-- Stage Markers -->
+        <l-marker v-if="showStages" v-for="(stage, index) in stages" :key="stage.id" :lat-lng="stage.location">
+          <l-popup>
+            <router-link :to="'/location/' + (stage['id-name'] || stage.id)" target="_blank">
+              <strong>{{ stage.name }}</strong>
+            </router-link>
+          </l-popup>
+        </l-marker>
 
-    <!-- Bühnen-Marker -->
-    <l-marker v-if="showStages" v-for="(stage, index) in stages" :key="stage.id" :lat-lng="stage.location">
-      <l-popup>
-        <router-link :to="'/location/' + (stage['id-name'] || stage.id)" target="_blank">
-          <strong>{{ stage.name }}</strong>
-        </router-link>
-      </l-popup>
-    </l-marker>
-
-    <!-- Gefilterte POI-Marker -->
-    <l-marker
-      v-for="(item, index) in filteredMapData"
-      :key="'map-' + item.id"
-      :lat-lng="item.location"
-      v-if="!isLoading"
-    >
-      <l-popup>
-        <strong>{{ item.name }}</strong><br />
-        <em>{{ item.kategori }}</em>
-      </l-popup>
-    </l-marker>
-  </l-map>
+        <!-- Filtered POI Markers -->
+        <l-marker
+          v-for="(item, index) in filteredMapData"
+          :key="'map-' + item.id"
+          :lat-lng="item.location"
+          v-if="!isLoading"
+        >
+          <l-popup>
+            <strong>{{ item.name }}</strong><br />
+            <em>{{ item.kategori }}</em><br />
+            <em>{{ item.description }}</em>
+            <div v-if="item.openingTimes?.length">
+              <li v-for="(time, index) in item.openingTimes" :key="index">
+                  {{ formatDateTime(time.from, 'Date Short Time') }} –
+                  {{ formatDateTime(time.to, 'Time') }}
+                  <span v-if="time.note"> {{ time.note }}</span>
+                </li>
+            </div>
+          </l-popup>
+        </l-marker>
+      </l-map>
+    </div>
+  </div>  
 </template>
 
 <script setup lang="ts">
 import { ref, watchEffect, computed } from "vue";
 import { useRoute } from "vue-router";
-import { useEventData } from "@/useEventData";
-import { useMapData } from "@/script/useMapData";
+import { formatDateTime } from "@/scripts/functions";
+import { useEventData } from "@/scripts/useEventData";
+import { useMapData } from "@/scripts/useMapData";
 import { LMap, LTileLayer, LMarker, LPopup } from "@vue-leaflet/vue-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
@@ -78,7 +99,7 @@ const fitMapToStages = (map: L.Map) => {
   const allLocations = [
     ...stages.value.map(stage => stage.location as [number, number]),
     ...mapData.value
-      .filter(item => !item.noinclude) // Filter für andere Map-Objekte mit noinclude
+      .filter(item => !item.noinclude) // Filter out items with "noinclude"
       .map(item => item.location as [number, number]),
   ];
   const bounds = L.latLngBounds(allLocations);
@@ -143,10 +164,6 @@ watchEffect(() => {
   } else {
     fitMapToStages(mapInstance.value);
   }
-
-  /*if (mapInstance.value) {
-    fitMapToStages(mapInstance.value);
-  }*/
 });
 
 </script>
@@ -160,22 +177,40 @@ watchEffect(() => {
   z-index: 500;
 }
 
+.map-view {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  height: 600px; /*maybe 90vh? */
+}
+
+.map-container {
+  overflow: hidden;
+}
+
+.map-area {
+  height: 100%;
+  width: 100%;
+}
+
 .filter-buttons {
   display: flex;
-  gap: 8px;
-  margin-bottom: 10px;
+  flex-wrap: wrap;
+  padding: 0.25rem;
+  gap: 0.25rem;
 }
 
 button {
   padding: 8px 12px;
-  border: 1px solid #ccc;
-  background: white;
+  border: none;
+  background: #ccc;
   cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 500;
 }
 
 button.active {
-  background: #007bff;
-  color: white;
-  border-color: #0056b3;
+  background: var(--vt-theme-2);
+  color: var(--vt-theme-2-text);
+  border: none;
 }
 </style>

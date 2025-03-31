@@ -1,0 +1,4 @@
+id;id-name;name;visible;type;capacity;image;description;location;add-street;zipcode;city;country;url;features
+1;mainstage;Mainstage;true;Open-Air;5000;demo-mainstage.jpg;Main Stage auf der Großenwiese, bekannt für die größten Acts des Festivals.;50.9375, 6.9603;Festivalstraße 123;12345;Festivalstadt;Deutschland;https://www.live-music-festival.com/mainstage;Audio-System, Light-System, VIP-Area
+2;clubzelt;Clubzelt;true;Indoor;800;demo-clubzelt.jpg;Das Clubzelt bietet elektronische Musik bis in die frühen Morgenstunden.;50.9380, 6.9610;Zeltweg 12;54321;Festivalstadt;Deutschland;https://www.live-music-festival.com/clubzelt;Sound-System, Lightshow
+3;workshoparea;Workshop-Area;false;Workshop;300;;Ein Ort für kreative Workshops und gemütliche Zusammenkünfte.;50.9390, 6.9620;Wiesenweg 1;67890;Festivalstadt;Deutschland;;Workbenches, Whiteboards

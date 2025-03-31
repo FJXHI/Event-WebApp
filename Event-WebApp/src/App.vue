@@ -4,6 +4,7 @@
   </header>
   
   <router-view class="router-view"/>
+  <DisclaimerModal />
   <PWABadge />
 </template>
 
@@ -11,6 +12,7 @@
 import { ref, computed } from 'vue';
 import { useRoute } from 'vue-router';
 import NavMenu from './components/NavMenu.vue';
+import DisclaimerModal from '@/components/DisclaimerModal.vue';
 import PWABadge from '@/components/PWABadge.vue';
 
 const route = useRoute();
@@ -22,7 +24,9 @@ const currentPage = computed(() => {
     '/favorites': 'nav-favorites',
     '/about': 'nav-about',
     '/schedule': 'nav-timetable',
-    '/map': 'nav-map'
+    '/timetable': 'nav-timetable',
+    '/map': 'nav-map',
+    '/settings': 'nav-settings'
   };
   // chech if the route starts with '/act/'
   if (route.path.startsWith('/act/')) {
@@ -35,7 +39,7 @@ const currentPage = computed(() => {
     return 'nav-timetable';
   }
 
-  return routeMap[route.path] || 'Unbekannte Seite';
+  return routeMap[route.path] || 'nav-unknown-site';
 });
 
 

@@ -29,7 +29,11 @@
         </p>
       </div>
       <div class="detail-line"></div>
-      <ScheduleList filter="location" :filterID="[String(stage.id)]" />
+      <!--<ScheduleListItem filter="location" :filterID="[String(stage.id)]" />-->
+      <ScheduleListItem :filters="{
+        ...eventFilters, stages: [String(stage.id)] 
+      }" />
+
     </div>
   </div>
   <div v-else>
@@ -37,14 +41,14 @@
   </div>  
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { useRoute } from 'vue-router';
-import { computed } from 'vue';
-import { baseUrl, formatAddress } from '@/config.ts';
-import { useEventData } from '@/useEventData.ts';
+import { ref, computed } from 'vue';
+import { baseUrl, eventFilters, formatAddress } from '@/scripts/functions';
+import { useEventData } from '@/scripts/useEventData';
 import IconGeo from '@/components/icons/IconGeo.vue';
 import OvalLink from '@/components/OvalLink.vue';
-import ScheduleList from '@/components/ScheduleList.vue';
+import ScheduleListItem from '@/components/ScheduleListItem.vue';
 import FavoriteButton from '@/components/FavBtn.vue';
 
 const route = useRoute();
@@ -70,6 +74,7 @@ const stage = computed(() => {
 
   return null;
 });
+
 </script>
 
 <style scoped>
