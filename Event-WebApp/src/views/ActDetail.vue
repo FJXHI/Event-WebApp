@@ -5,10 +5,9 @@
   <div v-if="act" class="detail-view">
     <div class="detail-space"></div>
     <div class="detail-header">
-      
       <img 
         v-if="act.image?.trim()" 
-        :src="baseUrl + 'images/' + act.image" 
+        :src="act.image.startsWith('http') ? act.image : baseUrl + act.image"
         class="act-detail-view-img"
         @error="event => (event.target as HTMLImageElement).remove()"
       />
@@ -31,20 +30,28 @@
       <div class="detail-content-text">
         <p>{{ act.description }}</p>
         <p>
-          <strong>{{ $t('genre') }}: </strong> 
-          <span v-for="(tag, index) in act.tags.filter(tag => tag.visible)" :key="index">
-            {{ tag.name }}<span v-if="index < act.tags.filter(tag => tag.visible).length - 1">, </span>
-          </span>
+          <TagLabel 
+            v-for="(tag, index) in act.tags.filter(tag => tag.visible)" 
+            :key="index"
+            :name=tag.name
+            class="tag-label-item"
+          />
         </p>
 
-        <li v-for="link in act.weblinks" :key="link.url">
-            <a :href="link.url" target="_blank" rel="noopener noreferrer">
-              {{ link.name }}
-            </a>
-        </li>
+        <ul class="detail-social-media">
+          <SocialMediaLink
+            v-for="link in act.weblinks"
+            :key="link.url"
+            :name="link.name"
+            :url="link.url"
+          />
+        </ul>
       </div>
-      
-      <ScheduleList filter="act" :filterID="[String(act.id)]" />
+      <div class="detail-line"></div>
+      <ScheduleListItem :filters="{
+        ...eventFilters, actIDs: [String(act.id)] 
+      }" />
+
     </div>
   </div>
 
@@ -57,11 +64,12 @@
 <script setup lang="ts">
 import { useRoute } from 'vue-router';
 import { computed } from 'vue';
-import { baseUrl } from '@/config.ts';
-import { useEventData } from '@/useEventData.ts';
-import ScheduleList from '@/components/ScheduleList.vue';
+import { baseUrl, eventFilters } from '@/scripts/config';
+import { useEventData } from '@/scripts/useEventData';
+import ScheduleListItem from '@/components/ScheduleListItem.vue';
+import SocialMediaLink from '@/components/SocialMediaLink.vue';
 import FavoriteButton from '@/components/FavBtn.vue';
-
+import TagLabel from '@/components/tagLabel.vue';
 
 const route = useRoute();
 const { acts, performances, stages } = useEventData();
@@ -89,5 +97,17 @@ const act = computed(() => {
     })),
   };
 });
-
 </script>
+
+<style>
+.detail-social-media {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+
+</style>

@@ -1,0 +1,4 @@
+id;id-name;name;subname;act-type;image;tages;description;weblinks
+101;band-a;Band A;The Band;Artist,Workshop;band-a.jpg;(Electro,true),(Rock,true);Band A is known for their energetic performances and catchy tunes.;(Facebook,https://www.facebook.com/banda),(Instagram,https://www.instagram.com/banda)
+102;;DJ Luna;;DJ;dj-luna.jpg;(Electro,true),(Outdoor,false);A deep house DJ that lights up the night.;(Instagram,https://www.instagram.com/djluna)
+103;the-poets;The Poets;spoken magic;Poetry;poets.jpg;(Late-Night,true);Poetic performances under the stars.;(Website,https://thepoets.com)

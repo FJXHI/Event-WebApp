@@ -22,7 +22,9 @@ const currentPage = computed(() => {
     '/favorites': 'nav-favorites',
     '/about': 'nav-about',
     '/schedule': 'nav-timetable',
-    '/map': 'nav-map'
+    '/timetable': 'nav-timetable',
+    '/map': 'nav-map',
+    '/settings': 'nav-settings'
   };
   // chech if the route starts with '/act/'
   if (route.path.startsWith('/act/')) {
@@ -35,7 +37,7 @@ const currentPage = computed(() => {
     return 'nav-timetable';
   }
 
-  return routeMap[route.path] || 'Unbekannte Seite';
+  return routeMap[route.path] || 'nav-unknown-site';
 });
 
 

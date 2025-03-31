@@ -33,8 +33,8 @@ const translate = (key) => (te(key) ? t(key) : key);
   display: flex;
   align-items: center;
   gap: 15px;
-  padding: 15px;
-  color: #007bff; /* Title Text Color */
+  padding: 12px;
+  color: var(--color-home-nav-title); /* home nav Title Text Color */
   text-decoration: none;
   font-size: 16px;
   border-radius: 8px;
@@ -53,7 +53,7 @@ const translate = (key) => (te(key) ? t(key) : key);
 .icon {
   width: 20px;
   height: 20px;
-  fill: darkcyan;
+  fill: var(--color-home-nav-icon);
 }
 
 .text-container {
@@ -68,6 +68,6 @@ const translate = (key) => (te(key) ? t(key) : key);
 
 .subtext {
   font-size: 14px;
-  color: darkcyan;
+  color: var(--color-home-nav-sub);
 }
 </style>

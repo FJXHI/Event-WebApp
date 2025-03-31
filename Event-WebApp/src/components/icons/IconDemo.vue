@@ -1,5 +1,5 @@
 <!-- Bootstrap Icon -->
-<!-- https://icons.getbootstrap.com/icons/instagram/ -->
+<!-- https://icons.getbootstrap.com/icons/ -->
 
 <template>
     <svg>

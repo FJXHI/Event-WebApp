@@ -2,16 +2,17 @@
 // logic for load map data from map.json
 
 import { ref, onMounted } from 'vue';
+import { mapDataUrl } from '@/scripts/config';
 
 // --- mapData.json: ----------------------------------------------------
 // Interface representing a map items from mapData.json
 export interface MapData {
-    id: number;
-    type: string;
-    name: string;
-    kategori: string;
-    location: number[];
-    noinclude?: boolean;
+    id: number; // unique identifier for the map item
+    type: string; // type of map item (support only "point")
+    name: string; // name of the map item
+    kategori: string; // category of the map item
+    location: number[]; // coordinates of the map item (latitude and longitude)
+    noinclude?: boolean; // if "true" item not included when centering the map
 }
 
 export function useMapData() {
@@ -19,10 +20,10 @@ export function useMapData() {
     const isLoading = ref<boolean>(true);
     const error = ref<{ message: string; code?: number } | null>(null);
 
-    // load all data at once
+    // load all data
     const loadData = async () => {
         try {
-            const response = await fetch(`${import.meta.env.BASE_URL}data/mapData.json`);
+            const response = await fetch(mapDataUrl);
             if (!response.ok) throw new Error("Fehler beim Laden von mapData.json");
     
             const json = await response.json();

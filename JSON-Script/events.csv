@@ -1,0 +1,3 @@
+id;actsArr;stageID;id-name;name;date;start_time;end_time;type;status;tags;description;ticket;url
+201;101,102;1;base;BASE;25.07.2024;2024-07-25 18:45;25.07.2024 19:30;concert;active;concert,music;BASE Eine Stunde Zusammensein, zusammen SEIN, anhalten, Luft holen, Kraft tanken und Spiritualit�t teilen;false;https://www.live-music-festival.com/base
+202;103;2;;RockOnTop;26.07.2024;26.07.2024 18:45;27.07.2024 19:30;concert;close;concert,music;BASE Eine Stunde Zusammensein, zusammen SEIN, anhalten, Luft holen, Kraft tanken und Spiritualit�t teilen;true;https://www.live-music-festival.com/base
