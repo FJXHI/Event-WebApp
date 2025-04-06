@@ -1,35 +1,35 @@
 [
     {
         "id": 101,
-        "name": "Band A",
+        "name": "Classic Band",
         "subname": "The Band",
         "act-type": ["Artist"],
         "tags": [
         {
-            "name": "Electro",
+            "name": "Classic",
             "visible": true
         },
         {
-            "name": "Outdoor",
+            "name": "Chill",
             "visible": false
         },
         {
-            "name": "Late-Night",
+            "name": "Pop",
             "visible": true
         }
         ],
         "id-name": "Band-A",
         "short-description": null,
-        "description": "Band A is known for their energetic performances and catchy tunes.",
-        "image": "demo-act.jpg",
+        "description": "Classic Band is a legendary group known for their vibrant performances and timeless hits. With a mix of classic music and modern flair, they captivate audiences of all ages. Their energy on stage is infectious, making every show a memorable experience.",
+        "image": "images-demo/AdobeStock_97772696.jpeg",
         "weblinks": [
         {
             "name": "Facebook",
-            "url": "https://www.facebook.com/banda"
+            "url": "https://www.facebook.com/classicband"
         },
         {
             "name": "Instagram",
-            "url": "https://www.instagram.com/banda"
+            "url": "https://www.instagram.com/classicband"
         }
         ]
     },
@@ -55,7 +55,7 @@
         "id-name": "DJ-Electro",
         "short-description": "Pioneering techno DJ with a passion for deep bass.",
         "description": "DJ Electro has been rocking the underground techno scene for over a decade, bringing deep bass and euphoric beats.",
-        "image": "url-to-dj-electro-image.jpg",
+        "image": "https://as2.ftcdn.net/v2/jpg/00/69/39/29/1000_F_69392962_aAVYsSSDPXhU8nW96PagSFwtIvHOCA9d.jpg",
         "weblinks": [
         {
             "name": "SoundCloud",
@@ -75,10 +75,10 @@
         "tags": [
         {
             "name": "Rock",
-            "visible": true
+            "visible": false
         },
         {
-            "name": "Live",
+            "name": "Hard Rock",
             "visible": true
         },
         {
@@ -89,15 +89,15 @@
         "id-name": "The-Rockstars",
         "short-description": "High-energy rock band known for their electrifying performances.",
         "description": "The Rockstars have toured globally, delivering unforgettable performances that get crowds jumping and singing along.",
-        "image": "url-to-rockstars-image.jpg",
+        "image": "images-demo/AdobeStock_148366032.jpeg",
         "weblinks": [
         {
             "name": "Facebook",
-            "url": "https://www.facebook.com/rockstars"
+            "url": "https://www.facebook.com/the-rockstars"
         },
         {
             "name": "Instagram",
-            "url": "https://www.instagram.com/rockstars"
+            "url": "https://www.instagram.com/the-rockstars"
         }
         ]
     },
@@ -123,7 +123,7 @@
         "id-name": "Lucy-Sax",
         "short-description": "Sultry saxophone sounds that bring a smooth vibe.",
         "description": "Lucy Sax combines jazz, blues, and soul for an unforgettable musical experience with a soothing touch.",
-        "image": "url-to-lucy-sax-image.jpg",
+        "image": "https://as1.ftcdn.net/v2/jpg/07/33/12/20/1000_F_733122056_kdsgOJePMEs8bO9pPJ9OM4919Ok5efrK.jpg",
         "weblinks": [
         {
             "name": "YouTube",
@@ -151,13 +151,13 @@
         },
         {
             "name": "Mainstage",
-            "visible": true
+            "visible": false
         }
         ],
         "id-name": "Vocal-Vibes",
         "short-description": "Indie pop duo with powerful vocal harmonies.",
         "description": "Vocal Vibes creates catchy pop anthems with heartfelt lyrics and harmonious vocals that leave a lasting impression.",
-        "image": "url-to-vocal-vibes-image.jpg",
+        "image": null,
         "weblinks": [
         {
             "name": "Spotify",
