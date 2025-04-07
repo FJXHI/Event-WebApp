@@ -1,0 +1,1 @@
+import{_ as e}from"./ActList.vue_vue_type_script_setup_true_lang-DMVG_6eF.js";import{d as o,c as t,e as r,o as a}from"./index-Cdaev5QM.js";import"./useEventData-CJiLa8jm.js";import"./FavBtn-Cmrpq5Yq.js";import"./tagLabel-DiCZHeMZ.js";const l=o({__name:"ActsView",setup(c){return(m,n)=>(a(),t("div",null,[r(e)]))}});export{l as default};
