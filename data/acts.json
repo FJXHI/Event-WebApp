@@ -21,7 +21,7 @@
         "id-name": "Band-A",
         "short-description": null,
         "description": "Classic Band is a legendary group known for their vibrant performances and timeless hits. With a mix of classic music and modern flair, they captivate audiences of all ages. Their energy on stage is infectious, making every show a memorable experience.",
-        "image": "images-demo/AdobeStock_97772696.jpeg",
+        "image": "images-demo/AdobeStock_97772696_light.jpg",
         "weblinks": [
         {
             "name": "Facebook",
@@ -89,7 +89,7 @@
         "id-name": "The-Rockstars",
         "short-description": "High-energy rock band known for their electrifying performances.",
         "description": "The Rockstars have toured globally, delivering unforgettable performances that get crowds jumping and singing along.",
-        "image": "images-demo/AdobeStock_148366032.jpeg",
+        "image": "images-demo/AdobeStock_148366032_light.jpg",
         "weblinks": [
         {
             "name": "Facebook",
