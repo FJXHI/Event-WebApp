@@ -29,6 +29,23 @@
             "subtitle": "FotoVideo",
             "icon": null,
             "text": "Alle Teilnehmenden erklären sich damit einverstanden, dass die im Zusammenhang mit der Veranstaltung gemachten Fotos und Filmaufnahmen ohne einen Vergütungsanspruch des*der Teilnehmer*in verbreitet und veröffentlicht werden können. Wenn das nicht gewünscht ist, bitte direkt an medien@demo-festival.com schreiben."
+        },
+        {
+            "id": 1002,
+            "name": "Feuer",
+            "subtitle": "Feuer",
+            "icon": null,
+            "text": "Offenes Feuer, Gaskocher und Grillen ist nicht erlaubt. Auf dem Gelände herrscht absolute Brandgefahr, sodass wir mit offenem Feuer wirklich aufpassen müssen!"
+        }
+        ],
+        "weblinks": [
+        {
+            "name": "Facebook",
+            "url": "https://www.facebook.com/demofestival"
+        },
+        {
+            "name": "Instagram",
+            "url": "https://www.instagram.com/demofestival"
         }
         ]
     }
