@@ -16,7 +16,13 @@
             >
             <span>{{ tagColor }}</span>
             </div>
-            <div class="color-grid">
+            <div class="about-section">
+              <h4 @click="toggleAbout(1)" class="about-toggle">
+                Color Palette
+                <span>{{ expandedAboutIds.includes(1) ? '▲' : '▼' }}</span>
+              </h4>
+              <transition name="fade">
+                <div class="color-grid" v-if="expandedAboutIds.includes(1)">
                 <div
                     v-for="(color, i) in colorPalette"
                     :key="'light-' + i"
@@ -26,6 +32,9 @@
                     <span>{{ color }}</span>
                 </div>
             </div>
+              </transition>
+            </div>
+            
       </div>
     </div>
   </template>
@@ -35,6 +44,18 @@
   import { getColorForTag } from '@/scripts/functions'
   import { ref, computed } from 'vue'
   
+  const expandedAboutIds = ref([]);
+
+  function toggleAbout(id) {
+    const index = expandedAboutIds.value.indexOf(id);
+    if (index > -1) {
+      expandedAboutIds.value.splice(index, 1);
+    } else {
+      expandedAboutIds.value.push(id);
+    }
+  }
+
+
   const tagName = ref('')
   
   const tagColor = computed(() => getColorForTag(tagName.value))

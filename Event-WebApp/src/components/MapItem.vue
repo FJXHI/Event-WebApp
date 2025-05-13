@@ -8,6 +8,7 @@
 <template>
   <div class="map-view">
     <div class="filter-buttons">
+      <button @click="fitMap()">Zentrieren</button>
       <button @click="toggleStages" :class="{ active: showStages }">
         {{ $t('stages') }}
       </button>
@@ -76,20 +77,25 @@ import { useEventData } from "@/scripts/useEventData";
 import { useMapData } from "@/scripts/useMapData";
 import { LMap, LTileLayer, LMarker, LPopup } from "@vue-leaflet/vue-leaflet";
 import "leaflet/dist/leaflet.css";
-import L from "leaflet";
+import { LocateControl } from "leaflet.locatecontrol";
+import "leaflet.locatecontrol/dist/L.Control.Locate.min.css";
+import * as L from 'leaflet';
 
 const route = useRoute();
 const { stages } = useEventData();
 const { mapData, isLoading } = useMapData();
 
 const mapInstance = ref<L.Map | null>(null);
-const mapCenter = ref<[number, number]>([50.9375, 6.9603]);
+const mapCenter = ref<[number, number]>([50.840158, 12.915234]);
 const zoom = ref<number>(16);
 const showStages = ref<boolean>(true);
 const selectedCategories = ref<string[]>([]);
 const markerRefs = ref([]);
 
-const fitMapToStages = (map: L.Map) => {
+const fitMap = (mapParam?: L.Map) => {
+  // Check if map instance is available
+  const map = mapParam ?? mapInstance.value;
+  if (!map) return;
 
   // Return if no stages available, using default view
   if (!stages.value.length && !mapData.value.length) {
@@ -147,11 +153,15 @@ const selectMarker = (stageId: string) => {
 
 const onMapReady = (map: L.Map) => {
   mapInstance.value = map;
-  fitMapToStages(map);
+  fitMap(map);
 
   if (route.query.stage) {
     selectMarker(route.query.stage as string);
   }
+
+  // Prevent Build Error: "TS2339: Property 'addTo' does not exist on type 'LocateControl'."
+  // @ts-ignore
+  new LocateControl().addTo(map);
 };
 
 
@@ -162,7 +172,7 @@ watchEffect(() => {
   if (route.query.stage) {
     selectMarker(route.query.stage as string);
   } else {
-    fitMapToStages(mapInstance.value);
+    fitMap(mapInstance.value);
   }
 });
 
@@ -213,4 +223,11 @@ button.active {
   color: var(--vt-theme-2-text);
   border: none;
 }
+
+.leaflet-control-locate a .leaflet-control-locate-location-arrow {
+  margin: 5px; /* originally & default 7px */
+  /* Adjust the margin to position the arrow*/
+}
+
+
 </style>

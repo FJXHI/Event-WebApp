@@ -7,11 +7,13 @@
     "nav-about": "Infos",
     "nav-map": "Karte",
     "nav-settings": "Einstellungen",
+    "nav-news": "News",
     "nav-acts-subtext": "",
     "nav-locations-subtext": "",
     "nav-locations-stages": "{count} Locations",
     "nav-about-subtext": "",
     "nav-favorites-subtext": "",
+    "nav-news-subtext": "",
     "nav-map-subtext": "",
     "nav-unknown-site": "Unbekannte Seite",
     "change-lang": "Sprache",
@@ -49,5 +51,7 @@
     "no-act-fav": "Keine Künstler-Favoriten.",
     "no-stage-fav": "Keine Location-Favoriten.",
     "no-event-fav": "Keine Programm-Favoriten.",
-    "artists": "Künstler"
+    "artists": "Künstler",
+    "languages": "Sprachen",
+    "appearance": "Erscheinungsbild"
 }

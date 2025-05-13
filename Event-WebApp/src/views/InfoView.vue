@@ -15,14 +15,28 @@
       <!-- About Section -->
       <div class="event-about">
         <p>{{ formatDateTime(eventData.startDate, 'Date Short') }} - {{ formatDateTime(eventData.endDate, 'Date Long') }}</p>
-        <p>{{ eventData.location.name }}: {{ formatAddress(eventData.location.address) }} ({{ eventData.location.gps.latitude }}, {{ eventData.location.gps.longitude }})</p>
         
         <p>{{ eventData.describtion }}</p>
         
-        <div v-for="about in eventData.about" :key="about.id">
-          <h4>{{ about.name }}</h4>
-          <!--<p>{{ about.subtitle }}</p>-->
-          <p>{{ about.text }}</p>
+        <p>{{ eventData.location.name }}: {{ formatAddress(eventData.location.address) }}
+          <a :href="`geo:${eventData.location.gps.latitude},${eventData.location.gps.longitude}`"
+            v-if="true"><!--ERROR-FIX isMobile dont work-->
+            ({{ eventData.location.gps.latitude }}, {{ eventData.location.gps.longitude }})
+          </a>
+          <a :href="`https://www.google.com/maps/search/?api=1&query=${eventData.location.gps.latitude},${eventData.location.gps.longitude}`"
+            v-else>
+            ({{ eventData.location.gps.latitude }}, {{ eventData.location.gps.longitude }})
+          </a>
+        </p>
+
+        <div v-for="about in eventData.about" :key="about.id" class="about-section">
+          <h4 @click="toggleAbout(about.id)" class="about-toggle">
+            {{ about.name }}
+            <span>{{ expandedAboutIds.includes(about.id) ? '▲' : '▼' }}</span>
+          </h4>
+          <transition name="fade">
+            <p v-if="expandedAboutIds.includes(about.id)">{{ about.text }}</p>
+          </transition>
         </div>
         <ul class="detail-social-media">
           <SocialMediaLink
@@ -51,11 +65,19 @@ const { eventInfo, isLoading, error } = useEventData();
 // shorthand for eventObj
 const eventData = computed(() => eventInfo.value[0] ?? {});
 
+import { ref } from "vue";
 
-/*
-const filteredTimetable = timetable.value.filter((perf) => perf.startDate === "2025-03-16");
-      const filteredTimetable = timetable.value.filter((perf) => perf.startTime < "20:00");
-*/
+// IDs der aktuell geöffneten Abschnitte
+const expandedAboutIds = ref<number[]>([]);
+
+function toggleAbout(id: number) {
+  const index = expandedAboutIds.value.indexOf(id);
+  if (index > -1) {
+    expandedAboutIds.value.splice(index, 1);
+  } else {
+    expandedAboutIds.value.push(id);
+  }
+}
 </script>
 
 <style scoped>
@@ -86,4 +108,27 @@ const filteredTimetable = timetable.value.filter((perf) => perf.startDate === "2
   flex-wrap: wrap;
   gap: 0.5rem;
 }
+
+.about-toggle {
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.about-section {
+  margin-bottom: 1rem;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from, .fade-leave-to {
+  opacity: 0;
+}
+
+
 </style>

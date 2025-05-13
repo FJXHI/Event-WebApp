@@ -19,6 +19,7 @@
         <LinkItem to="/locations" :icon="IconGeo" title="nav-locations" :subtext="$t('nav-locations-stages', { count: numberOfStages })" />
         <LinkItem to="/favorites" :icon="IconFav" title="nav-favorites" subtext="nav-favorites-subtext" />
         <LinkItem to="/about" :icon="IconInfo" title="nav-about" subtext="nav-about-subtext" />
+        <LinkItem to="/news" :icon="IconNews" title="nav-news" subtext="nav-news-subtext" />
         <LinkItem to="/map" :icon="IconMap" title="nav-map" subtext="nav-map-subtext" />
       </ul>
     </div>
@@ -36,6 +37,7 @@ import IconClock from '@/components/icons/IconClock.vue';
 import IconGeo from '@/components/icons/IconGeo.vue';
 import IconFav from '@/components/icons/IconHeart.vue';
 import IconInfo from '@/components/icons/IconInfo.vue';
+import IconNews from '@/components/icons/IconNews.vue';
 import IconMap from '@/components/icons/IconMap.vue';
 
 const { stages, eventInfo, isLoading, error } = useEventData();

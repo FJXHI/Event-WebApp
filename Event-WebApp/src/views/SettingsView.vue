@@ -3,22 +3,26 @@
 
 <template>
   <div>
-    <DarkModeBtn />
+    <DarkModeBtn class="pad"/>
     <!--<label>Sprache:</label>-->
-    <br />
-    <button><LangSwitch /></button>
+    <LangSwitch class="pad"/>
+    <div class="pad">
+      <label class="sett-title">Favoriten:</label>
     
-    <!--<label>Favoriten:</label>-->
-    <button @click="clearFavorites('act')">Favoriten für Acts löschen</button>
-    <button @click="clearFavorites('stage')">Favoriten für Bühnen löschen</button>
-    <button @click="clearFavorites('event')">Favoriten für Events löschen</button>
-    <button @click="clearFavorites('all')">Favoriten löschen</button>
-    <button @click="clearAllData">Cache-Daten löschen</button>
+      <!--<label>Favoriten:</label>-->
+      <div class="sett-button-group">
+        <button @click="clearFavorites('act')">Fav. Acts löschen</button>
+        <button @click="clearFavorites('stage')">Fav. Bühnen löschen</button>
+        <button @click="clearFavorites('event')">Fav. Events löschen</button>
+        <button @click="clearFavorites('all')">Favoriten löschen</button>
+        <button @click="clearAllData">Cache-Daten löschen</button>
+      </div>
+    </div>
 
     <br />
-    <br />
-    <ColorPalette />
+    <ColorPalette class="pad" />
     <BadgeAuthor position="fixed"/>
+    
   </div>
 </template>
 
@@ -52,5 +56,6 @@ function clearAllData() {
 </script>
 
 <style scoped>
+
 
 </style>

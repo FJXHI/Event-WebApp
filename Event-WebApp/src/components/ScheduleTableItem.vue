@@ -13,7 +13,7 @@
             </div>
         </div>
         <div class="stages">
-            <div v-for="stage in stages" :key="stage.id" class="stage">
+            <div v-for="stage in visibleStages" :key="stage.id" class="stage">
                 <div class="timeline-header">{{ stage.name }}</div>
                 <div class="events" :style="getEventsContainerStyle()">
                     <div v-for="hour in hours" :key="hour" class="time-slot" :style="getTimeSlotStyle(hour)">
@@ -88,6 +88,11 @@ const filteredPerformances = computed(() => {
         });
 });
 
+const visibleStages = computed(() => {
+    return stages.value.filter(stage =>
+        filteredPerformances.value.some(event => event.stageID === stage.id)
+    );
+});
 
 const hours = computed(() => {
     const eventTimes = filteredPerformances.value.flatMap(event => [
@@ -146,7 +151,7 @@ const getTimeSlotStyle = (hour) => {
 };
 
 const getEventTypeClass = (type) => {
-  const knownTypes = ['concert', 'spezial', 'workshop'];
+  const knownTypes = ['concert', 'spezial', 'workshop', 'Musik', 'Kunst', 'Gesellschaft', 'Sport', 'Wirtschaft'];
   return knownTypes.includes(type) ? type : 'default';
 };
 </script>
@@ -199,7 +204,12 @@ const getEventTypeClass = (type) => {
     position: relative;
 }
 
+
 .timeline-header {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* optional */
     text-align: center;
     font-weight: bold;
     padding: 5px;
@@ -236,6 +246,23 @@ const getEventTypeClass = (type) => {
 .event.workshop {
   background-color: #10B981;
 }
+/* UPDATE-KOSMOS */
+.event.Musik {
+  background-color: #3B82F6;
+}
+.event.Kunst {
+  background-color: #4F46E4;
+}
+.event.Gesellschaft {
+  background-color: #10B981;
+}
+.event.Sport {
+  background-color: #F59E0B;
+}
+.event.Wirtschaft {
+  background-color: #4fffff;
+}
+
 .event.default {
   background-color: var(--color-bg-theme-header);
 }

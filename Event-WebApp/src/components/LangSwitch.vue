@@ -1,30 +1,43 @@
 <!-- LangSwitch.vue -->
-<!-- A click-area to change language -->
-<!-- TODO: If more than 2 languages ​​are involved, it should probably be implemented and designed differently  -->
 
 <template>
-  <div @click="switchLanguage" class="lang-button">{{ $t('change-lang') }} ({{ getNextLanguage() }})
+  <div>
+    <label class="sett-title">{{ $t('languages') }}</label>
+    <div class="sett-button-group">
+      <button
+        v-for="lang in languages"
+        :key="lang.iso"
+        @click="switchLanguage(lang.iso)"
+        :class="{ active: lang.iso === currentLocale }"
+      >
+        <div>
+          <img :src="`${flagBasePath}${lang.iso}.svg`" style="width: 24px; height: auto;" />
+          <span>{{ lang.name }}</span>
+        </div>
+      </button>
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { useI18n } from 'vue-i18n';
+import { useI18n } from 'vue-i18n'
+import { computed } from 'vue';
+import { baseUrl } from '@/scripts/functions';
 
-const { locale } = useI18n();
+const { locale } = useI18n()
 
-//supported languages
-const languages = ['de', 'en']; // can be extended
+// Base path for flag icons
+// public/icons/flags/xx.svg
+const flagBasePath = `${baseUrl}icons/flags/`;
 
-const getNextLanguage = () => {
-  const currentIndex = languages.indexOf(locale.value);
-  return languages[(currentIndex + 1) % languages.length];
-};
+const currentLocale = computed(() => locale.value)
 
-const switchLanguage = () => {
-  locale.value = getNextLanguage();
-  /*
-  const currentIndex = languages.indexOf(locale.value);
-  const nextIndex = (currentIndex + 1) % languages.length;
-  locale.value = languages[nextIndex];*/
-};
+const languages = [
+  { iso: 'de', name: 'Deutsch'},
+  { iso: 'en', name: 'English'},
+]
+
+const switchLanguage = (iso: string) => {
+  locale.value = iso
+}
 </script>

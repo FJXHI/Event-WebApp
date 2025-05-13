@@ -148,3 +148,24 @@
   font-size: 1.2rem;
   font-weight: bold;
 }
+
+.sett-button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.sett-title {
+  font-size: 1.1rem;
+}
+
+.sett-button-group button {
+  padding: 0.5rem 1rem;;
+  cursor: pointer;
+}
+
+.sett-button-group button.active {
+  background: #007acc;
+  color: white;
+}

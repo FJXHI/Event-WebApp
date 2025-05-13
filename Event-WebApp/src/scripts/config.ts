@@ -12,7 +12,7 @@ export const stagesUrl = `${baseUrl}data/stages.json`;
 export const eventInfoUrl = `${baseUrl}data/eventInfo.json`;
 export const performancesUrl = `${baseUrl}data/performances.json`;
 export const dayStartTime = 8; // Start time of the day
-
+export const newsApiUrl = 'https://fjxhi.github.io/me/data/HW-newsAPI.json';
 
 export const colorPalette = [
     '#e63946', // rot

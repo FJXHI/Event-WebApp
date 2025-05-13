@@ -31,9 +31,9 @@
       <NavItem to="/acts" :label="t('nav-acts')" :icon="IconActs" @click="toggleNav" />
       <NavItem to="/locations" :label="t('nav-locations')" :icon="IconGeo" @click="toggleNav" />
       <NavItem to="/map" :label="t('nav-map')" :icon="IconMap" @click="toggleNav" />
+      <NavItem to="/news" :label="t('nav-news')" :icon="IconNews" @click="toggleNav" />
       <NavItem to="/about" :label="t('nav-about')" :icon="IconInfo" @click="toggleNav" />
       <NavItem to="/settings" :label="t('nav-settings')" :icon="IconSetting" @click="toggleNav" />
-      <router-link to="" class="nav-link"><LangSwitch /></router-link>
       <BadgeAuthor position="static"/>
     </nav>
 </template>
@@ -43,7 +43,6 @@ import { ref, computed } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 import { useI18n } from 'vue-i18n'
 import NavItem from './NavItem.vue';
-import LangSwitch from '@/components/LangSwitch.vue';
 import BadgeAuthor from './BadgeAuthor.vue';
 
 import IconHome from '@/components/icons/IconHome.vue'
@@ -57,6 +56,7 @@ import IconList from './icons/IconList.vue';
 import IconArrowLeft from './icons/IconArrowLeft.vue';
 import IconSearch from './icons/IconSearch.vue';
 import IconSetting from './icons/IconSetting.vue';
+import IconNews from './icons/IconNews.vue';
 
 const { t } = useI18n()
 

@@ -1,45 +1,87 @@
 <!-- NewsView.vue -->
-<!-- This component displays all messages in a list. -->
+<!-- This component fetches news notifications from an API (JSON-File) and displays them in a list format. -->
 
 <template>
-  <div class="news-view">
-    <p>DEMO: Not in use.</p>
-    <h1>News</h1>
+  <div class="news-view pad">
     <ul>
-      <li v-for="notification in sortedNotifications" :key="notification.id">
-        <h2>{{ notification.title }}</h2>
-        <p>{{ notification.content }}</p>
-        <p>{{ notification.date }}</p>
+      <li v-for="notification in sortedNotifications" :key="notification.id" class="news-item">
+        <p class="news-date">{{ formatDateTime(notification.date, "Date Long") }}</p>
+        <h2 class="news-title">{{ notification.title }}</h2>
+        <p class="news-content">{{ notification.content }}</p>
+        <a v-if="notification.url" :href="notification.url" target="_blank">Mehr erfahren</a>
+        <img v-if="notification.image" :src="notification.image" alt="News Image" style="max-width: 100%; height: auto;" />
       </li>
     </ul>
   </div>
-
 </template>
-<script setup lang="ts">
-import { ref, computed } from 'vue'
 
-const notifications = [
-  {
-    id: 1,
-    title: 'Festival Eröffnung',
-    content: 'Details about the festival opening.',  
-    date: '2025-07-01'
-  },
-  {
-    id: 2,
-    title: 'Absage Konzert',
-    content: 'Konzert von Band XYZ wurde abgesagt.',
-    date: '2023-10-02'
-  },
-  {
-    id: 3,
-    title: 'Wetterwarnung',
-    content: 'Mögliche Gewitterwarnung für den Festivalzeitraum.',
-    date: '2023-10-03'
-  }
-];
+<script setup lang="ts">
+import { ref, computed, onMounted } from 'vue'
+import { formatDateTime } from '@/scripts/functions'
+import { newsApiUrl } from '@/scripts/config'
+
+const notifications = ref<any[]>([])
+
 const sortedNotifications = computed(() =>
-  [...notifications].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+  [...notifications.value].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
 )
 
+const fetchNews = async () => {
+  try {
+    const response = await fetch(newsApiUrl)
+    if (!response.ok) throw new Error('Network response was not ok')
+    const data = await response.json()
+    notifications.value = Array.isArray(data) ? data : [data] // Einzelobjekt oder Array abfangen
+  } catch (error) {
+    console.error('Fehler beim Laden der News:', error)
+  }
+}
+
+onMounted(fetchNews)
 </script>
+  
+<style scoped>
+
+.news-view ul {
+  list-style: none;
+  padding: 0;
+}
+
+.news-item {
+  background-color: var(--vt-c-text-dark-2);
+  border-radius: 10px;
+  border: 1px solid grey;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition: transform 0.2s;
+}
+
+.news-date {
+  font-size: 0.85rem;
+  color: black;
+}
+
+.news-title {
+  margin: 0.25rem 0;
+  font-size: 1.25rem;
+}
+
+.news-content {
+  line-height: 1.5;
+  white-space: pre-line;
+}
+
+a {
+  color: #0077cc;
+  text-decoration: underline;
+}
+/*
+.news-item:hover {
+  transform: translateY(-2px);
+}
+
+a:hover {
+  text-decoration: none;
+}*/
+</style>
