@@ -83,7 +83,7 @@ const { stages } = useEventData();
 const { mapData, isLoading } = useMapData();
 
 const mapInstance = ref<L.Map | null>(null);
-const mapCenter = ref<[number, number]>([50.9375, 6.9603]);
+const mapCenter = ref<[number, number]>([50.840158, 12.915234]);
 const zoom = ref<number>(16);
 const showStages = ref<boolean>(true);
 const selectedCategories = ref<string[]>([]);

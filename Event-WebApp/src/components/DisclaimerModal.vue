@@ -1,9 +1,9 @@
 <template>
     <div v-if="visible" class="modal-overlay">
       <div class="modal-content">
-        <h2>Hinweis</h2>
+        <h2>inoffizielle App</h2>
         <p>
-          Diese WebApp ist ein privates Projekt und steht in keinem Zusammenhang mit dem offiziellen Festival.
+          Diese WebApp ist ein privates Projekt und steht in keinem Zusammenhang mit dem offiziellen Kosmos Festival 2025.
         </p>
         <button @click="close">Verstanden</button>
       </div>
@@ -43,7 +43,7 @@
   }
   
   .modal-content {
-    background-color: #fff;
+    background-color: var(--color-background-soft);
     padding: 24px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);

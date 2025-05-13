@@ -2,8 +2,7 @@
 .vscode/*
 !.vscode/extensions.json
 
-TODO.md
-Event-WebApp/package-lock.json
 JSON-Script/*.json
-REST
 JSON-Script/HW*
+# UPDATE-KOSMOS
+JSON-Script/KOSMOS

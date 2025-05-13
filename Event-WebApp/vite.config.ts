@@ -25,9 +25,9 @@ export default defineConfig({
     },
 
     manifest: {
-      name: 'Event-App',
-      short_name: 'Event-App',
-      description: 'App for Events and Festivals',
+      name: 'Kosmos 2025',
+      short_name: 'Kosmos',
+      description: 'Inoffizielle WebApp für Kosmos 2025',
       theme_color: '#ffffff',
     },
 

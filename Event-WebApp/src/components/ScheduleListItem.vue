@@ -4,21 +4,19 @@
 <template>
   <div>
     <div v-for="(timeGroups, date, index) in groupedByDateAndTime" :key="date" class="date-group">
-      <div class="date-navigation group-head">
-        <button
-          v-if="sortedDateList[index - 1]"
-          @click="scrollToDate(sortedDateList[index - 1])"
-          class="nav-arrow">
-          &lt;
-        </button> 
-        <h2 class="head-date" :id="date">{{ date }}</h2>
-        <button
-          v-if="sortedDateList[index + 1]"
-          @click="scrollToDate(sortedDateList[index + 1])"
-          class="nav-arrow">
-          &gt;
-        </button>
-      </div>
+      <div class="group-head">
+        <div class="date-nav-container">
+          <button v-if="sortedDateList[index - 1]" class="nav-arrow nav-left" @click="scrollToDate(sortedDateList[index - 1])">
+            &lt;
+          </button>
+          <div v-else class="nav-arrow nav-left"></div> <!-- Platzhalter links -->
+          <h2 class="head-date" :id="date">{{ date }}</h2>
+          <button v-if="sortedDateList[index + 1]" class="nav-arrow nav-right" @click="scrollToDate(sortedDateList[index + 1])">
+            &gt;
+          </button>
+          <div v-else class="nav-arrow nav-right"></div> <!-- Platzhalter rechts -->
+        </div>
+      </div>      
       <div v-for="(performances, time) in timeGroups" :key="time" class="time-group">
         <h3 class="group-head head-time pad">{{ time }}</h3>
         <ul>
@@ -211,31 +209,31 @@ ul {
   padding: 0;
 }
 
-.date-navigation {
-  display: flex;
+.date-nav-container {
+  display: grid;
+  grid-template-columns: 2.5rem auto 2.5rem; /* feste Breite für Buttons */
   align-items: center;
   justify-content: center;
-  gap: 1rem; /* Abstand zwischen Pfeil und Datum */
-  padding: 0.5rem 1rem;
-  position: relative;
 }
 
 .head-date {
   font-size: 1.4rem;
-  margin: 0;
   text-align: center;
-  flex-shrink: 0; /* Verhindert Schrumpfen des Datums */
-  min-width: 200px; /* Oder breiter, falls nötig */
 }
 
 .nav-arrow {
+  width: 2.5rem;
+  font-size: 1.2rem;
   background: none;
   border: none;
-  font-size: 1.5rem;
   cursor: pointer;
-  padding: 0.2rem 0.5rem;
   color: var(--color-theme-list-group-text);
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 
 
 .group-head {
