@@ -1,63 +1,933 @@
 [
   {
     "id": 1,
-    "name": "Mainstage",
-    "id-name": "Mainstage",
-    "short-description": "Main Stage auf der Großenwiese",
-    "description": "Main Stage auf der Großenwiese, bekannt für die größten Acts des Festivals.",
-    "location": [50.9375, 6.9603],
-    "address": {
-      "street": "Festivalstraße 123",
-      "postal_code": "12345",
-      "city": "Festivalstadt",
-      "country": "Deutschland"
-    },
-    "image": "demo-festival-bg.jpg",
-    "capacity": 5000,
+    "id-name": null,
+    "name": "Hartmannfabrik",
+    "description": "1",
+    "image": null,
     "visible": true,
-    "type": "Open-Air",
-    "features": ["Audio-System", "Light-System", "VIP-Area"],
-    "url": "https://www.live-music-festival.com/mainstage"
+    "type": "stage",
+    "capacity": 0,
+    "location": 1,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
   },
   {
     "id": 2,
-    "name": "Second Stage",
-    "id-name": "Second-Stage",
-    "short-description": "Nebenbühne mit alternativen Acts",
-    "description": "Die Second Stage bietet eine intime Atmosphäre für aufstrebende Künstler.",
-    "location": [50.9380, 6.9610],
-    "address": {
-      "street": "Hauptstraße 45",
-      "postal_code": "54321",
-      "city": "Kunststadt",
-      "country": "Deutschland"
-    },
-    "image": "url-secondstage.jpg",
-    "capacity": 1500,
+    "id-name": null,
+    "name": "Stadtwirtschaft",
+    "description": "2",
+    "image": null,
     "visible": true,
-    "type": "Indoor",
-    "features": ["Sound-System", "Licht-System"],
-    "url": "https://www.live-music-festival.com/secondstage"
+    "type": "stage",
+    "capacity": 0,
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
   },
   {
     "id": 3,
-    "name": "Silent Disco",
-    "id-name": "",
-    "short-description": "Silent Disco für alle, die es ruhig mögen",
-    "description": "Erlebe die einzigartige Silent Disco mit Kopfhörern und einer tollen Auswahl an DJ-Sets.",
-    "location": [50.9390, 6.9620],
-    "address": {
-      "street": "Einsame-Straße 7",
-      "postal_code": "67890",
-      "city": "Relaxburg",
-      "country": "Deutschland"
-    },
-    "image": "url-disco.jpg",
-    "capacity": 800,
+    "id-name": null,
+    "name": "Stadthalle",
+    "description": "3",
+    "image": null,
     "visible": true,
-    "type": "Zelt",
-    "features": ["Kopfhörer", "Licht-System", "Snack-Bar"],
-    "url": "https://www.live-music-festival.com/silentdisco"
+    "type": "stage",
+    "capacity": 0,
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
+  },
+  {
+    "id": 4,
+    "id-name": null,
+    "name": "Club Stage",
+    "description": "4",
+    "image": null,
+    "visible": true,
+    "type": "stage",
+    "capacity": 0,
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
+  },
+  {
+    "id": 5,
+    "id-name": null,
+    "name": "Schlossteichstraße",
+    "description": "5",
+    "image": null,
+    "visible": true,
+    "type": "stage",
+    "capacity": 0,
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
+  },
+  {
+    "id": 6,
+    "id-name": null,
+    "name": "Konkordiapark Wiese",
+    "description": "6",
+    "image": null,
+    "visible": true,
+    "type": "stage",
+    "capacity": 0,
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
+  },
+  {
+    "id": 7,
+    "id-name": null,
+    "name": "Konkordiapark Basketballfeld groß",
+    "description": "7",
+    "image": null,
+    "visible": true,
+    "type": "stage",
+    "capacity": 0,
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
+  },
+  {
+    "id": 8,
+    "id-name": null,
+    "name": "die fabrik",
+    "description": "8",
+    "image": null,
+    "visible": true,
+    "type": "stage",
+    "capacity": 0,
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
+  },
+  {
+    "id": 9,
+    "id-name": null,
+    "name": "Lokomov",
+    "description": "9",
+    "image": null,
+    "visible": true,
+    "type": "stage",
+    "capacity": 0,
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
+  },
+  {
+    "id": 10,
+    "id-name": null,
+    "name": "Garagen-Campus",
+    "description": "10",
+    "image": null,
+    "visible": true,
+    "type": "stage",
+    "capacity": 0,
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
+  },
+  {
+    "id": 11,
+    "id-name": null,
+    "name": "Ehemaliges Puppentheater",
+    "description": "11",
+    "image": null,
+    "visible": true,
+    "type": "stage",
+    "capacity": 0,
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
+  },
+  {
+    "id": 12,
+    "id-name": null,
+    "name": "Trailer-Bühne",
+    "description": "12",
+    "image": null,
+    "visible": true,
+    "type": "stage",
+    "capacity": 0,
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
+  },
+  {
+    "id": 13,
+    "id-name": null,
+    "name": "Stumpf Brückenstraße",
+    "description": "13",
+    "image": null,
+    "visible": true,
+    "type": "stage",
+    "capacity": 0,
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
+  },
+  {
+    "id": 14,
+    "id-name": null,
+    "name": "Erich-Schmidt-Straße",
+    "description": "14",
+    "image": null,
+    "visible": true,
+    "type": "stage",
+    "capacity": 0,
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
+  },
+  {
+    "id": 15,
+    "id-name": null,
+    "name": "Wall Of Femme",
+    "description": "15",
+    "image": null,
+    "visible": true,
+    "type": "stage",
+    "capacity": 0,
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
+  },
+  {
+    "id": 16,
+    "id-name": null,
+    "name": "Spielplatz Promenadenstraße",
+    "description": "16",
+    "image": null,
+    "visible": true,
+    "type": "stage",
+    "capacity": 0,
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
+  },
+  {
+    "id": 17,
+    "id-name": null,
+    "name": "Bergstraße",
+    "description": "17",
+    "image": null,
+    "visible": true,
+    "type": "stage",
+    "capacity": 0,
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
+  },
+  {
+    "id": 18,
+    "id-name": null,
+    "name": "HÖR Stage",
+    "description": "18",
+    "image": null,
+    "visible": true,
+    "type": "stage",
+    "capacity": 0,
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
+  },
+  {
+    "id": 19,
+    "id-name": null,
+    "name": "Oase am Brunnen",
+    "description": "19",
+    "image": null,
+    "visible": true,
+    "type": "stage",
+    "capacity": 0,
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
+  },
+  {
+    "id": 20,
+    "id-name": null,
+    "name": "enter Popticum",
+    "description": "20",
+    "image": null,
+    "visible": true,
+    "type": "stage",
+    "capacity": 0,
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
+  },
+  {
+    "id": 21,
+    "id-name": null,
+    "name": "enter fabmobil",
+    "description": "21",
+    "image": null,
+    "visible": true,
+    "type": "stage",
+    "capacity": 0,
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
+  },
+  {
+    "id": 22,
+    "id-name": null,
+    "name": "DUB Soundsystem",
+    "description": "22",
+    "image": null,
+    "visible": true,
+    "type": "stage",
+    "capacity": 0,
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
+  },
+  {
+    "id": 23,
+    "id-name": null,
+    "name": "Promenadenstraße",
+    "description": "23",
+    "image": null,
+    "visible": true,
+    "type": "stage",
+    "capacity": 0,
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
+  },
+  {
+    "id": 24,
+    "id-name": null,
+    "name": "Future Area Schlossteichinsel",
+    "description": "24",
+    "image": null,
+    "visible": true,
+    "type": "stage",
+    "capacity": 0,
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
+  },
+  {
+    "id": 25,
+    "id-name": null,
+    "name": "enter Ringodrom",
+    "description": "25",
+    "image": null,
+    "visible": true,
+    "type": "stage",
+    "capacity": 0,
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
+  },
+  {
+    "id": 26,
+    "id-name": null,
+    "name": "Jazz & Blues Times",
+    "description": "26",
+    "image": null,
+    "visible": true,
+    "type": "stage",
+    "capacity": 0,
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
+  },
+  {
+    "id": 27,
+    "id-name": null,
+    "name": "AOK – Kundenhalle",
+    "description": "27",
+    "image": null,
+    "visible": true,
+    "type": "stage",
+    "capacity": 0,
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
+  },
+  {
+    "id": 28,
+    "id-name": null,
+    "name": "Experimental Stage",
+    "description": "28",
+    "image": null,
+    "visible": true,
+    "type": "stage",
+    "capacity": 0,
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
+  },
+  {
+    "id": 29,
+    "id-name": null,
+    "name": "genNow Space – Markt der Möglichkeiten",
+    "description": "29",
+    "image": null,
+    "visible": true,
+    "type": "stage",
+    "capacity": 0,
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
+  },
+  {
+    "id": 30,
+    "id-name": null,
+    "name": "Zwergstadt",
+    "description": "30",
+    "image": null,
+    "visible": true,
+    "type": "stage",
+    "capacity": 0,
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
+  },
+  {
+    "id": 31,
+    "id-name": null,
+    "name": "Biergarten Miramar",
+    "description": "31",
+    "image": null,
+    "visible": true,
+    "type": "stage",
+    "capacity": 0,
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
+  },
+  {
+    "id": 32,
+    "id-name": null,
+    "name": "Schlossteichinsel",
+    "description": "32",
+    "image": null,
+    "visible": true,
+    "type": "stage",
+    "capacity": 0,
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
+  },
+  {
+    "id": 33,
+    "id-name": null,
+    "name": "Konkordiapark Basketballfeld klein",
+    "description": "33",
+    "image": null,
+    "visible": true,
+    "type": "stage",
+    "capacity": 0,
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
+  },
+  {
+    "id": 34,
+    "id-name": null,
+    "name": "genNow Space – Bühne",
+    "description": "34",
+    "image": null,
+    "visible": true,
+    "type": "stage",
+    "capacity": 0,
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
+  },
+  {
+    "id": 35,
+    "id-name": null,
+    "name": "Gondelstation",
+    "description": "35",
+    "image": null,
+    "visible": true,
+    "type": "stage",
+    "capacity": 0,
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
+  },
+  {
+    "id": 36,
+    "id-name": null,
+    "name": "Bühne an der Hundewiese",
+    "description": "36",
+    "image": null,
+    "visible": true,
+    "type": "stage",
+    "capacity": 0,
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
+  },
+  {
+    "id": 37,
+    "id-name": null,
+    "name": "Schillingsche Figuren",
+    "description": "37",
+    "image": null,
+    "visible": true,
+    "type": "stage",
+    "capacity": 0,
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
+  },
+  {
+    "id": 38,
+    "id-name": null,
+    "name": "Falkeplatz",
+    "description": "38",
+    "image": null,
+    "visible": true,
+    "type": "stage",
+    "capacity": 0,
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
+  },
+  {
+    "id": 39,
+    "id-name": null,
+    "name": "Spielplatz Schlossteichinsel",
+    "description": "39",
+    "image": null,
+    "visible": true,
+    "type": "stage",
+    "capacity": 0,
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
+  },
+  {
+    "id": 40,
+    "id-name": null,
+    "name": "Bühne am Schloss",
+    "description": "40",
+    "image": null,
+    "visible": true,
+    "type": "stage",
+    "capacity": 0,
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
+  },
+  {
+    "id": 41,
+    "id-name": null,
+    "name": "genNow Space – großes Zelt",
+    "description": "41",
+    "image": null,
+    "visible": true,
+    "type": "stage",
+    "capacity": 0,
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
+  },
+  {
+    "id": 42,
+    "id-name": null,
+    "name": "Milchhäuschen",
+    "description": "42",
+    "image": null,
+    "visible": true,
+    "type": "stage",
+    "capacity": 0,
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
+  },
+  {
+    "id": 43,
+    "id-name": null,
+    "name": "Treppe Schlossteichstraße",
+    "description": "43",
+    "image": null,
+    "visible": true,
+    "type": "stage",
+    "capacity": 0,
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
+  },
+  {
+    "id": 44,
+    "id-name": null,
+    "name": "genNow Space – kleines Zelt",
+    "description": "44",
+    "image": null,
+    "visible": true,
+    "type": "stage",
+    "capacity": 0,
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
+  },
+  {
+    "id": 45,
+    "id-name": null,
+    "name": "KOSMOS Bühne",
+    "description": "45",
+    "image": null,
+    "visible": true,
+    "type": "stage",
+    "capacity": 0,
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
+  },
+  {
+    "id": 46,
+    "id-name": null,
+    "name": "Konkordiapark Fußballfeld",
+    "description": "46",
+    "image": null,
+    "visible": true,
+    "type": "stage",
+    "capacity": 0,
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
+  },
+  {
+    "id": 47,
+    "id-name": null,
+    "name": "Pavillon auf der Schlossteichinsel",
+    "description": "47",
+    "image": null,
+    "visible": true,
+    "type": "stage",
+    "capacity": 0,
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
+  },
+  {
+    "id": 48,
+    "id-name": null,
+    "name": "Bandbüro",
+    "description": "48",
+    "image": null,
+    "visible": true,
+    "type": "stage",
+    "capacity": 0,
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
+  },
+  {
+    "id": 49,
+    "id-name": null,
+    "name": "Wiese am Schloss",
+    "description": "49",
+    "image": null,
+    "visible": true,
+    "type": "stage",
+    "capacity": 0,
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
   }
 ]
-  
