@@ -1,30 +1,35 @@
-<template>
-  <main class="scroll-area">
-    <div class="head">
-      <div v-if="isLoading"><p>{{ $t('loading') }}</p></div>
-      <div v-else-if="error"><p>{{ error.message }}</p></div>
-      <div v-else>
-        <!--<div :style="{ backgroundImage: 'url(' + baseUrl + 'images/' + eventData.backgroundImage + ')' }" class="event-header">-->
-        <div :style="{ backgroundImage: 'url(' + (eventData.backgroundImage.startsWith('http') ? eventData.backgroundImage : baseUrl + eventData.backgroundImage) + ')' }" class="event-header">
+<!-- HomeView.vue -->
+<!-- MainPage from the App, showing navigation links -->
 
-          <h1 class="titlemain glow">{{ eventData.title }}</h1>
-          <h2 class="subtitle glow">{{ eventData.subtitle }}</h2>
+<template>
+  <div class="scroll-head full-height">
+    <main class="scroll-y-area">
+      <div class="head">
+        <div v-if="isLoading"><p>{{ $t('loading') }}</p></div>
+        <div v-else-if="error"><p>{{ error.message }}</p></div>
+        <div v-else>
+          <!--<div :style="{ backgroundImage: 'url(' + baseUrl + 'images/' + eventData.backgroundImage + ')' }" class="event-header">-->
+          <div :style="{ backgroundImage: 'url(' + (eventData.backgroundImage.startsWith('http') ? eventData.backgroundImage : baseUrl + eventData.backgroundImage) + ')' }" class="event-header">
+
+            <h1 class="titlemain glow">{{ eventData.title }}</h1>
+            <h2 class="subtitle glow">{{ eventData.subtitle }}</h2>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="center">
-      <ul>
-        <LinkItem to="/acts" :icon="IconActs" title="nav-acts" subtext="nav-acts-subtext" />
-        <LinkItem to="/schedule" :icon="IconClock" title="nav-timetable" :subtext="formattedDateRange" />
-        <LinkItem to="/locations" :icon="IconGeo" title="nav-locations" :subtext="$t('nav-locations-stages', { count: numberOfStages })" />
-        <LinkItem to="/favorites" :icon="IconFav" title="nav-favorites" subtext="nav-favorites-subtext" />
-        <LinkItem to="/about" :icon="IconInfo" title="nav-about" subtext="nav-about-subtext" />
-        <LinkItem to="/news" :icon="IconNews" title="nav-news" subtext="nav-news-subtext" />
-        <LinkItem to="/map" :icon="IconMap" title="nav-map" subtext="nav-map-subtext" />
-      </ul>
-    </div>
-    <div class="footer"></div>
-  </main>
+      <div class="center">
+        <ul>
+          <LinkItem to="/acts" :icon="IconActs" title="nav-acts" subtext="nav-acts-subtext" />
+          <LinkItem to="/schedule" :icon="IconClock" title="nav-timetable" :subtext="formattedDateRange" />
+          <LinkItem to="/locations" :icon="IconGeo" title="nav-locations" :subtext="$t('nav-locations-stages', { count: numberOfStages })" />
+          <LinkItem to="/favorites" :icon="IconFav" title="nav-favorites" subtext="nav-favorites-subtext" />
+          <LinkItem to="/about" :icon="IconInfo" title="nav-about" subtext="nav-about-subtext" />
+          <LinkItem to="/news" :icon="IconNews" title="nav-news" subtext="nav-news-subtext" />
+          <LinkItem to="/map" :icon="IconMap" title="nav-map" subtext="nav-map-subtext" />
+        </ul>
+      </div>
+      <div class="footer"></div>
+    </main>
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -58,10 +63,10 @@ const formattedDateRange = computed(() => {
 
 <style scoped>
 main {
-  display: flex;
+  /*display: flex;
   flex-direction: column;
   height: 90vh;
-  overflow: hidden;
+  overflow: hidden;*/
 }
 
 .head {
@@ -92,7 +97,7 @@ main {
 
 .center {
   width: 100%;
-  padding: 10px 0;
+  padding: 0px;
   box-sizing: border-box;
   margin-top: auto;
 }

@@ -32,10 +32,14 @@
         {{ $t('open-filter') }}
       </button>
     </div>
-
     <ScheduleListItem
+      v-if="hasEvents"
       :filters="computedFilters"
       class="ProgrammList"
+    />
+    <NoEntries 
+      v-else 
+      :type="favOnly && !hasFavorites ? 'favorites' : 'event'" 
     />
   </div>
 </template>
@@ -48,6 +52,7 @@ import ToggleViewButton from '@/components/SwitchView.vue';
 import ScheduleListItem from '@/components/ScheduleListItem.vue';
 import FilterMenu from '@/components/FilterMenu.vue';
 import SearchBar from '@/components/SearchBar.vue';
+import NoEntries from '@/components/NoEntries.vue';
 import { useEventData } from '@/scripts/useEventData';
 
 const { performances } = useEventData();
@@ -125,5 +130,25 @@ const favoriteEvents = computed(() => {
     favoriteEventIds.includes(perf.id.toString())
   );
 });
+
+
+const hasFavorites = computed(() => favoriteEvents.value.length > 0);
+
+// Check if there are any events after applying the filters
+const hasEvents = computed(() => {
+  if (!performances.value) return false;
+
+  let filtered = performances.value;
+
+  // Filter for Favorites
+  if (favOnly.value) {
+    const favIds = favoriteEvents.value.map(p => p.id.toString());
+    filtered = filtered.filter(perf => favIds.includes(perf.id.toString()));
+  }
+
+  // Other filters
+  return filtered.length > 0;
+});
+
 
 </script>

@@ -43,7 +43,8 @@
           <FavoriteButton :itemId="String(act.id)" itemType="act" class="list-item-fav-btn" />
         </li>
       </ul>
-      <p v-else>{{ $t('no-acts') }}</p>
+      <NoEntries v-else-if="favOnly && acts.length > 0" type="favorites" />
+      <NoEntries v-else type="acts" />
     </div>
   </div>
 </template>
@@ -56,12 +57,15 @@ import FavoriteButton from '@/components/FavBtn.vue';
 import TagLabel from '@/components/TagLabel.vue';
 import SearchBar from '@/components/SearchBar.vue';
 import FilterMenu from '@/components/FilterMenu.vue';
+import NoEntries from '@/components/NoEntries.vue';
 
 
 // Function for Search
 const route = useRoute()
+const favOnly = computed(() => route.query.fav === 'true');
 const showSearch = computed(() => route.query.search ?? 'false')
 const searchQuery = ref('');
+
 
 // Function to update the search query
 const updateSearch = (query: string) => {

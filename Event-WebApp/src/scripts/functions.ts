@@ -133,6 +133,8 @@ export function formatDateTime(dateTimeString: string, formatType = 'Date Time',
                 hour12: hour12
             };
             break;
+        case 'ISO':
+            return date.toISOString().split('T')[0]; // Only date part (yyyy-mm-dd)
         default:
             options = {
                 day: '2-digit',
@@ -172,7 +174,7 @@ export function getFavoriteSubtext(count: number): string {
     return `${count} Favoriten`;
 }
 
-// ERROR-FIX dont work with i18n
+// count favorites with i18n support
 import { useI18n } from 'vue-i18n';
 export function getFavoriteSubtext2(count: number): string {
     const { t } = useI18n(); // Zugriff auf i18n-Funktion

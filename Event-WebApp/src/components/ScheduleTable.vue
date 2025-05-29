@@ -2,25 +2,18 @@
 <!-- display schedule in a table format with navigation -->
 
 <template>
-    <div class="schedule-table">    
+    <div class="schedule-table scroll-head full-height">    
         <div class="btn-header">
             <ToggleViewButton targetView="list" class="btn full"/>
         </div>
-        <div class="timetable scroll-area">
+        <div class="timetable scroll-y-area">
             <div v-for="(day, index) in days" :key="day" class="day-table">
-                <div class="group-head">
-                    <div class="date-nav-container">
-                        <button v-if="index > 0" class="nav-arrow nav-left" @click="scrollToDate(days[index - 1])">
-                            &lt;
-                        </button>
-                        <div v-else class="nav-arrow nav-left"></div> <!-- Spacer left -->
-                        <h2 class="head-date" :id="day">{{ formatDateTime(day, "Date Long") }}</h2>
-                        <button v-if="index < days.length - 1" class="nav-arrow nav-right" @click="scrollToDate(days[index + 1])">
-                            &gt;
-                        </button>
-                        <div v-else class="nav-arrow nav-right"></div> <!-- Spacer right -->
-                    </div>
-                </div>
+                <DateHead
+                    :date="day"
+                    :index="index"
+                    :sortedDateList="days"
+                    :scrollToDate="scrollToDate"
+                />
                 <ScheduleTableItem :date="day"/>
             </div>
         </div>
@@ -32,6 +25,7 @@ import { computed } from 'vue';
 import { useEventData } from '@/scripts/useEventData.ts';
 import ToggleViewButton from '@/components/SwitchView.vue';
 import ScheduleTableItem from "@/components/ScheduleTableItem.vue";
+import DateHead from '@/components/DateHead.vue';
 import { dayStartTime } from '@/scripts/config.ts';
 import { parseDateIgnoringTimezone, formatDateTime } from '@/scripts/functions.ts';
 import { useRouter } from 'vue-router';

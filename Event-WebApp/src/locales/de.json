@@ -45,8 +45,12 @@
     "not-found": "wurde nicht gefunden.",
     "genre": "Genre",
     "appearances": "Auftritte",
-    "no-locations": "Keine Locations gefunden.",
-    "no-acts": "Keine Künstler gefunden.",
+    "noResults": {
+        "acts": "Keine Künstler gefunden.",
+        "locations": "Keine Locations gefunden.",
+        "event": "Keine Events gefunden.",
+        "favorites": "Du hast noch keine Favoriten gespeichert."
+    },
     "count-favorites": {
         "none": "Keine Favoriten",
         "one": "1 Favorit",
@@ -56,9 +60,6 @@
     "favorites": "Favoriten",
     "my": "Meine",
     "image": "Bild",
-    "no-act-fav": "Keine Künstler-Favoriten.",
-    "no-stage-fav": "Keine Location-Favoriten.",
-    "no-event-fav": "Keine Programm-Favoriten.",
     "artists": "Künstler",
     "languages": "Sprachen",
     "appearance": "Erscheinungsbild"

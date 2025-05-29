@@ -5,25 +5,24 @@
 /* Scrolling */
 
 .scroll-head {
-  display: flex;
-  flex-direction: column;
-  /*height: 100%; in full-height */
+  /* No longer needed */
 }
 
 .scroll-y-area {
-  flex: 1;
+  flex: 1 1 auto;
   overflow-y: auto;
   min-height: 0; 
 }
 
 .full-height {
+  /* Important in every parent form scroll-y-area */
+  flex: 1 1 auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
   height: 100%;
 }
 
-.scroll-area {
-  height: 100vh;
-  overflow: auto;
-}
 
 /* Style for Item-Lists */
 .list-item-ul {

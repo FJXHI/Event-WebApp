@@ -1,31 +1,23 @@
 <!-- ScheduleListItem.vue -->
 <!-- List of performances grouped by date and time -->
-<!-- ERROR-FIX: Show Data with Buttons -> own component -->
-
 
 <template>
   <div class="scroll-head full-height">
     <div class="scroll-y-area">
+      <NoEntries v-if="Object.keys(groupedByDateAndTime).length === 0" type="event"/>
       <div v-for="(timeGroups, date, index) in groupedByDateAndTime" :key="date" class="date-group">
-        <div class="group-head">
-          <div class="date-nav-container">
-            <button v-if="sortedDateList[index - 1]" class="nav-arrow nav-left" @click="scrollToDate(sortedDateList[index - 1])">
-              &lt;
-            </button>
-            <div v-else class="nav-arrow nav-left"></div> <!-- Spacer left -->
-            <h2 class="head-date" :id="date">{{ date }}</h2>
-            <button v-if="sortedDateList[index + 1]" class="nav-arrow nav-right" @click="scrollToDate(sortedDateList[index + 1])">
-              &gt;
-            </button>
-            <div v-else class="nav-arrow nav-right"></div> <!-- Spacer right -->
-          </div>
-        </div>      
+        <DateHead
+            :date="date"
+            :index="index"
+            :sortedDateList="sortedDateList"
+            :scrollToDate="scrollToDate"
+          />
         <div v-for="(performances, time) in timeGroups" :key="time" class="time-group">
           <h3 class="group-head head-time pad">{{ time }}</h3>
           <ul class="list-item-ul">
             <li v-for="performance in performances" :key="performance.id" class="list-item-obj">
               <router-link
-                :to="'/event/' + (performance['id-name']?.trim() || performance.id)"
+                :to="`/event/${performance['id-name']?.trim() || performance.id}`"
                 class="list-item-link"
               >
                 <div class="list-item-info pad">
@@ -75,6 +67,8 @@ import { formatDateTime, getActNames, capitalize } from '@/scripts/functions';
 import { useEventData } from '@/scripts/useEventData';
 import FavoriteButton from '@/components/FavBtn.vue';
 import TagLabel from '@/components/TagLabel.vue';
+import NoEntries from '@/components/NoEntries.vue';
+import DateHead from '@/components/DateHead.vue';
 import type { Act, Stage, Performance } from '@/scripts/useEventData';
 
 import { useRouter, useRoute } from 'vue-router'
@@ -116,7 +110,9 @@ const getStageName = (stageID: number): string => {
   return stage ? stage.name : 'Stage not found'; // ERROR-FIX Translation
 };
 
-const getActNamesLocal = (actsArr: (number | string)[]) => getActNames(actsArr, acts);
+const getActNamesLocal = (actsArr: (number | string)[] = []) =>
+  getActNames(actsArr, acts);
+
 
 const filteredPerformances = computed((): Performance[] => {
   const filters = props.filters;
@@ -210,14 +206,20 @@ const filteredPerformances = computed((): Performance[] => {
     }
 
     return true;
-  }).sort((a, b) => new Date(a.start_time).getTime() - new Date(b.start_time).getTime());
+  })
+  .sort(sortByStartTime);
 });
+
+function sortByStartTime(a: Performance, b: Performance) {
+  return new Date(a.start_time).getTime() - new Date(b.start_time).getTime();
+}
+
 
 const groupedByDateAndTime = computed(() => {
   const groups: Record<string, Record<string, Performance[]>> = {};
 
   for (const perf of filteredPerformances.value) {
-    const dateKey = formatDateTime(perf.start_time, 'Date Long');
+    const dateKey = formatDateTime(perf.start_time, 'ISO') // → "2025-07-20"
     const timeKey = formatDateTime(perf.start_time, 'Time');
 
     if (!groups[dateKey]) groups[dateKey] = {};

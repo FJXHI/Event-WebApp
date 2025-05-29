@@ -39,7 +39,10 @@
           <FavoriteButton :itemId="String(stage.id)" itemType="stage" class="list-item-fav-btn" />
         </li>
       </ul>
-      <p v-else>{{ $t('no-locations') }}</p>
+      <NoEntries 
+        v-else
+        :type="favOnly && !hasFavorites ? 'favorites' : 'locations'" 
+      />
     </div>
   </div>
 </template>
@@ -52,11 +55,21 @@ import FavoriteButton from '@/components/FavBtn.vue';
 import SearchBar from '@/components/SearchBar.vue';
 import FilterMenu from '@/components/FilterMenu.vue';
 import TagLabel from '@/components/TagLabel.vue';
+import NoEntries from '@/components/NoEntries.vue';
 
 // Function for Search
 const route = useRoute();
+const favOnly = computed(() => route.query.fav === 'true');
 const showSearch = computed(() => route.query.search ?? 'false');
 const searchQuery = ref('');
+
+const favoriteStageIds = computed(() => {
+  const stored = localStorage.getItem('stage');
+  return stored ? JSON.parse(stored).map((id: string) => parseInt(id)) : [];
+});
+
+const hasFavorites = computed(() => favoriteStageIds.value.length > 0);
+
 
 // Function to update the search query
 const updateSearch = (query: string) => {
@@ -85,6 +98,9 @@ const updateFilters = (newFilters: any) => {
 // Filter stages by filterID and search query
 const filteredStages = computed(() => {
   if (!stages.value || stages.value.length === 0) return [];
+
+  // No Favorites, if favOnly is true and no favorites exist
+  if (props.filterID && props.filterID.length === 0) return [];
 
   let results = stages.value;
 

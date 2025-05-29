@@ -1,7 +1,7 @@
 <!-- FavoritesView.vue -->
 <template>
-  <div>
-    <div class="center">
+  <div class="scroll-head full-height">
+    <div class="center scroll-y-area">
       <ul>
         <LinkItem 
           to="/acts?fav=true" 
@@ -54,13 +54,6 @@ const favoriteEventsSubtext = computed(() => getFavoriteSubtext(favoriteEvents.v
 
 <style scoped>
 /* Need for LinkItem.vue */
-.center {
-  width: 100%;
-  padding: 10px 0;
-  box-sizing: border-box;
-  margin-top: auto;
-}
-
 .center ul {
   list-style: none;
   padding: 0;

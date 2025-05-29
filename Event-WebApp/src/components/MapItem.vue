@@ -1,12 +1,13 @@
 <!-- MapItem.vue -->
 <!-- View for displaying a map with stages and points of interest (POIs) -->
 <!-- ERROR-FIX 
-      -Auto height of map not realy working.
+      -Auto height of map not really work.
       -Button Design with theme color, maybe use Btn Design from other components.
       -->
+<!-- NO scrolling allowed --> 
 
 <template>
-  <div class="map-view">
+  <div class="map-view full-height">
     <div class="filter-buttons">
       <button @click="fitMap()">Zentrieren</button>
       <button @click="toggleStages" :class="{ active: showStages }">
@@ -190,7 +191,7 @@ watchEffect(() => {
 .map-view {
   display: grid;
   grid-template-rows: auto 1fr;
-  height: 600px; /*maybe 90vh? */
+  height: 90vh ; /* 600px maybe 90vh? */
 }
 
 .map-container {
@@ -212,20 +213,21 @@ watchEffect(() => {
 button {
   padding: 8px 12px;
   border: none;
-  background: #ccc;
+  background: var(--btn-normal-bg);
+  color: var(--btn-normal-text);
   cursor: pointer;
   transition: all 0.2s ease;
   font-weight: 500;
 }
 
 button.active {
-  background: var(--vt-theme-2);
-  color: var(--vt-theme-2-text);
+  background: var(--btn-active-bg);
+  color: var(--btn-active-text);
   border: none;
 }
 
 .leaflet-control-locate a .leaflet-control-locate-location-arrow {
-  margin: 5px; /* originally & default 7px */
+  margin: 4.5px; /* originally & default 7px */
   /* Adjust the margin to position the arrow*/
 }
 

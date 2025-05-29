@@ -1,9 +1,8 @@
+<!-- ActsView.vue -->
+
 <template>
   <div class="list-view full-height">
-    <div v-if="acts.length > 0" class="full-height">
-      <ActList :filterID="favOnly ? favoriteActIds : undefined"  class="full-height"/>
-    </div>
-    <p v-else>{{ $t('no-acts') }}</p>
+    <ActList :filterID="favOnly ? favoriteActIds : undefined"  class="full-height"/>
   </div>
 </template>
 

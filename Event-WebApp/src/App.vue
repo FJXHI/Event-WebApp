@@ -6,9 +6,11 @@
       <NavMenu :PageName="currentPage"/>
     </header>
 
-    <router-view class="router-view full-height"/>
+    <router-view class="router-view"/>
     <PopupModal />
     <PWABadge />
+    <footer class="app-footer">
+    </footer>
   </div>
 </template>
 
@@ -54,23 +56,23 @@ const currentPage = computed(() => {
 .app-container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  /*height: 100vh;*/ 
+  height: 100%; /* Remove Height Problem with Browser Address bar */
   overflow: hidden;
 }
 
-.scroll-old {
-  flex-grow: 1;
-  /*overflow-y: auto;*/
-}
-
 .router-view {
-  height: 90%;
-  /*overflow: hidden; /* wichtig: die innere Scroll-Area übernimmt */
-  /*height: 90%;
-  position: sticky;*/
-  /* margin-left: 0.5rem;
-  margin-right: 0.5rem;*/
+  flex: 1 1 auto;
+  overflow: hidden; /* damit nur der Inhalt scrollt */
+  display: flex;
+  flex-direction: column;
 }
 
+.app-footer {
+  /* possible solution for height problem with browser address bar */
+  height: 0px; /* 40px; */
+  flex-shrink: 0;
+  background-color: red;
+}
 
 </style>
