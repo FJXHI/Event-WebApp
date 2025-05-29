@@ -7,23 +7,27 @@ CSV_FILE = 'JSON-Script/acts.csv'
 JSON_FILE = 'JSON-Script/acts.json'
 
 def parse_tags(cell):
-    # Parse tags from a cell string formatted as (name,visible),(name,visible)...
-    # Example: (electro,true),(rock,false) -> [{'name': 'Electro', 'visible': True}, {'name': 'Rock', 'visible': False}]
+    # Parse tags from a cell string formatted as (name,visible) or just (name)
+    # Example: (electro,false),(rock) -> [{'name': 'Electro', 'visible': False}, {'name': 'Rock', 'visible': True}]
     tags = []
     try:
         if not cell:
             return []
         for pair in cell.strip().split('),('):
             clean = pair.strip('()')
-            if ',' in clean:
-                name, visible = map(str.strip, clean.split(',', 1))
-                tags.append({
-                    "name": name.capitalize(),
-                    "visible": visible.lower() == 'true'
-                })
+            parts = list(map(str.strip, clean.split(',', 1)))
+            name = parts[0].capitalize()
+            visible = True  # default
+            if len(parts) == 2:
+                visible = parts[1].lower() == 'true'
+            tags.append({
+                "name": name,
+                "visible": visible
+            })
     except Exception as e:
         print(f"Error parsing tags", e)
     return tags
+
 
 def parse_weblinks(cell):
     # Parse web links from a cell string formatted as (name,url),(name,url)...

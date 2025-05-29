@@ -20,7 +20,7 @@
            :icon="IconGeo"
            :name="stage.location.toString()" />
     </div>
-    <div class="detail-content">
+    <div class="detail-content full-height">
       <div class="detail-content-text">
         <p>{{ stage.description || 'Keine Beschreibung verfügbar' }}</p>
         <p v-if="stage?.url">

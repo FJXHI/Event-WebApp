@@ -4,9 +4,10 @@
       -Auto height of map not realy working.
       -Button Design with theme color, maybe use Btn Design from other components.
       -->
+<!-- NO scrolling allowed --> 
 
 <template>
-  <div class="map-view">
+  <div class="map-view full-height">
     <div class="filter-buttons">
       <button @click="fitMap()">Zentrieren</button>
       <button @click="toggleStages" :class="{ active: showStages }">

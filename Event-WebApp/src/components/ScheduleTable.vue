@@ -2,11 +2,11 @@
 <!-- display schedule in a table format with navigation -->
 
 <template>
-    <div class="schedule-table">    
+    <div class="schedule-table scroll-head full-height">    
         <div class="btn-header">
             <ToggleViewButton targetView="list" class="btn full"/>
         </div>
-        <div class="timetable scroll-area">
+        <div class="timetable scroll-y-area">
             <div v-for="(day, index) in days" :key="day" class="day-table">
                 <div class="group-head">
                     <div class="date-nav-container">

@@ -6,7 +6,7 @@
       <NavMenu :PageName="currentPage"/>
     </header>
 
-    <router-view class="router-view full-height"/>
+    <router-view class="router-view"/>
     <PopupModal />
     <PWABadge />
   </div>
@@ -58,18 +58,9 @@ const currentPage = computed(() => {
   overflow: hidden;
 }
 
-.scroll-old {
-  flex-grow: 1;
-  /*overflow-y: auto;*/
-}
-
 .router-view {
-  height: 90%;
-  /*overflow: hidden; /* wichtig: die innere Scroll-Area übernimmt */
-  /*height: 90%;
-  position: sticky;*/
-  /* margin-left: 0.5rem;
-  margin-right: 0.5rem;*/
+  height: 100%;
+  /*margin-bottom: 1rem*/
 }
 
 

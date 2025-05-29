@@ -2,7 +2,7 @@
 <!-- This displays the details of an act -->
 
 <template>
-  <div v-if="act" class="detail-view">
+  <div v-if="act" class="full-height detail-view">
     <div class="detail-space"></div>
     <div class="detail-header">
       <img 
@@ -26,7 +26,7 @@
       </div>
     </div>
 
-    <div class="detail-content">
+    <div class="detail-content full-height">
       <div class="detail-content-text">
         <p>{{ act.description }}</p>
         <p>

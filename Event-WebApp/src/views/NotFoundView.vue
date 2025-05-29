@@ -1,9 +1,11 @@
 <template>
-    <div class="text-center p-4">
+  <div class="scroll-head full-height">
+    <div class="text-center scroll-y-area">
       <h1 class="site404">404 – Seite nicht gefunden</h1>
       <p>Die angeforderte Seite existiert nicht.</p>
       <router-link to="/" class="link404">Zur Startseite</router-link>
     </div>
+  </div>
 </template>
 
 <style scoped>
