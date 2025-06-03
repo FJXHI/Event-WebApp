@@ -56,8 +56,8 @@ const currentPage = computed(() => {
 .app-container {
   display: flex;
   flex-direction: column;
-  /*height: 100vh;*/ 
-  height: 100%; /* Remove Height Problem with Browser Address bar */
+  height: 100vh;
+  /*height: 100%; /* Remove Height Problem with Browser Address bar */
   overflow: hidden;
 }
 
@@ -70,9 +70,8 @@ const currentPage = computed(() => {
 
 .app-footer {
   /* possible solution for height problem with browser address bar */
-  height: 0px; /* 40px; */
+  height: 40px; /* 40px; */
   flex-shrink: 0;
-  background-color: red;
 }
 
 </style>

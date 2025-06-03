@@ -73,6 +73,9 @@ import type { Act, Stage, Performance } from '@/scripts/useEventData';
 
 import { useRouter, useRoute } from 'vue-router'
 import { onMounted } from 'vue'
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n();
 
 const router = useRouter()
 
@@ -107,7 +110,7 @@ const props = defineProps<{
 
 const getStageName = (stageID: number): string => {
   const stage = stages.value.find((stage: Stage) => stage.id === stageID);
-  return stage ? stage.name : 'Stage not found'; // ERROR-FIX Translation
+  return stage ? stage.name : t('stageNotFound'); // Use translation for "Stage not found"
 };
 
 const getActNamesLocal = (actsArr: (number | string)[] = []) =>
