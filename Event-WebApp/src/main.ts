@@ -32,10 +32,14 @@ onMessage(messaging, (payload) => {
   console.log('Message received. ', payload);
 });
 
+navigator.serviceWorker.addEventListener('message', (event) => {
+  if (event.data?.action === 'navigate') {
+    const url = event.data.url
+    window.location.hash = url // z. B. /#/news?id=123
+  }
+})
+
 const app = createApp(App)
 app.use(i18n)
 app.use(router)
 app.mount('#app')
-
-
-
