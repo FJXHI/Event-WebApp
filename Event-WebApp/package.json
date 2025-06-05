@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@vue-leaflet/vue-leaflet": "^0.10.1",
+    "firebase": "^11.8.1",
     "leaflet": "^1.9.4",
     "leaflet.locatecontrol": "^0.84.2",
     "vue": "^3.5.13",

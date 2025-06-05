@@ -8,6 +8,7 @@
 
     <router-view class="router-view"/>
     <PopupModal />
+    <PopupMessage />
     <PWABadge />
     <footer class="app-footer">
     </footer>
@@ -19,6 +20,7 @@ import { ref, computed } from 'vue';
 import { useRoute } from 'vue-router';
 import NavMenu from './components/NavMenu.vue';
 import PopupModal from '@/components/PopupModal.vue';
+import PopupMessage from '@/components/PopupMessage.vue';
 import PWABadge from '@/components/PWABadge.vue';
 
 const route = useRoute();
