@@ -19,8 +19,31 @@ messaging.onBackgroundMessage(function (payload) {
   const notificationTitle = payload.notification.title;
   const notificationOptions = {
     body: payload.notification.body,
-    icon: '/icon.png'
+    icon: '/icon.png',
+    data: {
+      url: payload.data?.url
+    }
   };
 
   self.registration.showNotification(notificationTitle, notificationOptions);
 });
+
+self.addEventListener('notificationclick', function(event) {
+  event.notification.close()
+  const url = event.notification?.data?.url || '/news' // fallback
+
+  event.waitUntil(
+    clients.matchAll({ type: 'window', includeUncontrolled: true }).then(windowClients => {
+      for (const client of windowClients) {
+        
+        // Falls Tab schon offen, wechseln und navigieren
+        if (client.url.includes('/') && 'focus' in client) {
+          client.postMessage({ action: 'navigate', url })
+          return client.focus()
+        }
+      }
+      // Ansonsten neuen Tab öffnen
+      return clients.openWindow(url)
+    })
+  )
+})
