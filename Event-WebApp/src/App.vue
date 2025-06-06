@@ -5,10 +5,10 @@
     <header class="app-header">
       <NavMenu :PageName="currentPage"/>
     </header>
-
+    <PopupMessage />
     <router-view class="router-view"/>
     <PopupModal />
-    <PopupMessage />
+    
     <PWABadge />
     <footer class="app-footer">
     </footer>

@@ -6,12 +6,16 @@
         v-if="visible"
         class="popup"
         >
-            <strong>{{ notification?.title }}</strong>
-            <p>{{ notification?.body }}</p>
-            <button @click="close">×</button>
+          <div class="popup-content">
+            <strong>{{ notification?.title || "Title" }}</strong>
+            <p>{{ notification?.body || "Message" }}</p>
+            <button class="popup-btn" @click="close">×</button> 
+          </div>
         </div>
     </Transition>
 </template>
+
+
 
 <script setup lang="ts">
 import { ref, onMounted } from 'vue';
@@ -31,7 +35,7 @@ function showPopup(payload: any) {
   if (timeout) clearTimeout(timeout);
   timeout = window.setTimeout(() => {
     visible.value = false;
-  }, 5000);
+  }, 15000);
 }
 
 function close() {
@@ -51,29 +55,73 @@ onMounted(() => {
 .popup {
   position: fixed;
   top: 1rem;
-  right: 1rem;
-  background: #333;
-  color: white;
-  padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.4);
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
   z-index: 9999;
-  max-width: 300px;
 }
-.popup button {
-  position: absolute;
-  top: 0.25rem;
-  right: 0.5rem;
+
+.popup-content {
+  margin: 1rem;
+  width: 80%;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  background-color: grey;
+  color: white;
+  box-shadow: 0 8px 12px rgba(0,0,0,0.4);
+  max-width: 500px;
+}
+
+.popup-btn {
+  font-size: 1.2rem;
   background: transparent;
   color: white;
-  font-size: 1.2rem;
   border: none;
   cursor: pointer;
 }
+
+.popup-btn {
+  /*
+  position: absolute;
+  top: 0.5rem;
+  right: 0.75rem;
+  font-size: 1.2rem;
+  transition: color 0.2s ease;*/
+}
+
+
+.popup-btn:hover {
+  color: #e74c3c;
+}
+
 .fade-enter-active, .fade-leave-active {
-  transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 .fade-enter-from, .fade-leave-to {
   opacity: 0;
+  transform: translateY(-10px);
 }
+
+
+
+
+.popup-content strong {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.popup-content p {
+  margin: 0;
+  line-height: 1.4;
+}
+
+
+
+
+
+
+
+
 </style>

@@ -26,9 +26,9 @@ async function initializeFCM() {
       console.log('Notification permission granted.');
 
       // --- Crucial Step: Explicitly register your service worker ---
-      // Make sure the path below is correct relative to your domain's root
-      // It should be '/Event-WebApp/firebase-messaging-sw.js' based on your description
-      // Ensure this file actually exists at that path.
+
+      // Scope dont work
+      //const registration = await navigator.serviceWorker.register('/Event-WebApp/firebase-messaging-sw.js', { scope: '/' });
       const registration = await navigator.serviceWorker.register('/Event-WebApp/firebase-messaging-sw.js');
       console.log('Service worker registered with scope: ', registration.scope);
 
@@ -41,6 +41,7 @@ async function initializeFCM() {
 
       if (currentToken) {
         console.log('Debug: FCM Token:', currentToken);
+        alert(currentToken);
         // Here is where you would typically send the token to your backend server
         // ...
       } else {
