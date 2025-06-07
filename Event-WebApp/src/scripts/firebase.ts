@@ -29,8 +29,18 @@ const messaging = getMessaging(app);
 // Registriere Service Worker mit benutzerdefiniertem Pfad
 navigator.serviceWorker.register('/Event-WebApp/firebase-messaging-sw.js')
   .then((registration) => {
-    // Übergib die Registrierung explizit an Firebase
-    messaging.useServiceWorker(registration);
+    console.log('Service Worker registriert:', registration);
+    // Token mit expliziter Übergabe der SW-Registrierung holen
+    return getToken(messaging, {
+      vapidKey: import.meta.env.VITE_FIREBASE_VAPID_KEY,
+      serviceWorkerRegistration: registration,
+    });
+  })
+  .then((token) => {
+    console.log('FCM-Token:', token);
+  })
+  .catch((err) => {
+    console.warn('FCM-Token konnte nicht geholt werden:', err);
   });
 
 export { app, analytics, messaging, getToken, onMessage };
