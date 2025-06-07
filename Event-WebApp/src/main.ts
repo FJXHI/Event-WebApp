@@ -15,7 +15,24 @@ const theme = storedTheme === 'light' || storedTheme === 'dark' || storedTheme =
 
 applyTheme(theme)
 
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/Event-WebApp/firebase-messaging-sw.js', {
+    scope: '/Event-WebApp/'
+  })
+  .then(function (registration) {
+    console.log('Service Worker registered with scope:', registration.scope);
+  })
+  .catch(function (err) {
+    console.log('Service Worker registration failed:', err);
+  });
+}
+
+
+
 // *** Start of the updated FCM Token Retrieval Logic ***
+
+
+
 
 async function initializeFCM() {
   try {

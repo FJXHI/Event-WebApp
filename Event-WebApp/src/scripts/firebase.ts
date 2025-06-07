@@ -26,4 +26,11 @@ analyticsSupported().then((supported) => {
 // Messaging vorbereiten
 const messaging = getMessaging(app);
 
+// Registriere Service Worker mit benutzerdefiniertem Pfad
+navigator.serviceWorker.register('/Event-WebApp/firebase-messaging-sw.js')
+  .then((registration) => {
+    // Übergib die Registrierung explizit an Firebase
+    messaging.useServiceWorker(registration);
+  });
+
 export { app, analytics, messaging, getToken, onMessage };
