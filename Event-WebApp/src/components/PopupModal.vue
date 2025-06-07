@@ -7,7 +7,7 @@
       <div class="modal-content">
         <h2>inoffizielle App</h2>
         <p>
-          Diese WebApp ist ein privates Projekt und steht in keinem Zusammenhang mit dem offiziellen Kosmos Festival 2025.
+          Diese WebApp ist ein privates Projekt und steht in keinem Zusammenhang mit dem offiziellen Festival.
         </p>
         <button @click="close">Verstanden</button>
       </div>
