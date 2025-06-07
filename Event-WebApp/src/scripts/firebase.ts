@@ -15,7 +15,7 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 
-// Optional: Analytics (funktioniert nur in HTTPS und in unterstützten Browsern)
+// Optional: Analytics
 let analytics;
 analyticsSupported().then((supported) => {
   if (supported) {
@@ -23,24 +23,22 @@ analyticsSupported().then((supported) => {
   }
 });
 
-// Messaging vorbereiten
 const messaging = getMessaging(app);
 
-// Registriere Service Worker mit benutzerdefiniertem Pfad
-navigator.serviceWorker.register('/Event-WebApp/firebase-messaging-sw.js')
-  .then((registration) => {
-    console.log('Service Worker registriert:', registration);
-    // Token mit expliziter Übergabe der SW-Registrierung holen
-    return getToken(messaging, {
+/**
+ * Holt den FCM Token mit einer übergebenen Service Worker Registrierung.
+ */
+export async function fetchFcmToken(registration: ServiceWorkerRegistration): Promise<string | null> {
+  try {
+    const token = await getToken(messaging, {
       vapidKey: import.meta.env.VITE_FIREBASE_VAPID_KEY,
       serviceWorkerRegistration: registration,
     });
-  })
-  .then((token) => {
-    console.log('FCM-Token:', token);
-  })
-  .catch((err) => {
+    return token;
+  } catch (err) {
     console.warn('FCM-Token konnte nicht geholt werden:', err);
-  });
+    return null;
+  }
+}
 
-export { app, analytics, messaging, getToken, onMessage };
+export { app, analytics, messaging, onMessage };

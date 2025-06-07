@@ -2,18 +2,73 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import i18n from './scripts/i18n.js'
-import { messaging, getToken, onMessage } from './scripts/firebase';
+import { messaging, onMessage, fetchFcmToken } from './scripts/firebase';
 import './assets/main.css'
 import router from './router'
 import { applyTheme } from './scripts/functions.ts'
 
 //logic for dark mode
-const storedTheme = localStorage.getItem('theme')
+const storedTheme = localStorage.getItem('theme');
+//const theme = ['light', 'dark', 'system'].includes(storedTheme ?? '') ? storedTheme : 'system';
 const theme = storedTheme === 'light' || storedTheme === 'dark' || storedTheme === 'system'
   ? storedTheme
   : 'system'
 
-applyTheme(theme)
+applyTheme(theme);
+
+
+
+// Einmalige Service Worker Registrierung + FCM Token holen
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/Event-WebApp/firebase-messaging-sw.js', {
+    scope: '/Event-WebApp/',
+  })
+    .then(async (registration) => {
+      console.log('Service Worker registered with scope:', registration.scope);
+
+      const permission = await Notification.requestPermission();
+      if (permission === 'granted') {
+        const token = await fetchFcmToken(registration);
+        if (token) {
+          console.log('FCM Token:', token);
+          // Optional: an Backend senden
+          alert(token); // Nur zu Debugzwecken
+        } else {
+          console.warn('Kein FCM-Token verfügbar.');
+        }
+      } else {
+        console.warn('Benachrichtigungsberechtigung nicht erteilt.');
+      }
+    })
+    .catch((err) => {
+      console.error('Service Worker registration failed:', err);
+    });
+}
+
+// Nachrichten im Vordergrund empfangen
+onMessage(messaging, (payload) => {
+  console.log('Foreground-Nachricht empfangen:', payload);
+  // Optional: UI-Benachrichtigung anzeigen
+});
+
+// Kommunikation vom Service Worker zur App
+navigator.serviceWorker.addEventListener('message', (event) => {
+  console.log('Message vom Service Worker:', event.data);
+  if (event.data?.action === 'navigate') {
+    const url = event.data.url;
+    router.push(url).catch((err) => {
+      console.error('Navigation fehlgeschlagen:', err);
+    });
+  }
+});
+
+const app = createApp(App);
+app.use(i18n);
+app.use(router);
+app.mount('#app');
+
+
+/*
 
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('/Event-WebApp/firebase-messaging-sw.js', {
@@ -102,10 +157,4 @@ navigator.serviceWorker.addEventListener('message', (event) => {
         // window.location.hash = url;
     });
   }
-});
-
-
-const app = createApp(App)
-app.use(i18n)
-app.use(router) // Make sure router is initialized before being used
-app.mount('#app')
+});*/
