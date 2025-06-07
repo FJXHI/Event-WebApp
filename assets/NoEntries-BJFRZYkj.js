@@ -1,0 +1,1 @@
+import{d as s,a as t,b as o,t as a,o as n,_ as r}from"./index-BkLEtjuV.js";const p={class:"no-results"},_=s({__name:"NoEntries",props:{type:{}},setup(c){return(e,i)=>(n(),t("div",p,[o("p",null,a(e.$t(`noResults.${e.type}`)),1)]))}}),d=r(_,[["__scopeId","data-v-76623f0b"]]);export{d as N};
