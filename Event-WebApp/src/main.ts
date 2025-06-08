@@ -16,10 +16,11 @@ const theme = storedTheme === 'light' || storedTheme === 'dark' || storedTheme =
   ? storedTheme
   : 'system';
 
-applyTheme(theme); // Theme vor dem Mounten anwenden
+applyTheme(theme);
 
-// ----- Service Worker Registrierung (WICHTIGSTE STELLE) -----
-// Dieses Promise wird die ServiceWorkerRegistration enthalten, sobald sie erfolgreich ist.
+/*
+// ----- Service Worker registriation (Important) -----
+// Promise for Service Worker Registration
 let serviceWorkerRegistrationPromise: Promise<ServiceWorkerRegistration | null>;
 
 if ('serviceWorker' in navigator) {
@@ -28,15 +29,15 @@ if ('serviceWorker' in navigator) {
     })
     .then((registration) => {
       console.log('[FCM] Service Worker successfully registered with scope:', registration.scope);
-      return registration; // Gib die Registrierung zurück
+      return registration; // Return the registration
     })
     .catch((error) => {
       console.error('[FCM] Service Worker Registration failed:', error);
-      return null; // Im Fehlerfall null zurückgeben
+      return null;
     });
 } else {
   console.warn('Service Workers are not supported by this browser. Push messages may not function.');
-  serviceWorkerRegistrationPromise = Promise.resolve(null); // Resolve mit null, falls SW nicht unterstützt
+  serviceWorkerRegistrationPromise = Promise.resolve(null); // Resolve with null if service workers are not supported
 }
 
 // ----- Firebase Cloud Messaging (FCM) Logik -----
@@ -85,6 +86,7 @@ serviceWorkerRegistrationPromise
   .catch((err) => {
     console.error('An error occurred during FCM initialization or token retrieval. ', err);
   });
+*/
 
 // Vue App Mounten
 app.use(i18n);
