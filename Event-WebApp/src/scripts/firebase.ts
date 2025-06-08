@@ -13,9 +13,10 @@ const firebaseConfig = {
   measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };
 
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-// Optional: Analytics
+// Get Firebase Analytics instance
 let analytics;
 analyticsSupported().then((supported) => {
   if (supported) {
@@ -23,22 +24,7 @@ analyticsSupported().then((supported) => {
   }
 });
 
+// Get Firebase Messaging instance
 const messaging = getMessaging(app);
 
-/**
- * Holt den FCM Token mit einer übergebenen Service Worker Registrierung.
- */
-export async function fetchFcmToken(registration: ServiceWorkerRegistration): Promise<string | null> {
-  try {
-    const token = await getToken(messaging, {
-      vapidKey: import.meta.env.VITE_FIREBASE_VAPID_KEY,
-      serviceWorkerRegistration: registration,
-    });
-    return token;
-  } catch (err) {
-    console.warn('FCM-Token konnte nicht geholt werden:', err);
-    return null;
-  }
-}
-
-export { app, analytics, messaging, onMessage };
+export { app, analytics, messaging, getToken ,onMessage };

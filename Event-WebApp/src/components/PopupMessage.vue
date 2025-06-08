@@ -45,7 +45,7 @@ function close() {
 
 onMounted(() => {
   onMessage(messaging, (payload) => {
-    console.log('[Foreground FCM] Nachricht empfangen:', payload);
+    console.log('[FCM] Message received:', payload);
     showPopup(payload);
   });
 });
