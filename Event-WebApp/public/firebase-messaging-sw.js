@@ -4,6 +4,7 @@ importScripts('https://www.gstatic.com/firebasejs/10.12.2/firebase-messaging-com
 
 // Firebase-Configuration
 /*
+// Dont work
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
@@ -13,6 +14,7 @@ const firebaseConfig = {
   appId: import.meta.env.VITE_FIREBASE_APP_ID,
   measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };*/
+
 
 const firebaseConfig = {
   apiKey: "AIzaSyAPW1bXotTgbEdA5szLIuPCwR_64rTCDZg",
@@ -26,6 +28,8 @@ const firebaseConfig = {
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+//import config from "./firebase.config.ts";
+//firebase.initializeApp(config);
 
 const messaging = firebase.messaging();
 
@@ -33,7 +37,7 @@ const messaging = firebase.messaging();
 messaging.onBackgroundMessage((payload) => {
   console.log('[FCM] Message received background:', payload);
 
-  const notificationTitle = payload.notification.title;
+  const notificationTitle = payload.notification.title || 'Nachricht';
   const notificationOptions = {
     body: payload.notification.body,
     icon: '/icon.png',

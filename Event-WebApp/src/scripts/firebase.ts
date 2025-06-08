@@ -17,7 +17,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 
 // Get Firebase Analytics instance
-let analytics;
+let analytics: any;
 analyticsSupported().then((supported) => {
   if (supported) {
     analytics = getAnalytics(app);
@@ -27,4 +27,4 @@ analyticsSupported().then((supported) => {
 // Get Firebase Messaging instance
 const messaging = getMessaging(app);
 
-export { app, analytics, messaging, getToken ,onMessage };
+export { app, analytics, messaging, getToken, onMessage };
