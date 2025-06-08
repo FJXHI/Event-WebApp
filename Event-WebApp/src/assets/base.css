@@ -86,6 +86,9 @@
 
   --bg-body-hover: var(--vt-c-white-soft);
 
+  --popup-bg: var(--list-group);
+  --popup-text: var(--vt-c-black);
+
   /* Home Nav */
   --home-hover: lightgreen; /* not in use */
   
@@ -146,6 +149,9 @@
   --home-title: var(--vt-theme-1-text);
   --home-sub: var(--vt-theme-1-soft);
   --home-icon: var(--vt-theme-1-soft);
+
+  --popup-bg: var(--vt-c-black-mute);
+  --popup-text: var(--vt-c-white);
 
   /*--btn-reset: #007bff;*/
   /*--btn-apply-bg: #28a745;*/

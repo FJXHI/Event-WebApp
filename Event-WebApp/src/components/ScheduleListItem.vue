@@ -4,6 +4,7 @@
 <template>
   <div class="scroll-head full-height">
     <div class="scroll-y-area">
+      <FlowBtn class="flow-btn" @click="FlowBtnClick">{{ $t('now')}}</FlowBtn>
       <NoEntries v-if="Object.keys(groupedByDateAndTime).length === 0" type="event"/>
       <div v-for="(timeGroups, date, index) in groupedByDateAndTime" :key="date" class="date-group">
         <DateHead
@@ -13,7 +14,13 @@
             :scrollToDate="scrollToDate"
           />
         <div v-for="(performances, time) in timeGroups" :key="time" class="time-group">
-          <h3 class="group-head head-time pad">{{ time }}</h3>
+          <h3
+            class="group-head head-time pad"
+            :ref="el => registerTimeRef(date, time, el as HTMLElement)"
+          >
+            {{ time }}
+          </h3>
+          
           <ul class="list-item-ul">
             <li v-for="performance in performances" :key="performance.id" class="list-item-obj">
               <router-link
@@ -62,15 +69,15 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue';
-import { formatDateTime, getActNames, capitalize } from '@/scripts/functions';
+import { computed, ref, nextTick } from 'vue';
+import { formatDateTime, getActNames, capitalize, parseDateIgnoringTimezone } from '@/scripts/functions';
 import { useEventData } from '@/scripts/useEventData';
 import FavoriteButton from '@/components/FavBtn.vue';
 import TagLabel from '@/components/TagLabel.vue';
 import NoEntries from '@/components/NoEntries.vue';
 import DateHead from '@/components/DateHead.vue';
+import FlowBtn from '@/components/FlowBtn.vue';
 import type { Act, Stage, Performance } from '@/scripts/useEventData';
-
 import { useRouter, useRoute } from 'vue-router'
 import { onMounted } from 'vue'
 import { useI18n } from 'vue-i18n';
@@ -233,6 +240,50 @@ const groupedByDateAndTime = computed(() => {
 
   return groups;
 });
+
+const timeRefs = ref<Record<string, HTMLElement>>({});
+
+function registerTimeRef(date: string, time: string, el: HTMLElement | null | undefined) {
+  if (el) {
+    timeRefs.value[`${date}_${time}`] = el;
+  }
+}
+
+function FlowBtnClick() {
+  scrollToNextUpcomingPerformance();
+}
+
+// Test setup for scrollToNextUpcomingPerformance
+const testNow = ref<Date | null>(null);
+testNow.value = new Date('2025-03-21T21:00:00');
+
+function scrollToNextUpcomingPerformance() {
+  const now = testNow.value ?? new Date();
+
+  const upcoming = filteredPerformances.value
+    .filter(p => parseDateIgnoringTimezone(p.start_time).getTime() > now.getTime())
+    .sort((a, b) => parseDateIgnoringTimezone(a.start_time).getTime() - parseDateIgnoringTimezone(b.start_time).getTime());
+
+  if (upcoming.length === 0) {
+    console.log('No upcoming performances found.');
+    return;
+  }
+
+  const next = upcoming[0];
+  const dateKey = formatDateTime(next.start_time, 'ISO');    // z.B. '2025-07-20'
+  const timeKey = formatDateTime(next.start_time, 'Time');   // z.B. '18:00'
+
+  nextTick(() => {
+    const el = timeRefs.value[`${dateKey}_${timeKey}`];
+    if (el) {
+      console.log('Scroll to:', dateKey, timeKey);
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    } else {
+      console.warn("Dont find Scroll-Target for:", dateKey, timeKey);
+    }
+  });
+}
+
 </script>
 
 <style scoped>

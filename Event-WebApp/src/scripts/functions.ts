@@ -152,14 +152,20 @@ export function formatDateTime(dateTimeString: string, formatType = 'Date Time',
 
 // Function to parse date ignoring timezone
 export function parseDateIgnoringTimezone(dateTimeString: string): Date {
-    const [datePart, timePart] = dateTimeString.split('T');
+    const [datePart, timePartRaw] = dateTimeString.split('T');
     const [year, month, day] = datePart.split('-').map(Number);
+  
+    if (!year || !month || !day) return new Date(NaN); // Invalid input format
+  
+    // Clean time part: remove 'Z' or timezone offsets like "+01:00"
+    const timePart = timePartRaw?.replace(/Z|[+-]\d{2}:\d{2}$/, '') ?? '';
+    const [hour = 0, minute = 0, second = 0] = timePart.split(':').map(Number);
+  
+    // Create a local Date object without applying timezone offsets
+    return new Date(year, month - 1, day, hour, minute, second);
+  }
+  
 
-    // if no time part is present, set hour and minute to 0
-    const [hour, minute] = timePart ? timePart.replace('Z', '').split(':').map(Number) : [0, 0];
-
-    return new Date(year, month - 1, day, hour, minute);
-}
 
 // get favorite items from local storage
 export function getFavoriteItems(itemKey: string, itemData: any[]): any[] {
