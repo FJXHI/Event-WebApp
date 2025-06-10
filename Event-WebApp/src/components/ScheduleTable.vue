@@ -44,6 +44,30 @@ function scrollToDate(targetDate: string) {
 const { performances } = useEventData();
 
 const days = computed<string[]>(() => {
+    const shownDays = new Set<string>();
+
+    performances.value.forEach(event => {
+        const eventDate = parseDateIgnoringTimezone(event.start_time);
+        const eventHour = eventDate.getHours();
+
+        // Normaly, the event counts as the day it starts
+        let logicalDay = new Date(eventDate);
+        // If the event starts after midnight but before dayStartTime, it counts as the previous day
+        if (eventHour < dayStartTime) {
+            logicalDay.setDate(logicalDay.getDate() - 1);
+        }
+        
+        // Format the date as 'YYYY-MM-DD' for consistency
+        const logicalDayStr = logicalDay.toLocaleDateString('sv-SE');
+        //const logicalDayStr = formatDateTime(logicalDay, 'ISO') // → "YYYY-MM-DD" // Dont work
+        shownDays.add(logicalDayStr);
+    });
+
+    return Array.from(shownDays).sort();
+});
+
+
+const days2 = computed<string[]>(() => {
     // extract unique days from events
     const uniqueDays = new Set<string>(
         performances.value.map(event => 

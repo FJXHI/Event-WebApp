@@ -67,19 +67,34 @@ const filteredPerformances = computed(() => {
             const eventDate = parseDateIgnoringTimezone(event.start_time);
             const selectedDay = parseDateIgnoringTimezone(props.date);
 
-            // Check if the event starts after midnight (until dayStartTime)
-            const isLateNightEvent = eventDate.getHours() < dayStartTime && eventDate.getDate() === selectedDay.getDate() + 1;
-
             // Event belongs to the same day or the previous day (Late-Night-Event)
-            const isSameDayEvent = eventDate.getDate() === selectedDay.getDate();
-            const shouldShowEvent = isSameDayEvent || isLateNightEvent;
+            // const isSameDayEvent = eventDate.getDate() === selectedDay.getDate();
+            const isSameDay = (
+                eventDate.getFullYear() === selectedDay.getFullYear() &&
+                eventDate.getMonth() === selectedDay.getMonth() &&
+                eventDate.getDate() === selectedDay.getDate()
+            );
 
+            // Check if the event starts after midnight (until dayStartTime)
+            //const isLateNightEvent = eventDate.getHours() < dayStartTime && eventDate.getDate() === selectedDay.getDate() + 1;
+            const isLateNightEvent = (
+                eventDate.getHours() < dayStartTime &&
+                eventDate.getFullYear() === selectedDay.getFullYear() &&
+                eventDate.getMonth() === selectedDay.getMonth() &&
+                eventDate.getDate() === selectedDay.getDate() + 1
+            );
+            
             // Event is late-night event and should not be shown again for the current day
-            if (eventDate.getHours() < dayStartTime && eventDate.getDate() === selectedDay.getDate()) {
-                return false; 
-            }
+            const isEarlyHourDuplicate = (
+                eventDate.getHours() < dayStartTime &&
+                eventDate.getFullYear() === selectedDay.getFullYear() &&
+                eventDate.getMonth() === selectedDay.getMonth() &&
+                eventDate.getDate() === selectedDay.getDate()
+            );
 
-            return shouldShowEvent;
+            if (isEarlyHourDuplicate) return false;
+
+            return isSameDay || isLateNightEvent;
         })
         .sort((a, b) => {
             const dateA = parseDateIgnoringTimezone(a.start_time) ?? new Date(0);

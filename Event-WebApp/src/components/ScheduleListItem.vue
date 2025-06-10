@@ -229,7 +229,7 @@ const groupedByDateAndTime = computed(() => {
   const groups: Record<string, Record<string, Performance[]>> = {};
 
   for (const perf of filteredPerformances.value) {
-    const dateKey = formatDateTime(perf.start_time, 'ISO') // → "2025-07-20"
+    const dateKey = formatDateTime(perf.start_time, 'ISO') // → "YYYY-MM-DD"
     const timeKey = formatDateTime(perf.start_time, 'Time');
 
     if (!groups[dateKey]) groups[dateKey] = {};

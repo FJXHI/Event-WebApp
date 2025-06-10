@@ -7,10 +7,10 @@ import { ref } from 'vue';
 const baseUrl = import.meta.env.BASE_URL;
 
 export const mapDataUrl = `${baseUrl}data/mapData.json`;
-export const actsUrl = `${baseUrl}data/acts.json`;
+export const actsUrl = `${baseUrl}data/HWacts.json`;
 export const stagesUrl = `${baseUrl}data/stages.json`;
 export const eventInfoUrl = `${baseUrl}data/eventInfo.json`;
-export const performancesUrl = `${baseUrl}data/performances.json`;
+export const performancesUrl = `${baseUrl}data/HWperformances.json`;
 export const dayStartTime = 8; // Start time of the day
 export const newsApiUrl = 'https://fjxhi.github.io/me/data/HW-newsAPI.json';
 
