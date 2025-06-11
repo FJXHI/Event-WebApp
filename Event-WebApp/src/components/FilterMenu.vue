@@ -244,6 +244,7 @@ const applyAndClose = () => {
 <style scoped>
 .overlay {
   position: fixed;
+  z-index: 200;
   inset: 0;
   background: rgba(0, 0, 0, 0.5);
   display: flex;
@@ -255,7 +256,7 @@ const applyAndClose = () => {
   background: var(--color-background-mute);
   border-radius: 8px;
   width: 30rem; /* ERROR-FIX responsive */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 .filter-modal-header {

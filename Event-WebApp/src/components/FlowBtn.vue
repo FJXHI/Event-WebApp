@@ -14,6 +14,7 @@
 <style scoped>
 .flow-btn {
     position: absolute;
+    z-index: 100;
     bottom: 1rem;
     right: 1rem;
     padding: 0.5rem 1.5rem;
