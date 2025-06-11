@@ -1,4 +1,7 @@
 // Event-Webapp/Public/firebase-messaging-sw.js
+// ERROR-FIX: Browser dont find firebase-sw.js file. 
+// Solution: Hosting File direct on fjxhi.github.io
+
 importScripts('https://www.gstatic.com/firebasejs/11.9.0/firebase-app-compat.js');
 importScripts('https://www.gstatic.com/firebasejs/11.9.0/firebase-messaging-compat.js');
 
@@ -14,7 +17,6 @@ const firebaseConfig = {
   appId: import.meta.env.VITE_FIREBASE_APP_ID,
   measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };*/
-
 
 const firebaseConfig = {
   apiKey: "AIzaSyAPW1bXotTgbEdA5szLIuPCwR_64rTCDZg",
