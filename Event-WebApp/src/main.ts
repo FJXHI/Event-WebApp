@@ -88,6 +88,22 @@ serviceWorkerRegistrationPromise
   });
 */
 
+// Receive messages when the app is in the foreground
+onMessage(messaging, (payload) => {
+  console.log('Received message:', payload);
+});
+
+// Get FCM registration token
+getToken(messaging, { vapidKey: import.meta.env.VITE_FIREBASE_VAPID_KEY }).then((currentToken) => {
+  if (currentToken) {
+    console.log('FCM Token:', currentToken);
+  } else {
+    console.log('No registration token available. Request permission to generate one.');
+  }
+}).catch((err) => {
+  console.log('An error occurred while retrieving token. ', err);
+});
+
 // Vue App Mounten
 app.use(i18n);
 app.use(router);
