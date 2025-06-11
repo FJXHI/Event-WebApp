@@ -22,7 +22,11 @@
     <br />
     <ColorPalette class="pad" />
     <BadgeAuthor position="fixed"/>
-    
+    <div class="pad">
+      <p>Build Time: {{ buildDate }}</p>
+      <p v-if="fcmToken">FCM Token: {{ fcmToken }}</p>
+    <p v-else>FCM Token: {{ $t('loading') }}</p>
+    </div>
   </div>
 </template>
 
@@ -31,8 +35,18 @@ import LangSwitch from '@/components/LangSwitch.vue';
 import BadgeAuthor from "@/components/BadgeAuthor.vue";
 import ColorPalette from "@/components/DebugColorPalette.vue";
 import DarkModeBtn from '@/components/DarkModeBtn.vue';
-
+import { storeToRefs } from 'pinia';
+import { useMessagingStore } from '@/scripts/useMessagingStore';
 import { ref } from 'vue';
+
+const messagingStore = useMessagingStore();
+const { fcmToken } = storeToRefs(messagingStore);
+
+const buildDate = new Intl.DateTimeFormat('de-DE', {
+  dateStyle: 'medium',
+  timeStyle: 'short',
+}).format(new Date(__BUILD_DATE__));
+
 
 const clearFavorites = (type: string): void => {
   if(type == 'all') {

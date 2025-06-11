@@ -1,13 +1,17 @@
 // src/main.ts
 import { createApp } from 'vue';
 import App from './App.vue';
+import { createPinia } from 'pinia';
 import i18n from './scripts/i18n.js';
+import { useMessagingStore } from './scripts/useMessagingStore';
 import { messaging, onMessage, getToken } from './scripts/firebase';
 import './assets/main.css';
 import router from './router';
 import { baseUrl, applyTheme } from './scripts/functions.ts';
 
 const app = createApp(App);
+const pinia = createPinia();
+app.use(pinia);
 
 // Logic for dark mode
 const storedTheme = localStorage.getItem('theme');
@@ -17,6 +21,10 @@ const theme = storedTheme === 'light' || storedTheme === 'dark' || storedTheme =
   : 'system';
 
 applyTheme(theme);
+
+const messagingStore = useMessagingStore();
+
+
 
 /*
 // ----- Service Worker registriation (Important) -----
@@ -94,9 +102,11 @@ onMessage(messaging, (payload) => {
 });
 
 // Get FCM registration token
+
 getToken(messaging, { vapidKey: import.meta.env.VITE_FIREBASE_VAPID_KEY }).then((currentToken) => {
   if (currentToken) {
     console.log('FCM Token:', currentToken);
+    messagingStore.setToken(currentToken);
   } else {
     console.log('No registration token available. Request permission to generate one.');
   }
