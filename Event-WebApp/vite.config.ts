@@ -25,10 +25,10 @@ export default defineConfig({
     },
 
     manifest: {
-      name: 'Kosmos 2025',
-      short_name: 'Kosmos',
-      description: 'Inoffizielle WebApp für Kosmos 2025',
-      theme_color: '#ffffff',
+      name: 'Eventa',
+      short_name: 'Event',
+      description: 'Demo Event-WebApp',
+      theme_color: '#e5ba8b',
     },
 
     injectManifest: {
