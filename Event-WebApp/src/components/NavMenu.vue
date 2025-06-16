@@ -13,7 +13,7 @@
         <IconSearch class="icon-size"/>
       </button>
       <button class="topnav-btn" v-if="showFavQuery" @click="openFav">
-        <IconHeart class="icon-size"/>
+        <IconHeart :fill="isFav ? 'red' : 'white'" class="icon-size" />
       </button>
       <router-link v-if="showFav" to="/favorites" class="topnav-btn">
         <IconHeart class="icon-size"/>
@@ -56,6 +56,7 @@ import IconGeo from '@/components/icons/IconGeo.vue'
 import IconInfo from '@/components/icons/IconInfo.vue'
 import IconMap from '@/components/icons/IconMap.vue'
 import IconHeart from './icons/IconHeart.vue';
+import IconHeartFav from './icons/IconHeartFav.vue';
 import IconList from './icons/IconList.vue';
 import IconArrowLeft from './icons/IconArrowLeft.vue';
 import IconSearch from './icons/IconSearch.vue';
@@ -72,6 +73,7 @@ const goBack = () => {
 
 const search = computed(() => route.query.search ?? 'false')
 const fav = computed(() => route.query.fav ?? 'false')
+const isFav = computed(() => fav.value === 'true');
 
 function openSearch() {
   const newStatus = search.value === 'false' ? 'true' : 'false';
@@ -85,7 +87,7 @@ function openSearch() {
 
 function openFav() {
   const newStatus = fav.value === 'false' ? 'true' : 'false';
-  if (newStatus === 'true') {
+  if (newStatus === 'true') { 
     router.replace({ query: { ...route.query, fav: newStatus } });
   } else {
     const { fav, ...rest } = route.query; 

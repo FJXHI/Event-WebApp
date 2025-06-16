@@ -3,9 +3,13 @@
 
 import { ref } from 'vue';
 import type { Ref } from 'vue';
+import { useRoute, useRouter } from 'vue-router'
+import { useI18n } from 'vue-i18n';
+import { colorPalette } from './config'; // List of colors for TagLabel
 
 //BaseURL for routing
 export const baseUrl = import.meta.env.BASE_URL;
+
 
 // object to store the filters for the events
 export const eventFilters = ref({
@@ -20,6 +24,7 @@ export const eventFilters = ref({
     performanceIDs: [] as string[],
   });
 
+
 // Change Theme Mode (dark/light/system)
 export function applyTheme(theme: 'light' | 'dark' | 'system') {
     localStorage.setItem('theme', theme)
@@ -30,6 +35,7 @@ export function applyTheme(theme: 'light' | 'dark' | 'system') {
     document.documentElement.classList.toggle('dark', isDark)
 }
 
+
 // Get the Name of the Act from the ID
 export const getActNames = (actsArr: (number | string)[] = [], acts: Ref<any[]>): string => {
     return actsArr
@@ -37,11 +43,13 @@ export const getActNames = (actsArr: (number | string)[] = [], acts: Ref<any[]>)
         .join(', ');
 };
 
+
+// Capitalize a string
 export const capitalize = (str: string) => str.charAt(0).toUpperCase() + str.slice(1);
+
 
 // Function to get the Color for a Tag (string)
 // This function generates a color based on the tag name using a hash function
-import { colorPalette } from './config';
 export function getColorForTag(name: string): string {
     const normalized = name.toLowerCase()
     let hash = 0
@@ -150,6 +158,7 @@ export function formatDateTime(dateTimeString: string, formatType = 'Date Time',
     return new Intl.DateTimeFormat(locale, options).format(date);
 }
 
+
 // Function to parse date ignoring timezone
 export function parseDateIgnoringTimezone(dateTimeString: string): Date {
     const [datePart, timePartRaw] = dateTimeString.split('T');
@@ -166,13 +175,13 @@ export function parseDateIgnoringTimezone(dateTimeString: string): Date {
   }
   
 
-
 // get favorite items from local storage
 export function getFavoriteItems(itemKey: string, itemData: any[]): any[] {
     const favoriteIds = JSON.parse(localStorage.getItem(itemKey) || '[]');
     return itemData.filter(item => favoriteIds.includes(item.id.toString()));
   }
-  
+
+
 // render string for Subtext in the favorites page
 export function getFavoriteSubtext(count: number): string {
     if (count === 0) return 'Keine Favoriten';
@@ -180,16 +189,46 @@ export function getFavoriteSubtext(count: number): string {
     return `${count} Favoriten`;
 }
 
+
 // count favorites with i18n support
-import { useI18n } from 'vue-i18n';
 export function getFavoriteSubtext2(count: number): string {
-    const { t } = useI18n(); // Zugriff auf i18n-Funktion
+    const { t } = useI18n(); // access the i18n instance
 
     if (count === 0) {
-    return t('count-favorites.none');  // Übersetzung für "Keine Favoriten"
+    return t('count-favorites.none');  // Transation for "No Favorites"
     }
     if (count === 1) {
-    return t('count-favorites.one');  // Übersetzung für "1 Favorit"
+    return t('count-favorites.one');  // Transation for "one Favorites"
     }
-    return t('count-favorites.many', { count });  // Übersetzung für "x Favoriten"
+    return t('count-favorites.many', { count });  // Transation for "more Favorites"
+}
+
+
+
+export function useScrollToDate() {
+  const route = useRoute()
+  const router = useRouter()
+
+  function scrollToDate(targetDate: string) {
+    // Update URL hash (without new History Entry)
+    router.replace({
+      hash: `#${targetDate}`,
+      query: { ...route.query },
+    })
+
+    // Check the current View
+    const view = route.query.view ?? 'list';
+    const containerSelector = view === 'list' ? '.schedule-list' : '.schedule-table'
+    const visibleContainer = document.querySelector(containerSelector)
+
+    const el = visibleContainer?.querySelector(`[id='${targetDate}']`)
+    console.log(`Scroll to ${targetDate} in ${view}`)
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
+
+  return {
+    scrollToDate,
+  }
 }

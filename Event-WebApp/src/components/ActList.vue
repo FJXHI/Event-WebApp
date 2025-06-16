@@ -43,7 +43,8 @@
           <FavoriteButton :itemId="String(act.id)" itemType="act" class="list-item-fav-btn" />
         </li>
       </ul>
-      <NoEntries v-else-if="favOnly && acts.length > 0" type="favorites" />
+      <!--<NoEntries v-else-if="favOnly && acts.length > 0" type="favorites" />-->
+      <NoEntries v-else-if="favOnly" type="favorites" />
       <NoEntries v-else type="acts" />
     </div>
   </div>
@@ -102,8 +103,11 @@ const updateFilters = (newFilters: any) => {
 const filteredActs = computed(() => {
   if (!acts.value || acts.value.length === 0) return []; // If acts are not loaded yet, return empty array
 
-  let results = acts.value; // show all acts if no filter is set
+  if (favOnly.value && (!props.filterID || props.filterID.length === 0)) {
+    return [];
+  }
 
+  let results = acts.value; // show all acts if no filter is set
   
   // filter by filterID prop (for Fav)
   if (props.filterID && props.filterID.length > 0) {

@@ -3,13 +3,15 @@
  
 <template>
   <button @click="toggleFavorite" :class="{ 'favorited': isFavorite }">
-    <IconHeart :fill="isFavorite ? 'red' : 'white'" />
+    <!--<IconHeart :fill="isFavorite ? 'red' : 'white'" />-->
+    <IconFavHeart :is-filled="isFavorite" />
   </button>
 </template>
 
+
 <script setup lang="ts">
 import { ref, onMounted } from 'vue';
-import IconHeart from '@/components/icons/IconHeart.vue';
+import IconFavHeart from '@/components/icons/IconHeartFav.vue';
 
 // Define props with TypeScript
 const props = defineProps<{
@@ -59,24 +61,21 @@ onMounted(() => {
 </script>
 
 <style scoped>
-/* ERROR-FIX Improve Style */
-
 button {
-  background-color: #007bff; /* Blue */
-  color: white;
-  padding: 10px;
-  border: 2px solid transparent;
-  border-radius: 5px;
+  background-color: transparent;
+  padding: 4px;
+  border: none;
+  border-radius: 15px;
   cursor: pointer;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 button:hover {
-  background-color: #0056b3; /* Darker blue */
-}
-
-button.favorited {
-  background-color: white;
-  border-color: red; /* Red border when favorited */
+  background-color: #f0f0f0;
 }
 
 button:focus {
@@ -84,6 +83,8 @@ button:focus {
 }
 
 button svg {
-  transition: fill 0.3s ease; /* Smooth transition for heart color */
+  width: 26px;
+  height: 26px;
+  transition: fill 0.3s ease, stroke 0.3s ease;
 }
 </style>

@@ -9,7 +9,6 @@
     <router-view class="router-view"/>
     <PopupModal />
     
-    <PWABadge />
     <footer class="app-footer">
     </footer>
   </div>
@@ -21,7 +20,6 @@ import { useRoute } from 'vue-router';
 import NavMenu from './components/NavMenu.vue';
 import PopupModal from '@/components/PopupModal.vue';
 import PopupMessage from '@/components/PopupMessage.vue';
-import PWABadge from '@/components/PWABadge.vue';
 
 const route = useRoute();
 const currentPage = computed(() => {

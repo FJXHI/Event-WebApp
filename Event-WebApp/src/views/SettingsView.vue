@@ -24,7 +24,11 @@
     <BadgeAuthor position="fixed"/>
     <div class="pad">
       <p>Build Time: {{ buildDate }}</p>
-      <p v-if="fcmToken">FCM Token: {{ fcmToken }}</p>
+      <!--<p v-if="fcmToken">FCM Token: {{ fcmToken }}</p>-->
+      <div v-if="fcmToken" >
+        <p class="fcm-token-label" @click="copyToken">FCM Token: {{ fcmToken }}</p>
+        <!--<div v-if="copied" class="show-up">{{ $t('copied') }}</div>--><!--ERROR-FIX: Copy Animation-->
+      </div>
     <p v-else>FCM Token: {{ $t('loading') }}</p>
     </div>
   </div>
@@ -47,6 +51,17 @@ const buildDate = new Intl.DateTimeFormat('de-DE', {
   timeStyle: 'short',
 }).format(new Date(__BUILD_DATE__));
 
+const copied = ref(false)
+const copyToken = async () => {
+  try {
+    await navigator.clipboard.writeText(fcmToken.value)
+    console.log('Token copied to clipboard.')
+    copied.value = true
+    setTimeout(() => (copied.value = false), 2000)
+  } catch (err) {
+    console.error('Copy failed', err)
+  }
+}
 
 const clearFavorites = (type: string): void => {
   if(type == 'all') {
@@ -56,7 +71,7 @@ const clearFavorites = (type: string): void => {
     alert('Alle Favoriten wurden gelöscht');
     return;
   } else {
-    localStorage.removeItem(type);  // Löscht Favoriten für den jeweiligen Typ
+    localStorage.removeItem(type);  // Delete specific type of favorites
     alert(`${type} Favoriten wurden gelöscht`);
   }
 };
@@ -70,6 +85,10 @@ function clearAllData() {
 </script>
 
 <style scoped>
-
+.fcm-token-label {
+  overflow-wrap: break-word;
+  width: 95%;
+  cursor: pointer;
+}
 
 </style>

@@ -2,9 +2,14 @@
 <!-- List of performances grouped by date and time -->
 
 <template>
-  <div class="scroll-head full-height">
+  <div class="scroll-head schedule-list full-height">
     <div class="scroll-y-area">
-      <FlowBtn class="flow-btn" @click="FlowBtnClick">{{ $t('now')}}</FlowBtn>
+      <FlowBtn 
+        v-if="filteredPerformances.length > 1"
+        class="flow-btn" 
+        @click="FlowBtnClick">
+        {{ $t('now')}}
+      </FlowBtn>
       <NoEntries v-if="Object.keys(groupedByDateAndTime).length === 0" type="event"/>
       <div v-for="(timeGroups, date, index) in groupedByDateAndTime" :key="date" class="date-group">
         <DateHead
@@ -22,7 +27,12 @@
           </h3>
           
           <ul class="list-item-ul">
-            <li v-for="performance in performances" :key="performance.id" class="list-item-obj">
+            <!--<li v-for="performance in performances" :key="performance.id" class="list-item-obj">-->
+            <li
+              v-for="performance in performances"
+              :key="performance.id"
+              :class="['list-item-obj', { 'performance-past': isPastPerformance(performance) }]"
+            >
               <router-link
                 :to="`/event/${performance['id-name']?.trim() || performance.id}`"
                 class="list-item-link"
@@ -70,7 +80,7 @@
 
 <script setup lang="ts">
 import { computed, ref, nextTick } from 'vue';
-import { formatDateTime, getActNames, capitalize, parseDateIgnoringTimezone } from '@/scripts/functions';
+import { formatDateTime, getActNames, capitalize, parseDateIgnoringTimezone, useScrollToDate } from '@/scripts/functions';
 import { useEventData } from '@/scripts/useEventData';
 import FavoriteButton from '@/components/FavBtn.vue';
 import TagLabel from '@/components/TagLabel.vue';
@@ -86,16 +96,14 @@ const { t } = useI18n();
 
 const router = useRouter()
 
+// hash-link for date navigation
+const { scrollToDate } = useScrollToDate()
+
+
 const sortedDateList = computed(() =>
   Object.keys(groupedByDateAndTime.value).sort()
 );
 
-// hash-link for date navigation
-function scrollToDate(targetDate: string) {
-  router.replace({ hash: `#${targetDate}` }) // replace the URL, no new history entry
-  const el = document.getElementById(targetDate);
-  if (el) el.scrollIntoView({ behavior: 'smooth' });
-}
 
 
 const { performances, acts, stages } = useEventData();
@@ -255,13 +263,13 @@ function FlowBtnClick() {
 
 // Test setup for scrollToNextUpcomingPerformance
 const testNow = ref<Date | null>(null);
-testNow.value = new Date('2025-03-21T21:00:00');
+testNow.value = new Date('2025-07-25T17:00:00');
 
 function scrollToNextUpcomingPerformance() {
   const now = testNow.value ?? new Date();
 
   const upcoming = filteredPerformances.value
-    .filter(p => parseDateIgnoringTimezone(p.start_time).getTime() > now.getTime())
+    .filter(p => parseDateIgnoringTimezone(p.start_time).getTime() >= now.getTime())
     .sort((a, b) => parseDateIgnoringTimezone(a.start_time).getTime() - parseDateIgnoringTimezone(b.start_time).getTime());
 
   if (upcoming.length === 0) {
@@ -282,6 +290,11 @@ function scrollToNextUpcomingPerformance() {
       console.warn("Dont find Scroll-Target for:", dateKey, timeKey);
     }
   });
+}
+
+function isPastPerformance(perf: Performance): boolean {
+  const now = testNow.value ?? new Date();
+  return parseDateIgnoringTimezone(perf.end_time).getTime() < now.getTime();
 }
 
 </script>
@@ -325,6 +338,11 @@ function scrollToNextUpcomingPerformance() {
 .list-item-tags span {
   margin-right: 0.4rem;
   
+}
+
+.performance-past {
+  opacity: 0.75;
+  background-color: var(--list-past);
 }
 
 </style>

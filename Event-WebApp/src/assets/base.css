@@ -83,6 +83,7 @@
   --line-soft: var(--vt-body-line);
   --list-group: var(--vt-body-line);
   --list-group-text: var(--vt-c-black);
+  --list-past: #f2f2f2;
 
   --bg-body-hover: var(--vt-c-white-soft);
 
@@ -144,6 +145,7 @@
   --line-soft: var(--vt-c-text-dark-2);
   --list-group: var(--vt-c-black-soft);
   --list-group-text: var(--vt-c-white-mute);
+  --list-past: #444;
   --bg-body-hover: var(--vt-c-wight-soft);  
   
   --home-title: var(--vt-theme-1-text);

@@ -27,19 +27,12 @@ import ToggleViewButton from '@/components/SwitchView.vue';
 import ScheduleTableItem from "@/components/ScheduleTableItem.vue";
 import DateHead from '@/components/DateHead.vue';
 import { dayStartTime } from '@/scripts/config.ts';
-import { parseDateIgnoringTimezone, formatDateTime } from '@/scripts/functions.ts';
+import { parseDateIgnoringTimezone, formatDateTime, useScrollToDate } from '@/scripts/functions.ts';
 import { useRouter } from 'vue-router';
 
 const router = useRouter();
 
-function scrollToDate(targetDate: string) {
-    router.replace({ 
-        hash: `#${targetDate}`,
-        query: { ...router.currentRoute.value.query},
-     }) // replace to avoid adding to history
-    const el = document.getElementById(targetDate);
-    if (el) el.scrollIntoView({ behavior: 'smooth' });
-}
+const { scrollToDate } = useScrollToDate()
 
 const { performances } = useEventData();
 
@@ -97,29 +90,5 @@ const days2 = computed<string[]>(() => {
 </script>
 
 <style scoped>
-.date-nav-container {
-  display: grid;
-  grid-template-columns: 2.5rem auto 2.5rem; /* feste Breite für Buttons */
-  align-items: center;
-  justify-content: center;
-}
-
-.head-date {
-  font-size: 1.5rem;
-  text-align: center;
-}
-
-.nav-arrow {
-  width: 2.5rem;
-  font-size: 1.2rem;
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: var(--list-group-text);
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 </style>
