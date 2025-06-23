@@ -62,7 +62,8 @@ onMounted(() => {
 
 <style scoped>
 button {
-  background-color: transparent;
+  /* background-color: transparent; */
+  background-color: var(--color-background);
   padding: 4px;
   border: none;
   border-radius: 15px;

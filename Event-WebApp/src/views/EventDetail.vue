@@ -35,6 +35,7 @@
         <OvalLink :link="'/location/' + (performance.stage['id-name']?.trim() ? performance.stage['id-name'] : performance.stage.id)"
             :icon="IconGeo"
             :name="performance.stage.name" />
+        <Countdown :time="performance.start_time" />
       </div>
       <div class="detail-content">
         <div v-for="(act, index) in performance.acts" :key="act.id" class="list-item-obj">
@@ -48,6 +49,7 @@
           <FavoriteButton :itemId="String(act.id)" itemType="act" class="list-item-fav-btn" />
         </div>
         <div class="detail-content-text">
+          
           <p> {{ performance.description || 'Keine Beschreibung verfügbar' }}</p>
           <p v-if="performance?.url">
             <a :href="performance.url" target="_blank" rel="noopener noreferrer">
@@ -87,6 +89,7 @@ import OvalLink from '@/components/OvalLink.vue';
 import FavoriteButton from '@/components/FavBtn.vue';
 import type { Act, Stage, Performance } from '@/scripts/useEventData';
 import TagLabel from '@/components/TagLabel.vue';
+import Countdown from '@/components/Countdown.vue';
 
 const route = useRoute();
 const { performances, stages, acts, isLoading } = useEventData();

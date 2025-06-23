@@ -23,6 +23,7 @@
       <div class="detail-title">
         <h3>{{ act.name }}</h3>
         <h4 v-if="act.subname">{{ act.subname }}</h4>
+        <Countdown :time="nextPerformance.start_time" />
       </div>
     </div>
 
@@ -72,12 +73,13 @@
 <script setup lang="ts">
 import { useRoute } from 'vue-router';
 import { computed } from 'vue';
-import { baseUrl, eventFilters } from '@/scripts/functions';
+import { baseUrl, eventFilters, getNextPerformance } from '@/scripts/functions';
 import { useEventData } from '@/scripts/useEventData';
 import ScheduleListItem from '@/components/ScheduleListItem.vue';
 import SocialMediaLink from '@/components/SocialMediaLink.vue';
 import FavoriteButton from '@/components/FavBtn.vue';
 import TagLabel from '@/components/TagLabel.vue';
+import Countdown from '@/components/Countdown.vue';
 
 const route = useRoute();
 const { acts, performances, stages } = useEventData();
@@ -105,6 +107,11 @@ const act = computed(() => {
     })),
   };
 });
+
+const nextPerformance = computed(() =>
+  act.value ? getNextPerformance(act.value.performances) : null
+);
+
 </script>
 
 <style>

@@ -22,6 +22,7 @@
     </div>
     <div class="detail-content full-height">
       <div class="detail-content-text">
+        <Countdown :time="nextPerformance.start_time" />
         <p>{{ stage.description || 'Keine Beschreibung verfügbar' }}</p>
         <p v-if="stage?.url">
           <a :href="stage.url" target="_blank" rel="noopener noreferrer">{{ stage.url.replace(/^(https?:\/\/)?(www\.)?/, '') }}
@@ -50,13 +51,14 @@
 <script setup lang="ts">
 import { useRoute } from 'vue-router';
 import { ref, computed } from 'vue';
-import { baseUrl, eventFilters, formatAddress } from '@/scripts/functions';
+import { baseUrl, eventFilters, formatAddress, getNextPerformance  } from '@/scripts/functions';
 import { useEventData } from '@/scripts/useEventData';
 import IconGeo from '@/components/icons/IconGeo.vue';
 import OvalLink from '@/components/OvalLink.vue';
 import ScheduleListItem from '@/components/ScheduleListItem.vue';
 import FavoriteButton from '@/components/FavBtn.vue';
 import TagLabel from '@/components/TagLabel.vue';
+import Countdown from '@/components/Countdown.vue';
 
 const route = useRoute();
 const { stages, performances, acts } = useEventData();
@@ -81,6 +83,10 @@ const stage = computed(() => {
 
   return null;
 });
+
+const nextPerformance = computed(() =>
+  stage.value ? getNextPerformance(stage.value.performances) : null
+);
 
 </script>
 

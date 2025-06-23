@@ -232,3 +232,13 @@ export function useScrollToDate() {
     scrollToDate,
   }
 }
+
+// Function to get the next performance from a list of performances
+export function getNextPerformance<T extends { start_time: string | Date }>(performances: T[]): T | null {
+    const now = new Date();
+    return (
+      performances
+        ?.filter(p => new Date(p.start_time) > now)
+        .sort((a, b) => new Date(a.start_time).getTime() - new Date(b.start_time).getTime())[0] || null
+    );
+  }
