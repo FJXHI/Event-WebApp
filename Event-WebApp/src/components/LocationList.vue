@@ -8,7 +8,9 @@
       <FilterMenu
         v-if="showFilterMenu"
         :showStageTypeFilter="true"
-        :initial-stage-types="activeFilters.stageTypes"  
+        :showStageFeatureFilter="true"
+        :initial-stage-types="activeFilters.stageTypes"
+        :initial-stage-features="activeFilters.stageFeatures"  
         @apply="updateFilters"
         @close="showFilterMenu = false"
       />
@@ -29,8 +31,8 @@
               <strong class="list-item-name">{{ stage.name }}</strong>
               <span class="list-item-tags">
                 <TagLabel 
-                  v-if="stage.type"
-                  :name=stage.type
+                  v-for="feature in stage.features"
+                  :name=feature
                   class="tag-label-item TagLabel"
                 />
               </span>
@@ -88,11 +90,13 @@ const props = defineProps<{
 }>();
 
 const activeFilters = ref({
-  stageTypes: [],        
+  stageTypes: [],
+  stageFeatures: [],
 });
 
 const updateFilters = (newFilters: any) => {
   activeFilters.value.stageTypes = newFilters.stageTypes || [];
+  activeFilters.value.stageFeatures = newFilters.stageFeatures || [];
 };
 
 // Filter stages by filterID and search query
@@ -113,6 +117,13 @@ const filteredStages = computed(() => {
   if (activeFilters.value.stageTypes.length > 0) {
     results = results.filter(stage =>
       stage.type && activeFilters.value.stageTypes.includes(stage.type)
+    );
+  }
+
+  // filter by stageFeatures
+  if (activeFilters.value.stageFeatures.length > 0) {
+    results = results.filter(stage =>
+      stage.features?.some((f: string) => activeFilters.value.stageFeatures.includes(f))
     );
   }
 

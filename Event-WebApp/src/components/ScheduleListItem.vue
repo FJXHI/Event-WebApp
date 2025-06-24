@@ -80,7 +80,7 @@
 
 <script setup lang="ts">
 import { computed, ref, nextTick } from 'vue';
-import { formatDateTime, getActNames, capitalize, parseDateIgnoringTimezone, useScrollToDate } from '@/scripts/functions';
+import { formatDateTime, getActNames, capitalize, useScrollToDate } from '@/scripts/functions';
 import { useEventData } from '@/scripts/useEventData';
 import FavoriteButton from '@/components/FavBtn.vue';
 import TagLabel from '@/components/TagLabel.vue';
@@ -263,14 +263,14 @@ function FlowBtnClick() {
 
 // Test setup for scrollToNextUpcomingPerformance
 const testNow = ref<Date | null>(null);
-testNow.value = new Date('2025-07-25T17:00:00');
+testNow.value = new Date('2025-07-25T17:01:00');
 
 function scrollToNextUpcomingPerformance() {
   const now = testNow.value ?? new Date();
 
   const upcoming = filteredPerformances.value
-    .filter(p => parseDateIgnoringTimezone(p.start_time).getTime() >= now.getTime())
-    .sort((a, b) => parseDateIgnoringTimezone(a.start_time).getTime() - parseDateIgnoringTimezone(b.start_time).getTime());
+    .filter(p => new Date(p.start_time).getTime() >= now.getTime())
+    .sort((a, b) => new Date(a.start_time).getTime() - new Date(b.start_time).getTime());
 
   if (upcoming.length === 0) {
     console.log('No upcoming performances found.');
@@ -294,7 +294,7 @@ function scrollToNextUpcomingPerformance() {
 
 function isPastPerformance(perf: Performance): boolean {
   const now = testNow.value ?? new Date();
-  return parseDateIgnoringTimezone(perf.end_time).getTime() < now.getTime();
+  return new Date(perf.end_time).getTime() < now.getTime();
 }
 
 </script>

@@ -2,8 +2,9 @@ import csv
 import json
 
 # Configuration
-CSV_FILE = 'JSON-Script/stages.csv'
-JSON_FILE = 'JSON-Script/stages.json'
+CSV_FILE = 'JSON-Script/HWstages.csv'
+# JSON_FILE = 'JSON-Script/stages.json'
+JSON_FILE = 'JSON-Script/HWstages.json'
 
 
 def parse_location(cell):
@@ -42,7 +43,7 @@ def convert_stages_csv_to_json(csv_file, json_file):
                 "image": row.get("image", "").strip() or None,
                 "visible": row.get("visible", "false").strip().lower() == "true",
                 "type": row.get("type", "").strip(),
-                "capacity": int(row.get("capacity", 0)),
+                # "capacity": int(row.get("capacity", 0)),
                 "location": parse_location(row.get("location", "")),
                 "address": {
                     "street": row.get("add-street", "").strip(),

@@ -3,8 +3,9 @@ import json
 import os
 
 # Configuration
-CSV_FILE = 'JSON-Script/acts.csv'
-JSON_FILE = 'JSON-Script/acts.json'
+CSV_FILE = 'JSON-Script/HWacts.csv'
+# JSON_FILE = 'JSON-Script/acts.json'
+JSON_FILE = 'Event-WebApp/public/data/HWacts.json'
 
 def parse_tags(cell):
     # Parse tags from a cell string formatted as (name,visible) or just (name)
@@ -16,7 +17,7 @@ def parse_tags(cell):
         for pair in cell.strip().split('),('):
             clean = pair.strip('()')
             parts = list(map(str.strip, clean.split(',', 1)))
-            name = parts[0].capitalize()
+            name = parts[0]
             visible = True  # default
             if len(parts) == 2:
                 visible = parts[1].lower() == 'true'
@@ -47,6 +48,26 @@ def parse_weblinks(cell):
         print(f"Error parsing web links:", e)
     return links
 
+# Replace [ae], [oe], [ue], [AE], etc. with proper Umlauts
+def replace_umlauts(text):
+    if not isinstance(text, str):
+        return text
+    replacements = {
+        "[ae]": "ä",
+        "[oe]": "ö",
+        "[ue]": "ü",
+        "[AE]": "Ä",
+        "[OE]": "Ö",
+        "[UE]": "Ü",
+        "[sz]": "ß",
+        "[O-]": "Ø",
+        "[o-]": "ø",
+    }
+    for key, value in replacements.items():
+        text = text.replace(key, value)
+    return text
+
+
 def convert_acts_csv_to_json(csv_file, json_file):
     acts = []
 
@@ -61,11 +82,13 @@ def convert_acts_csv_to_json(csv_file, json_file):
             act = {
                 "id": int(row.get("id", 0)),
                 "id-name": row.get("id-name") or None,
-                "name": row.get("name", "").strip(),
+                #"name": row.get("name", "").strip(),
+                "name": replace_umlauts(row.get("name", "")),
                 "subname": row.get("subname", "").strip(),
                 "act-type": act_types,
                 # "short-description": None, # Not in use
-                "description": row.get("description", "").strip(),
+                #"description": row.get("description", "").strip(),
+                "description": replace_umlauts(row.get("description", "")),
                 "image": row.get("image", "").strip() or None,
                 "tags": tags,
                 "weblinks": weblinks

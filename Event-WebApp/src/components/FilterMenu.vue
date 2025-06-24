@@ -43,6 +43,21 @@
           </div>
         </div>
 
+        <!-- Stage Features -->
+        <div v-show="props.showStageFeatureFilter" class="filter-group">
+          <h3>{{ $t('Location-Features') }}</h3>
+          <div class="filter-button-group">
+            <TagLabel
+              v-for="feature in availableStageFeatures"
+              :key="feature"
+              :name="capitalize(feature)"
+              tag="button"
+              @click="toggleStageFeature(feature)"
+              :class="{ selected: selectedStageFeatures.includes(feature) }"
+            />
+          </div>
+        </div>
+
         <!-- Act-Tags -->
         <div v-show="props.showCategoryFilter" class="filter-group">
           <h3>{{ $t('kategorien') }}</h3>
@@ -127,6 +142,7 @@ const { stages, acts, performances } = useEventData();
 const props = defineProps({
   initialStages: { type: Array as () => number[], default: () => [] },
   initialStageTypes: { type: Array as () => string[], default: () => [] },
+  initialStageFeatures: { type: Array as () => string[], default: () => [] },
   initialCategories: { type: Array as () => string[], default: () => [] },
   initialActTypes: { type: Array as () => string[], default: () => [] },
   initialPerforTypes: { type: Array as () => string[], default: () => [] },
@@ -135,6 +151,7 @@ const props = defineProps({
 
   showStageFilter: { type: Boolean, default: false },
   showStageTypeFilter: { type: Boolean, default: false },
+  showStageFeatureFilter: { type: Boolean, default: false },
   showCategoryFilter: { type: Boolean, default: false },
   showActTypeFilter: { type: Boolean, default: false },
   showPerforTypeFilter: { type: Boolean, default: false },
@@ -144,6 +161,7 @@ const props = defineProps({
 // Reactive states
 const selectedStages = ref<number[]>([...props.initialStages.map(Number)]);
 const selectedStageTypes = ref([...props.initialStageTypes]);
+const selectedStageFeatures = ref([...props.initialStageFeatures]);
 const selectedCategories = ref([...props.initialCategories]);
 const selectedActTypes = ref([...props.initialActTypes]);
 const selectedPerforTypes = ref([...props.initialPerforTypes]);
@@ -158,6 +176,15 @@ const availableStageTypes = computed(() => {
     if (stage.type) typeSet.add(stage.type);
   });
   return Array.from(typeSet);
+});
+
+// Extract unique Stage-Features
+const availableStageFeatures = computed(() => {
+  const featureSet = new Set<string>();
+  stages.value.forEach((stage) => {
+    stage.features?.forEach((feature: string) => featureSet.add(feature));
+  });
+  return Array.from(featureSet);
 });
 
 // Extract unique Act-Tags
@@ -210,6 +237,7 @@ const toggleItem = <T>(list: T[], item: T) => {
 // Toggle functions
 const toggleStage = (stageID: number) => toggleItem(selectedStages.value, stageID);
 const toggleStageType = (type: string) => toggleItem(selectedStageTypes.value, type);
+const toggleStageFeature = (feature: string) => toggleItem(selectedStageFeatures.value, feature);
 const toggleCategory = (category: string) => toggleItem(selectedCategories.value, category);
 const toggleActType = (type: string) => toggleItem(selectedActTypes.value, type);
 const togglePerforType = (type: string) => toggleItem(selectedPerforTypes.value, type);
@@ -219,6 +247,7 @@ const togglePerformanceTag = (tag: string) => toggleItem(selectedPerformanceTags
 const resetFilters = () => {
   selectedStages.value = [];
   selectedStageTypes.value = [];
+  selectedStageFeatures.value = [];
   selectedCategories.value = [];
   selectedActTypes.value = [];
   selectedPerforTypes.value = [];
@@ -231,6 +260,7 @@ const applyAndClose = () => {
   emit('apply', {
     stages: selectedStages.value.map(String),
     stageTypes: selectedStageTypes.value,
+    stageFeatures: selectedStageFeatures.value,
     categories: selectedCategories.value,
     actTypes: selectedActTypes.value,
     perforTypes: selectedPerforTypes.value,

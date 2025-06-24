@@ -2,10 +2,20 @@
 <!-- display schedule in a table format with navigation -->
 
 <template>
-    <div class="schedule-table scroll-head full-height">    
+    <div class="schedule-table scroll-head full-height">
         <div class="btn-header">
-            <ToggleViewButton targetView="list" class="btn full"/>
+            <ToggleViewButton targetView="list" class="btn left"/>
+            <ToogleStageTypeButton
+                class="btn right"
+                :stageTypeFilter="stageTypeFilter"
+                @toggle="toggleStageType"
+            />
         </div>
+        <FlowBtn 
+            class="flow-btn" 
+            @click="FlowBtnClick">
+            {{ $t('now')}}
+        </FlowBtn>
         <div class="timetable scroll-y-area">
             <div v-for="(day, index) in days" :key="day" class="day-table">
                 <DateHead
@@ -14,33 +24,63 @@
                     :sortedDateList="days"
                     :scrollToDate="scrollToDate"
                 />
-                <ScheduleTableItem :date="day"/>
+                <!--<ScheduleTableItem 
+                    :date="day" 
+                    :stageTypeFilter="stageTypeFilter"
+                    :nowLineRef="nowLineRef"
+                />--><!--ERROR-FIX nowLine scroll dont work-->
+                <ScheduleTableItem 
+                    :date="day" 
+                    :stageTypeFilter="stageTypeFilter"
+                />
             </div>
         </div>
     </div>
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue';
+import { ref, computed } from 'vue';
 import { useEventData } from '@/scripts/useEventData.ts';
 import ToggleViewButton from '@/components/SwitchView.vue';
+import ToogleStageTypeButton from '@/components/SwitchViewType.vue';
+import FlowBtn from '@/components/FlowBtn.vue';
 import ScheduleTableItem from "@/components/ScheduleTableItem.vue";
 import DateHead from '@/components/DateHead.vue';
 import { dayStartTime } from '@/scripts/config.ts';
-import { parseDateIgnoringTimezone, formatDateTime, useScrollToDate } from '@/scripts/functions.ts';
+import { formatDateTime, useScrollToDate } from '@/scripts/functions.ts';
 import { useRouter } from 'vue-router';
 
 const router = useRouter();
-
 const { scrollToDate } = useScrollToDate()
-
 const { performances } = useEventData();
+
+const nowLineRef = ref<HTMLElement | null>(null);
+
+//const stageTypeOptions = ['stage', 'workshop', 'all'];
+const stageTypeOptions = ['stage', 'all'];
+const stageTypeFilter = ref('stage');
+
+function FlowBtnClick() {
+    console.log('FlowBtnClick', nowLineRef.value);
+
+    if (nowLineRef.value) {
+        nowLineRef.value.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        nowLineRef.value.classList.add('highlight');
+        setTimeout(() => nowLineRef.value?.classList.remove('highlight'), 2000);
+    }
+}
+
+
+const toggleStageType = () => {
+  const currentIndex = stageTypeOptions.indexOf(stageTypeFilter.value);
+  stageTypeFilter.value = stageTypeOptions[(currentIndex + 1) % stageTypeOptions.length];
+};
 
 const days = computed<string[]>(() => {
     const shownDays = new Set<string>();
 
     performances.value.forEach(event => {
-        const eventDate = parseDateIgnoringTimezone(event.start_time);
+        const eventDate = new Date(event.start_time);
         const eventHour = eventDate.getHours();
 
         // Normaly, the event counts as the day it starts
@@ -64,7 +104,7 @@ const days2 = computed<string[]>(() => {
     // extract unique days from events
     const uniqueDays = new Set<string>(
         performances.value.map(event => 
-            parseDateIgnoringTimezone(event.start_time).toLocaleDateString('en-CA')
+            new Date(event.start_time).toLocaleDateString('en-CA')
         )
     );
 
@@ -72,7 +112,7 @@ const days2 = computed<string[]>(() => {
     const additionalDays = new Set<string>();
 
     performances.value.forEach(event => {
-        const eventDate = parseDateIgnoringTimezone(event.start_time);
+        const eventDate = new Date(event.start_time);
         const eventHour = eventDate.getHours();
         // Check if there are events after midnight (until dayStartTime) on the current day 
         if (eventHour >= 0 && eventHour < dayStartTime) {

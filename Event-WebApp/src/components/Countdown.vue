@@ -1,7 +1,6 @@
 <!-- Countdown.vue -->
-
 <template>
-  <div class="countdown">
+  <div class="countdown-box">
     <p v-if="targetTime">
       <strong>{{ countdown }}</strong>
     </p>
@@ -11,7 +10,6 @@
 
 <script setup lang="ts">
 import { ref, computed, onMounted, onUnmounted, watch } from 'vue';
-import { parseDateIgnoringTimezone } from '@/scripts/functions';
 
 const props = defineProps<{
   time?: string | Date | null;
@@ -21,14 +19,11 @@ const now = ref(new Date());
 
 const targetTime = computed(() => {
   if (!props.time) return null;
-
   if (typeof props.time === 'string') {
-    const parsed = parseDateIgnoringTimezone(props.time);
+    const parsed = new Date(props.time);
     return isNaN(parsed.getTime()) ? null : parsed;
   }
-  if (props.time instanceof Date) {
-    return props.time;
-  }
+  if (props.time instanceof Date) return props.time;
   return null;
 });
 
@@ -39,9 +34,8 @@ function pad(n: number): string {
 const countdown = computed(() => {
   if (!targetTime.value) return '';
   const diffMs = targetTime.value.getTime() - now.value.getTime();
-  if (diffMs <= 0) return 'NOW';
+  const totalSeconds = Math.max(0, Math.floor(diffMs / 1000)); // nie negativ
 
-  const totalSeconds = Math.floor(diffMs / 1000);
   const days = Math.floor(totalSeconds / (3600 * 24));
   const hours = Math.floor((totalSeconds % (3600 * 24)) / 3600);
   const minutes = Math.floor((totalSeconds % 3600) / 60);
@@ -71,9 +65,10 @@ watch(() => props.time, () => {
 </script>
 
 <style scoped>
-.countdown {
-  font-size: 1rem;
-  padding: 0.5rem;
+.countdown-box {
+  font-family: monospace;
+  font-size: 1.3rem;
+  text-align: center;
 }
 .error {
   color: red;

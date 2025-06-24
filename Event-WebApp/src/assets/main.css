@@ -31,10 +31,14 @@ button {
 
 /* Desktop styles */
 @media screen and (min-width: 1000px) {
+  html, body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-topnav); /* Farbe für den Bereich außerhalb von #app */
+  }
+
   #app {
-    /* For Style Debugging */
-    border-left: 15px solid purple;
-    border-right: 15px solid purple;
+    background-color: var(--color-background);
   }
 }
 

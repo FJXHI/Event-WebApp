@@ -14,15 +14,18 @@
       <div class="detail-title">
         <div class="detail-space2"></div>
         <h3>{{ stage.name }}</h3>
-        <p>{{ formatAddress(stage.address, 'noCountry') }}</p>
+        <!--<p>{{ formatAddress(stage.address, 'noCountry') }}</p>-->
       </div>
-      <OvalLink :link="{ name: 'map', query: { stage: stage.id }}"
-           :icon="IconGeo"
-           :name="stage.location.toString()" />
+      <OvalLink 
+        v-if="stage.location && stage.location.length === 2"  
+        :link="{ name: 'map', query: { stage: stage.id }}"
+        :icon="IconGeo"
+        :name="stage.location.toString()" />
+      <Countdown v-if="nextPerformance" :time="nextPerformance.start_time" />
     </div>
     <div class="detail-content full-height">
       <div class="detail-content-text">
-        <Countdown :time="nextPerformance.start_time" />
+        
         <p>{{ stage.description || 'Keine Beschreibung verfügbar' }}</p>
         <p v-if="stage?.url">
           <a :href="stage.url" target="_blank" rel="noopener noreferrer">{{ stage.url.replace(/^(https?:\/\/)?(www\.)?/, '') }}

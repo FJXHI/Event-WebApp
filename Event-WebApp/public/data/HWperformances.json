@@ -1,0 +1,1146 @@
+[
+  {
+    "id": 301,
+    "actsIDArr": [
+      111
+    ],
+    "stageID": 1,
+    "id-name": "base-do",
+    "name": "BASE am Donnerstag",
+    "description": "BASE Eine Stunde Zusammensein, zusammen SEIN, anhalten, Luft holen, Kraft tanken und Spiritualität teilen",
+    "start_time": "2025-07-24T18:00:00Z",
+    "end_time": "2025-07-24T19:00:00Z",
+    "date": "2025-07-24",
+    "status": "active",
+    "type": "spezial",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 302,
+    "actsIDArr": [
+      111
+    ],
+    "stageID": 1,
+    "id-name": "base-fr",
+    "name": "BASE am Freitag",
+    "description": "BASE Eine Stunde Zusammensein, zusammen SEIN, anhalten, Luft holen, Kraft tanken und Spiritualität teilen",
+    "start_time": "2025-07-25T18:00:00Z",
+    "end_time": "2025-07-25T19:00:00Z",
+    "date": "2025-07-25",
+    "status": "active",
+    "type": "spezial",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 303,
+    "actsIDArr": [
+      111
+    ],
+    "stageID": 1,
+    "id-name": "base-sa",
+    "name": "BASE am Samstag",
+    "description": "BASE Eine Stunde Zusammensein, zusammen SEIN, anhalten, Luft holen, Kraft tanken und Spiritualität teilen",
+    "start_time": "2025-07-26T18:00:00Z",
+    "end_time": "2025-07-26T19:00:00Z",
+    "date": "2025-07-26",
+    "status": "active",
+    "type": "spezial",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 304,
+    "actsIDArr": [],
+    "stageID": 1,
+    "id-name": "breakfest",
+    "name": "Bring & Share Frühstück",
+    "description": "Am Sonntag wollen wir gemeinsam frühastücken und dafür kannst Du gern alles mitbringen, was für Dich auf einem Brötchen nicht fehlen darf. Auch an den anderen Tagen kannst Du zur Frühastückszeit Brötchen erwerben.",
+    "start_time": "2025-07-27T07:00:00Z",
+    "end_time": "2025-07-27T08:30:00Z",
+    "date": "2025-07-27",
+    "status": "active",
+    "type": "spezial",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 305,
+    "actsIDArr": [
+      111
+    ],
+    "stageID": 1,
+    "id-name": "base-so",
+    "name": "BASE am Sonntag",
+    "description": "Eine Stunde Zusammensein, zusammen SEIN, anhalten, Luft holen, Kraft tanken und Spiritualität teilen.",
+    "start_time": "2025-07-27T08:30:00Z",
+    "end_time": "2025-07-27T10:30:00Z",
+    "date": "2025-07-27",
+    "status": "active",
+    "type": "spezial",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 306,
+    "actsIDArr": [
+      112
+    ],
+    "stageID": 2,
+    "id-name": "opening1",
+    "name": "Openingshow",
+    "description": "Openingshow",
+    "start_time": "2025-07-24T19:15:00Z",
+    "end_time": "2025-07-24T19:30:00Z",
+    "date": "2025-07-24",
+    "status": "active",
+    "type": "spezial",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 307,
+    "actsIDArr": [
+      112
+    ],
+    "stageID": 2,
+    "id-name": "opening2",
+    "name": "Openingshow",
+    "description": "Openingshow",
+    "start_time": "2025-07-25T19:15:00Z",
+    "end_time": "2025-07-25T19:30:00Z",
+    "date": "2025-07-25",
+    "status": "active",
+    "type": "spezial",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 308,
+    "actsIDArr": [
+      112
+    ],
+    "stageID": 2,
+    "id-name": "opening3",
+    "name": "Openingshow",
+    "description": "Openingshow",
+    "start_time": "2025-07-26T19:15:00Z",
+    "end_time": "2025-07-26T19:30:00Z",
+    "date": "2025-07-26",
+    "status": "active",
+    "type": "spezial",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 309,
+    "actsIDArr": [],
+    "stageID": 3,
+    "id-name": "poetry-slam",
+    "name": "Poetry Slam",
+    "description": "Unser Wohnzimmer-Team vergibt eine Wild Card für den Poetry Slam! Du wolltest schon immer deine eigenen Texte bei uns auf der Bühne präsentieren? Dann ist jetzt deine Chance! \\n Der Poetry Slam findet am Freitag, den 25.07.2025, um 17:00 Uhr im Wohnzimmer statt. Um teilzunehmen, solltest du zu diesem Zeitpunkt verfügbar sein und mindestens drei eigene Texte mitbringen. Ob du bereits Bühnenerfahrung hast oder zum ersten Mal auftrittst, spielt dabei keine Rolle. Wichtig ist nur: Deine Texte dürfen nicht gegen unsere Werte verstoßen. Wir bieten Rassismus, Homophobie, Sexismus und Diskriminierung keine Bühne. Wir behalten uns vor, deine Texte vorab einzusehen. \\n Wenn du die Wild Card ergattern möchtest, schreib uns gerne eine E-Mail an wohnzimmer@homeward-festival.de. \\n Sende uns deine Kontaktdaten, eine kurze Beschreibung der Themen deiner Texte und erzähle uns, warum gerade du die Wild Card bekommen solltest. Bewerbungsschluss ist der 06.07.2025. \\n Wir freuen uns auf deine Nachricht!",
+    "start_time": "2025-07-25T15:00:00Z",
+    "end_time": "2025-07-25T16:00:00Z",
+    "date": "2025-07-25",
+    "status": "active",
+    "type": "spezial",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 310,
+    "actsIDArr": [],
+    "stageID": 3,
+    "id-name": "karaoke",
+    "name": "Karaoke",
+    "description": "??? \\n Karaoke am Samstag Abend im Wohnzimmer",
+    "start_time": "2025-07-26T21:15:00Z",
+    "end_time": "2025-07-26T22:45:00Z",
+    "date": "2025-07-26",
+    "status": "active",
+    "type": "spezial",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 311,
+    "actsIDArr": [],
+    "stageID": 2,
+    "id-name": null,
+    "name": "Open Stage",
+    "description": "Open Stage, 3 DJ's",
+    "start_time": "2025-07-25T14:00:00Z",
+    "end_time": "2025-07-25T15:30:00Z",
+    "date": "2025-07-25",
+    "status": "active",
+    "type": "concert",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 411,
+    "actsIDArr": [
+      113
+    ],
+    "stageID": 1,
+    "id-name": null,
+    "name": "Workshop Fr I",
+    "description": "",
+    "start_time": "2025-07-25T08:30:00Z",
+    "end_time": "2025-07-25T10:00:00Z",
+    "date": "2025-07-25",
+    "status": "active",
+    "type": "workshop",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 412,
+    "actsIDArr": [
+      113
+    ],
+    "stageID": 11,
+    "id-name": null,
+    "name": "Selbstverteidigung",
+    "description": "Selbstverteidigung",
+    "start_time": "2025-07-25T08:30:00Z",
+    "end_time": "2025-07-25T10:00:00Z",
+    "date": "2025-07-25",
+    "status": "active",
+    "type": "workshop",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 413,
+    "actsIDArr": [
+      113
+    ],
+    "stageID": 3,
+    "id-name": null,
+    "name": "Klarheit statt Gedankenchaos",
+    "description": "Klarheit statt Gedankenchaos: innere Bedürfnisse erkennen und ihnen folgen",
+    "start_time": "2025-07-25T08:30:00Z",
+    "end_time": "2025-07-25T10:00:00Z",
+    "date": "2025-07-25",
+    "status": "active",
+    "type": "workshop",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 414,
+    "actsIDArr": [
+      113
+    ],
+    "stageID": 2,
+    "id-name": null,
+    "name": "DJ - Workshop",
+    "description": "DJ - Workshop",
+    "start_time": "2025-07-25T08:30:00Z",
+    "end_time": "2025-07-25T10:00:00Z",
+    "date": "2025-07-25",
+    "status": "active",
+    "type": "workshop",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 415,
+    "actsIDArr": [
+      113
+    ],
+    "stageID": 14,
+    "id-name": null,
+    "name": "open Hair",
+    "description": "open Hair",
+    "start_time": "2025-07-25T08:30:00Z",
+    "end_time": "2025-07-25T10:00:00Z",
+    "date": "2025-07-25",
+    "status": "active",
+    "type": "workshop",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 416,
+    "actsIDArr": [
+      113
+    ],
+    "stageID": 19,
+    "id-name": null,
+    "name": "Übungsfeld Liebe",
+    "description": "Übungsfeld Liebe",
+    "start_time": "2025-07-25T08:30:00Z",
+    "end_time": "2025-07-25T10:00:00Z",
+    "date": "2025-07-25",
+    "status": "active",
+    "type": "workshop",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 417,
+    "actsIDArr": [
+      113
+    ],
+    "stageID": 15,
+    "id-name": null,
+    "name": "Kinderkriegen und Glaubenskrisen",
+    "description": "Vom Kinderkriegen und Glaubenskrisen",
+    "start_time": "2025-07-25T08:30:00Z",
+    "end_time": "2025-07-25T10:00:00Z",
+    "date": "2025-07-25",
+    "status": "active",
+    "type": "workshop",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 418,
+    "actsIDArr": [
+      113
+    ],
+    "stageID": 18,
+    "id-name": null,
+    "name": "Kaffee rösten",
+    "description": "Kaffee rösten wie im 19. Jahrhundert",
+    "start_time": "2025-07-25T08:30:00Z",
+    "end_time": "2025-07-25T10:00:00Z",
+    "date": "2025-07-25",
+    "status": "active",
+    "type": "workshop",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 419,
+    "actsIDArr": [
+      113
+    ],
+    "stageID": 12,
+    "id-name": null,
+    "name": "Honigbiene",
+    "description": "Summ, Summ, Summ, Wunderwerk Honigbiene",
+    "start_time": "2025-07-25T08:30:00Z",
+    "end_time": "2025-07-25T10:00:00Z",
+    "date": "2025-07-25",
+    "status": "active",
+    "type": "workshop",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 420,
+    "actsIDArr": [
+      113
+    ],
+    "stageID": 16,
+    "id-name": null,
+    "name": "Familie mal anders",
+    "description": "Familie mal anders - Pflegekinder und ihr neues Zuhause",
+    "start_time": "2025-07-25T08:30:00Z",
+    "end_time": "2025-07-25T10:00:00Z",
+    "date": "2025-07-25",
+    "status": "active",
+    "type": "workshop",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 421,
+    "actsIDArr": [
+      113
+    ],
+    "stageID": 17,
+    "id-name": null,
+    "name": "Im Glauben wachsen",
+    "description": "Im Glauben wachsen und seine Zugänge zu Gott entdecken",
+    "start_time": "2025-07-25T08:30:00Z",
+    "end_time": "2025-07-25T10:00:00Z",
+    "date": "2025-07-25",
+    "status": "active",
+    "type": "workshop",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 422,
+    "actsIDArr": [
+      113
+    ],
+    "stageID": 1,
+    "id-name": null,
+    "name": "Musik hören. Musik fühlen.",
+    "description": "Musik hören. Musik fühlen.",
+    "start_time": "2025-07-25T08:30:00Z",
+    "end_time": "2025-07-25T10:00:00Z",
+    "date": "2025-07-25",
+    "status": "active",
+    "type": "workshop",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 423,
+    "actsIDArr": [
+      113
+    ],
+    "stageID": 3,
+    "id-name": null,
+    "name": "Workshop Fr II",
+    "description": "",
+    "start_time": "2025-07-25T11:30:00Z",
+    "end_time": "2025-07-25T13:30:00Z",
+    "date": "2025-07-25",
+    "status": "active",
+    "type": "workshop",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 424,
+    "actsIDArr": [
+      113
+    ],
+    "stageID": 3,
+    "id-name": null,
+    "name": "Workshop Sa I",
+    "description": "",
+    "start_time": "2025-07-26T08:30:00Z",
+    "end_time": "2025-07-26T10:00:00Z",
+    "date": "2025-07-26",
+    "status": "active",
+    "type": "workshop",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 425,
+    "actsIDArr": [
+      113
+    ],
+    "stageID": 3,
+    "id-name": null,
+    "name": "Workshop Sa II",
+    "description": "",
+    "start_time": "2025-07-26T11:30:00Z",
+    "end_time": "2025-07-26T13:30:00Z",
+    "date": "2025-07-26",
+    "status": "active",
+    "type": "workshop",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 426,
+    "actsIDArr": [
+      113
+    ],
+    "stageID": 22,
+    "id-name": null,
+    "name": "Feuerwehr",
+    "description": "Feuerwehr - Rettungsgasse oben",
+    "start_time": "2025-07-26T08:30:00Z",
+    "end_time": "2025-07-26T10:00:00Z",
+    "date": "2025-07-26",
+    "status": "active",
+    "type": "workshop",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 427,
+    "actsIDArr": [
+      113
+    ],
+    "stageID": 22,
+    "id-name": null,
+    "name": "Feuerwehr",
+    "description": "Feuerwehr - Rettungsgasse oben",
+    "start_time": "2025-07-26T11:30:00Z",
+    "end_time": "2025-07-26T13:30:00Z",
+    "date": "2025-07-26",
+    "status": "active",
+    "type": "workshop",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 501,
+    "actsIDArr": [
+      219
+    ],
+    "stageID": 2,
+    "id-name": null,
+    "name": "",
+    "description": "Zeit noch nicht Fest",
+    "start_time": "2025-07-24T16:30:00Z",
+    "end_time": "2025-07-24T17:00:00Z",
+    "date": "2025-07-24",
+    "status": "active",
+    "type": "concert",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 502,
+    "actsIDArr": [
+      202
+    ],
+    "stageID": 2,
+    "id-name": null,
+    "name": "",
+    "description": "Zeit noch nicht Fest",
+    "start_time": "2025-07-25T13:30:00Z",
+    "end_time": "2025-07-25T14:00:00Z",
+    "date": "2025-07-25",
+    "status": "active",
+    "type": "concert",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 503,
+    "actsIDArr": [
+      203
+    ],
+    "stageID": 2,
+    "id-name": null,
+    "name": "",
+    "description": "Zeit noch nicht Fest",
+    "start_time": "2025-07-25T20:00:00Z",
+    "end_time": "2025-07-25T20:30:00Z",
+    "date": "2025-07-25",
+    "status": "active",
+    "type": "concert",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 504,
+    "actsIDArr": [
+      229
+    ],
+    "stageID": 2,
+    "id-name": null,
+    "name": "",
+    "description": "Zeit noch nicht Fest",
+    "start_time": "2025-07-25T20:30:00Z",
+    "end_time": "2025-07-25T21:00:00Z",
+    "date": "2025-07-25",
+    "status": "active",
+    "type": "concert",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 505,
+    "actsIDArr": [
+      232
+    ],
+    "stageID": 2,
+    "id-name": null,
+    "name": "",
+    "description": "Zeit noch nicht Fest",
+    "start_time": "2025-07-25T21:00:00Z",
+    "end_time": "2025-07-25T21:30:00Z",
+    "date": "2025-07-25",
+    "status": "active",
+    "type": "concert",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 506,
+    "actsIDArr": [
+      214
+    ],
+    "stageID": 2,
+    "id-name": null,
+    "name": "",
+    "description": "Zeit noch nicht Fest",
+    "start_time": "2025-07-26T13:30:00Z",
+    "end_time": "2025-07-26T14:00:00Z",
+    "date": "2025-07-26",
+    "status": "active",
+    "type": "concert",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 507,
+    "actsIDArr": [
+      224
+    ],
+    "stageID": 2,
+    "id-name": null,
+    "name": "",
+    "description": "Zeit noch nicht Fest",
+    "start_time": "2025-07-26T14:00:00Z",
+    "end_time": "2025-07-26T14:30:00Z",
+    "date": "2025-07-26",
+    "status": "active",
+    "type": "concert",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 508,
+    "actsIDArr": [
+      226
+    ],
+    "stageID": 2,
+    "id-name": null,
+    "name": "",
+    "description": "Zeit noch nicht Fest",
+    "start_time": "2025-07-26T14:30:00Z",
+    "end_time": "2025-07-26T15:00:00Z",
+    "date": "2025-07-26",
+    "status": "active",
+    "type": "concert",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 509,
+    "actsIDArr": [
+      217
+    ],
+    "stageID": 2,
+    "id-name": null,
+    "name": "",
+    "description": "Zeit noch nicht Fest",
+    "start_time": "2025-07-26T15:00:00Z",
+    "end_time": "2025-07-26T15:30:00Z",
+    "date": "2025-07-26",
+    "status": "active",
+    "type": "concert",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 510,
+    "actsIDArr": [
+      201
+    ],
+    "stageID": 1,
+    "id-name": null,
+    "name": "",
+    "description": "Zeit noch nicht Fest",
+    "start_time": "2025-07-24T16:30:00Z",
+    "end_time": "2025-07-24T17:00:00Z",
+    "date": "2025-07-24",
+    "status": "active",
+    "type": "concert",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 511,
+    "actsIDArr": [
+      210
+    ],
+    "stageID": 1,
+    "id-name": null,
+    "name": "",
+    "description": "Zeit noch nicht Fest",
+    "start_time": "2025-07-24T17:00:00Z",
+    "end_time": "2025-07-24T17:30:00Z",
+    "date": "2025-07-24",
+    "status": "active",
+    "type": "concert",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 512,
+    "actsIDArr": [
+      216
+    ],
+    "stageID": 1,
+    "id-name": null,
+    "name": "",
+    "description": "Zeit noch nicht Fest",
+    "start_time": "2025-07-24T17:30:00Z",
+    "end_time": "2025-07-24T18:00:00Z",
+    "date": "2025-07-24",
+    "status": "active",
+    "type": "concert",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 513,
+    "actsIDArr": [
+      212
+    ],
+    "stageID": 1,
+    "id-name": null,
+    "name": "",
+    "description": "Zeit noch nicht Fest",
+    "start_time": "2025-07-25T13:30:00Z",
+    "end_time": "2025-07-25T14:00:00Z",
+    "date": "2025-07-25",
+    "status": "active",
+    "type": "concert",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 514,
+    "actsIDArr": [
+      227
+    ],
+    "stageID": 1,
+    "id-name": null,
+    "name": "",
+    "description": "Zeit noch nicht Fest",
+    "start_time": "2025-07-25T14:00:00Z",
+    "end_time": "2025-07-25T14:30:00Z",
+    "date": "2025-07-25",
+    "status": "active",
+    "type": "concert",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 515,
+    "actsIDArr": [
+      208
+    ],
+    "stageID": 1,
+    "id-name": null,
+    "name": "",
+    "description": "Zeit noch nicht Fest",
+    "start_time": "2025-07-26T13:30:00Z",
+    "end_time": "2025-07-26T14:00:00Z",
+    "date": "2025-07-26",
+    "status": "active",
+    "type": "concert",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 516,
+    "actsIDArr": [
+      211
+    ],
+    "stageID": 1,
+    "id-name": null,
+    "name": "",
+    "description": "Zeit noch nicht Fest",
+    "start_time": "2025-07-26T14:00:00Z",
+    "end_time": "2025-07-26T14:30:00Z",
+    "date": "2025-07-26",
+    "status": "active",
+    "type": "concert",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 517,
+    "actsIDArr": [
+      218
+    ],
+    "stageID": 1,
+    "id-name": null,
+    "name": "",
+    "description": "Zeit noch nicht Fest",
+    "start_time": "2025-07-26T14:30:00Z",
+    "end_time": "2025-07-26T15:00:00Z",
+    "date": "2025-07-26",
+    "status": "active",
+    "type": "concert",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 518,
+    "actsIDArr": [
+      223
+    ],
+    "stageID": 1,
+    "id-name": null,
+    "name": "",
+    "description": "Zeit noch nicht Fest",
+    "start_time": "2025-07-26T15:00:00Z",
+    "end_time": "2025-07-26T15:30:00Z",
+    "date": "2025-07-26",
+    "status": "active",
+    "type": "concert",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 519,
+    "actsIDArr": [
+      205
+    ],
+    "stageID": 3,
+    "id-name": null,
+    "name": "",
+    "description": "Zeit noch nicht Fest",
+    "start_time": "2025-07-24T16:30:00Z",
+    "end_time": "2025-07-24T17:00:00Z",
+    "date": "2025-07-24",
+    "status": "active",
+    "type": "concert",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 520,
+    "actsIDArr": [
+      220
+    ],
+    "stageID": 3,
+    "id-name": null,
+    "name": "",
+    "description": "Zeit noch nicht Fest",
+    "start_time": "2025-07-24T17:00:00Z",
+    "end_time": "2025-07-24T17:30:00Z",
+    "date": "2025-07-24",
+    "status": "active",
+    "type": "concert",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 521,
+    "actsIDArr": [
+      228
+    ],
+    "stageID": 3,
+    "id-name": null,
+    "name": "",
+    "description": "Zeit noch nicht Fest",
+    "start_time": "2025-07-24T17:30:00Z",
+    "end_time": "2025-07-24T18:00:00Z",
+    "date": "2025-07-24",
+    "status": "active",
+    "type": "concert",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 522,
+    "actsIDArr": [
+      206
+    ],
+    "stageID": 3,
+    "id-name": null,
+    "name": "",
+    "description": "Zeit noch nicht Fest",
+    "start_time": "2025-07-25T13:30:00Z",
+    "end_time": "2025-07-25T14:00:00Z",
+    "date": "2025-07-25",
+    "status": "active",
+    "type": "concert",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 523,
+    "actsIDArr": [
+      222
+    ],
+    "stageID": 3,
+    "id-name": null,
+    "name": "",
+    "description": "Zeit noch nicht Fest",
+    "start_time": "2025-07-25T14:00:00Z",
+    "end_time": "2025-07-25T14:30:00Z",
+    "date": "2025-07-25",
+    "status": "active",
+    "type": "concert",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 524,
+    "actsIDArr": [
+      231
+    ],
+    "stageID": 3,
+    "id-name": null,
+    "name": "",
+    "description": "Zeit noch nicht Fest",
+    "start_time": "2025-07-25T14:30:00Z",
+    "end_time": "2025-07-25T15:00:00Z",
+    "date": "2025-07-25",
+    "status": "active",
+    "type": "concert",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 525,
+    "actsIDArr": [
+      209
+    ],
+    "stageID": 3,
+    "id-name": null,
+    "name": "",
+    "description": "Zeit noch nicht Fest",
+    "start_time": "2025-07-26T13:30:00Z",
+    "end_time": "2025-07-26T14:00:00Z",
+    "date": "2025-07-26",
+    "status": "active",
+    "type": "concert",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 526,
+    "actsIDArr": [
+      204
+    ],
+    "stageID": 4,
+    "id-name": null,
+    "name": "",
+    "description": "Zeit noch nicht Fest",
+    "start_time": "2025-07-24T16:30:00Z",
+    "end_time": "2025-07-24T17:00:00Z",
+    "date": "2025-07-24",
+    "status": "active",
+    "type": "concert",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 527,
+    "actsIDArr": [
+      225
+    ],
+    "stageID": 4,
+    "id-name": null,
+    "name": "",
+    "description": "Zeit noch nicht Fest",
+    "start_time": "2025-07-24T17:00:00Z",
+    "end_time": "2025-07-24T17:30:00Z",
+    "date": "2025-07-24",
+    "status": "active",
+    "type": "concert",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 528,
+    "actsIDArr": [
+      207
+    ],
+    "stageID": 4,
+    "id-name": null,
+    "name": "",
+    "description": "Zeit noch nicht Fest",
+    "start_time": "2025-07-25T13:30:00Z",
+    "end_time": "2025-07-25T14:00:00Z",
+    "date": "2025-07-25",
+    "status": "active",
+    "type": "concert",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 529,
+    "actsIDArr": [
+      215
+    ],
+    "stageID": 4,
+    "id-name": null,
+    "name": "",
+    "description": "Zeit noch nicht Fest",
+    "start_time": "2025-07-25T14:00:00Z",
+    "end_time": "2025-07-25T14:30:00Z",
+    "date": "2025-07-25",
+    "status": "active",
+    "type": "concert",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 530,
+    "actsIDArr": [
+      221
+    ],
+    "stageID": 4,
+    "id-name": null,
+    "name": "",
+    "description": "Zeit noch nicht Fest",
+    "start_time": "2025-07-25T14:30:00Z",
+    "end_time": "2025-07-25T15:00:00Z",
+    "date": "2025-07-25",
+    "status": "active",
+    "type": "concert",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 531,
+    "actsIDArr": [
+      230
+    ],
+    "stageID": 4,
+    "id-name": null,
+    "name": "",
+    "description": "Zeit noch nicht Fest",
+    "start_time": "2025-07-25T15:00:00Z",
+    "end_time": "2025-07-25T15:30:00Z",
+    "date": "2025-07-25",
+    "status": "active",
+    "type": "concert",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 532,
+    "actsIDArr": [
+      233
+    ],
+    "stageID": 4,
+    "id-name": null,
+    "name": "",
+    "description": "Zeit noch nicht Fest",
+    "start_time": "2025-07-25T15:30:00Z",
+    "end_time": "2025-07-25T16:00:00Z",
+    "date": "2025-07-25",
+    "status": "active",
+    "type": "concert",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 533,
+    "actsIDArr": [
+      213
+    ],
+    "stageID": 4,
+    "id-name": null,
+    "name": "",
+    "description": "Zeit noch nicht Fest",
+    "start_time": "2025-07-26T13:30:00Z",
+    "end_time": "2025-07-26T14:00:00Z",
+    "date": "2025-07-26",
+    "status": "active",
+    "type": "concert",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 534,
+    "actsIDArr": [
+      221
+    ],
+    "stageID": 4,
+    "id-name": null,
+    "name": "",
+    "description": "Zeit noch nicht Fest",
+    "start_time": "2025-07-26T14:00:00Z",
+    "end_time": "2025-07-26T14:30:00Z",
+    "date": "2025-07-26",
+    "status": "active",
+    "type": "concert",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 535,
+    "actsIDArr": [
+      234
+    ],
+    "stageID": 4,
+    "id-name": null,
+    "name": "",
+    "description": "Zeit noch nicht Fest",
+    "start_time": "2025-07-26T14:30:00Z",
+    "end_time": "2025-07-26T15:00:00Z",
+    "date": "2025-07-26",
+    "status": "active",
+    "type": "concert",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 536,
+    "actsIDArr": [
+      235
+    ],
+    "stageID": 4,
+    "id-name": null,
+    "name": "",
+    "description": "Zeit noch nicht Fest",
+    "start_time": "2025-07-26T15:00:00Z",
+    "end_time": "2025-07-26T15:30:00Z",
+    "date": "2025-07-26",
+    "status": "active",
+    "type": "concert",
+    "tags": [],
+    "url": "",
+    "ticket": false
+  }
+]

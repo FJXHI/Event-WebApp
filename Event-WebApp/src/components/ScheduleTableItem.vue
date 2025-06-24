@@ -1,4 +1,4 @@
-<!-- TimeTableItem.vue -->
+<!-- ScheduleTableItem.vue -->
 <!-- ERROR-Fix Show Fav - Dark Mode - Style Error, some Stages are longer -->
 <template>
     <div class="table-content">
@@ -9,6 +9,7 @@
                     <div v-for="hour in hours" :key="hour" class="time-slot" :style="getTimeSlotStyle(hour)">
                         {{ hour % 24 }}:00
                     </div>
+                    <div class="now-line" ref="nowLine" :style="nowLineStyle"></div>
                 </div>
             </div>
         </div>
@@ -16,6 +17,7 @@
             <div v-for="stage in visibleStages" :key="stage.id" class="stage">
                 <div class="timeline-header">{{ stage.name }}</div>
                 <div class="events" :style="getEventsContainerStyle()">
+                    <div class="now-line" :style="nowLineStyle"></div>
                     <div v-for="hour in hours" :key="hour" class="time-slot" :style="getTimeSlotStyle(hour)">
                     </div>
                     <router-link 
@@ -46,16 +48,58 @@
 </template>
 
 <script setup lang="ts">
-import { computed, toRefs } from 'vue';
+import { computed, toRefs, ref, onMounted, onUnmounted } from 'vue';
+import type { Ref } from 'vue';
 import { useEventData } from '@/scripts/useEventData.ts';
 import { dayStartTime } from '@/scripts/config.ts';
-import { parseDateIgnoringTimezone } from '@/scripts/functions.ts';
 import { getActNames } from '@/scripts/functions';
 
-
 const props = defineProps({
-    date: String
+    date: String,
+    stageTypeFilter: {
+        type: String,
+        default: 'stage'
+    },
+    nowLineRef: {
+        type: Object as () => Ref<HTMLElement | null>,
+        required: false
+    }
 });
+
+const nowLine = ref<HTMLElement | null>(null);
+
+const testNow = ref<Date | null>(null);
+testNow.value = new Date('2025-07-25T15:50:00');
+
+const now = ref<Date>(testNow.value ?? new Date());
+
+
+const updateNow = () => {
+    now.value = testNow.value ?? new Date();
+};
+
+onMounted(() => {
+    const interval = setInterval(updateNow, 60 * 1000); // jede Minute aktualisieren
+    updateNow();
+    onUnmounted(() => clearInterval(interval));
+    if (isToday(props.date)) {
+        props.nowLineRef.value = nowLine.value;
+    }
+});
+
+function isToday(dateString: string | undefined): boolean {
+  if (!dateString) return false;
+
+  const inputDate = new Date(dateString);
+  const today = new Date();
+
+  return (
+    inputDate.getFullYear() === today.getFullYear() &&
+    inputDate.getMonth() === today.getMonth() &&
+    inputDate.getDate() === today.getDate()
+  );
+}
+
 
 const { performances, acts, stages } = useEventData();
 
@@ -64,8 +108,8 @@ const getActNamesLocal = (actsArr: (number | string)[]) => getActNames(actsArr, 
 const filteredPerformances = computed(() => {
     return performances.value
         .filter(event => {
-            const eventDate = parseDateIgnoringTimezone(event.start_time);
-            const selectedDay = parseDateIgnoringTimezone(props.date);
+            const eventDate = new Date(event.start_time);
+            const selectedDay = new Date(props.date);
 
             // Event belongs to the same day or the previous day (Late-Night-Event)
             // const isSameDayEvent = eventDate.getDate() === selectedDay.getDate();
@@ -97,22 +141,29 @@ const filteredPerformances = computed(() => {
             return isSameDay || isLateNightEvent;
         })
         .sort((a, b) => {
-            const dateA = parseDateIgnoringTimezone(a.start_time) ?? new Date(0);
-            const dateB = parseDateIgnoringTimezone(b.start_time) ?? new Date(0);
+            const dateA = new Date(a.start_time) ?? new Date(0);
+            const dateB = new Date(b.start_time) ?? new Date(0);
             return dateA.getTime() - dateB.getTime();
         });
 });
 
 const visibleStages = computed(() => {
-    return stages.value.filter(stage =>
-        filteredPerformances.value.some(event => event.stageID === stage.id)
-    );
+    return stages.value.filter(stage => {
+        const isTypeMatch =
+            props.stageTypeFilter === 'all' ||
+            stage.type === props.stageTypeFilter;
+
+        const hasEvents =
+            filteredPerformances.value.some(event => event.stageID === stage.id);
+
+        return isTypeMatch && hasEvents;
+    });
 });
 
 const hours = computed(() => {
     const eventTimes = filteredPerformances.value.flatMap(event => [
-        parseDateIgnoringTimezone(event.start_time).getHours(),
-        parseDateIgnoringTimezone(event.end_time).getHours()
+        new Date(event.start_time).getHours(),
+        new Date(event.end_time).getHours()
     ]);
 
     const normalizedTimes = eventTimes.map(time => (time < dayStartTime ? time + 24 : time));
@@ -123,8 +174,8 @@ const hours = computed(() => {
 
 // calculate position of the event in the timeline
 const getEventStyle = (event) => {
-    const startTime = parseDateIgnoringTimezone(event.start_time);
-    const endTime = parseDateIgnoringTimezone(event.end_time);
+    const startTime = new Date(event.start_time);
+    const endTime = new Date(event.end_time);
 
     const minHour = hours.value[0];
     const totalMinutes = (hours.value.length) * 60;
@@ -169,6 +220,51 @@ const getEventTypeClass = (type) => {
   const knownTypes = ['concert', 'spezial', 'workshop', 'Musik', 'Kunst', 'Gesellschaft', 'Sport', 'Wirtschaft'];
   return knownTypes.includes(type) ? type : 'default';
 };
+
+
+const nowLineStyle = computed(() => {
+    if (!now.value || !props.date) return { display: 'none' };
+
+    const selectedDay = new Date(props.date);
+    const current = now.value;
+
+    // Berechne adjustedCurrent - wenn Stunde < dayStartTime, dann zählt die Zeit zum Vortag
+    const adjustedCurrent = new Date(current);
+    if (adjustedCurrent.getHours() < dayStartTime) {
+        adjustedCurrent.setDate(adjustedCurrent.getDate() - 1);
+    }
+
+    // Prüfen, ob adjustedCurrent zum ausgewählten Tag passt
+    const isSameDay = (
+        adjustedCurrent.getFullYear() === selectedDay.getFullYear() &&
+        adjustedCurrent.getMonth() === selectedDay.getMonth() &&
+        adjustedCurrent.getDate() === selectedDay.getDate()
+    );
+    if (!isSameDay) return { display: 'none' };
+
+    const minHour = hours.value[0];
+    const maxHour = hours.value[hours.value.length - 1] < minHour
+        ? hours.value[hours.value.length - 1] + 24
+        : hours.value[hours.value.length - 1];
+
+    // Stundenbereich von minHour bis maxHour (z.B. 16 bis 29)
+    const hourRange = Array.from({ length: maxHour - minHour + 1 }, (_, i) => minHour + i);
+
+    // currentHour ebenfalls anpassen
+    let hourAdjusted = current.getHours();
+    if (hourAdjusted < dayStartTime) hourAdjusted += 24;
+
+    if (!hourRange.includes(hourAdjusted)) return { display: 'none' };
+
+    const totalMinutes = hourRange.length * 60;
+    const minutesSinceStart = (hourAdjusted * 60 + current.getMinutes()) - (minHour * 60);
+    const topPercent = (minutesSinceStart / totalMinutes) * 100;
+
+    return {
+        top: `${topPercent}%`
+    };
+});
+
 </script>
 
 <style scoped>
@@ -236,6 +332,7 @@ const getEventTypeClass = (type) => {
 .events {
     position: relative;
     overflow-y: hidden;
+    overflow-x: hidden; /* Scrollbar move events up out of time slots */
     height: 100%;
 }
 
@@ -261,25 +358,18 @@ const getEventTypeClass = (type) => {
 .event.workshop {
   background-color: #10B981;
 }
-/* UPDATE-KOSMOS */
-.event.Musik {
-  background-color: #3B82F6;
-}
-.event.Kunst {
-  background-color: #4F46E4;
-}
-.event.Gesellschaft {
-  background-color: #10B981;
-}
-.event.Sport {
-  background-color: #F59E0B;
-}
-.event.Wirtschaft {
-  background-color: #4fffff;
-}
 
 .event.default {
   background-color: var(--bg-header);
+}
+
+.now-line {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: red;
+    z-index: 10;
 }
 
 

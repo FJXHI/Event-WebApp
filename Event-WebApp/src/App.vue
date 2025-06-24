@@ -70,7 +70,7 @@ const currentPage = computed(() => {
 
 .app-footer {
   /* possible solution for height problem with browser address bar */
-  height: 40px; /* 40px; */
+  height: 0px; /* 40px; */
   flex-shrink: 0;
 }
 

@@ -14,7 +14,8 @@ export const baseUrl = import.meta.env.BASE_URL;
 // object to store the filters for the events
 export const eventFilters = ref({
     stages: [] as string[],
-    stageTypes: [] as string[],           
+    stageTypes: [] as string[],
+    stageFeatures: [] as string[],           
     categories: [] as string[],
     actTypes: [] as string[],
     perforTypes: [] as string[],          
@@ -94,72 +95,45 @@ export function formatAddress(address, type = 'full') {
 
 // Function to format date and time ignoring timezone
 export function formatDateTime(dateTimeString: string, formatType = 'Date Time', hour12 = false, locale = 'de-DE') {
-    // use parseDateIgnoringTimezone function
-    const date = parseDateIgnoringTimezone(dateTimeString);
-    
-    let options;
+    const date = new Date(dateTimeString);
+    if (isNaN(date.getTime())) return ''; // Ungültiger Zeitpunkt
+
+    const baseOptions = {
+        timeZone: 'Europe/Berlin',
+        hour12: hour12,
+    };
+
+    let options: Intl.DateTimeFormatOptions;
 
     switch (formatType) {
         case 'Date Long':
-            options = {
-                day: '2-digit',
-                month: '2-digit',
-                year: 'numeric',
-                hour12: hour12
-            };
+            options = { day: '2-digit', month: '2-digit', year: 'numeric' };
             break;
         case 'Date Short':
-            options = {
-                day: '2-digit',
-                month: '2-digit',
-                hour12: hour12
-            };
+            options = { day: '2-digit', month: '2-digit' };
             break;
         case 'Time':
-            options = {
-                hour: '2-digit',
-                minute: '2-digit',
-                hour12: hour12
-            };
+            options = { hour: '2-digit', minute: '2-digit' };
             break;
         case 'Date Short Time':
-            options = {
-                day: '2-digit',
-                month: '2-digit',
-                hour: '2-digit',
-                minute: '2-digit',
-                hour12: hour12
-            };
+            options = { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' };
             break;
         case 'Date Long Time':
-            options = {
-                day: '2-digit',
-                month: '2-digit',
-                year: 'numeric',
-                hour: '2-digit',
-                minute: '2-digit',
-                hour12: hour12
-            };
+            options = { day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' };
             break;
+        case 'ISO Long':
+            return date.toISOString(); // z.B. "2025-07-23T16:00:00.000Z"
         case 'ISO':
             return date.toISOString().split('T')[0]; // Only date part (yyyy-mm-dd)
         default:
-            options = {
-                day: '2-digit',
-                month: '2-digit',
-                year: 'numeric',
-                hour: '2-digit',
-                minute: '2-digit',
-                hour12: hour12
-            };
+            options = { day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' };
             break;
     }
 
-    return new Intl.DateTimeFormat(locale, options).format(date);
+    return new Intl.DateTimeFormat(locale, { ...baseOptions, ...options }).format(date);
 }
 
-
-// Function to parse date ignoring timezone
+// Function to parse date ignoring timezone // Not in use anymore
 export function parseDateIgnoringTimezone(dateTimeString: string): Date {
     const [datePart, timePartRaw] = dateTimeString.split('T');
     const [year, month, day] = datePart.split('-').map(Number);
