@@ -1,0 +1,246 @@
+[
+    {
+        "id": 1,
+        "type": "point",
+        "name": "Eingang",
+        "kategori": "other",
+        "location": [50.73349, 12.76843]
+    },
+    {
+        "id": 2,
+        "type": "point",
+        "name": "Ordnerzentrale & Sanitäter",
+        "kategori": "other",
+        "location": [50.73452, 12.76811]
+    },
+    {
+        "id": 3,
+        "type": "point",
+        "name": "Kinderwelt",
+        "kategori": "Orte",
+        "location": [50.73417, 12.76817],
+        "openingTimes": [
+        {
+            "from": "2025-07-24T16:00",
+            "to": "2025-07-24T18:00"
+        },
+        {
+            "from": "2025-07-25T09:00",
+            "to": "2025-07-25T12:00"
+        },
+        {
+            "from": "2025-07-25T14:00",
+            "to": "2025-07-25T18:00"
+        },
+        {
+            "from": "2025-07-26T09:00",
+            "to": "2025-07-26T12:00"
+        },
+        {
+            "from": "2025-07-26T14:00",
+            "to": "2025-07-26T18:00"
+        },
+        {
+            "from": "2025-07-27T10:30",
+            "to": "2025-07-27T12:30"
+        }
+        ],
+        "description": "Wir bespaßen die Kleinen, damit die Eltern das Festival auf sich wirken lassen können. Auf dem Mini-homeward können die Kids sich richtig austoben und kreativ sein."
+    },
+    {
+        "id": 10,
+        "type": "point",
+        "name": "Wildes Wohnzimmer",
+        "kategori": "Orte",
+        "location": [50.734039, 12.767575]
+    },
+    {
+        "id": 11,
+        "type": "point",
+        "name": "Shishazelt",
+        "kategori": "Orte",
+        "location": [50.73423, 12.7679]
+    },
+    {
+        "id": 12,
+        "type": "point",
+        "name": "Awareness-Zelt",
+        "kategori": "Orte",
+        "location": [50.733852, 12.768315]
+    },
+    {
+        "id": 13,
+        "type": "point",
+        "name": "Gebetszelt",
+        "kategori": "Orte",
+        "location": [50.733788, 12.768401]
+    },
+    {
+        "id": 14,
+        "type": "point",
+        "name": "Arkaden",
+        "kategori": "Orte",
+        "location": [50.734386, 12.767256]
+    },
+    {
+        "id": 15,
+        "type": "point",
+        "name": "Heimaterde",
+        "kategori": "Orte",
+        "location": [50.734506, 12.767886]
+    },    
+    {
+        "id": 20,
+        "type": "point",
+        "name": "Späti",
+        "kategori": "Shop",
+        "location": [50.734433, 12.767527],
+        "openingTimes": [
+        {
+            "from": "2025-07-25T20:00",
+            "to": "2025-07-26T02:00",
+            "note": "Essensmarkenverkauf Täglich (Do nur bis 1 Uhr)"
+        }
+        ],
+        "description": "Späti mit Snacks und Essensmarkenverkauf."
+    },
+    {
+        "id": 21,
+        "type": "point",
+        "name": "Veggi",
+        "kategori": "Food",
+        "location": [50.73436, 12.76813],
+        "description": "Pommes, Mozzarella-Sticks, Zwiebelringe und mehr."
+    },
+    {
+        "id": 22,
+        "type": "point",
+        "name": "Handbrot",
+        "kategori": "Food",
+        "location": [50.73453, 12.76771]
+    },
+    {
+        "id": 23,
+        "type": "point",
+        "name": "Grill",
+        "kategori": "Food",
+        "location": [50.73369, 12.76758]
+    },
+    {
+        "id": 24,
+        "type": "point",
+        "name": "Mainstage Bar",
+        "kategori": "Bar",
+        "location": [50.733678, 12.767481]
+    },
+    {
+        "id": 25,
+        "type": "point",
+        "name": "Backyard Bar",
+        "kategori": "Bar",
+        "location": [50.734688, 12.767395]
+    },
+    {
+        "id": 26,
+        "type": "point",
+        "name": "Wohnzimmer Bar",
+        "kategori": "Bar",
+        "location": [50.734453, 12.767639]
+    },
+    {
+        "id": 28,
+        "type": "point",
+        "name": "Wechselstube",
+        "kategori": "Shop",
+        "location": [50.734504, 12.767706],
+        "openingTimes": [
+        {
+            "from": "2025-07-24T09:30",
+            "to": "2025-07-24T20:00",
+            "note": "Essensmarkenverkauf Täglich"
+        }
+        ],
+        "description": "Hier hast du die Möglichkeit mit deiner EC-Karte Bargeld abzuheben."
+    },
+    {
+        "id": 29,
+        "type": "point",
+        "name": "Merchstand",
+        "kategori": "Shop",
+        "location": [50.733656, 12.767315],
+        "openingTimes": [
+        {
+            "from": "2025-07-24T17:00",
+            "to": "2025-07-25T01:00",
+            "note": "Essensmarkenverkauf Do Ab 17 Uhr"
+        },
+        {
+            "from": "2025-07-25T16:00",
+            "to": "2025-07-26T01:00",
+            "note": "Essensmarkenverkauf Fr & Sa Ab 16 Uhr"
+        }
+        ],
+        "description": "Merchendise und Festivalartikel. Sowie Essensmarken."
+    },
+    {
+        "id": 30,
+        "type": "point",
+        "name": "Marktplatz",
+        "kategori": "Shop",
+        "location": [50.733523, 12.767889]
+    },
+    {
+        "id": 31,
+        "type": "point",
+        "name": "WC Ziegelei",
+        "kategori": "sanitary",
+        "location": [50.734635, 12.768]
+    },
+    {
+        "id": 32,
+        "type": "point",
+        "name": "WC Eingang (Dixi)",
+        "kategori": "sanitary",
+        "location": [50.73356, 12.76823]
+    },
+    {
+        "id": 41,
+        "type": "point",
+        "name": "Parkplatz 1",
+        "kategori": "Parking",
+        "location": [50.729998, 12.769695],
+        "noinclude": true
+    },
+    {
+        "id": 42,
+        "type": "point",
+        "name": "Parkplatz 1",
+        "kategori": "Parking",
+        "location": [50.733331, 12.769782],
+        "noinclude": true
+    },
+    {
+        "id": 43,
+        "type": "point",
+        "name": "Camping-West Zelt",
+        "kategori": "Camping",
+        "location": [50.7331314, 12.7684283],
+        "noinclude": true
+    },
+    {
+        "id": 44,
+        "type": "point",
+        "name": "Camping-Ost Zelt",
+        "kategori": "Camping",
+        "location": [50.7345849, 12.775276],
+        "noinclude": true
+    },
+    {
+        "id": 45,
+        "type": "point",
+        "name": "Camping Caravan",
+        "kategori": "Camping",
+        "location": [50.734163, 12.768844],
+        "noinclude": true
+    }    
+]

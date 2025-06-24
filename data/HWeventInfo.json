@@ -1,0 +1,158 @@
+[
+    {
+        "id": 1,
+        "title": "DEMO Homeward",
+        "subtitle": "Homeward Festival 2025",
+        "short-describtion": "Ein großartiges Rock-Konzert mit vielen bekannten Bands.",
+        "describtion":  "Wir sind ein schickes familiäres Festival im kleinen Niederwürschnitz in Sachsen. Euch erwarten vielseitige Künstler*innen, vier Bühnen, Workshops und Seminare, super nette Leute und eine unverkennbare Location.",
+        "backgroundImage": "https://www.homeward-festival.de/templates/yootheme/cache/46/homestagenight-4633ef5d.jpeg",
+        "logo": "demo-festival-bg.jpg",
+        "startDate": "2025-07-24",
+        "endDate": "2025-07-27",
+        "location": {
+            "name": "Alte Ziegelei Niederwürschnitz",
+            "address": {
+                "street": "Nach den Steegen 2",
+                "postal_code": "09399",
+                "city": "Niederwürschnitz",
+                "country": "Deutschland"
+              },
+            "gps": {
+                "latitude": 50.73450,
+                "longitude": 12.76773
+            }
+        },
+        "about": [
+        {
+            "id": 1000,
+            "name": "Preise & Solibeitrag",
+            "subtitle": "",
+            "icon": "preis",
+            "text": "Solibeitrag? Solibeitrag! Homeward soll ein Ort sein, an dem jeder Mensch willkommen ist. Da bei einem bunten Haufen wie uns Manche mehr und Manche weniger Geld haben, finden wir einen festen Preis unangemessen. Gerechtigkeit bedeutet eben nicht für alle das Gleiche, sondern das, was zur eigenen Situation passt. Damit sich das Homeward trägt, braucht es im Schnitt die unten angegeben Preise. Bitte entscheide selbst, wieviel du davon geben kannst.* Kleiner Reminder: Jeder Euro mehr sorgt mit für all jene, die wenig geben können. *(Wenn du weniger Geld zur Verfügung hast, sprich uns bitte an. Wir wollen eine Lösung mit dir finden.)In diesem Sinne, Danke für Deine Unterstützung, Dein homeward Festival"
+        },
+        {
+            "id":1021,
+            "name": "Öffnungszeiten",
+            "subtitle": "",
+            "icon": "uhr",
+            "text": "Donnerstag 16:00 - 00:00 Uhr Kasse: 16:00 - 22:00 Uhr, Freitag 9:30 - 03:00 Uhr Kasse: 9:30 - 22:00 Uhr, Samstag 9:30 - 03:00 Uhr Kasse: 9:30 - 22:00 Uhr, Sonntag 9:30 - 12:30 Uhr Kasse: Eintritt frei"
+        },
+        {
+            "id": 1022,
+            "name": "Essen & Trinken",
+            "subtitle": "",
+            "icon": "Essen",
+            "text": "Da es vollkommen unserer Philosophie widerspricht, euch irgendwie Stress zu machen, wenn ihr eigenes Essen und Getränke mitbringt, würden wir euch einfach im Rahmen eurer Möglichkeiten darum bitten unser schickes Essens- und Getränkeangebot anzunehmen. Das ist nämlich unsere Hauptquelle zur Finanzierung des homewards, da wir die Eintrittspreise weiterhin so günstig und auf Solibasis halten möchten. Wir versuchen, euch auch mit guten Preisen und Essen wie bei den Großeltern entgegen zu kommen!"
+        },
+        {
+            "id": 1001,
+            "name": "Kinderwelt",
+            "subtitle": "Mitwirken",
+            "icon": "menschen",
+            "text": "Das Kinderteam besteht aus wunderbaren achtsamen Menschen, teils Erzieher*innen, Eltern oder Großeltern, die sich liebevoll um die Kleinen (ab 3 Jahren) kümmern. Wichtig: Wenn Euer Kind an Kinderangeboten teilnimmt oder betreut wird, obliegt die gesetzliche Aufsichtspflicht und komplette Haftung immer noch bei Euch Eltern. Das gesamte Kinderteam agiert mit Herz und Verstand, ist jedoch von sämtlicher Haftung befreit. Achtet bitte selbst darauf, dass Eure Kinder in der Kinderbetreuung etwas zu Essen dabei haben (Trinken gibt es bei uns für die Kids) und wetterentsprechend angezogen sind. Uns findet Ihr zwischen der Homestage und dem Wohnzimmer/Heimaterde, unterhalb von dem Wohnhaus."
+        },  
+        {
+            "id": 1001,
+            "name": "Mitwirken",
+            "subtitle": "Mitwirken",
+            "icon": "menschen",
+            "text": "homeward ist UNSER ehrenamtlich organisiertes Mitmach-Festival das von vielen helfenden Händen lebt. Lasst uns gemeinsam aufeinander acht geben, zuhören, Müll wegräumen, Gemüse schnippeln, leere Flaschen sortieren ..."
+        },    
+        {
+            "id": 1002,
+            "name": "Foto/Videografie",
+            "subtitle": "FotoVideo",
+            "icon": "kamera",
+            "text": "Alle Teilnehmenden erklären sich damit einverstanden, dass die im Zusammenhang mit der Veranstaltung gemachten Fotos und Filmaufnahmen ohne einen Vergütungsanspruch des*der Teilnehmer*in verbreitet und veröffentlicht werden können. Wenn das nicht gewünscht ist, bitte direkt an medien@homeward-festival.de schreiben."
+        },
+        {
+            "id": 1003,
+            "name": "Sicherheit",
+            "subtitle": "Sicherheit",
+            "icon": "rettungsring",
+            "text": "Das Sicherheitspersonal hat das Hausrecht auf dem gesamten homewardgelände. Bei Problemen kannst Du Dich gern an sie wenden. Sie sind am Eingang und auf dem Gelände zu finden und durch ein rotes Ordner-Shirt gekennzeichnet."
+        },    
+        {
+            "id": 1004,
+            "name": "Frühstück",
+            "subtitle": "",
+            "icon": "kaffetasse",
+            "text": "Am Sonntag wollen wir gemeinsam frühstücken und dafür kannst Du gern alles mitbringen, was für Dich auf einem Brötchen nicht fehlen darf. Auch an den anderen Tagen kannst Du zur Frühstückszeit Brötchen erwerben."
+        },
+        {
+            "id": 1005,
+            "name": "Essen",
+            "subtitle": "Essen",
+            "icon": "besteck",
+            "text": "Tagsüber gibt es eine Vielzahl an leckeren Essens-Angeboten. Dafür gibt es auf dem homeward Essensmarken. Ihr könnt euch am Einlass (09:00-17:00) und am Merchstand (17:00-23:00) einen kleinen Vorrat kaufen, damit dann die Schlange für‘s Bezahlen am Foodstand wegfällt. Wenn möglich, bringt bitte euer eigenes Geschirr und Besteck mit."
+        },    
+        {
+            "id": 1006,
+            "name": "Trinken",
+            "subtitle": "",
+            "icon": "drink",
+            "text": "Selbst mitgebrachte Getränke sind grundsätzlich erlaubt. Aber vielleicht möchtest Du das homeward untersützen, indem Du Getränke vor Ort kaufst: Wir bieten eine super Auswahl an Getränken zu fairen Preisen."
+        },
+        {
+            "id": 1007,
+            "name": "Müll",
+            "subtitle": "",
+            "icon": "müll",
+            "text": "Bitte halte Gelände und Toiletten sauber. Wirf deinen Müll grundsätzlich in die Mülltonnen, die reichlich aufgestellt sind. Du erleichterst unseren ehrenamtlichen Helfern die Arbeit."
+        },    
+        {
+            "id": 1008,
+            "name": "Rauchen",
+            "subtitle": "",
+            "icon": "rauchen",
+            "text": "Auf dem Gelände ist Rauchen generell erlaubt. Wirf Deine Zigarettenkippen bitte in die Aschenbecher!"
+        },
+        {
+            "id": 1009,
+            "name": "Drogen",
+            "subtitle": "",
+            "icon": "rettung",
+            "text": "Das Handeln und Konsumieren von illegalen Drogen und Cannabis ist verboten."
+        },
+        {
+            "id": 1010,
+            "name": "Feuer",
+            "subtitle": "Feuer",
+            "icon": null,
+            "text": "Offenes Feuer, Gaskocher und Grillen ist nicht erlaubt. Auf dem Gelände herrscht absolute Brandgefahr, sodass wir mit offenem Feuer wirklich aufpassen müssen!"
+        },    
+        {
+            "id": 1011,
+            "name": "Wasser",
+            "subtitle": "",
+            "icon": "wasser",
+            "text": "Am Campingplatz gibt es Waschrinnen. Hier könnt Ihr Geschirr spülen, Zähneputzen und Euch waschen."
+        },
+        {
+            "id": 1012,
+            "name": "Hunde",
+            "subtitle": "",
+            "icon": "Hund",
+            "text": "Hunde müssen an der Kasse angemeldet werden und stets kurz angeleint sein. Wenn Dein Hund fremde Menschen oder Menschenmengen nicht gewohnt ist, leg ihm bitte auch einen Beißschutz (Maulkorb, Halti) an. Auch wenn Ordner*innen  Dich darum bitten, lege deinem Hund bitte einen Halti an. Bitte achte weiter darauf, dass alles, was beim Hund hinten rauskommt und nicht verdunstet, von dem*der Hundebesitzer*in aufgesammelt werden muss."
+        }
+        ],
+        "weblinks": [
+        {
+            "name": "Youtube",
+            "url": "https://www.youtube.com/channel/UCnw39hxQSvC3KTITFtvWZYw"
+        },
+        {
+            "name": "Facebook",
+            "url": "https://www.facebook.com/homewardfestival/"
+        },
+        {
+            "name": "Instagram",
+            "url": "https://www.instagram.com/homewardfestival"
+        },
+        {
+            "name": "Webseite",
+            "url": "https://www.homeward-festival.de"
+        }
+        ]
+    }
+]

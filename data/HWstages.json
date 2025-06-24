@@ -1,0 +1,353 @@
+[
+  {
+    "id": 1,
+    "id-name": "homestage",
+    "name": "Homestage",
+    "description": "Main Stage auf der Großenwiese",
+    "image": null,
+    "visible": true,
+    "type": "stage",
+    "location": [
+      50.7334,
+      12.7675
+    ],
+    "address": {
+      "street": "Nach den Steegen 2",
+      "postal_code": "09399",
+      "city": "Niederwürschnitz",
+      "country": "Deutschland"
+    },
+    "url": "",
+    "features": [
+      "Open-Air"
+    ]
+  },
+  {
+    "id": 2,
+    "id-name": "backyard",
+    "name": "Backyard",
+    "description": "Backyard an der Ziegelei.",
+    "image": null,
+    "visible": true,
+    "type": "stage",
+    "location": [
+      50.73455,
+      12.7671
+    ],
+    "address": {
+      "street": "Nach den Steegen 2",
+      "postal_code": "09399",
+      "city": "Niederwürschnitz",
+      "country": "Deutschland"
+    },
+    "url": "",
+    "features": [
+      "Open-Air",
+      "DJs"
+    ]
+  },
+  {
+    "id": 3,
+    "id-name": "wohnzimmer",
+    "name": "Wohnzimmer",
+    "description": "Gemütliches Wohnzimmer-Zelt",
+    "image": null,
+    "visible": true,
+    "type": "stage",
+    "location": [
+      50.7343,
+      12.7672
+    ],
+    "address": {
+      "street": "Nach den Steegen 2",
+      "postal_code": "09399",
+      "city": "Niederwürschnitz",
+      "country": "Deutschland"
+    },
+    "url": "",
+    "features": [
+      "Indoor"
+    ]
+  },
+  {
+    "id": 4,
+    "id-name": "schepperschuppen",
+    "name": "Schepperschuppen",
+    "description": "Der Neue Schepperschuppen bietet Musik während der Umbaupausen der Mainstage.",
+    "image": null,
+    "visible": true,
+    "type": "stage",
+    "location": [
+      50.7336,
+      12.7675
+    ],
+    "address": {
+      "street": "Nach den Steegen 2",
+      "postal_code": "09399",
+      "city": "Niederwürschnitz",
+      "country": "Deutschland"
+    },
+    "url": "",
+    "features": [
+      "Indoor"
+    ]
+  },
+  {
+    "id": 10,
+    "id-name": null,
+    "name": "Workshop",
+    "description": "",
+    "image": null,
+    "visible": true,
+    "type": "workshop",
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
+  },
+  {
+    "id": 11,
+    "id-name": null,
+    "name": "Wiese für Workshops",
+    "description": "",
+    "image": null,
+    "visible": true,
+    "type": "workshop",
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
+  },
+  {
+    "id": 12,
+    "id-name": null,
+    "name": "Wildes Wohnzimmer",
+    "description": "",
+    "image": null,
+    "visible": true,
+    "type": "workshop",
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
+  },
+  {
+    "id": 13,
+    "id-name": null,
+    "name": "Wildes Wohnzimmer (rechts)",
+    "description": "",
+    "image": null,
+    "visible": true,
+    "type": "workshop",
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
+  },
+  {
+    "id": 14,
+    "id-name": null,
+    "name": "vor Arkaden",
+    "description": "",
+    "image": null,
+    "visible": true,
+    "type": "workshop",
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
+  },
+  {
+    "id": 15,
+    "id-name": null,
+    "name": "Arkaden",
+    "description": "",
+    "image": null,
+    "visible": true,
+    "type": "workshop",
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": [
+      "Indoor"
+    ]
+  },
+  {
+    "id": 16,
+    "id-name": null,
+    "name": "vor Shishazelt",
+    "description": "",
+    "image": null,
+    "visible": true,
+    "type": "workshop",
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
+  },
+  {
+    "id": 17,
+    "id-name": null,
+    "name": "Shishazelt",
+    "description": "",
+    "image": null,
+    "visible": true,
+    "type": "workshop",
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": [
+      "Indoor"
+    ]
+  },
+  {
+    "id": 18,
+    "id-name": null,
+    "name": "Kaffeestand",
+    "description": "",
+    "image": null,
+    "visible": true,
+    "type": "workshop",
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
+  },
+  {
+    "id": 19,
+    "id-name": null,
+    "name": "Gebetszelt",
+    "description": "",
+    "image": null,
+    "visible": true,
+    "type": "workshop",
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": [
+      "Indoor"
+    ]
+  },
+  {
+    "id": 20,
+    "id-name": null,
+    "name": "Einlass",
+    "description": "",
+    "image": null,
+    "visible": true,
+    "type": "workshop",
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
+  },
+  {
+    "id": 21,
+    "id-name": null,
+    "name": "Kleidertausch",
+    "description": "",
+    "image": null,
+    "visible": true,
+    "type": "workshop",
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
+  },
+  {
+    "id": 22,
+    "id-name": null,
+    "name": "Rettungsgasse",
+    "description": "",
+    "image": null,
+    "visible": true,
+    "type": "workshop",
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
+  },
+  {
+    "id": 23,
+    "id-name": null,
+    "name": "Heimaterde",
+    "description": "",
+    "image": null,
+    "visible": true,
+    "type": "workshop",
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
+  }
+]
