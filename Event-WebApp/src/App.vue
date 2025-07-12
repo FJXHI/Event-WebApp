@@ -8,7 +8,7 @@
     <PopupMessage />
     <router-view class="router-view"/>
     <PopupModal />
-    <ShareModal v-model:visible="visibleShare" link="https://fjxhi.github.io/Event-WebApp/" />
+    <ShareModal v-model:visible="visibleShare" :link="currentUrl" />
     <ImportFav />
     
     <footer class="app-footer">
@@ -19,6 +19,7 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue';
 import { useRoute } from 'vue-router';
+import { baseUrl } from './scripts/functions';
 import NavMenu from './components/NavMenu.vue';
 import PopupModal from '@/components/PopupModal.vue';
 import PopupMessage from '@/components/PopupMessage.vue';
@@ -53,6 +54,10 @@ const currentPage = computed(() => {
   return routeMap[route.path] || 'nav-unknown-site';
 });
 
+const currentUrl = computed(() => {
+  const Url = window.location.origin + baseUrl;
+  return Url.replace(/\/$/, '') + route.fullPath;
+});
 
 const visibleShare = ref(false);
 

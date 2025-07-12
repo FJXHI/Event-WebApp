@@ -3,26 +3,31 @@
 
 <template>
     <div class="topnav">
-      <!-- Dont show PageName and BackBtn on Homesite -->
-      <!-- Show BackBtn and PageName on all other sites -->
-      <button v-if="!isHomePage && showBack" @click="goBack" class="topnav-btn back-btn">
-        <IconArrowLeft class="icon-size"/>
-      </button>
-      <div class="pagename" v-if="!isHomePage">{{ $t(PageName) }}</div>
-
-      <button class="topnav-btn" v-if="showSearch" @click="openSearch">
-        <IconSearch class="icon-size"/>
-      </button>
-      <button class="topnav-btn" v-if="showFavQuery" @click="openFav">
-        <IconHeart :fill="isFav ? 'red' : 'white'" class="icon-size" />
-      </button>
-      <router-link v-if="showFav" to="/favorites" class="topnav-btn">
-        <IconHeart class="icon-size"/>
-      </router-link>
-      <button class="topnav-btn" @click="$emit('open-share')">
-        <IconShare class="icon-size"/>
-      </button>
-      <button class="topnav-btn menu-btn" @click="toggleNav"><IconList class="icon-size" /></button>
+      <div class="topnav-left">
+        <!-- Dont show PageName and BackBtn on Homesite -->
+        <!-- Show BackBtn and PageName on all other sites -->
+        <button v-if="!isHomePage && showBack" @click="goBack" class="topnav-btn back-btn">
+          <IconArrowLeft class="icon-size"/>
+        </button>
+        <div class="pagename" v-if="!isHomePage">{{ $t(PageName) }}</div>
+      </div>
+      <div class="topnav-right">
+        <button class="topnav-btn" v-if="showSearch" @click="openSearch">
+          <IconSearch class="icon-size"/>
+        </button>
+        <button class="topnav-btn" v-if="showFavQuery" @click="openFav">
+          <IconHeart :fill="isFav ? 'red' : 'white'" class="icon-size" />
+        </button>
+        <router-link v-if="showFav" to="/favorites" class="topnav-btn">
+          <IconHeart class="icon-size"/>
+        </router-link>
+        <button class="topnav-btn" @click="$emit('open-share')">
+          <IconShare class="icon-size"/>
+        </button>
+        <button class="topnav-btn menu-btn" @click="toggleNav">
+          <IconList class="icon-size" />
+        </button>
+      </div>
     </div>
     
     <div class="nav-overlay" v-if="isNavOpen" @click="toggleNav"></div>
@@ -69,6 +74,8 @@ import IconSetting from './icons/IconSetting.vue';
 import IconNews from './icons/IconNews.vue';
 
 const { t } = useI18n()
+
+const emit = defineEmits(['open-share']);
 
 const router = useRouter();
 // Method to navigate back
@@ -149,6 +156,13 @@ const showFavQuery = computed(() => route.path === '/schedule' || route.path ===
   height: 3.5rem;
   color: var(--text-topnav);
   cursor: pointer;
+}
+
+.topnav-left,
+.topnav-right {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
 }
 
 .topnav-btn:focus {

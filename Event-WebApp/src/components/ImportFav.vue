@@ -1,26 +1,20 @@
 <!-- ImportFav.vue -->
 
 <template>
-  <div v-if="hasImportData" class="modal-overlay">
-    <div class="modal-content">
+    <PopupModal v-model="hasImportData">
       <h2>Geteilte Favoriten gefunden:</h2>
       <ul>
         <li v-for="(ids, category) in importData" :key="category">
           {{ ids.length }} {{ $t(category) }}
         </li>
       </ul>
-      <div>
-        <button @click="importToLocalStorage">Favoriten hinzufügen?</button>
-        <button @click="close">Nein</button>
-      </div>
-      
-    </div>
-    x
-  </div>
+    <button @click="importToLocalStorage">Favoriten hinzufügen?</button>
+  </PopupModal>
 </template>
 
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
+import PopupModal from './PopupModalTemp.vue'
 type FavoriteMap = Record<string, number[]>
 
 const importData = ref<FavoriteMap>({})
@@ -95,42 +89,7 @@ function clearImportQueryParams() {
 </script>
 
 <style scoped>
-.import-favorites {
-  margin: 1rem 0;
-  padding: 1rem;
-  background: #f5f5f5;
-  border: 1px solid #ddd;
-}
-
-.modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 9999;
-}
-
-.modal-content {
-  background-color: var(--color-background-soft);
-  color: var(--color-text);
-  padding: 24px;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  max-width: 400px;
-  width: 90%;
-  text-align: center;
-}
-
-.modal-content h2 {
-  margin-top: 0;
-}
-
-.modal-content button {
+button {
   margin-top: 16px;
   padding: 8px 16px;
   background-color: #2a6dff;

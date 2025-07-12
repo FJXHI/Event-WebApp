@@ -59,10 +59,6 @@ const computedLink = computed(() => {
   return shareFav.value ? `${props.link}${generateShareUrlParams()}` : props.link
 })
 
-function close() {
-  emit('update:visible', false)
-}
-
 function showQRcode() {
   visibleQRcode.value = true
 }

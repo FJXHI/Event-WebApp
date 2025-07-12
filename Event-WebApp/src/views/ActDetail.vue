@@ -23,7 +23,7 @@
       <div class="detail-title">
         <h3>{{ act.name }}</h3>
         <h4 v-if="act.subname">{{ act.subname }}</h4>
-        <Countdown :time="nextPerformance.start_time" />
+        <Countdown v-if="nextPerformance" :time="nextPerformance.start_time" />
       </div>
     </div>
 
@@ -99,7 +99,7 @@ const act = computed(() => {
 
   return {
     ...selectedAct,
-    performances: performances.value
+    performances: (performances.value || [])
       .filter((perf) => perf.actsIDArr.includes(selectedAct.id))
       .map((perf) => ({
         ...perf,

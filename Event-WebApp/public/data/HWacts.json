@@ -46,471 +46,12 @@
   {
     "id": 201,
     "id-name": null,
-    "name": "Lionlion",
-    "subname": "",
-    "act-type": [
-      "Artist"
-    ],
-    "description": "Home Do",
-    "image": null,
-    "tags": [
-      {
-        "name": "Indie Rock",
-        "visible": true
-      },
-      {
-        "name": "Indie",
-        "visible": false
-      },
-      {
-        "name": "Rock",
-        "visible": false
-      }
-    ],
-    "weblinks": []
-  },
-  {
-    "id": 202,
-    "id-name": null,
-    "name": "Palazar",
-    "subname": "",
-    "act-type": [
-      "Artist"
-    ],
-    "description": "Backyard Fr",
-    "image": null,
-    "tags": [
-      {
-        "name": "Hardtechno",
-        "visible": true
-      },
-      {
-        "name": "Hardtrance",
-        "visible": true
-      },
-      {
-        "name": "Techno",
-        "visible": false
-      }
-    ],
-    "weblinks": []
-  },
-  {
-    "id": 203,
-    "id-name": null,
-    "name": "SubkoØne",
-    "subname": "",
-    "act-type": [
-      "Artist"
-    ],
-    "description": "Backyard Fr",
-    "image": null,
-    "tags": [
-      {
-        "name": "Techno",
-        "visible": true
-      },
-      {
-        "name": "Hardtechno",
-        "visible": true
-      },
-      {
-        "name": "Hardtrance",
-        "visible": true
-      }
-    ],
-    "weblinks": [
-      {
-        "name": "Instagram",
-        "url": "https://www.instagram.com/subko_1"
-      }
-    ]
-  },
-  {
-    "id": 204,
-    "id-name": null,
-    "name": "Nidare",
-    "subname": "",
-    "act-type": [
-      "Artist"
-    ],
-    "description": "Schepperschuppen Do",
-    "image": null,
-    "tags": [
-      {
-        "name": "Post Black Metal",
-        "visible": true
-      },
-      {
-        "name": "Metal",
-        "visible": false
-      }
-    ],
-    "weblinks": []
-  },
-  {
-    "id": 205,
-    "id-name": null,
-    "name": "Oliver Gehmlich",
-    "subname": "",
-    "act-type": [
-      "Artist"
-    ],
-    "description": "Wohn Do",
-    "image": null,
-    "tags": [
-      {
-        "name": "Musical",
-        "visible": true
-      },
-      {
-        "name": "Klassic",
-        "visible": true
-      },
-      {
-        "name": "Pop",
-        "visible": true
-      }
-    ],
-    "weblinks": []
-  },
-  {
-    "id": 206,
-    "id-name": null,
-    "name": "Tiliah.Music",
-    "subname": "",
-    "act-type": [
-      "Artist"
-    ],
-    "description": "Wohn Fr",
-    "image": null,
-    "tags": [
-      {
-        "name": "Singer",
-        "visible": true
-      },
-      {
-        "name": "Songwriter",
-        "visible": true
-      }
-    ],
-    "weblinks": [
-      {
-        "name": "Instagram",
-        "url": "https://www.instagram.com/tiliah.music"
-      }
-    ]
-  },
-  {
-    "id": 207,
-    "id-name": null,
-    "name": "Never Yours",
-    "subname": "",
-    "act-type": [
-      "Artist"
-    ],
-    "description": "Schepperschuppen Fr",
-    "image": null,
-    "tags": [
-      {
-        "name": "EMO",
-        "visible": true
-      },
-      {
-        "name": "Pop-Punk",
-        "visible": true
-      },
-      {
-        "name": "Pop",
-        "visible": false
-      },
-      {
-        "name": "Punk",
-        "visible": false
-      }
-    ],
-    "weblinks": []
-  },
-  {
-    "id": 208,
-    "id-name": null,
-    "name": "Paul Brunner",
-    "subname": "",
-    "act-type": [
-      "Artist"
-    ],
-    "description": "Home Sa",
-    "image": null,
-    "tags": [
-      {
-        "name": "Indie Pop",
-        "visible": true
-      },
-      {
-        "name": "Indie",
-        "visible": false
-      },
-      {
-        "name": "Pop",
-        "visible": false
-      }
-    ],
-    "weblinks": [
-      {
-        "name": "Instagram",
-        "url": "https://www.instagram.com/brunnermusik"
-      }
-    ]
-  },
-  {
-    "id": 209,
-    "id-name": null,
-    "name": "Gruva/Kopfkultur",
-    "subname": "",
-    "act-type": [
-      "Artist"
-    ],
-    "description": "Wohn Sa - Gruva ist DJ und Teil des Berliner Technokollektivs Kopfkultur. Mit einem feinen Gespür für Breakbeat, Groove und Trance erschafft Gruva energetische Sets, die zwischen treibendem Rhythmus und verspielter Leichtigkeit balancieren. Dabei geht es ihm nicht nur um den Sound, sondern um die Stimmung: Seine Sets sind eine Einladung zum Loslassen - gute Laune auf dem Dancefloor.",
-    "image": null,
-    "tags": [
-      {
-        "name": "Electronic",
-        "visible": true
-      },
-      {
-        "name": "Beats",
-        "visible": true
-      },
-      {
-        "name": "Club",
-        "visible": true
-      }
-    ],
-    "weblinks": []
-  },
-  {
-    "id": 210,
-    "id-name": null,
-    "name": "Chaosbay",
-    "subname": "",
-    "act-type": [
-      "Artist"
-    ],
-    "description": "Home Do - Prog, Djent, Core, Pop. CHAOSBAY aus Berlin/Deutschland halten die Metalwelt in Atem. Millionen von Streams, große Festivals, ausverkaufte Shows und erfolgreiche Headliner-Touren beweisen, dass sich Chaosbay als einer der aufregendsten Metalcore-Acts in Europa etabliert haben. Kaum eine andere Band verbindet virtuosen Prog-Metalcore mit radiotauglichen Hooks auf so einzigartige Weise. Bekannt für ihre unermüdliche Arbeitsmoral, schafft die Band immer wieder Meisterwerke zeitloser Metal-Kompositionen, die sowohl Headbangen als auch frenetisches Mitsingen garantieren. Brutales Riffing und Geschrei trifft auf engelsgleiche Vocals und kraftvolle Melodien. Vergleiche mit Djent-Giganten wie PERIPHERY oder MONUMENTS drängen sich ebenso auf wie Assoziationen mit Metalcore-Legenden wie I PREVAIL, BRING ME THE HORIZON oder BAD OMENS. Die Band tourte bereits mit SIAMESE 2025 und EMIL BULLS 2024 durch Europa, unterstützte ANNISOKAY, VENDED (USA) und DEEZ NUTS und trat in den letzten Jahren auf mehreren Festivals auf, darunter WACKEN, SUMMER BREEZE, EUROBLAST, TAKEDOWN FESTIVAL (UK) und PROGPOWER EUROPE (NL). Das neue Studioalbum ARE YOU AFRAID? wird im Jahr 2024 veröffentlicht. Mit ihren energiegeladenen und beeindruckenden Live-Shows haben sich CHAOSBAY längst den Status einer exzellenten Live-Band aller Genres erspielt. Und seither liefern sie immer wieder zeitlose Ohrwürmer, die ihresgleichen suchen.",
-    "image": null,
-    "tags": [
-      {
-        "name": "Progressive Meatalcore",
-        "visible": true
-      },
-      {
-        "name": "Metal",
-        "visible": false
-      }
-    ],
-    "weblinks": [
-      {
-        "name": "Instagram",
-        "url": "https://www.instagram.com/chaosbayofficial"
-      }
-    ]
-  },
-  {
-    "id": 211,
-    "id-name": null,
-    "name": "Twofronts",
-    "subname": "",
-    "act-type": [
-      "Artist"
-    ],
-    "description": "Home Sa",
-    "image": null,
-    "tags": [
-      {
-        "name": "Nu Metal",
-        "visible": true
-      },
-      {
-        "name": "Metal",
-        "visible": false
-      }
-    ],
-    "weblinks": [
-      {
-        "name": "Instagram",
-        "url": "https://www.instagram.com/two_fronts"
-      }
-    ]
-  },
-  {
-    "id": 212,
-    "id-name": null,
-    "name": "Kickers Dibs",
-    "subname": "",
-    "act-type": [
-      "Artist"
-    ],
-    "description": "Home Fr",
-    "image": null,
-    "tags": [
-      {
-        "name": "Indie Rock",
-        "visible": true
-      },
-      {
-        "name": "Indie",
-        "visible": false
-      },
-      {
-        "name": "Rock",
-        "visible": false
-      }
-    ],
-    "weblinks": []
-  },
-  {
-    "id": 213,
-    "id-name": null,
-    "name": "Pennwood Rd.",
-    "subname": "",
-    "act-type": [
-      "Artist"
-    ],
-    "description": "Schepperschuppen Sa",
-    "image": null,
-    "tags": [
-      {
-        "name": "Midwest EMO",
-        "visible": true
-      },
-      {
-        "name": "EMO",
-        "visible": false
-      }
-    ],
-    "weblinks": []
-  },
-  {
-    "id": 214,
-    "id-name": null,
-    "name": "ToMilez",
-    "subname": "",
-    "act-type": [
-      "Artist"
-    ],
-    "description": "Backyard Sa",
-    "image": null,
-    "tags": [
-      {
-        "name": "Bassmusic",
-        "visible": true
-      },
-      {
-        "name": "Bass",
-        "visible": false
-      }
-    ],
-    "weblinks": [
-      {
-        "name": "Instagram",
-        "url": "https://www.instagram.com/to.milezofficial"
-      }
-    ]
-  },
-  {
-    "id": 215,
-    "id-name": null,
-    "name": "Inner Space",
-    "subname": "",
-    "act-type": [
-      "Artist"
-    ],
-    "description": "Schepperschuppen Fr",
-    "image": null,
-    "tags": [
-      {
-        "name": "Hardcore",
-        "visible": true
-      }
-    ],
-    "weblinks": []
-  },
-  {
-    "id": 216,
-    "id-name": null,
-    "name": "Kontraire",
-    "subname": "",
-    "act-type": [
-      "Artist"
-    ],
-    "description": "Home Do - Kontraire klingen geradliniger, bestimmter und schlagkräftiger, lassen jedoch nichts an bisher von ihnen bekannter Theatralik missen. Die Band kostet die Grenzen des klassischen Rocktrios aus und kreiert einen Sound, der voluminös und groß daher kommt. Dabei mischen sich berstende Riffs mit einer erfrischend vielseitigen Dynamik. Texte, in denen melancholische Schwere brodelt werden getragen von einem Gesang, der beschwörend über dem dichten Soundgeflecht schwebt und nicht selten in Momente schreiender Wut ausbricht. Dabei bleiben sich Kontraire ihrer düsteren Ernsthaftigkeit und inhaltlichen Tiefe treu.",
-    "image": null,
-    "tags": [
-      {
-        "name": "Alternativ Rock",
-        "visible": true
-      },
-      {
-        "name": "Rock",
-        "visible": false
-      }
-    ],
-    "weblinks": []
-  },
-  {
-    "id": 217,
-    "id-name": null,
-    "name": "TØSCHE",
-    "subname": "",
-    "act-type": [
-      "Artist"
-    ],
-    "description": "Backyard Sa -",
-    "image": null,
-    "tags": [
-      {
-        "name": "Psytrance",
-        "visible": true
-      },
-      {
-        "name": "Techno",
-        "visible": true
-      }
-    ],
-    "weblinks": [
-      {
-        "name": "Instagram",
-        "url": "https://www.instagram.com/tosche___"
-      }
-    ]
-  },
-  {
-    "id": 218,
-    "id-name": null,
-    "name": "Headless Rooster",
-    "subname": "",
-    "act-type": [
-      "Artist"
-    ],
-    "description": "Home Sa",
-    "image": null,
-    "tags": [
-      {
-        "name": "Grunge'n'Roll",
-        "visible": true
-      }
-    ],
-    "weblinks": []
-  },
-  {
-    "id": 219,
-    "id-name": null,
     "name": "100Sachen80",
     "subname": "",
     "act-type": [
       "Artist"
     ],
-    "description": "Backyard Do - 100Sachen80 - das DJ Duo bestehend aus Daumendreher und Peter. Sie stehen vor allem für abwechslungsreiche Techno, Garage und Drum\"n\"Bass Sets. 100Sachen80 macht alles, nur keine halben Sachen.",
+    "description": "100Sachen80 - das DJ Duo bestehend aus Daumendreher und Peter. Sie stehen vor allem für abwechslungsreiche Techno, Garage und Drum\"n\"Bass Sets. 100Sachen80 macht alles, nur keine halben Sachen.",
     "image": null,
     "tags": [
       {
@@ -526,87 +67,56 @@
     ]
   },
   {
-    "id": 220,
-    "id-name": null,
-    "name": "Nancy",
-    "subname": "",
+    "id": 202,
+    "id-name": "a-kingdom-arise",
+    "name": "A Kingdom Arise",
+    "subname": "Nightpraise",
     "act-type": [
       "Artist"
     ],
-    "description": "Wohn Do - Die Singer-Songwriterin NANCY aus Hannover begeistert mit ihrem authentischen Stil und einer kraftvollen Mischung aus gefühlvollen Melodien und ausdrucksstarken Texten. Im Genre des Deutschpop verankert, zeichnet sich ihre Musik durch tief autobiografische Inhalte aus. Ihre Songs bieten ehrliche Einblicke in ihr Leben, ihre Erfahrungen und Emotionen - und schaffen so eine starke Verbindung zu ihren Hörer*innen. Mit ihrer ersten EP erzählt NANCY die vielschichtige Geschichte einer Liebesbeziehung - mit all ihren Höhen und Tiefen. Ihre unverwechselbare Stimme und die poetische Tiefe ihrer Texte fangen diese emotionalen Facetten ein und zeigen, wie vielseitig und ehrlich Deutschpop sein kann.",
+    "description": "Lobpreisband für alle Fälle - Nightpraise Homestage am Donnerstag",
     "image": null,
     "tags": [
       {
-        "name": "Singer",
+        "name": "Worship",
         "visible": true
       },
       {
-        "name": "Songwriter",
+        "name": "Nightpraise",
         "visible": true
       }
     ],
     "weblinks": [
       {
         "name": "Instagram",
-        "url": "https://www.instagram.com/nancymusic"
+        "url": "https://www.instagram.com/aka_worship/"
       }
     ]
   },
   {
-    "id": 221,
+    "id": 203,
     "id-name": null,
-    "name": "Meijar",
+    "name": "Ace",
     "subname": "",
     "act-type": [
       "Artist"
     ],
-    "description": "Schepperschuppen Sa",
+    "description": "Backyard Sa",
     "image": null,
     "tags": [
       {
-        "name": "Post Hardcore",
+        "name": "Drum",
         "visible": true
       },
       {
-        "name": "Hardcore",
-        "visible": false
+        "name": "Bass",
+        "visible": true
       }
     ],
     "weblinks": []
   },
   {
-    "id": 222,
-    "id-name": null,
-    "name": "GINAmusaxx",
-    "subname": "",
-    "act-type": [
-      "Artist"
-    ],
-    "description": "Wohn Fr -",
-    "image": null,
-    "tags": [
-      {
-        "name": "Country",
-        "visible": true
-      },
-      {
-        "name": "Acoustic",
-        "visible": true
-      },
-      {
-        "name": "Pop",
-        "visible": true
-      }
-    ],
-    "weblinks": [
-      {
-        "name": "Instagram",
-        "url": "https://www.instagram.com/gina_musaxx"
-      }
-    ]
-  },
-  {
-    "id": 223,
+    "id": 204,
     "id-name": "alex-mofa-gang",
     "name": "Alex Mofa Ganf",
     "subname": "",
@@ -637,41 +147,59 @@
     ]
   },
   {
-    "id": 224,
-    "id-name": "pirapus",
-    "name": "Pirapus",
+    "id": 205,
+    "id-name": "alles-wird-ganz-schlimm",
+    "name": "Alles wird ganz Schlimm",
     "subname": "",
     "act-type": [
-      "DJ"
+      "Artist"
     ],
-    "description": "Backyard Sa",
-    "image": "https://assetproxy.hoemepage.com/1747675065-34fb16f7aa37b770ae0244ac92ee29f4004b16e1?p=large",
+    "description": "ALLES WIRD GANZ SCHLIMM - Emo Doom aus Nürnberg und Hof. Auf ihrem Debut VIEL ZU LANG ZUVERSICHT beweqt sich die Band auf der Borderline zwischen Selbstzweifel und Gesellschaftskritik. Dabei steuern sie geradewegs in eine gedankliche Sackgasse und haben praktischerweise auch keinen Lösungsansatz parat. Die musikalischen Einflüsse liegen irgendwo zwischen Filmmusik wie \"28 weeks later\" und \"Chernobyl\" und Bands wie \"Fjort\", \"Okkid\" und \"Audio88\". Oder um es, mit den Worten aus einer Reaktion zum Albumrelease, kurz zusammen zu fassen: \"Wer das nicht fühlt hat keine Probleme.\"",
+    "image": "https://assetproxy.hoemepage.com/1747408910-c4516d52e5959d30b029148a675f000479081ce2?p=large",
     "tags": [
       {
-        "name": "Drum",
+        "name": "EMO",
         "visible": true
       },
       {
-        "name": "Bass",
+        "name": "Doom",
         "visible": true
       }
     ],
     "weblinks": [
       {
         "name": "Instagram",
-        "url": "https://www.instagram.com/pirapus"
+        "url": "https://www.instagram.com/alleswirdganzschlimm"
       }
     ]
   },
   {
-    "id": 225,
+    "id": 206,
+    "id-name": null,
+    "name": "ANNder the Skin",
+    "subname": "",
+    "act-type": [
+      "Artist"
+    ],
+    "description": "Backyard Fr",
+    "image": null,
+    "tags": [
+      {
+        "name": "House",
+        "visible": true
+      }
+    ],
+    "weblinks": []
+  },
+  {
+    "id": 207,
     "id-name": "attic-stories",
     "name": "Attic Stories",
     "subname": "",
     "act-type": [
       "Artist"
     ],
-    "description": "Schepperschuppen Do - ATTIC STORIES ist eine vierköpfige Pop-Punk-Band aus Karlsruhe, Deutschland. In ihren Songs erzählen sie Geschichten, die direkt aus dem Leben gegriffen sind - ehrlich, persönlich und fesselnd. Sie bringen Erinnerungen und Gefühle an die Oberfläche. Das kann weh tun, ist aber auch heilsam. Zwischen Verletzlichkeit und Euphorie wirkt die Stimme von Frontfrau Romana wie eine unterstützende und motivierende Kraft.Wer Bands wie Paramore, Neck Deep, All Time Low, Tonight Alive oder Stand Atlantic mag, wird sich mit ATTIC STORIES sofort anfreunden.",
+    "description": "ATTIC STORIES ist eine vierköpfige Pop-Punk-Band aus Karlsruhe, Deutschland. In ihren Songs erzählen sie Geschichten, die direkt aus dem Leben gegriffen sind - ehrlich, persönlich und fesselnd. Sie bringen Erinnerungen und Gefühle an die Oberfläche. Das kann weh tun, ist aber auch heilsam. Zwischen Verletzlichkeit und Euphorie wirkt die Stimme von Frontfrau Romana wie eine unterstützende und motivierende Kraft.Wer Bands wie Paramore, Neck Deep, All Time Low, Tonight Alive oder Stand Atlantic mag, wird sich mit ATTIC STORIES sofort anfreunden.",
     "image": "https://assetproxy.hoemepage.com/1747675513-d0fe00f9441073f3a059d5ac646bb7b1384a8520?p=large",
     "tags": [
       {
@@ -687,6 +215,441 @@
       {
         "name": "Instagram",
         "url": "https://www.instagram.com/atticstories"
+      }
+    ]
+  },
+  {
+    "id": 208,
+    "id-name": null,
+    "name": "Benninja",
+    "subname": "",
+    "act-type": [
+      "Artist"
+    ],
+    "description": "Backyard Sa",
+    "image": null,
+    "tags": [
+      {
+        "name": "Breakbeat",
+        "visible": true
+      }
+    ],
+    "weblinks": []
+  },
+  {
+    "id": 209,
+    "id-name": null,
+    "name": "BITE",
+    "subname": "",
+    "act-type": [
+      "Artist"
+    ],
+    "description": "BITE ist eine 5-köpfige Heavy Band aus Leipzig, die sich in der Hardcore- und Metalszene gleichermaßen heimisch und zugehörig fühlen. Nach Ihrer Debut-EP \"Sounds of Agony\" haben die Jungs im November 2024 den Nachfolger \"Longing for Eternal Sleep\" veröffentlicht auf der Sie deutlich düsterere Klänge anschlagen und sich zunehmend verspielter zeigen. Wer abwechslungsreiche Songs, schwere Breakdowns, und aggresive Vocals mag ist hier genau richtig.",
+    "image": null,
+    "tags": [
+      {
+        "name": "Metal",
+        "visible": true
+      },
+      {
+        "name": "Hardcore",
+        "visible": true
+      }
+    ],
+    "weblinks": []
+  },
+  {
+    "id": 210,
+    "id-name": null,
+    "name": "Bochow",
+    "subname": "",
+    "act-type": [
+      "Artist"
+    ],
+    "description": "BOCHOW. Drei Träumer die inmitten von atmosphärischen Klangwänden, verzerrten Riffs und beweqten Melodien ihre Harmonie gefunden haben. Zwischen Weltschmerz und Liebe fühlen wir uns am wohlsten und schreien unsere Gedanken und Emotionen laut und roh in die Welt hinaus. BOCHOW ist unser Ventil, unsere Amplitude, unser Mittel zum Loslassen und Ausbrechen. Ein Weg den wir gewählt haben, um mit Problemen klar zu kommen und aus der täglichen Langeweile zu entfliehen. Wohin dieser Weg vollends führen mag, das wissen wir nicht aber wir heißen alle willkommen, sich mit uns treiben zu lassen und es heraus zu finden.",
+    "image": null,
+    "tags": [
+      {
+        "name": "Alternativ Rock",
+        "visible": true
+      },
+      {
+        "name": "Rock",
+        "visible": false
+      }
+    ],
+    "weblinks": [
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/bochowmusik"
+      }
+    ]
+  },
+  {
+    "id": 211,
+    "id-name": "burning-nations",
+    "name": "Burning Nations",
+    "subname": "",
+    "act-type": [
+      "Artist"
+    ],
+    "description": "Burning Nations ist eine Metalcore Band aus Süddeutschland, die ursprünglich 2010 gegründet wurde. Über die Jahre hat die Band es geschafft, ihren eigenen Stil zu entwickeln, der harte Breakdowns mit kraftvollen Vocals und einprägsamen Melodien verbindet. Dass die Jungs Bock auf Action und Interaktion mit dem Publikum haben, stellen sie mit einer energiegeladenen Liveperformance unter Beweis. Mit der Kombination aus harter Musik und leidenschaftlicher Bühnenpräsenz konnten sie schon deutschlandweit ihre Zuhörer begeistern. In ihren Songs geht es um Hoffnung, Verzweiflung und darum, nicht den Mut zu verlieren in einer Welt, die uns ständig mit neuen Herausforderungen konfrontiert. -Even the darkest nights will end with the rising sun.",
+    "image": "https://assetproxy.hoemepage.com/1747409004-ab17c4e5e920ac7c20aecc1b544a74109d6659aa?p=large",
+    "tags": [
+      {
+        "name": "Metalcore",
+        "visible": true
+      }
+    ],
+    "weblinks": [
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/burningnations"
+      }
+    ]
+  },
+  {
+    "id": 212,
+    "id-name": null,
+    "name": "Chaosbay",
+    "subname": "",
+    "act-type": [
+      "Artist"
+    ],
+    "description": "Prog, Djent, Core, Pop. CHAOSBAY aus Berlin/Deutschland halten die Metalwelt in Atem. Millionen von Streams, große Festivals, ausverkaufte Shows und erfolgreiche Headliner-Touren beweisen, dass sich Chaosbay als einer der aufregendsten Metalcore-Acts in Europa etabliert haben. Kaum eine andere Band verbindet virtuosen Prog-Metalcore mit radiotauglichen Hooks auf so einzigartige Weise. Bekannt für ihre unermüdliche Arbeitsmoral, schafft die Band immer wieder Meisterwerke zeitloser Metal-Kompositionen, die sowohl Headbangen als auch frenetisches Mitsingen garantieren. Brutales Riffing und Geschrei trifft auf engelsgleiche Vocals und kraftvolle Melodien. Vergleiche mit Djent-Giganten wie PERIPHERY oder MONUMENTS drängen sich ebenso auf wie Assoziationen mit Metalcore-Legenden wie I PREVAIL, BRING ME THE HORIZON oder BAD OMENS. Die Band tourte bereits mit SIAMESE 2025 und EMIL BULLS 2024 durch Europa, unterstützte ANNISOKAY, VENDED (USA) und DEEZ NUTS und trat in den letzten Jahren auf mehreren Festivals auf, darunter WACKEN, SUMMER BREEZE, EUROBLAST, TAKEDOWN FESTIVAL (UK) und PROGPOWER EUROPE (NL). Das neue Studioalbum ARE YOU AFRAID? wird im Jahr 2024 veröffentlicht. Mit ihren energiegeladenen und beeindruckenden Live-Shows haben sich CHAOSBAY längst den Status einer exzellenten Live-Band aller Genres erspielt. Und seither liefern sie immer wieder zeitlose Ohrwürmer, die ihresgleichen suchen.",
+    "image": null,
+    "tags": [
+      {
+        "name": "Progressive Meatalcore",
+        "visible": true
+      },
+      {
+        "name": "Meatalcore",
+        "visible": false
+      },
+      {
+        "name": "Metal",
+        "visible": false
+      }
+    ],
+    "weblinks": [
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/chaosbayofficial"
+      }
+    ]
+  },
+  {
+    "id": 213,
+    "id-name": null,
+    "name": "Charged Movement Takeover",
+    "subname": "",
+    "act-type": [
+      "Artist"
+    ],
+    "description": "Backyard Sa",
+    "image": null,
+    "tags": [
+      {
+        "name": "Drum",
+        "visible": true
+      },
+      {
+        "name": "Bass",
+        "visible": true
+      }
+    ],
+    "weblinks": []
+  },
+  {
+    "id": 214,
+    "id-name": null,
+    "name": "Chungking Express",
+    "subname": "",
+    "act-type": [
+      "Artist"
+    ],
+    "description": "Two MCs & One DJ - mehr braucht's nicht. Wir servieren Conscious Rap auf staubigen Boom-Bap-Beats - roh, direkt, mit Haltung. Keine Filter, kein Autotune, kein Algorithmus. Nur Seele, Substanz und Skills. Unsere Tracks klingen wie alte Tapes aus dem Ghettoblaster: warm, verrauscht, lebendig. Kein Retro-Hype, kein Nostalgie-Act - das hier ist echt. Ein Statement gegen die Belanglosigkeit. Für mehr Gefühl, Tiefe und Groove. Kopf nickt, Herz hört zu. Lasst es euch schmecken.",
+    "image": null,
+    "tags": [],
+    "weblinks": []
+  },
+  {
+    "id": 215,
+    "id-name": "dj-bieberbitch",
+    "name": "DJ Bieberbitch",
+    "subname": "",
+    "act-type": [
+      "Artist"
+    ],
+    "description": "Wohn Fr",
+    "image": null,
+    "tags": [
+      {
+        "name": "Querbeet",
+        "visible": true
+      }
+    ],
+    "weblinks": []
+  },
+  {
+    "id": 216,
+    "id-name": null,
+    "name": "Ell",
+    "subname": "",
+    "act-type": [
+      "Artist"
+    ],
+    "description": "ELL vereint mit weiblicher stimme und wenigen instrumenten die schönheit einer schlagbohrmaschine mit der power einer duftenden kirschblüte. oder umgekehrt? wer vermag das schon zu beurteilen! erst recht, wenn man dieses krachpop-duo noch nicht live gesehen hat. lisa-anna und lennart sind laut rockband-duden vielleicht personell unterbesetzt, jedoch fehlt es ihnen an absolut gar nichts. sympathisch? jep,\" authentisch? oh ja!\" sound? wie machen die das?!?!\" publika im deutschsprachigen raum sind ELL somit schutzlos ausgeliefert und verlassen shows in der regel mit einem zementierten grinsen, einer neuen frisur und diesem warm-wohligen gefühl, wenn man mit viel liebe ein butterbrot gemacht bekommt. das ist ELL.",
+    "image": null,
+    "tags": [
+      {
+        "name": "Krack-Pop",
+        "visible": true
+      },
+      {
+        "name": "Pop",
+        "visible": false
+      }
+    ],
+    "weblinks": [
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/ell_offiziell"
+      }
+    ]
+  },
+  {
+    "id": 217,
+    "id-name": "elmo",
+    "name": "ELMO",
+    "subname": "",
+    "act-type": [
+      "DJ"
+    ],
+    "description": "Backyard Fr",
+    "image": "https://assetproxy.hoemepage.com/1747675687-293ffc58519ae6be4aa853432357645278ff9f4e?p=large",
+    "tags": [
+      {
+        "name": "Drum",
+        "visible": true
+      },
+      {
+        "name": "Bass",
+        "visible": true
+      }
+    ],
+    "weblinks": [
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/elmo.n.bass"
+      }
+    ]
+  },
+  {
+    "id": 218,
+    "id-name": "escape-the-madness",
+    "name": "Escape the Madness",
+    "subname": "",
+    "act-type": [
+      "Artist"
+    ],
+    "description": "Escape The Madness wurde 2015 im Freundeskreis in Chemnitz gegründet und hat sich seitdem als kraftvolle Band im Modern Metalcore etabliert. Mit einem einzigartigen Sound, der brachiale Riffs, melodische Hooks und dynamische Breakdowns kombiniert, begeistert die Band sowohl neue als auch langjährige Metalcore-Fans. Ihr Debütalbum Drown My Faith\", welches 2020 veröffentlicht wurde, sowie die beiden EPs Continuation Of Misery\" (2022) und Continuation Of Fear\" (2023) zeigen ihre musikalische Entwicklung und Vielfalt. 2025 brachte die Band ihre bisher erfolgreichste Single \"Transhuman\" heraus, die für Aufsehen sorgte und Fans neugierig auf die kommenden Projekte macht. Escape The Madness steht für die Verbindung von Freundschaft, Kreativität und musikalischer Hingabe. Mit weiteren Releases in Planung blicken sie motiviert in Richtung des Festivalsommers und sind fest entschlossen, ihren Platz in der Metalcore-Szene weiter zu festigen.",
+    "image": "https://assetproxy.hoemepage.com/1747408977-4e762fac58d1624677ab3ad81ca6efa9fc23ca8e?p=large",
+    "tags": [
+      {
+        "name": "Modern Metalcore",
+        "visible": true
+      },
+      {
+        "name": "Metalcore",
+        "visible": false
+      }
+    ],
+    "weblinks": [
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/escape_the_madness_official"
+      }
+    ]
+  },
+  {
+    "id": 219,
+    "id-name": null,
+    "name": "Focus",
+    "subname": "",
+    "act-type": [
+      "Artist"
+    ],
+    "description": "Pressetexte von FOCUS. könnte man Jahr für Jahr kopieren. Auch 2025 kommt ein Album. Auch geht die Band (nach Supporttourneen für Sondaschule, Turbobier, Rogers, 3 Meter Feldweg) im Januar mit Hämatom und Engst auf Tour, bevor es im April auf die erste eigene Tour geht. Da sag' mal einer Punks sind faul! Achso, vergessen: Album haben FOCUS. auch gemacht.",
+    "image": null,
+    "tags": [
+      {
+        "name": "Rock",
+        "visible": true
+      }
+    ],
+    "weblinks": [
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/focuspunkt"
+      }
+    ]
+  },
+  {
+    "id": 220,
+    "id-name": null,
+    "name": "GINAmusaxx",
+    "subname": "",
+    "act-type": [
+      "Artist"
+    ],
+    "description": "Wohnzimmer Freitag",
+    "image": null,
+    "tags": [
+      {
+        "name": "Country",
+        "visible": true
+      },
+      {
+        "name": "Acoustic",
+        "visible": true
+      },
+      {
+        "name": "Pop",
+        "visible": true
+      }
+    ],
+    "weblinks": [
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/gina_musaxx"
+      }
+    ]
+  },
+  {
+    "id": 221,
+    "id-name": null,
+    "name": "Gruva/Kopfkultur",
+    "subname": "",
+    "act-type": [
+      "Artist"
+    ],
+    "description": "Gruva ist DJ und Teil des Berliner Technokollektivs Kopfkultur. Mit einem feinen Gespür für Breakbeat, Groove und Trance erschafft Gruva energetische Sets, die zwischen treibendem Rhythmus und verspielter Leichtigkeit balancieren. Dabei geht es ihm nicht nur um den Sound, sondern um die Stimmung: Seine Sets sind eine Einladung zum Loslassen - gute Laune auf dem Dancefloor.",
+    "image": null,
+    "tags": [
+      {
+        "name": "Electronic",
+        "visible": true
+      },
+      {
+        "name": "Beats",
+        "visible": true
+      },
+      {
+        "name": "Club",
+        "visible": true
+      }
+    ],
+    "weblinks": []
+  },
+  {
+    "id": 222,
+    "id-name": null,
+    "name": "Headless Rooster",
+    "subname": "",
+    "act-type": [
+      "Artist"
+    ],
+    "description": "Ihr seid auf der Suche nach puren Rock'n'Roll? Die vier Musiker von Headless Rooster schaffen es puren Rock mit Grunge und einer Briese Punk zu vereinen. Das Programm von Headless Rooster besteht aus überwiegend selbst komponierten Titeln und doch dürfen Klassiker von The Who oder The Stooges nicht fehlen. Ein Alleinstellungsmerkmal der Band ist zudem, dass alle Bandmitglieder in bei einer Show als Sänger in Erscheinung treten.",
+    "image": null,
+    "tags": [
+      {
+        "name": "Grunge'n'Roll",
+        "visible": true
+      }
+    ],
+    "weblinks": [
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/headless.rooster"
+      }
+    ]
+  },
+  {
+    "id": 223,
+    "id-name": null,
+    "name": "Healing",
+    "subname": "",
+    "act-type": [
+      "Artist"
+    ],
+    "description": "Schrottig wie deine abgegriffenen Converse, nostalgisch wie deine König der Löwen VHS und explosiv wie Pop Rocks auf deiner Zunge... das ist der Sound von Healing, einer frischen und aufregenden Combo aus Dresden. Mit einem genreübergreifenden Mix aus Elementen der 90er Grunge-Ära, Punk und Hardrock haben sie ihren eigenen, einzigartigen Sound voller Luftgitarrensoli, mitsingbarer Refrains und treibender Beats entwickelt. Am 29. Januar 2021 veröffentlichten Healing ihre Debütsingle Overgrown. Die Singles Blind Alley und Smoke in Paradise folgten kurz hintereinander im Sommer 2021 und schafften es in die Playlist der großen Redaktionen. Ihre letzten Singles Suns, Traces und E.T., die im Winter 2021 veröffentlicht wurden, erweitern die klangliche Vielfalt der Band von explosivem Skate-Punk bis hin zu tiefgründigen Grunge-Kl[äe]ngen und ermöglichen es ihnen, ihre Leidenschaft für Musik mit einem treuen, st[äe]ndig wachsenden Publikum zu teilen",
+    "image": null,
+    "tags": [
+      {
+        "name": "Grunge",
+        "visible": true
+      },
+      {
+        "name": "Alternativ",
+        "visible": true
+      }
+    ],
+    "weblinks": [
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/healing.band"
+      }
+    ]
+  },
+  {
+    "id": 224,
+    "id-name": null,
+    "name": "Inner Space",
+    "subname": "",
+    "act-type": [
+      "Artist"
+    ],
+    "description": "INNER SPACE sind eine solche Band, die sich von Dißonanz und Brutalität inspirieren läßt und ihre Klangwelt mit pißed beyond pißed shredding screams ergänzt. Textlich kreischt und knurrt ihr Sänger Eric über soziale Unruhen und gespaltene Gesellschaften in unserer modernen Zeit. Wenn alles zusammenpaßt, sind die Weichen gestellt für einen Weg, der härter und wütender nicht sein könnte",
+    "image": null,
+    "tags": [
+      {
+        "name": "Hardcore",
+        "visible": true
+      }
+    ],
+    "weblinks": [
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/innerspacehc"
+      }
+    ]
+  },
+  {
+    "id": 225,
+    "id-name": null,
+    "name": "Jagster",
+    "subname": "",
+    "act-type": [
+      "Artist"
+    ],
+    "description": "Jagster - das sind vier Jungs aus der Region Stollberg im Erzgebirge. Hier begannen sie 2019 ihre ersten Unplugged-Gigs zu spielen und ihre ersten Songs zu schreiben. Von einer Indie-Coverband entwickelten sie sich schnell zu einer hauptsächlich englischsprachigen Rockband und konnten schließlich 2024 ihr Debütalbum Without A Sound\" veröffentlichen. Die Veröffentlichung lässt sich hauptsächlich in die Genres Classic und Alternative Rock einordnen und thematisiert neben Liebe, Schmerz und Leidenschaft auch soziale Themen. Noch bevor das Debütalbum produziert war, arbeiteten sie bereits an der nächsten Veröffentlichung. Inspiriert von dem Ziel, mit den nächsten Songs einen Schritt weiter zu gehen, entstand das Konzeptalbum V\". Während der Großteil der Instrumentalaufnahmen in Eigenregie durchgeführt wurde, wurden die Gesangsaufnahmen und die Endproduktion einem der modernsten Tonstudios Deutschlands anvertraut. Im Gegensatz zum Debütalbum erzählt die EP \"V\" eine zusammenhängende Geschichte über den Trennungsprozess nach einer langjährigen Beziehung. Die lyrische Inspiration dafür wurde aus privaten Erfahrungen geschöpft. Stilistisch hebt sich die Veröffentlichung durch ein progressiveres und härteres Songwriting vom Debütalbum ab und bildet ein in sich geschlossenes Gesamtwerk.\"",
+    "image": null,
+    "tags": [
+      {
+        "name": "Alternativ Rock",
+        "visible": true
+      },
+      {
+        "name": "Rock",
+        "visible": false
+      }
+    ],
+    "weblinks": [
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/jagstermusic"
       }
     ]
   },
@@ -719,13 +682,138 @@
   },
   {
     "id": 227,
+    "id-name": "joe-shepherd",
+    "name": "Joe Shepherd",
+    "subname": "",
+    "act-type": [
+      "Artist"
+    ],
+    "description": "Melancholisch-schöne Folk-songs mit einem Hauch Country, die mit ihrer aufrichtigen Tiefe und Einfachheit Geschichten aus dem Leben erzählen und berühren. Lass dich von der intimen Atmosphäre verzaubern und tauche ein in die Seelenwelt von Joe Shepherd.",
+    "image": "https://assetproxy.hoemepage.com/1747674772-7a69c14eb6c9bf8d0939683c2bdf2df9fc72867b?p=large",
+    "tags": [
+      {
+        "name": "Folk",
+        "visible": true
+      },
+      {
+        "name": "Country",
+        "visible": true
+      }
+    ],
+    "weblinks": [
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/thisisjoeshepherd"
+      }
+    ]
+  },
+  {
+    "id": 228,
+    "id-name": null,
+    "name": "Johne Kite",
+    "subname": "",
+    "act-type": [
+      "Artist"
+    ],
+    "description": "Backyard Fr",
+    "image": null,
+    "tags": [
+      {
+        "name": "Drum",
+        "visible": true
+      },
+      {
+        "name": "Bass",
+        "visible": true
+      }
+    ],
+    "weblinks": []
+  },
+  {
+    "id": 229,
+    "id-name": "karla-blum",
+    "name": "Karla Blum",
+    "subname": "",
+    "act-type": [
+      "DJ"
+    ],
+    "description": "Wenn uns Filme in den letzten 10 Jahren etwas gelehrt haben, dann, dass wir alle eine Ursprungsgeschichte lieben. Karla Blum ist genau so eine Künstlerin. Glänzend und neu, ihre Augen leuchten vor Möglichkeiten, geht sie mit stählerner Entschlossenheit auf ihre Klangreise. Aber sie hat einen Vorteil. Da sie in Berlin geboren und aufgewachsen ist, hat sie die Möglichkeit, die größte Techno-Show der Welt hautnah mitzuerleben - eine Stadt mit einer Fälle von Clubbing-Möglichkeiten. Ihr erster Gig fand zum Beispiel im weltberühmten Ritter Butzke statt, einer ehemaligen Fabrik im Bezirk Kreuzberg, die 2007 als illegaler Club begann und schnell an Popularität gewann und zwei Jahre später offiziell wurde.",
+    "image": "https://assetproxy.hoemepage.com/1747675241-a03c546af52b15d862b06f1984fb4a7a6dcc5f96?p=large",
+    "tags": [
+      {
+        "name": "Techno",
+        "visible": true
+      }
+    ],
+    "weblinks": [
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/dj_karla_blum"
+      }
+    ]
+  },
+  {
+    "id": 230,
+    "id-name": null,
+    "name": "Kickers Dibs",
+    "subname": "",
+    "act-type": [
+      "Artist"
+    ],
+    "description": "Absage, als Ersatz kommt \"The Livelines\"",
+    "image": null,
+    "tags": [
+      {
+        "name": "Indie Rock",
+        "visible": true
+      },
+      {
+        "name": "Indie",
+        "visible": false
+      },
+      {
+        "name": "Rock",
+        "visible": false
+      }
+    ],
+    "weblinks": []
+  },
+  {
+    "id": 231,
+    "id-name": null,
+    "name": "Kontraire",
+    "subname": "",
+    "act-type": [
+      "Artist"
+    ],
+    "description": "Kontraire klingen geradliniger, bestimmter und schlagkräftiger, lassen jedoch nichts an bisher von ihnen bekannter Theatralik missen. Die Band kostet die Grenzen des klassischen Rocktrios aus und kreiert einen Sound, der voluminös und groß daher kommt. Dabei mischen sich berstende Riffs mit einer erfrischend vielseitigen Dynamik. Texte, in denen melancholische Schwere brodelt werden getragen von einem Gesang, der beschwörend über dem dichten Soundgeflecht schwebt und nicht selten in Momente schreiender Wut ausbricht. Dabei bleiben sich Kontraire ihrer düsteren Ernsthaftigkeit und inhaltlichen Tiefe treu.",
+    "image": null,
+    "tags": [
+      {
+        "name": "Alternativ Rock",
+        "visible": true
+      },
+      {
+        "name": "Rock",
+        "visible": false
+      }
+    ],
+    "weblinks": [
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/kontraire"
+      }
+    ]
+  },
+  {
+    "id": 232,
     "id-name": "lenax-heartbroken",
     "name": "Lenax & The Heartbroken",
     "subname": "",
     "act-type": [
       "Artist"
     ],
-    "description": "Home Fr - LENAX & The Heartbroken ist eine Indie-Band aus Dresden, bestehend aus LENAX, der bereits als Solokünstler Musik veröffentlicht hat, Michael Netwall (Gitarre), Kornelius Lehmann (Bass), Alec Miller (Schlagzeug) und Louis Blawert (Tasten). Die Band arbeitet seit 2024 zusammen und hat im März 2025 ihre Debütsingle - sorry x- veröffentlicht.",
+    "description": "LENAX & The Heartbroken ist eine Indie-Band aus Dresden, bestehend aus LENAX, der bereits als Solokünstler Musik veröffentlicht hat, Michael Netwall (Gitarre), Kornelius Lehmann (Bass), Alec Miller (Schlagzeug) und Louis Blawert (Tasten). Die Band arbeitet seit 2024 zusammen und hat im März 2025 ihre Debütsingle - sorry x- veröffentlicht.",
     "image": "https://assetproxy.hoemepage.com/1747675294-ff8e822d10f3f784fbda9854ae1496d171ef095d?p=large",
     "tags": [
       {
@@ -741,40 +829,410 @@
         "visible": false
       }
     ],
-    "weblinks": []
+    "weblinks": [
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/lenxa.music"
+      }
+    ]
   },
   {
-    "id": 228,
-    "id-name": "joe-shepherd",
-    "name": "Joe Shepherd",
+    "id": 233,
+    "id-name": null,
+    "name": "Lessoner",
     "subname": "",
     "act-type": [
       "Artist"
     ],
-    "description": "Wohn Do - Melancholisch-schöne Folk-songs mit einem Hauch Country, die mit ihrer aufrichtigen Tiefe und Einfachheit Geschichten aus dem Leben erzählen und berühren. Lass dich von der intimen Atmosphäre verzaubern und tauche ein in die Seelenwelt von Joe Shepherd.",
-    "image": "https://assetproxy.hoemepage.com/1747674772-7a69c14eb6c9bf8d0939683c2bdf2df9fc72867b?p=large",
+    "description": "Der tägliche Kampf mit den eigenen Gedanken und das Aushalten der modernen Einsamkeit. Trotz schlechter Aussichten immer wieder die Kraft finden, nach Lösungen zu suchen, um die eigene Welt erträglicher zumachen. Es ist der wiederkehrende Wechsel von Melancholie und Aufschwung, der sich in der Musik von Lessoner widerspiegelt. Ein Versuch, dem Chaos im Kopf ein Ventil zu bieten und die angestauten Emotionen mit anderen zu teilen",
+    "image": null,
     "tags": [
       {
-        "name": "Folk",
+        "name": "EMO",
+        "visible": true
+      }
+    ],
+    "weblinks": [
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/lessoner.band"
+      }
+    ]
+  },
+  {
+    "id": 234,
+    "id-name": "lionlion",
+    "name": "LIONLION",
+    "subname": "",
+    "act-type": [
+      "Artist"
+    ],
+    "description": "Wir versuchen, den goldenen Mittelweg zwischen Poesie und Sachlichkeit, Bewegung und Ruhe, großen Gesten und leisen Tönen zu finden. Jeder von uns hat einen anderen musikalischen Hintergrund und deshalb lassen sich unsere Songs nicht wirklich in ein bestimmtes Genre einordnen: Unsere Klangwelt erinnert an den Drive von Mutemath, die eingängigen Melodien von Keane, den Charme von The Notwist und die Grandezza von Muse. Schnoddriger Britpop der Jahrtausendwende berührt einen sphärischen James-Bond-Soundtrack, Sgt. Pepper grüßt in die Klangsphären von Pink Floyd.",
+    "image": null,
+    "tags": [
+      {
+        "name": "Indie Rock",
         "visible": true
       },
       {
-        "name": "Country",
+        "name": "Indie",
+        "visible": false
+      },
+      {
+        "name": "Rock",
+        "visible": false
+      }
+    ],
+    "weblinks": [
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/lionlionmusic"
+      }
+    ]
+  },
+  {
+    "id": 235,
+    "id-name": "lohrge",
+    "name": "Lohrge",
+    "subname": "",
+    "act-type": [
+      "Artist"
+    ],
+    "description": "Bubblegrunge mit Post-Punk-Einflüssen, est. 2022. Das Quartett kombiniert grungigen Gitarrensound mit zweistimmigen Gesangsmelodien und Texten über Liebe, Hass und sterbende Hunde. Klingt besser als dünner Kaffee schmeckt!",
+    "image": "https://assetproxy.hoemepage.com/1747675408-008e28b07e96a215f739bf5478fae13ace844944?p=large",
+    "tags": [
+      {
+        "name": "Bubblegrunge",
         "visible": true
+      }
+    ],
+    "weblinks": [
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/lohrge"
+      }
+    ]
+  },
+  {
+    "id": 236,
+    "id-name": null,
+    "name": "Meijar",
+    "subname": "",
+    "act-type": [
+      "Artist"
+    ],
+    "description": "MEIJAR - ein Vierergespann aus Dresden, Deutschland eröffnet das Buffet. Auf der Speisekarte stehen roher Grunge, düsterer Ambient und wütend verzweifelter Post-Hardcore medium rare. Köstlich! MElJARs vielseitiger Sound wird zu fies gebrüllten und verträumt gesungenen deutschen Texten serviert. Melancholie dient als Liaison zu den akustischen Gängen. Nach dem Dessert bleiben trotz gastgeberischer Sorgfalt viele ordinäre Bierflecken auf Omas Anrichte zurück ...",
+    "image": null,
+    "tags": [
+      {
+        "name": "Post Hardcore",
+        "visible": true
+      },
+      {
+        "name": "Hardcore",
+        "visible": false
+      }
+    ],
+    "weblinks": [
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/meijarband"
+      }
+    ]
+  },
+  {
+    "id": 237,
+    "id-name": null,
+    "name": "Mirror of Societiy",
+    "subname": "",
+    "act-type": [
+      "Artist"
+    ],
+    "description": "Backyard Do",
+    "image": null,
+    "tags": [
+      {
+        "name": "Haus",
+        "visible": true
+      },
+      {
+        "name": "Hardtechnot",
+        "visible": true
+      },
+      {
+        "name": "Techno",
+        "visible": false
       }
     ],
     "weblinks": []
   },
   {
-    "id": 229,
-    "id-name": "elmo",
-    "name": "ELMO",
+    "id": 238,
+    "id-name": null,
+    "name": "Nancy",
+    "subname": "",
+    "act-type": [
+      "Artist"
+    ],
+    "description": "Die Singer-Songwriterin NANCY aus Hannover begeistert mit ihrem authentischen Stil und einer kraftvollen Mischung aus gefühlvollen Melodien und ausdrucksstarken Texten. Im Genre des Deutschpop verankert, zeichnet sich ihre Musik durch tief autobiografische Inhalte aus. Ihre Songs bieten ehrliche Einblicke in ihr Leben, ihre Erfahrungen und Emotionen - und schaffen so eine starke Verbindung zu ihren Hörer*innen. Mit ihrer ersten EP erzählt NANCY die vielschichtige Geschichte einer Liebesbeziehung - mit all ihren Höhen und Tiefen. Ihre unverwechselbare Stimme und die poetische Tiefe ihrer Texte fangen diese emotionalen Facetten ein und zeigen, wie vielseitig und ehrlich Deutschpop sein kann.",
+    "image": null,
+    "tags": [
+      {
+        "name": "Singer",
+        "visible": true
+      },
+      {
+        "name": "Songwriter",
+        "visible": true
+      }
+    ],
+    "weblinks": [
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/nancymusic"
+      }
+    ]
+  },
+  {
+    "id": 239,
+    "id-name": "never-yours",
+    "name": "Never Yours",
+    "subname": "",
+    "act-type": [
+      "Artist"
+    ],
+    "description": "Never Yours ist eine 4-köpfige Band aus Nürnberg, die sich irgendwo zwischen Emo und Pop-Punk wiederfindet. Sie verpackt persönliche aber auch gesellschaftliche Themen mit eingängigen Gesangsmelodien und melodischen Gitarrenriffs. Mit ihrer 2024 veröffentlichten Debut-EP \"Reason To Stay\" im Gepäck standen bereits die ersten Shows auf dem Plan - überzeugt euch selbst",
+    "image": null,
+    "tags": [
+      {
+        "name": "EMO",
+        "visible": true
+      },
+      {
+        "name": "Pop-Punk",
+        "visible": true
+      },
+      {
+        "name": "Pop",
+        "visible": false
+      },
+      {
+        "name": "Punk",
+        "visible": false
+      }
+    ],
+    "weblinks": [
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/neveryoursband"
+      }
+    ]
+  },
+  {
+    "id": 240,
+    "id-name": null,
+    "name": "Nicolazz",
+    "subname": "",
+    "act-type": [
+      "Artist"
+    ],
+    "description": "Wohnzimmer Sa",
+    "image": null,
+    "tags": [
+      {
+        "name": "Singer",
+        "visible": true
+      },
+      {
+        "name": "Songwriter",
+        "visible": true
+      }
+    ],
+    "weblinks": [
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/nicolazzmusic"
+      }
+    ]
+  },
+  {
+    "id": 241,
+    "id-name": "nidare",
+    "name": "Nidare",
+    "subname": "",
+    "act-type": [
+      "Artist"
+    ],
+    "description": "Nidare kommen aus dem Herzen Berlins und kreieren einen Sound, der so weitreichend ist wie ihre Ursprünge. Ihre Musik schöpft tief aus der Quelle ihrer Einflüsse, darunter Deafheaven, Der Weg einer Freiheit, Amenra und Oathbreaker. Sie verweben atmosphärische Klangwelten mit der rohen Intensität des Black Metal.",
+    "image": null,
+    "tags": [
+      {
+        "name": "Post Black Metal",
+        "visible": true
+      },
+      {
+        "name": "Metal",
+        "visible": false
+      }
+    ],
+    "weblinks": [
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/nidareblackmetal"
+      }
+    ]
+  },
+  {
+    "id": 242,
+    "id-name": "oliver-gehmlich",
+    "name": "Oliver Gehmlich",
+    "subname": "",
+    "act-type": [
+      "Artist"
+    ],
+    "description": "Oliver Gehmlich - viel Stimme, viel Gefühl, viel Typ. Zwischen Musical, Klassik und Pop Erleben Sie einen Abend voller musikalischer Vielfalt mit Oliver Gehmlich - einem Sänger, der mit ausdrucksstarker Stimme und echter Hingabe begeistert. Seit frühester Kindheit auf der Bühne bringt er seine Erfahrungen aus zahlreichen Ensembleproduktionen nun als Solokünstler auf die Bühne. Auch wenn die Bretter, die die Welt bedeuten, für ihn nur ein Nebenschauplatz sind - sie sind sein wahres Zuhause. Mit einem Repertoire von großen Musicalmomenten über klassische Melodien bis hin zu gefühlvollen Popsongs lädt er sein Publikum zum Lauschen, Träumen und Mitfühlen ein. Authentisch. Emotional. Berührend",
+    "image": null,
+    "tags": [
+      {
+        "name": "Musical",
+        "visible": true
+      },
+      {
+        "name": "Klassic",
+        "visible": true
+      },
+      {
+        "name": "Pop",
+        "visible": true
+      }
+    ],
+    "weblinks": [
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/gehmlich.singt"
+      }
+    ]
+  },
+  {
+    "id": 243,
+    "id-name": "palzar",
+    "name": "Palazar",
+    "subname": "",
+    "act-type": [
+      "Artist"
+    ],
+    "description": "Backyard Fr",
+    "image": null,
+    "tags": [
+      {
+        "name": "Hardtechno",
+        "visible": true
+      },
+      {
+        "name": "Hardtrance",
+        "visible": true
+      },
+      {
+        "name": "Techno",
+        "visible": false
+      }
+    ],
+    "weblinks": []
+  },
+  {
+    "id": 244,
+    "id-name": null,
+    "name": "Patrick Krushed",
+    "subname": "",
+    "act-type": [
+      "Artist"
+    ],
+    "description": "Backyard Fr",
+    "image": null,
+    "tags": [],
+    "weblinks": []
+  },
+  {
+    "id": 245,
+    "id-name": "paul-brunner",
+    "name": "Paul Brunner",
+    "subname": "",
+    "act-type": [
+      "Artist"
+    ],
+    "description": "Vom ehemaligen Außenseiter in der Schule zum selbstbewussten Künstler auf der Bühne. Mit seiner einzigartigen Stimme überzeugt Paul Brunner nicht nur live sondern in Zukunft auch auf seinen eigenen Platten. Seine Songs schreibt der 21 Jährige im Team mit Revelle (das ungeklärte,...) und Kurt Stolle (Jonas Monar, 1986zig, Matthias Schweighöfer,...). Seine erste Single \"Nie Wieder Gehen\" beschreibt den Wunsch, dass eine bestimmter Moment nie zu ende geht. Klar ist: mit dem ersten Aufschlag wird bereits mit Großstadtsound und direkten Texten ein Zeichen gesetzt. Mit der zweiten Single \"Da für dich\" erzählt Paul die Geschichte von seinem Bruder und ihm. Mit minimalistischem Sound und Ehrlichkeit spricht er mit diesem Song vielen Menschen aus der Seele.",
+    "image": null,
+    "tags": [
+      {
+        "name": "Indie Pop",
+        "visible": true
+      },
+      {
+        "name": "Indie",
+        "visible": false
+      },
+      {
+        "name": "Pop",
+        "visible": false
+      }
+    ],
+    "weblinks": [
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/brunnermusik"
+      }
+    ]
+  },
+  {
+    "id": 246,
+    "id-name": null,
+    "name": "PaulA",
+    "subname": "",
+    "act-type": [
+      "Artist"
+    ],
+    "description": "Die Erfurter Musikerin PaulA liebt und lebt handgemachte Musik. Mit Gitarre und Loop Station reist sie am liebsten durch ihre Gedankenstraßen und packt alle Worte und Gefühle ein, bis ein Lied daraus entsteht - mal wuselig, mal wütend, ab und zu auch gemütlich. Wie es in ihrem Kopf passiert, verschwimmen dabei die Grenzen politischer und privater Themen. Es geht um Liebe, Krisen, Weltschmerz und alles dazwischen.",
+    "image": null,
+    "tags": [],
+    "weblinks": []
+  },
+  {
+    "id": 247,
+    "id-name": null,
+    "name": "Pennwood Rd.",
+    "subname": "",
+    "act-type": [
+      "Artist"
+    ],
+    "description": "Schepperschuppen Sa",
+    "image": null,
+    "tags": [
+      {
+        "name": "Midwest EMO",
+        "visible": true
+      },
+      {
+        "name": "EMO",
+        "visible": false
+      }
+    ],
+    "weblinks": [
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/pennwoodrd"
+      }
+    ]
+  },
+  {
+    "id": 248,
+    "id-name": "pirapus",
+    "name": "Pirapus",
     "subname": "",
     "act-type": [
       "DJ"
     ],
-    "description": "Backyard Fr",
-    "image": "https://assetproxy.hoemepage.com/1747675687-293ffc58519ae6be4aa853432357645278ff9f4e?p=large",
+    "description": "Backyard Sa",
+    "image": "https://assetproxy.hoemepage.com/1747675065-34fb16f7aa37b770ae0244ac92ee29f4004b16e1?p=large",
     "tags": [
       {
         "name": "Drum",
@@ -788,37 +1246,220 @@
     "weblinks": [
       {
         "name": "Instagram",
-        "url": "https://www.instagram.com/elmo.n.bass"
+        "url": "https://www.instagram.com/pirapus"
       }
     ]
   },
   {
-    "id": 230,
-    "id-name": "lohrge",
-    "name": "Lohrge",
+    "id": 249,
+    "id-name": null,
+    "name": "Praise United",
     "subname": "",
     "act-type": [
       "Artist"
     ],
-    "description": "Schepperschuppen Fr - Bubblegrunge mit Post-Punk-Einflüssen, est. 2022. Das Quartett kombiniert grungigen Gitarrensound mit zweistimmigen Gesangsmelodien und Texten über Liebe, Hass und sterbende Hunde. Klingt besser als dünner Kaffee schmeckt!",
-    "image": "https://assetproxy.hoemepage.com/1747675408-008e28b07e96a215f739bf5478fae13ace844944?p=large",
+    "description": "Home Fr",
+    "image": null,
     "tags": [
       {
-        "name": "Bubblegrunge",
+        "name": "Worship",
+        "visible": true
+      },
+      {
+        "name": "Nightpraise",
         "visible": true
       }
     ],
     "weblinks": []
   },
   {
-    "id": 231,
+    "id": 250,
+    "id-name": null,
+    "name": "Promised",
+    "subname": "",
+    "act-type": [
+      "Artist"
+    ],
+    "description": "Home Sa",
+    "image": null,
+    "tags": [
+      {
+        "name": "Worship",
+        "visible": true
+      },
+      {
+        "name": "Nightpraise",
+        "visible": true
+      }
+    ],
+    "weblinks": []
+  },
+  {
+    "id": 251,
+    "id-name": "subkone",
+    "name": "SubkoØne",
+    "subname": "",
+    "act-type": [
+      "Artist"
+    ],
+    "description": "Backyard Fr",
+    "image": null,
+    "tags": [
+      {
+        "name": "Techno",
+        "visible": true
+      },
+      {
+        "name": "Hardtechno",
+        "visible": true
+      },
+      {
+        "name": "Hardtrance",
+        "visible": true
+      }
+    ],
+    "weblinks": [
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/subko_1"
+      }
+    ]
+  },
+  {
+    "id": 252,
+    "id-name": null,
+    "name": "TØSCHE",
+    "subname": "",
+    "act-type": [
+      "Artist"
+    ],
+    "description": "Backyard Sa -",
+    "image": null,
+    "tags": [
+      {
+        "name": "Psytrance",
+        "visible": true
+      },
+      {
+        "name": "Techno",
+        "visible": true
+      }
+    ],
+    "weblinks": [
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/tosche___"
+      }
+    ]
+  },
+  {
+    "id": 253,
+    "id-name": null,
+    "name": "The Livelines",
+    "subname": "",
+    "act-type": [
+      "Artist"
+    ],
+    "description": "Home Fr (Ersatz für Kicker Dibs)",
+    "image": null,
+    "tags": [
+      {
+        "name": "Rock",
+        "visible": true
+      }
+    ],
+    "weblinks": []
+  },
+  {
+    "id": 254,
+    "id-name": "tiliah-music",
+    "name": "Tiliah.Music",
+    "subname": "",
+    "act-type": [
+      "Artist"
+    ],
+    "description": "Wohn Fr",
+    "image": null,
+    "tags": [
+      {
+        "name": "Singer",
+        "visible": true
+      },
+      {
+        "name": "Songwriter",
+        "visible": true
+      }
+    ],
+    "weblinks": [
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/tiliah.music"
+      }
+    ]
+  },
+  {
+    "id": 255,
+    "id-name": null,
+    "name": "ToMilez",
+    "subname": "",
+    "act-type": [
+      "Artist"
+    ],
+    "description": "Backyard Sa",
+    "image": null,
+    "tags": [
+      {
+        "name": "Bassmusic",
+        "visible": true
+      },
+      {
+        "name": "Bass",
+        "visible": false
+      }
+    ],
+    "weblinks": [
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/to.milezofficial"
+      }
+    ]
+  },
+  {
+    "id": 256,
+    "id-name": null,
+    "name": "Twofronts",
+    "subname": "",
+    "act-type": [
+      "Artist"
+    ],
+    "description": "Übersättigt von der Heuchelei an Spaßkultur, könnte der ganze Gute-Laune-Brechreiz wohl kaum anstrengender sein. TwoFronts aus Chemnitz boykottieren eure schlecht gespielten Good Vibes. Gegründet 2023, bestehend aus zwei Vocals wie Gitarren, Drums und Bass, bilden sie ein buntgemischtes Konstrukt der Schwarzmalerei. Sechs runtergekommene Typen die nichts besseres zutun haben, als die Fetzen zweier Genres in einem Klangteppich zu verstricken, diesen mit Benzin zu begießen und anzuzünden - Patchwork. Asozial, ungefiltert und ohne jegliches Gespür für Massentauglichkeit entsteht so kompromisslose Crossovermusik. Inspiriert durch die NuMetal-ära kreuzen sie die Genstränge von Metal und HipHop und katapultieren überforderte Endkonsumenten zurück in die 90er. Saubere Raptexte und ekelhafte Screams werden über brachiale Riffs durch melodische Synths getragen, nur um dann von schmetternden Drums übertönt zu werden. Die Lyrics bilden den Gegenpol zum allgemeinen Schmusekurs der deutschen Musikwelt. Keine Schönrednerei, sondern brutale Ehrlichkeit. Keine Sozialkritik, sondern manifestierter Hass aufs Establishment. Einfach mal kein Bullshit.",
+    "image": null,
+    "tags": [
+      {
+        "name": "Nu Metal",
+        "visible": true
+      },
+      {
+        "name": "Metal",
+        "visible": false
+      }
+    ],
+    "weblinks": [
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/two_fronts"
+      }
+    ]
+  },
+  {
+    "id": 257,
     "id-name": "waffellobby",
     "name": "Waffellobby",
     "subname": "",
     "act-type": [
       "Artist"
     ],
-    "description": "Wohn Fr - Alle Menschen lieben W affeln! Waffellobby ist das Soloprojekt von Florian Jaster, welcher seine Lieder mit Gitarre und Gesang auf die Bühne bringt. Musikalisch ist die Waffellobby im deutschsprachigen Singer-Songwriter-Bereich zu finden und bietet mit gefühlvollen aber auch humorvollen Liedern ein buntes Waffel-Buffet.",
+    "description": "Alle Menschen lieben W affeln! Waffellobby ist das Soloprojekt von Florian Jaster, welcher seine Lieder mit Gitarre und Gesang auf die Bühne bringt. Musikalisch ist die Waffellobby im deutschsprachigen Singer-Songwriter-Bereich zu finden und bietet mit gefühlvollen aber auch humorvollen Liedern ein buntes Waffel-Buffet.",
     "image": "https://assetproxy.hoemepage.com/1747674938-d14c8c1de7e69536a7f842c9cefff5d3f42db1ed?p=large",
     "tags": [
       {
@@ -838,97 +1479,29 @@
     ]
   },
   {
-    "id": 232,
-    "id-name": "karla-blum",
-    "name": "Karla Blum",
-    "subname": "",
-    "act-type": [
-      "DJ"
-    ],
-    "description": "Backyard Fr - Wenn uns Filme in den letzten 10 Jahren etwas gelehrt haben, dann, dass wir alle eine Ursprungsgeschichte lieben. Karla Blum ist genau so eine Künstlerin. Glänzend und neu, ihre Augen leuchten vor Möglichkeiten, geht sie mit stählerner Entschlossenheit auf ihre Klangreise. Aber sie hat einen Vorteil. Da sie in Berlin geboren und aufgewachsen ist, hat sie die Möglichkeit, die größte Techno-Show der Welt hautnah mitzuerleben - eine Stadt mit einer Fälle von Clubbing-Möglichkeiten. Ihr erster Gig fand zum Beispiel im weltberühmten Ritter Butzke statt, einer ehemaligen Fabrik im Bezirk Kreuzberg, die 2007 als illegaler Club begann und schnell an Popularität gewann und zwei Jahre später offiziell wurde.",
-    "image": "https://assetproxy.hoemepage.com/1747675241-a03c546af52b15d862b06f1984fb4a7a6dcc5f96?p=large",
-    "tags": [
-      {
-        "name": "Techno",
-        "visible": true
-      }
-    ],
-    "weblinks": []
-  },
-  {
-    "id": 233,
-    "id-name": "burning-nations",
-    "name": "Burning Nations",
+    "id": 258,
+    "id-name": null,
+    "name": "John Baily",
     "subname": "",
     "act-type": [
       "Artist"
     ],
-    "description": "Schepperschuppen Fr - Burning Nations ist eine Metalcore Band aus Süddeutschland, die ursprünglich 2010 gegründet wurde. Über die Jahre hat die Band es geschafft, ihren eigenen Stil zu entwickeln, der harte Breakdowns mit kraftvollen Vocals und einprägsamen Melodien verbindet. Dass die Jungs Bock auf Action und Interaktion mit dem Publikum haben, stellen sie mit einer energiegeladenen Liveperformance unter Beweis. Mit der Kombination aus harter Musik und leidenschaftlicher Bühnenpräsenz konnten sie schon deutschlandweit ihre Zuhörer begeistern. In ihren Songs geht es um Hoffnung, Verzweiflung und darum, nicht den Mut zu verlieren in einer Welt, die uns ständig mit neuen Herausforderungen konfrontiert. -Even the darkest nights will end with the rising sun.-",
-    "image": "https://assetproxy.hoemepage.com/1747409004-ab17c4e5e920ac7c20aecc1b544a74109d6659aa?p=large",
+    "description": "Dj John Baily kommt aus der Nähe von Erfurt und ist seit mehr als 25 Jahren leidenschaftlicher DJ. Schon längst nicht mehr nur in seiner Heimat Thüringen bekannt, legte er in naher Vergangenheit in legendären Clubs wie dem Sisy- phos Berlin, dem Club Cubique Innsbruck oder dem Holy Polo Club Osnabrück auf. Weitere Stationen waren in regionale Clubs wie dem Heizwerk (Klangkino Gebesee), Central Club (Erfurt), ClubRoom (Ei- senach) und dem Zughafen Erfurt sowie Clubgigs und Festivals in Brandenburg, Hessen, Sachsen, Sachsen-Anhalt, Baden-Württem- berg und Bayern. Ob Opening, Primetime oder Aftershow, Johns' Gespür für Publikum und Location beweist jedes Mal aufs Neue, dass er das Auflegen liebt. Fragt man ihn nach seinem Sound, beschreibt er diesen als ener- giegeladen, treibend, mitreißend! Aber keinesfalls überfordernd. Und eines ist ihm besonders wichtig, dass seine Sets - eine gute Mi- schung aus Techhouse und Techno - die Partycrowd auf engstem Raum miteinander vereinen. Im Herbst 2023 entschied er sich, seine musikalische Laufbahn wei- terzuentwickeln und produziert seitdem nun auch seinen eigenen Sound. Seine erste EP Cancer\" kam im Januar auf \"Ode To Bass Records\", einem portugiesischen Label, heraus. Weitere Releases folgten auf dem thüringischen Label \"TillmoonShine\". Sein neuster Track \"Avior\" steht bereits in den Startlöchern. (Veröffentlichung im Mai 2024 auf dem Düsseldorfer Label \"Eisenwaren\".) Johns größte Leidenschaft neben dem Auflegen? Ganz klar seine stetig wachsende Vinylsammlung, die schon jetzt mehrere Tausend schwarze Scheiben zählt.\"",
+    "image": null,
     "tags": [
       {
-        "name": "Metalcore",
-        "visible": true
-      }
-    ],
-    "weblinks": [
-      {
-        "name": "Instagram",
-        "url": "https://www.instagram.com/burningnations"
-      }
-    ]
-  },
-  {
-    "id": 234,
-    "id-name": "alles-wird-ganz-schlimm",
-    "name": "Alles wird ganz Schlimm",
-    "subname": "",
-    "act-type": [
-      "Artist"
-    ],
-    "description": "Schepperschuppen Sa  -",
-    "image": "https://assetproxy.hoemepage.com/1747408910-c4516d52e5959d30b029148a675f000479081ce2?p=large",
-    "tags": [
-      {
-        "name": "EMO",
+        "name": "Techhouse",
         "visible": true
       },
       {
-        "name": "Doom",
-        "visible": true
-      }
-    ],
-    "weblinks": [
-      {
-        "name": "Instagram",
-        "url": "https://www.instagram.com/alleswirdganzschlimm"
-      }
-    ]
-  },
-  {
-    "id": 235,
-    "id-name": "escape-the-madness",
-    "name": "Escape the Madness",
-    "subname": "",
-    "act-type": [
-      "Artist"
-    ],
-    "description": "Schepperschuppen Sa  -",
-    "image": "https://assetproxy.hoemepage.com/1747408977-4e762fac58d1624677ab3ad81ca6efa9fc23ca8e?p=large",
-    "tags": [
-      {
-        "name": "Modern Metalcore",
-        "visible": true
-      },
-      {
-        "name": "Metalcore",
+        "name": "House",
         "visible": false
       }
     ],
     "weblinks": [
       {
         "name": "Instagram",
-        "url": "https://www.instagram.com/escape_the_madness_official"
+        "url": "https://www.instagram.com/johnbaily"
       }
     ]
   }
