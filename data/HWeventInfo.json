@@ -27,113 +27,137 @@
             "id": 1000,
             "name": "Preise & Solibeitrag",
             "subtitle": "",
-            "icon": "preis",
-            "text": "Solibeitrag? Solibeitrag! Homeward soll ein Ort sein, an dem jeder Mensch willkommen ist. Da bei einem bunten Haufen wie uns Manche mehr und Manche weniger Geld haben, finden wir einen festen Preis unangemessen. Gerechtigkeit bedeutet eben nicht für alle das Gleiche, sondern das, was zur eigenen Situation passt. Damit sich das Homeward trägt, braucht es im Schnitt die unten angegeben Preise. Bitte entscheide selbst, wieviel du davon geben kannst.* Kleiner Reminder: Jeder Euro mehr sorgt mit für all jene, die wenig geben können. *(Wenn du weniger Geld zur Verfügung hast, sprich uns bitte an. Wir wollen eine Lösung mit dir finden.)In diesem Sinne, Danke für Deine Unterstützung, Dein homeward Festival"
+            "text": "Solibeitrag? Solibeitrag! Homeward soll ein Ort sein, an dem jeder Mensch willkommen ist. Da bei einem bunten Haufen wie uns Manche mehr und Manche weniger Geld haben, finden wir einen festen Preis unangemessen. Gerechtigkeit bedeutet eben nicht für alle das Gleiche, sondern das, was zur eigenen Situation passt. Damit sich das Homeward trägt, braucht es im Schnitt die unten angegeben Preise. Bitte entscheide selbst, wieviel du davon geben kannst.* Kleiner Reminder: Jeder Euro mehr sorgt mit für all jene, die wenig geben können. * (Wenn du weniger Geld zur Verfügung hast, sprich uns bitte an. Wir wollen eine Lösung mit dir finden.) In diesem Sinne, Danke für Deine Unterstützung, Dein homeward Festival"
         },
         {
-            "id":1021,
+            "id":1001,
             "name": "Öffnungszeiten",
             "subtitle": "",
-            "icon": "uhr",
-            "text": "Donnerstag 16:00 - 00:00 Uhr Kasse: 16:00 - 22:00 Uhr, Freitag 9:30 - 03:00 Uhr Kasse: 9:30 - 22:00 Uhr, Samstag 9:30 - 03:00 Uhr Kasse: 9:30 - 22:00 Uhr, Sonntag 9:30 - 12:30 Uhr Kasse: Eintritt frei"
+            "text": "Wir freuen uns, euch auf unserem Festival willkommen zu heißen! Damit ihr eure Zeit bei uns bestens planen könnt, findet ihr hier die Öffnungszeiten. Ob tagsüber zum Entdecken oder abends zum Genießen - wir sind für euch da und freuen uns auf gemeinsame unvergessliche Momente. \n Donnerstag 16:00 - 00:00 Uhr Kasse: 16:00 - 22:00 Uhr, \n Freitag 9:30 - 03:00 Uhr Kasse: 9:30 - 22:00 Uhr, \n Samstag 9:30 - 03:00 Uhr Kasse: 9:30 - 22:00 Uhr, \n Sonntag 9:30 - 12:30 Uhr Kasse: Eintritt frei"
         },
         {
-            "id": 1022,
-            "name": "Essen & Trinken",
+            "id":1003,
+            "name": "Awarness",
             "subtitle": "",
-            "icon": "Essen",
-            "text": "Da es vollkommen unserer Philosophie widerspricht, euch irgendwie Stress zu machen, wenn ihr eigenes Essen und Getränke mitbringt, würden wir euch einfach im Rahmen eurer Möglichkeiten darum bitten unser schickes Essens- und Getränkeangebot anzunehmen. Das ist nämlich unsere Hauptquelle zur Finanzierung des homewards, da wir die Eintrittspreise weiterhin so günstig und auf Solibasis halten möchten. Wir versuchen, euch auch mit guten Preisen und Essen wie bei den Großeltern entgegen zu kommen!"
+            "text": "Neben den Ordnern, haben wir auf dem Homewardfestival ein Awarnessteam. Uns ist es auf dem homeward festival, sehr wichtig dass sich jede Person wohl und sicher fühlt. Wenn dem nicht so ist und Du etwas Merkwürdiges beobachtest, Dich unwohl, bedrängt oder belästigt fühlst oder verbal oder körperlich angegriffen wirst, frag nach Kleo. Gemeinsam sorgen wir für eine respektvolle und sichere Festivalatmosphäre! 💛Ist Kleo Da? Solltest du dich in einer Situation unwohl fühlen und Hilfe brauchen, frag nach Kleo. Frag bei folgenden Personenkreisen nach Kleo: Awarness-InfopointPersonen mit einem lila LeuchtstabBarpersonal und Veranstaltungstechnik bei den Ordnern (Sicherheitspersonal) Unsere Mitarbeitenden werden Dir ohne weitere Rückfragen oder Kommentare ihre Hilfe anbieten und Dich oder die hilfesuchende Person in eine geschützte Umgebung bringen."
         },
         {
-            "id": 1001,
-            "name": "Kinderwelt",
-            "subtitle": "Mitwirken",
-            "icon": "menschen",
-            "text": "Das Kinderteam besteht aus wunderbaren achtsamen Menschen, teils Erzieher*innen, Eltern oder Großeltern, die sich liebevoll um die Kleinen (ab 3 Jahren) kümmern. Wichtig: Wenn Euer Kind an Kinderangeboten teilnimmt oder betreut wird, obliegt die gesetzliche Aufsichtspflicht und komplette Haftung immer noch bei Euch Eltern. Das gesamte Kinderteam agiert mit Herz und Verstand, ist jedoch von sämtlicher Haftung befreit. Achtet bitte selbst darauf, dass Eure Kinder in der Kinderbetreuung etwas zu Essen dabei haben (Trinken gibt es bei uns für die Kids) und wetterentsprechend angezogen sind. Uns findet Ihr zwischen der Homestage und dem Wohnzimmer/Heimaterde, unterhalb von dem Wohnhaus."
+            "id": 1011,
+            "name": "Getränke",
+            "subtitle": "",
+            "icon": "drink",
+            "text": "Selbst mitgebrachte Getränke sind grundsätzlich erlaubt. Aber vielleicht möchtest Du das homeward unterstützen, indem Du Getränke vor Ort kaufst: Wir bieten eine super Auswahl an Getränken zu fairen Preisen."
+        },
+        {
+            "id": 1012,
+            "name": "Essen",
+            "subtitle": "Essen",
+            "icon": "besteck",
+            "text": "Tagsüber gibt es eine Vielzahl an leckeren Essens-Angeboten. Dafür gibt es auf dem homeward Essensmarken. Ihr könnt euch am Einlass und am Merchstand einen kleinen Vorrat kaufen, damit dann die Schlange für's Bezahlen am Foodstand wegfällt. Wenn möglich, bringt bitte euer eigenes Geschirr und Besteck mit."
         },  
         {
-            "id": 1001,
+            "id": 1005,
+            "name": "Sicherheit",
+            "subtitle": "Sicherheit",
+            "icon": "rettungsring",
+            "text": "Das Sicherheitspersonal hat das Hausrecht auf dem gesamten homeward Festivalgelände. Solltest du dich Unwohl fühlen oder ein Problem haben, sprich gerne unsere Ordner an oder wende dich direkt an die Ordnerzentrale. Du erkennst die Ordner an roten T-Shirts mit der Aufschrift ORDNER oder an roten Pullovern mit der auf Schrift CREW."
+        },
+        {
+            "id": 1004,
+            "name": "Ist Kleo da?",
+            "subtitle": "",
+            "text": "Solltest du dich in einer Situation unwohl fühlen und Hilfe brauchen, frag nach KLEO. Frag bei folgenden Personenkreisen nach Kleo: Awarness-Infopoint, \n Personen mit einem lila Leuchtstab \n Barpersonal und Veranstaltungstechnik \n bei den Ordnern (Sicherheitspersonal). \n Unsere Mitarbeitenden werden Dir ohne weitere Rückfragen oder Kommentare ihre Hilfe anbieten und Dich oder die hilfesuchende Person in eine geschützte Umgebung bringen."
+        },       
+        {
+            "id": 1013,
+            "name": "Drogen",
+            "subtitle": "",
+            "text": "Das Handeln und Konsumieren von illegalen Drogen und Cannabis ist verboten. Achte bei Alkohol bitte auf dich und deine Grenzen."
+        },
+        {
+            "id": 1014,
+            "name": "Rauchen",
+            "subtitle": "",
+            "icon": "rauchen",
+            "text": "Auf dem Festivalgelände und auf dem Campingplätzen ist Rauchen generell erlaubt. Achte bitte auf deine Mitmenschen und wirf Deine Zigarettenkippen bitte in die Aschenbecher!"
+        },
+
+        {
+            "id": 1015,
+            "name": "Müll",
+            "subtitle": "",
+            "icon": "müll",
+            "text": "Bitte halte Gelände und Toiletten sauber. Wirf deinen Müll grundsätzlich in die Mülltonnen, die reichlich aufgestellt sind. Du erleichterst unseren ehrenamtlichen Helfern die Arbeit."
+        },   
+        {
+            "id": 1002,
+            "name": "U18?",
+            "subtitle": "",
+            "text": "Auch wenn wir alles so entspannt wie möglich gestalten wollen, gibt es trotzdem paar Sachen, an die wir uns halten müssen. Wenn Du noch nicht 18 bist, ist es am entspanntesten für Dich und uns, wenn Du einen Partyzettel mitbringst. Nutze dazu bitte den Vordruck auf unserer Webseite."
+        },  
+        {
+            "id": 1016,
+            "name": "Kids - Homeward",
+            "icon": "menschen",
+            "text": "Das Kinderteam besteht aus wunderbaren achtsamen Menschen, teils Erzieher*innen, Eltern oder Großeltern, die sich liebevoll um die Kleinen (ab 3 Jahren) kümmern. Wichtig: Wenn Euer Kind an Kinderangeboten teilnimmt oder betreut wird, obliegt die gesetzliche Aufsichtspflicht und komplette Haftung immer noch bei Euch Eltern. Das gesamte Kinderteam agiert mit Herz und Verstand, ist jedoch von sämtlicher Haftung befreit.Achtet bitte selbst darauf, dass Eure Kinder in der Kinderbetreuung etwas zu Essen dabei haben (Trinken gibt es bei uns für die Kids) und wetterentsprechend angezogen sind. Uns findet Ihr zwischen der Homestage und dem Wohnzimmer/Heimaterde, unterhalb von dem Wohnhaus"
+        },
+        {
+            "id": 1010,
             "name": "Mitwirken",
             "subtitle": "Mitwirken",
             "icon": "menschen",
             "text": "homeward ist UNSER ehrenamtlich organisiertes Mitmach-Festival das von vielen helfenden Händen lebt. Lasst uns gemeinsam aufeinander acht geben, zuhören, Müll wegräumen, Gemüse schnippeln, leere Flaschen sortieren ..."
         },    
         {
-            "id": 1002,
+            "id": 1006,
             "name": "Foto/Videografie",
             "subtitle": "FotoVideo",
             "icon": "kamera",
             "text": "Alle Teilnehmenden erklären sich damit einverstanden, dass die im Zusammenhang mit der Veranstaltung gemachten Fotos und Filmaufnahmen ohne einen Vergütungsanspruch des*der Teilnehmer*in verbreitet und veröffentlicht werden können. Wenn das nicht gewünscht ist, bitte direkt an medien@homeward-festival.de schreiben."
         },
         {
-            "id": 1003,
-            "name": "Sicherheit",
-            "subtitle": "Sicherheit",
-            "icon": "rettungsring",
-            "text": "Das Sicherheitspersonal hat das Hausrecht auf dem gesamten homewardgelände. Bei Problemen kannst Du Dich gern an sie wenden. Sie sind am Eingang und auf dem Gelände zu finden und durch ein rotes Ordner-Shirt gekennzeichnet."
-        },    
+            "id": 1019,
+            "name": "Kleidertausch & Markt",
+            "subtitle": "",
+            "text": "Markt: Auf unserem Markt findest du alles was das Herz begehrt. Von selbstgenähten Lieblingsstücken, Schmuck bis hin zu Holzwerken kannst du hier verschiedenste neue Lieblingsstücke finden. Wir versuchen möglichst kleinen Gewerben eine Platform zu geben. Schaut gern bei den Ständen vorbei. \n Kleider-/Pflanzentausch: Du hast einen vollen Kleiderschrank und trotzdem Lust auf ein paar neue Teile? Dann haben wir DIE Lösung für dich! \n Tausche Deine ehemaligen Lieblingssachen, die vielleicht seit zwei Saisons nur noch im Schank liegen, mit neuen wunderbaren Must-Haves für die nächste Saison. Du findest den Kleidertausch auf unserem Marktplatz. Fakt ist: Du schonst nicht nur deinen Geldbeutel, sondern auch die Umwelt, also tauschen, tauschen, tauschen! Für alle Pflanzenfreunde! Auch dieses Jahr gibt es neben zahlreichen Klamotten auch die Möglichkeit, Pflanzen zu Tauschen. Also pack deine Pflanzen, Absetzer, Rhizome und Blätter gleich mit ein.  \n Möge das Tauschen beginnen!"
+        },
         {
-            "id": 1004,
+            "id":1021,
+            "name": "Anfahrt",
+            "subtitle": "",
+            "text": "Auto: Du erreichst uns mit dem Auto, über die Autobahnabfahrt (A72)/Niederdorf, von da aus geht es weiter Richtung Niederwürschnitz, kurz nach dem Ortseingang kannst du abbiegen und dann den Schildern Richtung homeward Festival (Niederwürschnitz) folgen. Solltest du über die A4 anreisen, führt dich deine Route über Oberlungwitz, Lugau nach Niederwürschnitz. Beim Gasthof zum Kronprinz biegst du Links ab und fährst fast bis zum Ortsausgang, dann geht es nach links zu unserem Festival Gelände. Bitte bildet, wenn möglich Fahrgemeinschaften, damit unser Parkplatz nicht aus den Nähten platzt. Fahrrad: Mit dem Fahrrad oder zu Fuß erreichst Du uns über den Radweg an der Johannesschachtstraße aus Richtung Lugau. Achtung auf dieser Route musst du an der letzen Weggabelung rechts abbiegen um direkt zum Einlass zu gelangen.Alternativ nutze die Straßen aus Richtung Niederdorf / Niederwürschnitz oder die angrenzenden Steegenwälder. ÖPNV: Wenn du mit den Öffis anreisen möchtest nutze die Citybahnverbindung Chemnitz-Stollberg (C11). Vom Bahnhof Niederdorf aus brauchst Du noch 20 Minuten zu Fuß.Alternativ kannst Du mit dem RVE Bus (Linie 198, 260 o. 262) bis zur Haltestelle Niederwürschnitz Abzw. Alte Ziegelei fahren. Von da aus sind es noch 8 Minuten zu Fuß"
+        },
+        {
+            "id":1022,
+            "name": "Camping",
+            "subtitle": "",
+            "text": "Wer die Nächte auf dem homeward Festival nicht durchtanzen möchte oder wen es morgens doch einmal ins Bett zieht, der kann sich gern etwas zum schlafen mitbringen. Es gibt auf dem Gelände einen Campingplatz bzw. Wohnwagenstellplätze. Achte bitte auf deine Mitmenschen, achte auf die Nachtruhe. Bitte, liebe Fahrzeugcamper, schlaft nur auf den dafür vorgesehenen Stellplätzen, nicht auf dem Parkplatz. Alle Do's & Dont's findes du in unseren Camping-AGBs."
+        },
+        {
+            "id": 1023,
             "name": "Frühstück",
             "subtitle": "",
             "icon": "kaffetasse",
             "text": "Am Sonntag wollen wir gemeinsam frühstücken und dafür kannst Du gern alles mitbringen, was für Dich auf einem Brötchen nicht fehlen darf. Auch an den anderen Tagen kannst Du zur Frühstückszeit Brötchen erwerben."
         },
         {
-            "id": 1005,
-            "name": "Essen",
-            "subtitle": "Essen",
-            "icon": "besteck",
-            "text": "Tagsüber gibt es eine Vielzahl an leckeren Essens-Angeboten. Dafür gibt es auf dem homeward Essensmarken. Ihr könnt euch am Einlass (09:00-17:00) und am Merchstand (17:00-23:00) einen kleinen Vorrat kaufen, damit dann die Schlange für‘s Bezahlen am Foodstand wegfällt. Wenn möglich, bringt bitte euer eigenes Geschirr und Besteck mit."
-        },    
-        {
-            "id": 1006,
-            "name": "Trinken",
-            "subtitle": "",
-            "icon": "drink",
-            "text": "Selbst mitgebrachte Getränke sind grundsätzlich erlaubt. Aber vielleicht möchtest Du das homeward untersützen, indem Du Getränke vor Ort kaufst: Wir bieten eine super Auswahl an Getränken zu fairen Preisen."
-        },
-        {
-            "id": 1007,
-            "name": "Müll",
-            "subtitle": "",
-            "icon": "müll",
-            "text": "Bitte halte Gelände und Toiletten sauber. Wirf deinen Müll grundsätzlich in die Mülltonnen, die reichlich aufgestellt sind. Du erleichterst unseren ehrenamtlichen Helfern die Arbeit."
-        },    
-        {
-            "id": 1008,
-            "name": "Rauchen",
-            "subtitle": "",
-            "icon": "rauchen",
-            "text": "Auf dem Gelände ist Rauchen generell erlaubt. Wirf Deine Zigarettenkippen bitte in die Aschenbecher!"
-        },
-        {
-            "id": 1009,
-            "name": "Drogen",
-            "subtitle": "",
-            "icon": "rettung",
-            "text": "Das Handeln und Konsumieren von illegalen Drogen und Cannabis ist verboten."
-        },
-        {
-            "id": 1010,
+            "id": 1024,
             "name": "Feuer",
-            "subtitle": "Feuer",
-            "icon": null,
+            "subtitle": "",
             "text": "Offenes Feuer, Gaskocher und Grillen ist nicht erlaubt. Auf dem Gelände herrscht absolute Brandgefahr, sodass wir mit offenem Feuer wirklich aufpassen müssen!"
-        },    
+        },
         {
-            "id": 1011,
+            "id": 1025,
             "name": "Wasser",
             "subtitle": "",
             "icon": "wasser",
             "text": "Am Campingplatz gibt es Waschrinnen. Hier könnt Ihr Geschirr spülen, Zähneputzen und Euch waschen."
         },
         {
-            "id": 1012,
+            "id": 1020,
             "name": "Hunde",
             "subtitle": "",
-            "icon": "Hund",
-            "text": "Hunde müssen an der Kasse angemeldet werden und stets kurz angeleint sein. Wenn Dein Hund fremde Menschen oder Menschenmengen nicht gewohnt ist, leg ihm bitte auch einen Beißschutz (Maulkorb, Halti) an. Auch wenn Ordner*innen  Dich darum bitten, lege deinem Hund bitte einen Halti an. Bitte achte weiter darauf, dass alles, was beim Hund hinten rauskommt und nicht verdunstet, von dem*der Hundebesitzer*in aufgesammelt werden muss."
+            "text": "Achte bitte selbstständig auf das Wohl deines Tieres. Bei Uns gilt: Hunde müssen an der Kasse angemeldet werden und stets kurz angeleint sein. Wenn Dein Hund fremde Menschen oder Menschenmengen nicht gewohnt ist, leg ihm bitte einen Beißschutz (Maulkorb, Halti) an. Halte dich an die Anweisungen der Ordner. Bitte kümmere dich selbstständig um die Entsorgung der Hinterlassenschaften deines Hundes."
         }
         ],
         "weblinks": [

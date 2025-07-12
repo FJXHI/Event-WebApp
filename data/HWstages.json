@@ -3,7 +3,7 @@
     "id": 1,
     "id-name": "homestage",
     "name": "Homestage",
-    "description": "Main Stage auf der Großenwiese",
+    "description": "Auf der Homestage sind die größeren Bands des Festivals vertreten. Mit einem bunt gemischten Line-Up versuchen wir mölichst viele Genre für unsere Besuchenden abzudecken.",
     "image": null,
     "visible": true,
     "type": "stage",
@@ -26,7 +26,7 @@
     "id": 2,
     "id-name": "backyard",
     "name": "Backyard",
-    "description": "Backyard an der Ziegelei.",
+    "description": "Der Backyard ist Anziehungspunkt für Liebhaber elektronischer Musik und alle, die es werden wollen. Präsentiert wird ein bunter Blumenstrau� der verschiedenen Spielarten zwischen Drum and Bass, House und Techno, wobei Bassmassage und Lichtperformance eine einzigartige Atmosphäre schaffen.",
     "image": null,
     "visible": true,
     "type": "stage",
@@ -48,15 +48,15 @@
   },
   {
     "id": 3,
-    "id-name": "wohnzimmer",
-    "name": "Wohnzimmer",
-    "description": "Gemütliches Wohnzimmer-Zelt",
+    "id-name": "schepperschuppen",
+    "name": "Schepperschuppen",
+    "description": "Hier ist das neue Zuhause für Hardcore, Punk, Metal und alle harten Subgenres dazwischen. Kein Schnickschnack, kein Sicherheitsabstand - kleine Bühne, keine Barriers. Gespielt wird wahrend der Umbaupausen der Homestage. Erwartet eine Mischung aus regionalen und überregionalen Acts, mit klarem Fokus auf der DIY-Szene. Der Schepperschuppen ist kein Nebenprogramm. Er ist das neue Herzstück für alle, die es harter mögen.",
     "image": null,
     "visible": true,
     "type": "stage",
     "location": [
-      50.7343,
-      12.7672
+      50.73356,
+      12.76823
     ],
     "address": {
       "street": "Nach den Steegen 2",
@@ -66,20 +66,20 @@
     },
     "url": "",
     "features": [
-      "Indoor"
+      "Open-Air"
     ]
   },
   {
     "id": 4,
-    "id-name": "schepperschuppen",
-    "name": "Schepperschuppen",
-    "description": "Der Neue Schepperschuppen bietet Musik während der Umbaupausen der Mainstage.",
+    "id-name": "wohnzimmer",
+    "name": "Wohnzimmer",
+    "description": "Ein Ort für das obligatorische Zuhause-Feeling mit Musik und gemütlichen Sitzecken. Außerdem gibt es einen Marktplatz mit verschiedenen Verkaufsständen u.v.m.",
     "image": null,
     "visible": true,
     "type": "stage",
     "location": [
-      50.7336,
-      12.7675
+      50.7343,
+      12.7672
     ],
     "address": {
       "street": "Nach den Steegen 2",
@@ -113,7 +113,7 @@
   {
     "id": 11,
     "id-name": null,
-    "name": "Wiese für Workshops",
+    "name": "Worksop Wiese",
     "description": "",
     "image": null,
     "visible": true,
@@ -262,7 +262,7 @@
     "id": 19,
     "id-name": null,
     "name": "Gebetszelt",
-    "description": "",
+    "description": "Unser \"save space\" dient allen Mitarbeitenden und Besuchenden als Ort um zur Ruhe zu kommen, sich zu erden und zu beten - allein oder gemeinsam mit anderen.",
     "image": null,
     "visible": true,
     "type": "workshop",

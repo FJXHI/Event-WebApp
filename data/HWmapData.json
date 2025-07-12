@@ -2,30 +2,54 @@
     {
         "id": 1,
         "type": "point",
-        "name": "Eingang",
-        "kategori": "other",
-        "location": [50.73349, 12.76843]
+        "name": "Eingang & Kasse",
+        "kategori": "Orga",
+        "location": [50.73350, 12.76845],
+        "openingTimes": [
+        {
+            "from": "2025-07-24T15:00",
+            "to": "2025-07-24T22:30",
+            "note": "Kasse"
+        },
+        {
+            "from": "2025-07-25T09:00",
+            "to": "2025-07-25T22:30",
+            "note": "Kasse"
+        },
+        {
+            "from": "2025-07-26T09:00",
+            "to": "2025-07-26T22:30",
+            "note": "Kasse"
+        },
+        {
+            "from": "2025-07-27T09:00",
+            "to": "2025-07-27T12:30",
+            "note": "Sonntag Eintritt frei"
+        }]
     },
     {
         "id": 2,
         "type": "point",
-        "name": "Ordnerzentrale & Sanitäter",
-        "kategori": "other",
-        "location": [50.73452, 12.76811]
+        "name": "Ordnerzentrale",
+        "kategori": "Orga",
+        "location": [50.7345, 12.76814]
     },
     {
         "id": 3,
+        "type": "point",
+        "name": "Sanitäter",
+        "kategori": "Orga",
+        "location": [50.73439, 12.76825]
+    },
+    {
+        "id": 4,
         "type": "point",
         "name": "Kinderwelt",
         "kategori": "Orte",
         "location": [50.73417, 12.76817],
         "openingTimes": [
         {
-            "from": "2025-07-24T16:00",
-            "to": "2025-07-24T18:00"
-        },
-        {
-            "from": "2025-07-25T09:00",
+            "from": "2025-07-25T09:30",
             "to": "2025-07-25T12:00"
         },
         {
@@ -33,7 +57,7 @@
             "to": "2025-07-25T18:00"
         },
         {
-            "from": "2025-07-26T09:00",
+            "from": "2025-07-26T09:30",
             "to": "2025-07-26T12:00"
         },
         {
@@ -42,7 +66,7 @@
         },
         {
             "from": "2025-07-27T10:30",
-            "to": "2025-07-27T12:30"
+            "to": "2025-07-27T12:00"
         }
         ],
         "description": "Wir bespaßen die Kleinen, damit die Eltern das Festival auf sich wirken lassen können. Auf dem Mini-homeward können die Kids sich richtig austoben und kreativ sein."
@@ -59,7 +83,7 @@
         "type": "point",
         "name": "Shishazelt",
         "kategori": "Orte",
-        "location": [50.73423, 12.7679]
+        "location": [50.73414, 12.76729]
     },
     {
         "id": 12,
@@ -88,7 +112,14 @@
         "name": "Heimaterde",
         "kategori": "Orte",
         "location": [50.734506, 12.767886]
-    },    
+    },
+    {
+        "id": 16,
+        "type": "point",
+        "name": "Kaffestand",
+        "kategori": "Food",
+        "location": [50.73427, 12.76759]
+    },     
     {
         "id": 20,
         "type": "point",
@@ -122,28 +153,28 @@
     {
         "id": 23,
         "type": "point",
-        "name": "Grill",
+        "name": "Grillbar",
         "kategori": "Food",
-        "location": [50.73369, 12.76758]
+        "location": [50.73345, 12.7673150] 
     },
     {
         "id": 24,
         "type": "point",
-        "name": "Mainstage Bar",
+        "name": "Bar Homestage",
         "kategori": "Bar",
-        "location": [50.733678, 12.767481]
+        "location": [50.7334, 12.7673150]        
     },
     {
         "id": 25,
         "type": "point",
-        "name": "Backyard Bar",
+        "name": "Bar Backyard",
         "kategori": "Bar",
         "location": [50.734688, 12.767395]
     },
     {
         "id": 26,
         "type": "point",
-        "name": "Wohnzimmer Bar",
+        "name": "Bar Wohnzimmer",
         "kategori": "Bar",
         "location": [50.734453, 12.767639]
     },
@@ -167,17 +198,22 @@
         "type": "point",
         "name": "Merchstand",
         "kategori": "Shop",
-        "location": [50.733656, 12.767315],
+        "location": [50.73374, 12.76777],
         "openingTimes": [
         {
-            "from": "2025-07-24T17:00",
+            "from": "2025-07-24T16:00",
             "to": "2025-07-25T01:00",
-            "note": "Essensmarkenverkauf Do Ab 17 Uhr"
+            "note": "Essensmarken Do Ab 16 Uhr"
         },
         {
-            "from": "2025-07-25T16:00",
+            "from": "2025-07-25T17:00",
             "to": "2025-07-26T01:00",
-            "note": "Essensmarkenverkauf Fr & Sa Ab 16 Uhr"
+            "note": "Essensmarken Fr & Sa Ab 17 Uhr"
+        },
+        {
+            "from": "2025-07-27T10:00",
+            "to": "2025-07-27T12:00",
+            "note": "Essensmarken So 10-12 Uhr"
         }
         ],
         "description": "Merchendise und Festivalartikel. Sowie Essensmarken."
@@ -187,7 +223,7 @@
         "type": "point",
         "name": "Marktplatz",
         "kategori": "Shop",
-        "location": [50.733523, 12.767889]
+        "location": [50.73423, 12.7679]
     },
     {
         "id": 31,
@@ -199,9 +235,9 @@
     {
         "id": 32,
         "type": "point",
-        "name": "WC Eingang (Dixi)",
+        "name": "WC Unten (Dixi)",
         "kategori": "sanitary",
-        "location": [50.73356, 12.76823]
+        "location": [50.733523, 12.767889]
     },
     {
         "id": 41,
@@ -209,38 +245,40 @@
         "name": "Parkplatz 1",
         "kategori": "Parking",
         "location": [50.729998, 12.769695],
+        "description": "Langzeitparkplatz",
         "noinclude": true
     },
     {
         "id": 42,
         "type": "point",
-        "name": "Parkplatz 1",
+        "name": "Parkplatz 2",
         "kategori": "Parking",
         "location": [50.733331, 12.769782],
+        "description": "Parkplatz für Tagesgäste (Kurzzeitparkplatz)",
         "noinclude": true
     },
     {
         "id": 43,
         "type": "point",
-        "name": "Camping-West Zelt",
+        "name": "Camping 1 (Nord) Caravan",
         "kategori": "Camping",
-        "location": [50.7331314, 12.7684283],
+        "location": [50.73521, 12.76835],
         "noinclude": true
     },
     {
         "id": 44,
         "type": "point",
-        "name": "Camping-Ost Zelt",
+        "name": "Camping 2 (West) Zelt",
         "kategori": "Camping",
-        "location": [50.7345849, 12.775276],
+        "location": [50.7331314, 12.7684283],
         "noinclude": true
     },
     {
         "id": 45,
         "type": "point",
-        "name": "Camping Caravan",
+        "name": "Camping 3 (Ost) Caravan",
         "kategori": "Camping",
-        "location": [50.734163, 12.768844],
+        "location": [50.7339, 12.77235],
         "noinclude": true
-    }    
+    }  
 ]
