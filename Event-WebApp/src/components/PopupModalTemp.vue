@@ -3,34 +3,29 @@
 <!-- ERROR-FIX Translate & Style (add Cookies?) -->
 
 <template>
-  <PopupModal v-model="showDisclaimer" :show-default-close="false">
-    <h2>Inoffizielle App</h2>
-    <p>Diese WebApp ist ein privates Projekt und steht in keinem Zusammenhang mit dem offiziellen Festival.</p>
-    <button @click="acceptDisclaimer">Verstanden</button>
-  </PopupModal>
+  <div v-if="modelValue" class="modal-overlay" @click.self="emitClose">
+    <div class="modal-content">
+      <button v-if="showDefaultClose" @click="emitClose">Schließen</button>
+      <slot />
+    </div>
+  </div>
 </template>
 
+
 <script setup>
-import { ref, onMounted } from 'vue'
-import PopupModal from './PopupModalTemp.vue'
-
-const showDisclaimer = ref(false)
-
-onMounted(() => {
-  const accepted = localStorage.getItem('disclaimerAccepted')
-  if (!accepted) {
-    showDisclaimer.value = true
+defineProps({
+  modelValue: Boolean,
+  showDefaultClose: {
+    type: Boolean,
+    default: true
   }
 })
+const emit = defineEmits(['update:modelValue'])
 
-function acceptDisclaimer() {
-  localStorage.setItem('disclaimerAccepted', 'true')
-  showDisclaimer.value = false
+function emitClose() {
+  emit('update:modelValue', false)
 }
 </script>
-
-
-
   
 <style scoped>
 .modal-overlay {

@@ -9,6 +9,7 @@
         <IconArrowLeft class="icon-size"/>
       </button>
       <div class="pagename" v-if="!isHomePage">{{ $t(PageName) }}</div>
+
       <button class="topnav-btn" v-if="showSearch" @click="openSearch">
         <IconSearch class="icon-size"/>
       </button>
@@ -18,6 +19,9 @@
       <router-link v-if="showFav" to="/favorites" class="topnav-btn">
         <IconHeart class="icon-size"/>
       </router-link>
+      <button class="topnav-btn" @click="$emit('open-share')">
+        <IconShare class="icon-size"/>
+      </button>
       <button class="topnav-btn menu-btn" @click="toggleNav"><IconList class="icon-size" /></button>
     </div>
     
@@ -59,6 +63,7 @@ import IconHeart from './icons/IconHeart.vue';
 import IconHeartFav from './icons/IconHeartFav.vue';
 import IconList from './icons/IconList.vue';
 import IconArrowLeft from './icons/IconArrowLeft.vue';
+import IconShare from './icons/IconShare.vue';
 import IconSearch from './icons/IconSearch.vue';
 import IconSetting from './icons/IconSetting.vue';
 import IconNews from './icons/IconNews.vue';

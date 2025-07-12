@@ -3,11 +3,13 @@
 <template>
   <div class="app-container full-height">
     <header class="app-header">
-      <NavMenu :PageName="currentPage"/>
+      <NavMenu :PageName="currentPage" @open-share="openShareModal"/>
     </header>
     <PopupMessage />
     <router-view class="router-view"/>
     <PopupModal />
+    <ShareModal v-model:visible="visibleShare" link="https://fjxhi.github.io/Event-WebApp/" />
+    <ImportFav />
     
     <footer class="app-footer">
     </footer>
@@ -20,6 +22,8 @@ import { useRoute } from 'vue-router';
 import NavMenu from './components/NavMenu.vue';
 import PopupModal from '@/components/PopupModal.vue';
 import PopupMessage from '@/components/PopupMessage.vue';
+import ImportFav from './components/ImportFav.vue';
+import ShareModal from './components/ShareModal.vue';
 
 const route = useRoute();
 const currentPage = computed(() => {
@@ -49,6 +53,12 @@ const currentPage = computed(() => {
   return routeMap[route.path] || 'nav-unknown-site';
 });
 
+
+const visibleShare = ref(false);
+
+function openShareModal() {
+  visibleShare.value = true;
+}
 
 </script>
 

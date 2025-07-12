@@ -1,4 +1,4 @@
-<!-- SettingsView-vue -->
+<!-- SettingsView.vue -->
 <!-- View some settings of the app. -->
 
 <template>

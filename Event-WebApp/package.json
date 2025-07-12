@@ -9,11 +9,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@chenfengyuan/vue-qrcode": "2",
     "@vue-leaflet/vue-leaflet": "^0.10.1",
     "firebase": "^11.9.0",
     "leaflet": "^1.9.4",
     "leaflet.locatecontrol": "^0.84.2",
     "pinia": "^3.0.3",
+    "qrcode": "1",
     "vue": "^3.5.13",
     "vue-i18n": "^11.1.2",
     "vue-router": "^4.5.0"

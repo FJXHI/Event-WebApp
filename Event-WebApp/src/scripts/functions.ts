@@ -215,4 +215,39 @@ export function getNextPerformance<T extends { start_time: string | Date }>(perf
         ?.filter(p => new Date(p.start_time) > now)
         .sort((a, b) => new Date(a.start_time).getTime() - new Date(b.start_time).getTime())[0] || null
     );
-  }
+}
+
+// Function to generate a share URL with the favorites in localStorage
+export function generateShareUrlParams() {
+    const keys = ['act', 'event', 'stage']
+    const params: string[] = []
+
+    params.push('share=true')
+
+    for (const key of keys) {
+        const raw = localStorage.getItem(key)
+        if (!raw) continue
+
+        let ids: unknown
+        try {
+        ids = JSON.parse(raw)
+        } catch (e) {
+        console.warn(`Kann ${key} nicht parsen`, e)
+        continue
+        }
+
+        if (!Array.isArray(ids)) continue
+
+        const validIds = ids
+        .map((id) => parseInt(id as string))
+        .filter((n) => !isNaN(n))
+
+        if (validIds.length > 0) {
+        // Manuell und "clean":
+        const value = validIds.join('+') // oder ','
+        //const value = encodeURIComponent(validIds.join('+'))
+        params.push(`${key}=${value}`)
+        }
+    }
+    return `?${params.join('&')}`
+}
