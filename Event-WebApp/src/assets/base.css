@@ -63,6 +63,7 @@
   --bg-topnav-head-btn: var(--vt-theme-1-soft);
   --bg-searchbar: var(--vt-theme-1-mute);
   --text-searchbar: #ddd; /* theme-1-mute? */
+  --color-qr-code: #000000; /* QR-Code Color */
 
   --text-item-name: var(--vt-theme-2-text);
   --text-item-sub: var(--vt-c-text-light-1);
@@ -114,6 +115,7 @@
   --color-background: var(--vt-c-black);
   --color-background-soft: var(--vt-c-black-soft);
   --color-background-mute: var(--vt-c-black-mute);
+  --color-qr-code: #ffffff; /* QR-Code Color */
 
   --color-border: var(--vt-c-divider-dark-2);
   --color-border-hover: var(--vt-c-divider-dark-1);

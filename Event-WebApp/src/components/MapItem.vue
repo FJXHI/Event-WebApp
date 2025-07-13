@@ -10,8 +10,15 @@
   <div class="map-view full-height">
     <div class="filter-buttons">
       <button @click="fitMap()">{{ $t('map-center') }}</button>
-      <button @click="toggleStages" :class="{ active: showStages }">
-        {{ $t('stages') }}
+      <button
+        v-for="(stages, type) in groupedStages"
+        :key="type"
+        @click="toggleStageType(type)"
+        :class="{ active: isStageTypeVisible(type) }"
+      >
+        <template v-if="type === 'stage'">{{ $t('stages') }}</template>
+        <template v-else-if="type === 'workshop'">{{ $t('workshop') }}</template>
+        <template v-else>{{ type }}</template>
       </button>
       <button
         v-for="category in categories"
@@ -37,13 +44,22 @@
         />
 
         <!-- Stage Markers -->
-        <l-marker v-if="showStages" v-for="(stage, index) in stages" :key="stage.id" :lat-lng="stage.location">
-          <l-popup>
-            <router-link :to="'/location/' + (stage['id-name'] || stage.id)" target="_blank">
-              <strong>{{ stage.name }}</strong>
-            </router-link>
-          </l-popup>
-        </l-marker>
+        <template v-if="showStages">
+          <template v-for="(group, type) in groupedStages" :key="type">
+            <l-marker
+              v-for="stage in group"
+              :key="stage.id"
+              :lat-lng="stage.location"
+              v-if="isStageTypeVisible(type)"
+            >
+              <l-popup>
+                <router-link :to="'/location/' + (stage['id-name'] || stage.id)" target="_blank">
+                  <strong>{{ stage.name }}</strong>
+                </router-link>
+              </l-popup>
+            </l-marker>
+          </template>
+        </template>
 
         <!-- Filtered POI Markers -->
         <l-marker
@@ -124,6 +140,30 @@ const toggleCategory = (category: string) => {
     selectedCategories.value.push(category);
   }
 };
+
+const visibleStageTypes = ref<string[]>(['stage']);
+
+const toggleStageType = (type: string) => {
+  if (visibleStageTypes.value.includes(type)) {
+    visibleStageTypes.value = visibleStageTypes.value.filter(t => t !== type);
+  } else {
+    visibleStageTypes.value.push(type);
+  }
+};
+
+const isStageTypeVisible = (type: string) => {
+  return visibleStageTypes.value.includes(type);
+};
+
+const groupedStages = computed(() => {
+  const groups: Record<string, typeof stages.value> = {};
+  for (const stage of stages.value) {
+    const type = stage.type || "Sonstige";
+    if (!groups[type]) groups[type] = [];
+    groups[type].push(stage);
+  }
+  return groups;
+});
 
 const categories = computed(() => {
   const allCategories = mapData.value.map(item => item.kategori);

@@ -49,9 +49,8 @@
 
 <script setup lang="ts">
 import { computed, toRefs, ref, onMounted, onUnmounted } from 'vue';
-import type { Ref } from 'vue';
 import { useEventData } from '@/scripts/useEventData.ts';
-import { dayStartTime } from '@/scripts/config.ts';
+import { dayStartTime, testNow } from '@/scripts/config.ts';
 import { getActNames } from '@/scripts/functions';
 
 const props = defineProps({
@@ -60,16 +59,11 @@ const props = defineProps({
         type: String,
         default: 'stage'
     },
-    nowLineRef: {
-        type: Object as () => Ref<HTMLElement | null>,
-        required: false
-    }
 });
 
 const nowLine = ref<HTMLElement | null>(null);
 
-const testNow = ref<Date | null>(null);
-testNow.value = new Date('2025-07-25T15:50:00');
+defineExpose({ nowLine })
 
 const now = ref<Date>(testNow.value ?? new Date());
 
@@ -82,9 +76,6 @@ onMounted(() => {
     const interval = setInterval(updateNow, 60 * 1000); // jede Minute aktualisieren
     updateNow();
     onUnmounted(() => clearInterval(interval));
-    if (isToday(props.date)) {
-        props.nowLineRef.value = nowLine.value;
-    }
 });
 
 function isToday(dateString: string | undefined): boolean {

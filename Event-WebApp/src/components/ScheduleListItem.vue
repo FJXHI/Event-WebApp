@@ -86,6 +86,7 @@
 <script setup lang="ts">
 import { computed, ref, nextTick } from 'vue';
 import { formatDateTime, getActNames, capitalize, useScrollToDate } from '@/scripts/functions';
+import { testNow } from '@/scripts/config';
 import { useEventData } from '@/scripts/useEventData';
 import FavoriteButton from '@/components/FavBtn.vue';
 import TagLabel from '@/components/TagLabel.vue';
@@ -280,10 +281,6 @@ function registerTimeRef(date: string, time: string, el: HTMLElement | null | un
 function FlowBtnClick() {
   scrollToNextUpcomingPerformance();
 }
-
-// Test setup for scrollToNextUpcomingPerformance
-const testNow = ref<Date | null>(null);
-testNow.value = new Date('2025-07-25T17:01:00');
 
 function scrollToNextUpcomingPerformance() {
   const now = testNow.value ?? new Date();

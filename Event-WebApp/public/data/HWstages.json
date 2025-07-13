@@ -55,8 +55,8 @@
     "visible": true,
     "type": "stage",
     "location": [
-      50.73356,
-      12.76823
+      50.733469,
+      12.768165
     ],
     "address": {
       "street": "Nach den Steegen 2",
@@ -100,7 +100,10 @@
     "image": null,
     "visible": true,
     "type": "workshop",
-    "location": null,
+    "location": [
+      50.734,
+      12.769
+    ],
     "address": {
       "street": "",
       "postal_code": "",
@@ -120,7 +123,10 @@
     "image": null,
     "visible": true,
     "type": "workshop",
-    "location": null,
+    "location": [
+      50.733663,
+      12.768091
+    ],
     "address": {
       "street": "",
       "postal_code": "",
@@ -138,7 +144,10 @@
     "image": null,
     "visible": true,
     "type": "workshop",
-    "location": null,
+    "location": [
+      50.734039,
+      12.767575
+    ],
     "address": {
       "street": "",
       "postal_code": "",
@@ -156,7 +165,10 @@
     "image": null,
     "visible": true,
     "type": "workshop",
-    "location": null,
+    "location": [
+      50.734506,
+      12.767886
+    ],
     "address": {
       "street": "",
       "postal_code": "",
@@ -174,7 +186,10 @@
     "image": null,
     "visible": true,
     "type": "workshop",
-    "location": null,
+    "location": [
+      50.73414,
+      12.76729
+    ],
     "address": {
       "street": "",
       "postal_code": "",
@@ -194,7 +209,10 @@
     "image": null,
     "visible": true,
     "type": "workshop",
-    "location": null,
+    "location": [
+      50.734,
+      12.769
+    ],
     "address": {
       "street": "",
       "postal_code": "",
@@ -214,7 +232,10 @@
     "image": null,
     "visible": true,
     "type": "workshop",
-    "location": null,
+    "location": [
+      50.7336,
+      12.76745
+    ],
     "address": {
       "street": "",
       "postal_code": "",
@@ -232,7 +253,10 @@
     "image": null,
     "visible": true,
     "type": "workshop",
-    "location": null,
+    "location": [
+      50.734,
+      12.769
+    ],
     "address": {
       "street": "",
       "postal_code": "",
@@ -250,7 +274,10 @@
     "image": null,
     "visible": true,
     "type": "workshop",
-    "location": null,
+    "location": [
+      50.734,
+      12.769
+    ],
     "address": {
       "street": "",
       "postal_code": "",
@@ -270,7 +297,10 @@
     "image": null,
     "visible": true,
     "type": "workshop",
-    "location": null,
+    "location": [
+      50.734,
+      12.769
+    ],
     "address": {
       "street": "",
       "postal_code": "",
@@ -288,7 +318,10 @@
     "image": null,
     "visible": true,
     "type": "workshop",
-    "location": null,
+    "location": [
+      50.734,
+      12.769
+    ],
     "address": {
       "street": "",
       "postal_code": "",
@@ -306,7 +339,10 @@
     "image": null,
     "visible": true,
     "type": "workshop",
-    "location": null,
+    "location": [
+      50.734,
+      12.769
+    ],
     "address": {
       "street": "",
       "postal_code": "",
@@ -326,7 +362,10 @@
     "image": null,
     "visible": true,
     "type": "workshop",
-    "location": null,
+    "location": [
+      50.734,
+      12.769
+    ],
     "address": {
       "street": "",
       "postal_code": "",
@@ -346,7 +385,10 @@
     "image": null,
     "visible": true,
     "type": "workshop",
-    "location": null,
+    "location": [
+      50.734,
+      12.769
+    ],
     "address": {
       "street": "",
       "postal_code": "",
@@ -364,7 +406,10 @@
     "image": null,
     "visible": true,
     "type": "workshop",
-    "location": null,
+    "location": [
+      50.73465,
+      12.76785
+    ],
     "address": {
       "street": "",
       "postal_code": "",

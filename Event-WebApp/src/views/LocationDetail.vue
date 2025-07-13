@@ -34,9 +34,15 @@
         <p>
           <TagLabel
             v-if="stage.type"
-            :name=stage.type
+            :name=capitalize(stage.type)
             class="tag-label-item"
           />
+          <TagLabel
+            v-if="stage.features && stage.features.length"
+            v-for="tag in stage.features"
+            :key="tag"
+            :name="tag"
+            class="tag-label-item" />
         </p>
       </div>
       <div class="detail-line"></div>
@@ -53,7 +59,7 @@
 
 <script setup lang="ts">
 import { useRoute } from 'vue-router';
-import { ref, computed } from 'vue';
+import { ref, computed, capitalize } from 'vue';
 import { baseUrl, eventFilters, formatAddress, getNextPerformance  } from '@/scripts/functions';
 import { useEventData } from '@/scripts/useEventData';
 import IconGeo from '@/components/icons/IconGeo.vue';

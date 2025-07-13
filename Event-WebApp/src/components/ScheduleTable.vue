@@ -24,12 +24,8 @@
                     :sortedDateList="days"
                     :scrollToDate="scrollToDate"
                 />
-                <!--<ScheduleTableItem 
-                    :date="day" 
-                    :stageTypeFilter="stageTypeFilter"
-                    :nowLineRef="nowLineRef"
-                />--><!--ERROR-FIX nowLine scroll dont work-->
                 <ScheduleTableItem 
+                    ref="scheduleRef"
                     :date="day" 
                     :stageTypeFilter="stageTypeFilter"
                 />
@@ -46,7 +42,7 @@ import ToogleStageTypeButton from '@/components/SwitchViewType.vue';
 import FlowBtn from '@/components/FlowBtn.vue';
 import ScheduleTableItem from "@/components/ScheduleTableItem.vue";
 import DateHead from '@/components/DateHead.vue';
-import { dayStartTime } from '@/scripts/config.ts';
+import { dayStartTime, testNow } from '@/scripts/config.ts';
 import { formatDateTime, useScrollToDate } from '@/scripts/functions.ts';
 import { useRouter } from 'vue-router';
 
@@ -54,20 +50,26 @@ const router = useRouter();
 const { scrollToDate } = useScrollToDate()
 const { performances } = useEventData();
 
-const nowLineRef = ref<HTMLElement | null>(null);
-
 //const stageTypeOptions = ['stage', 'workshop', 'all'];
 const stageTypeOptions = ['stage', 'all'];
 const stageTypeFilter = ref('stage');
 
-function FlowBtnClick() {
-    console.log('FlowBtnClick', nowLineRef.value);
+const scheduleRef = ref<any[]>([]);
 
-    if (nowLineRef.value) {
-        nowLineRef.value.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        nowLineRef.value.classList.add('highlight');
-        setTimeout(() => nowLineRef.value?.classList.remove('highlight'), 2000);
-    }
+function FlowBtnClick() {
+  const items = scheduleRef.value;
+  const todayStr = (testNow.value ?? new Date()).toLocaleDateString('sv-SE');
+
+  const todayItem = items.find(item => item?.$props?.date === todayStr);
+
+  const target = todayItem?.nowLine;
+  if (target) {
+    target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    target.classList.add('highlight');
+    setTimeout(() => target?.classList.remove('highlight'), 2000);
+  } else {
+    console.warn("nowLine not found");
+  }
 }
 
 
@@ -97,34 +99,6 @@ const days = computed<string[]>(() => {
     });
 
     return Array.from(shownDays).sort();
-});
-
-
-const days2 = computed<string[]>(() => {
-    // extract unique days from events
-    const uniqueDays = new Set<string>(
-        performances.value.map(event => 
-            new Date(event.start_time).toLocaleDateString('en-CA')
-        )
-    );
-
-    // Create a set to store additional days
-    const additionalDays = new Set<string>();
-
-    performances.value.forEach(event => {
-        const eventDate = new Date(event.start_time);
-        const eventHour = eventDate.getHours();
-        // Check if there are events after midnight (until dayStartTime) on the current day 
-        if (eventHour >= 0 && eventHour < dayStartTime) {
-            const previousDay = new Date(eventDate);
-            previousDay.setDate(eventDate.getDate() - 1);
-
-            // add the previous day to the set
-            additionalDays.add(previousDay.toLocaleDateString('en-CA'));
-        }
-    });
-
-    return Array.from(new Set([...uniqueDays, ...additionalDays])).sort();
 });
 
 </script>

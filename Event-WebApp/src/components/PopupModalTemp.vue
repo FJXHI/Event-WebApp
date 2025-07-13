@@ -1,16 +1,20 @@
-<!-- PopupModal.vue -->
-<!-- A Vue component for displaying a disclaimer modal on page load. -->
-<!-- ERROR-FIX Translate & Style (add Cookies?) -->
+<!-- PopupModalTemp.vue -->
+<!-- A Vue component for displaying content in a modal popup.
+     It includes a close button and can be customized with slots. -->
+
 
 <template>
   <div v-if="modelValue" class="modal-overlay" @click.self="emitClose">
     <div class="modal-content">
-      <button v-if="showDefaultClose" @click="emitClose">x</button>
-      <slot />
+      <div v-if="showDefaultClose" class="modal-header">
+        <button v-if="showDefaultClose" @click="emitClose" class="modal-close-btn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <slot />
+      </div>
     </div>
   </div>
 </template>
-
 
 <script setup>
 defineProps({
@@ -44,7 +48,7 @@ function emitClose() {
 .modal-content {
   background-color: var(--color-background-soft);
   color: var(--color-text);
-  padding: 24px;
+  padding: 1rem;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   max-width: 400px;
@@ -52,22 +56,21 @@ function emitClose() {
   text-align: center;
 }
 
-.modal-content h2 {
-  margin-top: 0;
+.modal-header {
+  display: flex;
+  justify-content: flex-end;
 }
 
-.modal-content button {
-  margin-top: 16px;
-  padding: 8px 16px;
-  background-color: #2a6dff;
-  color: white;
+.modal-close-btn {
+  background: none;
   border: none;
-  border-radius: 4px;
+  font-size: 1.5rem;
   cursor: pointer;
+  color: var(--color-text);
 }
-
-.modal-content button:hover {
-  background-color: #1e54c4;
+.modal-body {
+  max-height: 70vh; /* 70% of viewport height */
+  overflow-y: auto; /* Add a scrollbar, if too much content */ 
 }
 </style>
   

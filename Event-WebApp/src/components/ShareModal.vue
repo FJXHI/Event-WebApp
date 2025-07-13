@@ -10,12 +10,22 @@
 
     <!-- QR Code Modal -->
     <PopupModal v-model="visibleQRcode">
-      <vue-qrcode v-if="computedLink" class="share-button" :value="computedLink"></vue-qrcode>
+      <vue-qrcode 
+        v-if="computedLink" 
+        class="share-qr" 
+        :value="computedLink"
+        :options="{
+          color: {
+            dark: qrDarkColor,
+            light: qrLightColor,
+          },
+          scale: 6,
+        }"
+      ></vue-qrcode>
     </PopupModal>
     <div class="share-buttons">
       <button class="share-button" @click="copyToClipboard">{{ $t('share-clipboard') }}</button>
       <button class="share-button" @click="showQRcode">{{ $t('share-qr') }}</button>
-      <br />
       <a
         :href="`https://x.com/intent/post?text=%20${encodeURIComponent(computedLink)}`"
         target="_blank"
@@ -49,6 +59,9 @@ const props = defineProps({
   visible: { type: Boolean, required: true }
 })
 
+let qrLightColor = getCSSVariable('--color-background-soft');
+let qrDarkColor = getCSSVariable('--color-qr-code')
+
 const emit = defineEmits(['update:visible'])
 
 const visibleQRcode = ref(false)
@@ -72,52 +85,15 @@ function copyToClipboard() {
   })
 }
 
+function getCSSVariable(name) {
+  return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+}
+
 </script>
 
 
 
 <style scoped>
-.modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 9999;
-}
-
-.modal-content {
-  background-color: var(--color-background-soft);
-  color: var(--color-text);
-  padding: 24px;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  max-width: 400px;
-  width: 90%;
-  text-align: center;
-}
-
-.modal-content h2 {
-  margin-top: 0;
-}
-
-.modal-content button {
-  margin-top: 16px;
-  padding: 8px 16px;
-  background-color: #2a6dff;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.modal-content button:hover {
-  background-color: #1e54c4;
-}
 
 .share-section {
   margin-top: 16px;
@@ -138,6 +114,7 @@ function copyToClipboard() {
   font-size: 13px;
 }
 
+/*
 .share-buttons {
   margin-top: 16px;
   display: flex;
@@ -145,7 +122,7 @@ function copyToClipboard() {
   flex-wrap: wrap;
   justify-content: center;
 }
-
+  
 .share-button {
   padding: 8px 12px;
   border-radius: 4px;
@@ -153,6 +130,24 @@ function copyToClipboard() {
   text-decoration: none;
   font-size: 14px;
 }
+*/
+
+.share-buttons {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center; /* optional: zentriert die Buttons horizontal */
+}
+
+.share-button {
+  width: 90%; /* oder: width: 100%; */
+  text-align: center;
+  border-radius: 4px;
+  color: white;
+  background-color: blue;
+}
+
 
 .share-button.facebook {
   background-color: #3b5998;
