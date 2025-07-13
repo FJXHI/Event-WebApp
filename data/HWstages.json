@@ -95,7 +95,7 @@
   {
     "id": 10,
     "id-name": null,
-    "name": "Workshop",
+    "name": "Workshopwand",
     "description": "",
     "image": null,
     "visible": true,
@@ -108,13 +108,15 @@
       "country": ""
     },
     "url": "",
-    "features": []
+    "features": [
+      "Treffpunkt"
+    ]
   },
   {
     "id": 11,
     "id-name": null,
-    "name": "Worksop Wiese",
-    "description": "",
+    "name": "Workshop Wiese",
+    "description": "Wiese für Workshops vor dem Schepperschuppen",
     "image": null,
     "visible": true,
     "type": "workshop",
@@ -149,7 +151,7 @@
   {
     "id": 13,
     "id-name": null,
-    "name": "Wildes Wohnzimmer (rechts)",
+    "name": "Heimaterde",
     "description": "",
     "image": null,
     "visible": true,
@@ -166,62 +168,6 @@
   },
   {
     "id": 14,
-    "id-name": null,
-    "name": "vor Arkaden",
-    "description": "",
-    "image": null,
-    "visible": true,
-    "type": "workshop",
-    "location": null,
-    "address": {
-      "street": "",
-      "postal_code": "",
-      "city": "",
-      "country": ""
-    },
-    "url": "",
-    "features": []
-  },
-  {
-    "id": 15,
-    "id-name": null,
-    "name": "Arkaden",
-    "description": "",
-    "image": null,
-    "visible": true,
-    "type": "workshop",
-    "location": null,
-    "address": {
-      "street": "",
-      "postal_code": "",
-      "city": "",
-      "country": ""
-    },
-    "url": "",
-    "features": [
-      "Indoor"
-    ]
-  },
-  {
-    "id": 16,
-    "id-name": null,
-    "name": "vor Shishazelt",
-    "description": "",
-    "image": null,
-    "visible": true,
-    "type": "workshop",
-    "location": null,
-    "address": {
-      "street": "",
-      "postal_code": "",
-      "city": "",
-      "country": ""
-    },
-    "url": "",
-    "features": []
-  },
-  {
-    "id": 17,
     "id-name": null,
     "name": "Shishazelt",
     "description": "",
@@ -241,7 +187,101 @@
     ]
   },
   {
+    "id": 15,
+    "id-name": null,
+    "name": "Kaffearkaden",
+    "description": "",
+    "image": null,
+    "visible": true,
+    "type": "workshop",
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": [
+      "Indoor"
+    ]
+  },
+  {
+    "id": 16,
+    "id-name": null,
+    "name": "Sitzeck Homestage",
+    "description": "Sitzecke an der Homestage",
+    "image": null,
+    "visible": true,
+    "type": "workshop",
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
+  },
+  {
+    "id": 17,
+    "id-name": null,
+    "name": "vor Arkaden",
+    "description": "",
+    "image": null,
+    "visible": true,
+    "type": "workshop",
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
+  },
+  {
     "id": 18,
+    "id-name": null,
+    "name": "Arkaden",
+    "description": "",
+    "image": null,
+    "visible": true,
+    "type": "workshop",
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": [
+      "Indoor"
+    ]
+  },
+  {
+    "id": 19,
+    "id-name": null,
+    "name": "vor Shishazelt",
+    "description": "",
+    "image": null,
+    "visible": true,
+    "type": "workshop",
+    "location": null,
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "",
+      "country": ""
+    },
+    "url": "",
+    "features": []
+  },
+  {
+    "id": 20,
     "id-name": null,
     "name": "Kaffeestand",
     "description": "",
@@ -259,7 +299,7 @@
     "features": []
   },
   {
-    "id": 19,
+    "id": 21,
     "id-name": null,
     "name": "Gebetszelt",
     "description": "Unser \"save space\" dient allen Mitarbeitenden und Besuchenden als Ort um zur Ruhe zu kommen, sich zu erden und zu beten - allein oder gemeinsam mit anderen.",
@@ -279,7 +319,7 @@
     ]
   },
   {
-    "id": 20,
+    "id": 22,
     "id-name": null,
     "name": "Einlass",
     "description": "",
@@ -294,10 +334,12 @@
       "country": ""
     },
     "url": "",
-    "features": []
+    "features": [
+      "Treffpunkt"
+    ]
   },
   {
-    "id": 21,
+    "id": 23,
     "id-name": null,
     "name": "Kleidertausch",
     "description": "",
@@ -315,28 +357,10 @@
     "features": []
   },
   {
-    "id": 22,
+    "id": 30,
     "id-name": null,
     "name": "Rettungsgasse",
-    "description": "",
-    "image": null,
-    "visible": true,
-    "type": "workshop",
-    "location": null,
-    "address": {
-      "street": "",
-      "postal_code": "",
-      "city": "",
-      "country": ""
-    },
-    "url": "",
-    "features": []
-  },
-  {
-    "id": 23,
-    "id-name": null,
-    "name": "Heimaterde",
-    "description": "",
+    "description": "Rettungsgasse oben an der Ziegelei, vor dem Backyard",
     "image": null,
     "visible": true,
     "type": "workshop",
