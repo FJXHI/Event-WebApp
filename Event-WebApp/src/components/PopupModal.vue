@@ -4,9 +4,9 @@
 
 <template>
   <PopupModal v-model="showDisclaimer" :show-default-close="false">
-    <h2>Inoffizielle App</h2>
-    <p>Diese WebApp ist ein privates Projekt und steht in keinem Zusammenhang mit dem offiziellen Festival.</p>
-    <button @click="acceptDisclaimer">Verstanden</button>
+    <h2>{{ $t('app-unofficial') }}</h2>
+    <p>{{ $t('app-unofficial-desc') }}</p>
+    <button @click="acceptDisclaimer">{{ $t('accept-disclaimer') }}</button>
   </PopupModal>
 </template>
 

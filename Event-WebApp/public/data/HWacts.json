@@ -37,7 +37,7 @@
     "image": null,
     "tags": [
       {
-        "name": "workshop",
+        "name": "Workshop",
         "visible": true
       }
     ],
@@ -371,7 +371,20 @@
     ],
     "description": "Two MCs & One DJ - mehr braucht's nicht. Wir servieren Conscious Rap auf staubigen Boom-Bap-Beats - roh, direkt, mit Haltung. Keine Filter, kein Autotune, kein Algorithmus. Nur Seele, Substanz und Skills. Unsere Tracks klingen wie alte Tapes aus dem Ghettoblaster: warm, verrauscht, lebendig. Kein Retro-Hype, kein Nostalgie-Act - das hier ist echt. Ein Statement gegen die Belanglosigkeit. Für mehr Gefühl, Tiefe und Groove. Kopf nickt, Herz hört zu. Lasst es euch schmecken.",
     "image": null,
-    "tags": [],
+    "tags": [
+      {
+        "name": "Boom",
+        "visible": true
+      },
+      {
+        "name": "Beats",
+        "visible": true
+      },
+      {
+        "name": "RAP",
+        "visible": true
+      }
+    ],
     "weblinks": []
   },
   {
@@ -671,6 +684,10 @@
       {
         "name": "Techno",
         "visible": true
+      },
+      {
+        "name": "House",
+        "visible": false
       }
     ],
     "weblinks": [
@@ -952,11 +969,11 @@
     "image": null,
     "tags": [
       {
-        "name": "Haus",
+        "name": "House",
         "visible": true
       },
       {
-        "name": "Hardtechnot",
+        "name": "Hardtechno",
         "visible": true
       },
       {
@@ -1149,7 +1166,24 @@
     ],
     "description": "Backyard Fr",
     "image": null,
-    "tags": [],
+    "tags": [
+      {
+        "name": "House",
+        "visible": true
+      },
+      {
+        "name": "Techno",
+        "visible": true
+      },
+      {
+        "name": "Bass",
+        "visible": true
+      },
+      {
+        "name": "Trance",
+        "visible": true
+      }
+    ],
     "weblinks": []
   },
   {
@@ -1193,7 +1227,16 @@
     ],
     "description": "Die Erfurter Musikerin PaulA liebt und lebt handgemachte Musik. Mit Gitarre und Loop Station reist sie am liebsten durch ihre Gedankenstraßen und packt alle Worte und Gefühle ein, bis ein Lied daraus entsteht - mal wuselig, mal wütend, ab und zu auch gemütlich. Wie es in ihrem Kopf passiert, verschwimmen dabei die Grenzen politischer und privater Themen. Es geht um Liebe, Krisen, Weltschmerz und alles dazwischen.",
     "image": null,
-    "tags": [],
+    "tags": [
+      {
+        "name": "Singer",
+        "visible": true
+      },
+      {
+        "name": "Songwriter",
+        "visible": true
+      }
+    ],
     "weblinks": []
   },
   {

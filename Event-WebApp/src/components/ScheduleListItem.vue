@@ -41,9 +41,9 @@
                   <strong class="list-item-name">
                     <div v-if="performance.name">
                       {{ performance.name }}
-                      <span v-if="performance.actsIDArr.length">
+                      <!--<span v-if="performance.actsIDArr.length">
                         ({{ getActNamesLocal(performance.actsIDArr) }})
-                      </span>
+                      </span>-->
                     </div>
                     <div v-else-if="performance.actsIDArr.length">
                       {{ getActNamesLocal(performance.actsIDArr) }}
@@ -53,14 +53,19 @@
                     </div>
                   </strong>
                   <span class="list-item-tags">
-                    <span>{{ getStageName(performance.stageID) }}</span>
                     <span>
-                      {{ formatDateTime(performance.start_time, 'Date Long') }},
+                      {{ getStageName(performance.stageID) }}
+                      <!--{{ formatDateTime(performance.start_time, 'Date Long') }},--> 
                       {{ formatDateTime(performance.start_time, 'Time') }} –
-                      {{ formatDateTime(performance.end_time, 'Time') }}
-                    </span>
+                      {{ formatDateTime(performance.end_time, 'Time') }}</span>
                     <span>
-                      <TagLabel :name="capitalize(performance.type)" class="tag-label-item" />
+                      <TagLabel
+                        v-for="(tag, index) in getMergedTags(performance)"
+                        :key="`tag-${performance.id}-${index}`"
+                        :name="tag"
+                        class="tag-label-item"
+                      />
+                      <!--<TagLabel :name="capitalize(performance.type)" class="tag-label-item" />-->
                     </span>
                   </span>
                 </div>
@@ -104,6 +109,21 @@ const sortedDateList = computed(() =>
   Object.keys(groupedByDateAndTime.value).sort()
 );
 
+function getMergedTags(performance: Performance): string[] {
+  const perfType = capitalize(performance.type);
+
+  const actTags = performance.actsIDArr
+    .map((actID) => acts.value.find((a) => a.id === actID))
+    .filter(Boolean)
+    .flatMap((act) =>
+      (act?.tags || [])
+        .filter((tag) => tag.visible)
+        .map((tag) => tag.name)
+    );
+
+  const allTags = [perfType, ...actTags];
+  return [...new Set(allTags)];
+}
 
 
 const { performances, acts, stages } = useEventData();

@@ -6,16 +6,16 @@
     <h2>{{ $t('share-it') }}</h2>
     <input type="checkbox" id="check_sharefav" v-model="shareFav" />
     <label for="check_sharefav">{{ $t('share-fav') }}</label>
-    <p v-if="copied" class="copied-text">Link kopiert!</p>
+    <p v-if="copied" class="copied-text">{{ $t('link-copied') }}</p>
 
     <!-- QR Code Modal -->
     <PopupModal v-model="visibleQRcode">
       <vue-qrcode v-if="computedLink" class="share-button" :value="computedLink"></vue-qrcode>
     </PopupModal>
     <div class="share-buttons">
-      <button class="share-button" @click="copyToClipboard">Zwischenablage kopieren</button>
-      <button class="share-button" @click="showQRcode">QR Code</button>
-      
+      <button class="share-button" @click="copyToClipboard">{{ $t('share-clipboard') }}</button>
+      <button class="share-button" @click="showQRcode">{{ $t('share-qr') }}</button>
+      <br />
       <a
         :href="`https://x.com/intent/post?text=%20${encodeURIComponent(computedLink)}`"
         target="_blank"

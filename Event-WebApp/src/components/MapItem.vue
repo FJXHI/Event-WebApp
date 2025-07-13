@@ -9,7 +9,7 @@
 <template>
   <div class="map-view full-height">
     <div class="filter-buttons">
-      <button @click="fitMap()">Zentrieren</button>
+      <button @click="fitMap()">{{ $t('map-center') }}</button>
       <button @click="toggleStages" :class="{ active: showStages }">
         {{ $t('stages') }}
       </button>

@@ -5,7 +5,7 @@
 <template>
   <div v-if="modelValue" class="modal-overlay" @click.self="emitClose">
     <div class="modal-content">
-      <button v-if="showDefaultClose" @click="emitClose">Schließen</button>
+      <button v-if="showDefaultClose" @click="emitClose">x</button>
       <slot />
     </div>
   </div>
