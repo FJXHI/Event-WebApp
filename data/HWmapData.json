@@ -229,14 +229,14 @@
         "id": 31,
         "type": "point",
         "name": "WC Ziegelei",
-        "kategori": "sanitary",
+        "kategori": "Sanitär",
         "location": [50.734635, 12.768]
     },
     {
         "id": 32,
         "type": "point",
         "name": "WC Unten (Dixi)",
-        "kategori": "sanitary",
+        "kategori": "Sanitär",
         "location": [50.733523, 12.767889]
     },
     {
