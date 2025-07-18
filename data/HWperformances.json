@@ -14,6 +14,7 @@
     "status": "active",
     "type": "spezial",
     "tags": [],
+    "image": "https://www.homeward-festival.de/templates/yootheme/cache/60/spirtualit%C3%A4t-600c0f62.jpeg",
     "url": "",
     "ticket": false
   },
@@ -32,6 +33,7 @@
     "status": "active",
     "type": "spezial",
     "tags": [],
+    "image": "https://www.homeward-festival.de/templates/yootheme/cache/60/spirtualit%C3%A4t-600c0f62.jpeg",
     "url": "",
     "ticket": false
   },
@@ -50,6 +52,7 @@
     "status": "active",
     "type": "spezial",
     "tags": [],
+    "image": "https://www.homeward-festival.de/templates/yootheme/cache/60/spirtualit%C3%A4t-600c0f62.jpeg",
     "url": "",
     "ticket": false
   },
@@ -66,6 +69,7 @@
     "status": "active",
     "type": "spezial",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -84,6 +88,7 @@
     "status": "active",
     "type": "spezial",
     "tags": [],
+    "image": "https://www.homeward-festival.de/templates/yootheme/cache/60/spirtualit%C3%A4t-600c0f62.jpeg",
     "url": "",
     "ticket": false
   },
@@ -102,6 +107,7 @@
     "status": "active",
     "type": "spezial",
     "tags": [],
+    "image": "https://www.homeward-festival.de/templates/yootheme/cache/7e/Backyard-7e1b2389.jpeg",
     "url": "",
     "ticket": false
   },
@@ -120,6 +126,7 @@
     "status": "active",
     "type": "spezial",
     "tags": [],
+    "image": "https://www.homeward-festival.de/templates/yootheme/cache/7e/Backyard-7e1b2389.jpeg",
     "url": "",
     "ticket": false
   },
@@ -138,6 +145,7 @@
     "status": "active",
     "type": "spezial",
     "tags": [],
+    "image": "https://www.homeward-festival.de/templates/yootheme/cache/7e/Backyard-7e1b2389.jpeg",
     "url": "",
     "ticket": false
   },
@@ -154,6 +162,7 @@
     "status": "active",
     "type": "spezial",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -170,6 +179,7 @@
     "status": "active",
     "type": "spezial",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -186,6 +196,7 @@
     "status": "active",
     "type": "concert",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -202,6 +213,7 @@
     "status": "active",
     "type": "spezial",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -220,6 +232,7 @@
     "status": "active",
     "type": "workshop",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -238,6 +251,7 @@
     "status": "active",
     "type": "workshop",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -256,6 +270,7 @@
     "status": "active",
     "type": "workshop",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -274,6 +289,7 @@
     "status": "active",
     "type": "workshop",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -292,6 +308,7 @@
     "status": "active",
     "type": "workshop",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -310,6 +327,7 @@
     "status": "active",
     "type": "workshop",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -328,6 +346,7 @@
     "status": "active",
     "type": "workshop",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -346,6 +365,7 @@
     "status": "active",
     "type": "workshop",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -364,6 +384,7 @@
     "status": "active",
     "type": "workshop",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -382,6 +403,7 @@
     "status": "active",
     "type": "workshop",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -400,6 +422,7 @@
     "status": "active",
     "type": "workshop",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -418,6 +441,7 @@
     "status": "active",
     "type": "workshop",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -436,6 +460,7 @@
     "status": "active",
     "type": "workshop",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -454,6 +479,7 @@
     "status": "active",
     "type": "workshop",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -472,6 +498,7 @@
     "status": "active",
     "type": "workshop",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -490,11 +517,31 @@
     "status": "active",
     "type": "workshop",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
   {
     "id": 366,
+    "actsIDArr": [
+      113
+    ],
+    "stageID": 20,
+    "id-name": null,
+    "name": "HighlandGames",
+    "description": "HighlandGames - Projekt | Erfahrung | Material - Tauche ein in die Welt der schottischen Tradition und körperlichen Herausforderung! Dieser Workshop bietet einen einzigartigen Einblick in die \"Highland Games\" - jene faszinierenden Wettkämpfe, die Kraft, Geschicklichkeit und Teamgeist auf besondere Weise miteinander verbinden. Wir widmen uns der Planung und Organisation eigener Highland Games. Welche Disziplinen gibt es? Wie werden sie durchgeführt? Welche Regeln sind zu beachten? Hier erhältst du das Rüstzeug, um selbst ein solches Event zu konzipieren.",
+    "start_time": "2025-07-25T08:30:00Z",
+    "end_time": "2025-07-25T10:00:00Z",
+    "date": "2025-07-25",
+    "status": "active",
+    "type": "workshop",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 367,
     "actsIDArr": [
       113
     ],
@@ -508,13 +555,15 @@
     "status": "active",
     "type": "workshop",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
   {
-    "id": 367,
+    "id": 368,
     "actsIDArr": [
-      113
+      113,
+      199
     ],
     "stageID": 30,
     "id-name": null,
@@ -526,13 +575,15 @@
     "status": "active",
     "type": "workshop",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
   {
-    "id": 368,
+    "id": 369,
     "actsIDArr": [
-      113
+      113,
+      199
     ],
     "stageID": 30,
     "id-name": null,
@@ -544,11 +595,12 @@
     "status": "active",
     "type": "workshop",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
   {
-    "id": 369,
+    "id": 370,
     "actsIDArr": [
       113
     ],
@@ -562,11 +614,12 @@
     "status": "active",
     "type": "workshop",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
   {
-    "id": 370,
+    "id": 371,
     "actsIDArr": [
       113
     ],
@@ -580,11 +633,12 @@
     "status": "active",
     "type": "workshop",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
   {
-    "id": 371,
+    "id": 372,
     "actsIDArr": [
       113
     ],
@@ -598,11 +652,12 @@
     "status": "active",
     "type": "workshop",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
   {
-    "id": 372,
+    "id": 373,
     "actsIDArr": [
       113
     ],
@@ -616,11 +671,12 @@
     "status": "active",
     "type": "workshop",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
   {
-    "id": 373,
+    "id": 374,
     "actsIDArr": [
       113
     ],
@@ -634,11 +690,12 @@
     "status": "active",
     "type": "workshop",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
   {
-    "id": 374,
+    "id": 375,
     "actsIDArr": [
       113
     ],
@@ -652,11 +709,12 @@
     "status": "active",
     "type": "workshop",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
   {
-    "id": 375,
+    "id": 376,
     "actsIDArr": [
       113
     ],
@@ -670,11 +728,12 @@
     "status": "active",
     "type": "workshop",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
   {
-    "id": 376,
+    "id": 377,
     "actsIDArr": [
       113
     ],
@@ -688,11 +747,12 @@
     "status": "active",
     "type": "workshop",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
   {
-    "id": 377,
+    "id": 378,
     "actsIDArr": [
       113
     ],
@@ -706,6 +766,7 @@
     "status": "active",
     "type": "workshop",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -724,6 +785,7 @@
     "status": "active",
     "type": "concert",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -742,6 +804,7 @@
     "status": "active",
     "type": "concert",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -760,6 +823,7 @@
     "status": "active",
     "type": "concert",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -778,6 +842,7 @@
     "status": "active",
     "type": "concert",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -796,6 +861,7 @@
     "status": "active",
     "type": "concert",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -814,6 +880,7 @@
     "status": "active",
     "type": "concert",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -832,6 +899,7 @@
     "status": "active",
     "type": "concert",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -850,6 +918,7 @@
     "status": "active",
     "type": "concert",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -868,6 +937,7 @@
     "status": "active",
     "type": "concert",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -886,6 +956,7 @@
     "status": "active",
     "type": "concert",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -904,6 +975,7 @@
     "status": "active",
     "type": "concert",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -922,6 +994,7 @@
     "status": "active",
     "type": "concert",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -940,6 +1013,7 @@
     "status": "active",
     "type": "concert",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -958,6 +1032,7 @@
     "status": "active",
     "type": "concert",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -976,6 +1051,7 @@
     "status": "active",
     "type": "concert",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -994,6 +1070,7 @@
     "status": "active",
     "type": "concert",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -1012,6 +1089,7 @@
     "status": "active",
     "type": "concert",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -1030,6 +1108,7 @@
     "status": "active",
     "type": "concert",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -1048,6 +1127,7 @@
     "status": "active",
     "type": "concert",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -1066,6 +1146,7 @@
     "status": "active",
     "type": "concert",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -1084,6 +1165,7 @@
     "status": "active",
     "type": "concert",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -1102,6 +1184,7 @@
     "status": "active",
     "type": "concert",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -1120,6 +1203,7 @@
     "status": "active",
     "type": "concert",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -1138,6 +1222,7 @@
     "status": "active",
     "type": "concert",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -1156,6 +1241,7 @@
     "status": "active",
     "type": "concert",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -1174,6 +1260,7 @@
     "status": "active",
     "type": "concert",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -1192,6 +1279,7 @@
     "status": "active",
     "type": "concert",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -1210,6 +1298,7 @@
     "status": "active",
     "type": "concert",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -1228,6 +1317,7 @@
     "status": "active",
     "type": "concert",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -1246,6 +1336,7 @@
     "status": "active",
     "type": "concert",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -1264,6 +1355,7 @@
     "status": "active",
     "type": "concert",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -1282,6 +1374,7 @@
     "status": "active",
     "type": "concert",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -1300,6 +1393,7 @@
     "status": "active",
     "type": "concert",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -1318,6 +1412,7 @@
     "status": "active",
     "type": "concert",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -1336,6 +1431,7 @@
     "status": "active",
     "type": "concert",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -1354,6 +1450,7 @@
     "status": "active",
     "type": "concert",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -1372,6 +1469,7 @@
     "status": "active",
     "type": "concert",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -1390,6 +1488,7 @@
     "status": "active",
     "type": "concert",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -1408,6 +1507,7 @@
     "status": "active",
     "type": "concert",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -1426,6 +1526,7 @@
     "status": "active",
     "type": "concert",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -1444,6 +1545,7 @@
     "status": "active",
     "type": "concert",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -1462,6 +1564,7 @@
     "status": "active",
     "type": "concert",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -1480,6 +1583,7 @@
     "status": "active",
     "type": "concert",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -1498,6 +1602,7 @@
     "status": "active",
     "type": "concert",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -1516,6 +1621,7 @@
     "status": "active",
     "type": "concert",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -1534,6 +1640,7 @@
     "status": "active",
     "type": "concert",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -1552,6 +1659,7 @@
     "status": "active",
     "type": "concert",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -1570,6 +1678,7 @@
     "status": "active",
     "type": "concert",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -1588,6 +1697,7 @@
     "status": "active",
     "type": "concert",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -1606,6 +1716,7 @@
     "status": "active",
     "type": "concert",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -1624,6 +1735,7 @@
     "status": "active",
     "type": "concert",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -1642,6 +1754,7 @@
     "status": "active",
     "type": "concert",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -1660,6 +1773,7 @@
     "status": "active",
     "type": "concert",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -1678,6 +1792,7 @@
     "status": "active",
     "type": "concert",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -1696,6 +1811,7 @@
     "status": "active",
     "type": "concert",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
@@ -1714,11 +1830,31 @@
     "status": "active",
     "type": "concert",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   },
   {
     "id": 557,
+    "actsIDArr": [
+      225
+    ],
+    "stageID": 4,
+    "id-name": null,
+    "name": "",
+    "description": "Zeit noch nicht Fest",
+    "start_time": "2025-07-24T16:30:00Z",
+    "end_time": "2025-07-24T17:00:00Z",
+    "date": "2025-07-24",
+    "status": "active",
+    "type": "concert",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 558,
     "actsIDArr": [
       214
     ],
@@ -1732,6 +1868,7 @@
     "status": "active",
     "type": "concert",
     "tags": [],
+    "image": null,
     "url": "",
     "ticket": false
   }
