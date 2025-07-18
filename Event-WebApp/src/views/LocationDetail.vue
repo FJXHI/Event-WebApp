@@ -16,11 +16,16 @@
         <h3>{{ stage.name }}</h3>
         <!--<p>{{ formatAddress(stage.address, 'noCountry') }}</p>-->
       </div>
-      <OvalLink 
+      <!--<OvalLink 
         v-if="stage.location && stage.location.length === 2"  
         :link="{ name: 'map', query: { stage: stage.id }}"
         :icon="IconGeo"
-        :name="stage.location.toString()" />
+        :name="stage.location.toString()" />-->
+        <OvalLink 
+        v-if="stage.location && stage.location.length === 2"  
+        :link="{ name: 'map', query: { stage: stage.id }}"
+        :icon="IconGeo"
+        name="Karte" /><!-- ERROR-FIX i18n -->
       <Countdown v-if="nextPerformance" :time="nextPerformance.start_time" />
     </div>
     <div class="detail-content full-height">

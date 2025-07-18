@@ -150,6 +150,7 @@ def convert_events():
                 "status": row.get("status", "active"),
                 "type": replace_umlauts(row.get("type", "")),
                 "tags": [replace_umlauts(t.strip()) for t in row.get("tags", "").split(',') if t.strip()],
+                "image": row.get("image", "").strip() or None,
                 "url": row.get("url", ""),
                 "ticket": ticket_bool
             }

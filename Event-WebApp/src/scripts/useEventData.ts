@@ -80,6 +80,7 @@ export interface Performance {
   tags?: string[]; // Optional tags associated with the performance (e.g., ["concert", "music"])
   ticket?: boolean; // Optional flag indicating if tickets are available
   ticket_info?: TicketInfo; // Optional detailed ticket information
+  image?: string; // Optional image URL of the act
   url?: string; // Optional URL for more details or purchasing tickets
 }
 

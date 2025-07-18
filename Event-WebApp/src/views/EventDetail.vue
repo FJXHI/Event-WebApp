@@ -9,6 +9,12 @@
     <div class="scroll-y-area">
       <div class="detail-space"></div>
       <div class="detail-header">
+          <img 
+          v-if="performance.image?.trim()" 
+          :src="performance.image.startsWith('http') ? performance.image : baseUrl + performance.image"
+          class="act-detail-view-img"
+          @error="event => (event.target as HTMLImageElement).remove()"
+        />
         <div class="event-detail-time">
           <h4>
             {{ formatDateTime(performance.start_time, 'Time') }} – 
@@ -81,7 +87,7 @@
 
 <script setup lang="ts">
 import { useRoute } from 'vue-router';
-import { formatDateTime } from '@/scripts/functions';
+import { baseUrl, formatDateTime } from '@/scripts/functions';
 import { useEventData } from '@/scripts/useEventData';
 import { computed } from 'vue';
 import IconGeo from '@/components/icons/IconGeo.vue';

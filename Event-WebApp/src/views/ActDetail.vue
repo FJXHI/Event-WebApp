@@ -27,40 +27,41 @@
       </div>
     </div>
 
-    <div class="detail-content full-height">
-      <div class="detail-content-text">
-        <p>{{ act.description }}</p>
-        <p>
-          <TagLabel 
-            v-for="(tag, index) in act.tags.filter(tag => tag.visible)" 
-            :key="index"
-            :name=tag.name
-            class="tag-label-item"
-          />
-        </p>
-        <p>
-          <TagLabel 
-            v-for="(type, index) in act['act-type']" 
-            :key="index"
-            :name=type
-            class="tag-label-item"
-          />
-        </p>
+    <div class="detail-content full-height scroll-head">
+      <div class="scroll-y-area">
+        <div class="detail-content-text">
+          <p>{{ act.description }}</p>
+          <p>
+            <TagLabel 
+              v-for="(tag, index) in act.tags.filter(tag => tag.visible)" 
+              :key="index"
+              :name=tag.name
+              class="tag-label-item"
+            />
+          </p>
+          <p>
+            <TagLabel 
+              v-for="(type, index) in act['act-type']" 
+              :key="index"
+              :name=type
+              class="tag-label-item"
+            />
+          </p>
 
-        <ul class="detail-social-media">
-          <SocialMediaLink
-            v-for="link in act.weblinks"
-            :key="link.url"
-            :name="link.name"
-            :url="link.url"
-          />
-        </ul>
+          <ul class="detail-social-media">
+            <SocialMediaLink
+              v-for="link in act.weblinks"
+              :key="link.url"
+              :name="link.name"
+              :url="link.url"
+            />
+          </ul>
+        </div>
+        <div class="detail-line"></div>
+        <ScheduleListItem :filters="{
+          ...eventFilters, actIDs: [String(act.id)] 
+        }" />
       </div>
-      <div class="detail-line"></div>
-      <ScheduleListItem :filters="{
-        ...eventFilters, actIDs: [String(act.id)] 
-      }" />
-
     </div>
   </div>
 
