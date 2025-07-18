@@ -14,7 +14,7 @@ export const performancesUrl = `${baseUrl}data/HWperformances.json`;
 export const dayStartTime = 8; // Start time of the day
 export const newsApiUrl = 'https://fjxhi.github.io/me/data/HW-newsAPI.json';
 export const testNow = ref<Date | null>(null);
-testNow.value = new Date('2025-07-25T20:50:00');
+//testNow.value = new Date('2025-07-25T20:50:00');
 
 export const colorPalette = [
     '#e63946', // rot
