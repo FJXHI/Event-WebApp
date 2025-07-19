@@ -249,7 +249,7 @@
     "status": "active",
     "type": "workshop",
     "tags": [],
-    "image": null,
+    "image": "https://assetproxy.hoemepage.com/1752340347-46b0e4d6c3591c10a8bda7b1fcbe23996441d4f9?p=large",
     "url": "",
     "ticket": false
   },
@@ -268,7 +268,7 @@
     "status": "active",
     "type": "workshop",
     "tags": [],
-    "image": null,
+    "image": "https://assetproxy.hoemepage.com/1752340347-46b0e4d6c3591c10a8bda7b1fcbe23996441d4f9?p=large",
     "url": "",
     "ticket": false
   },
@@ -287,7 +287,7 @@
     "status": "active",
     "type": "workshop",
     "tags": [],
-    "image": null,
+    "image": "https://assetproxy.hoemepage.com/1752342134-3b8bc586e9108d32dee46a56063c579f97426ddd?p=large",
     "url": "",
     "ticket": false
   },
@@ -408,7 +408,8 @@
   {
     "id": 333,
     "actsIDArr": [
-      113
+      113,
+      198
     ],
     "stageID": 10,
     "id-name": null,
@@ -440,7 +441,7 @@
     "status": "active",
     "type": "workshop",
     "tags": [],
-    "image": null,
+    "image": "https://assetproxy.hoemepage.com/1750272974-2b735dda9b4e2a5ddafbffd00aa316564f555d95?p=large",
     "url": "",
     "ticket": false
   },
@@ -535,7 +536,7 @@
     "status": "active",
     "type": "workshop",
     "tags": [],
-    "image": null,
+    "image": "https://assetproxy.hoemepage.com/1752597532-163cd76acc7b412ab182df76b67ecef23b80ccd6?p=large",
     "url": "",
     "ticket": false
   },
@@ -580,7 +581,8 @@
   {
     "id": 353,
     "actsIDArr": [
-      113
+      113,
+      198
     ],
     "stageID": 10,
     "id-name": null,
