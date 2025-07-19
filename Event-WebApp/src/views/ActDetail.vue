@@ -5,19 +5,7 @@
   <div v-if="act" class="full-height detail-view">
     <div class="detail-space"></div>
     <div class="detail-header">
-      <img 
-        v-if="act.image?.trim()" 
-        :src="act.image.startsWith('http') ? act.image : baseUrl + act.image"
-        class="act-detail-view-img"
-        @error="event => (event.target as HTMLImageElement).remove()"
-      />
-
-      <!-- With Default Image --
-      <img
-        :src="baseUrl + 'images/' + (act.image && act.image.trim() !== '' ? act.image : 'default-image.jpg')" 
-        alt="Act Image"
-        class="act-detail-view-img"
-      />-->
+      <ItemDetailImg :image="act.image" />
       <FavoriteButton :itemId="String(act.id)" itemType="act" class="detail-view-favBtn" />
 
       <div class="detail-title">
@@ -30,7 +18,7 @@
     <div class="detail-content full-height scroll-head">
       <div class="scroll-y-area">
         <div class="detail-content-text">
-          <p>{{ act.description }}</p>
+          <ExpandableText :text="act.description" />
           <p>
             <TagLabel 
               v-for="(tag, index) in act.tags.filter(tag => tag.visible)" 
@@ -81,6 +69,8 @@ import SocialMediaLink from '@/components/SocialMediaLink.vue';
 import FavoriteButton from '@/components/FavBtn.vue';
 import TagLabel from '@/components/TagLabel.vue';
 import Countdown from '@/components/Countdown.vue';
+import ItemDetailImg from '@/components/ItemDetailImg.vue';
+import ExpandableText from '@/components/ExpandableText.vue';
 
 const route = useRoute();
 const { acts, performances, stages } = useEventData();

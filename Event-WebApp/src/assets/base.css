@@ -64,6 +64,7 @@
   --bg-searchbar: var(--vt-theme-1-mute);
   --text-searchbar: #ddd; /* theme-1-mute? */
   --color-qr-code: #000000; /* QR-Code Color */
+  --link-color: green;
 
   --text-item-name: var(--vt-theme-2-text);
   --text-item-sub: var(--vt-c-text-light-1);

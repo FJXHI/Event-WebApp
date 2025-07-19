@@ -70,6 +70,11 @@ const router = createRouter({
       component: () => import('../views/NewsView.vue'),
     },
     {
+      path: '/about/map',
+      name: 'infoMap',
+      component: () => import('../views/InfoMapView.vue'),
+    },
+    {
       path: '/:pathMatch(.*)*',
       name: 'NotFound',
       component: () => import('../views/NotFoundView.vue'),

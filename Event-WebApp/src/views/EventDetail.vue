@@ -9,12 +9,7 @@
     <div class="scroll-y-area">
       <div class="detail-space"></div>
       <div class="detail-header">
-          <img 
-          v-if="performance.image?.trim()" 
-          :src="performance.image.startsWith('http') ? performance.image : baseUrl + performance.image"
-          class="act-detail-view-img"
-          @error="event => (event.target as HTMLImageElement).remove()"
-        />
+        <ItemDetailImg :image="performance.image" />
         <div class="event-detail-time">
           <h4>
             {{ formatDateTime(performance.start_time, 'Time') }} – 
@@ -55,8 +50,8 @@
           <FavoriteButton :itemId="String(act.id)" itemType="act" class="list-item-fav-btn" />
         </div>
         <div class="detail-content-text">
-          
-          <p> {{ performance.description || 'Keine Beschreibung verfügbar' }}</p>
+          <!--<ExpandableText :text="fallbackDescription" />-->
+          <p>{{ fallbackDescription }}</p>
           <p v-if="performance?.url">
             <a :href="performance.url" target="_blank" rel="noopener noreferrer">
               {{ performance.url.replace(/^(https?:\/\/)?(www\.)?/, '') }}
@@ -96,6 +91,8 @@ import FavoriteButton from '@/components/FavBtn.vue';
 import type { Act, Stage, Performance } from '@/scripts/useEventData';
 import TagLabel from '@/components/TagLabel.vue';
 import Countdown from '@/components/Countdown.vue';
+import ItemDetailImg from '@/components/ItemDetailImg.vue';
+//import ExpandableText from '@/components/ExpandableText.vue';
 
 const route = useRoute();
 const { performances, stages, acts, isLoading } = useEventData();
@@ -127,6 +124,17 @@ const performance = computed<ExtendedPerformance | null>(() => {
     stage,
   };
 });
+
+
+const fallbackDescription = computed(() => {
+  if (!performance.value) return 'Keine Beschreibung verfügbar';
+  return (
+    performance.value.description?.trim() ||
+    performance.value.acts[0]?.description?.trim() ||
+    'Keine Beschreibung verfügbar'
+  );
+});
+
 
 // Create array of unique act-tags
 const visibleUniqueActTags = computed(() => {

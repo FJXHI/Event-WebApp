@@ -14,6 +14,7 @@
         </div>
         <!-- About Section -->
         <div class="event-about">
+          <RouterLink to="/about/map" class="back-link">Geländeplan</RouterLink>
           <p>{{ formatDateTime(eventData.startDate, 'Date Short') }} - {{ formatDateTime(eventData.endDate, 'Date Long') }}</p>
           
           <p>{{ eventData.describtion }}</p>
@@ -65,6 +66,7 @@ const { eventInfo, isLoading, error } = useEventData();
 const eventData = computed(() => eventInfo.value[0] ?? {});
 
 import { ref } from "vue";
+import OvalLink from "@/components/OvalLink.vue";
 
 // IDs from currently expanded sections
 const expandedAboutIds = ref<number[]>([]);

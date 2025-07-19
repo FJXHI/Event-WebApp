@@ -38,7 +38,8 @@ const currentPage = computed(() => {
     '/timetable': 'nav-timetable',
     '/map': 'nav-map',
     '/settings': 'nav-settings',
-    '/news': 'nav-news'
+    '/news': 'nav-news',
+    '/about/map': 'nav-about',
   };
   // chech if the route starts with '/act/'
   if (route.path.startsWith('/act/')) {

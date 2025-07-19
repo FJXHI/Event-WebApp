@@ -44,6 +44,24 @@
     "weblinks": []
   },
   {
+    "id": 198,
+    "id-name": null,
+    "name": "Ziegelei-Führung",
+    "subname": "",
+    "act-type": [
+      "Workshop"
+    ],
+    "description": "Ziegelei-Führung mit Christian Mehlhorn jeweils 13:30 an der Workshopwand (1h)",
+    "image": null,
+    "tags": [
+      {
+        "name": "Workshop",
+        "visible": true
+      }
+    ],
+    "weblinks": []
+  },
+  {
     "id": 199,
     "id-name": "feuerwehr",
     "name": "Feuerwehr Lugau",
@@ -117,6 +135,10 @@
       {
         "name": "Instagram",
         "url": "https://www.instagram.com/aka_worship/"
+      },
+      {
+        "name": "Spotify",
+        "url": "https://open.spotify.com/intl-de/artist/0e7ZKwA14Gh6sbZ0VfTW1w"
       }
     ]
   },
@@ -128,7 +150,7 @@
     "act-type": [
       "Artist"
     ],
-    "description": "Backyard Sa",
+    "description": "Backyard Samstag",
     "image": null,
     "tags": [
       {
@@ -150,7 +172,7 @@
     "act-type": [
       "Artist"
     ],
-    "description": "Home Sa",
+    "description": "Alex Mofa Gang ist eine deutsche Rockband, die 2012 in Berlin gegründet wurde. Ihre Musik setzt sich aus Elementen des Punk, Indie und Pop zusammen.",
     "image": "https://assetproxy.hoemepage.com/1747675337-5abaa34844f8c3a6598070487426d3bd3069c960?p=large",
     "tags": [
       {
@@ -170,6 +192,14 @@
       {
         "name": "Instagram",
         "url": "https://www.instagram.com/alexmofagang"
+      },
+      {
+        "name": "Spotify",
+        "url": "https://open.spotify.com/intl-de/artist/66fzqbJlcSTBuIrMtaqVv0"
+      },
+      {
+        "name": "Webseite",
+        "url": "https://alexmofagang.de/"
       }
     ]
   },
@@ -197,6 +227,10 @@
       {
         "name": "Instagram",
         "url": "https://www.instagram.com/alleswirdganzschlimm"
+      },
+      {
+        "name": "Spotify",
+        "url": "https://open.spotify.com/intl-de/artist/17HyF3SKSdYAx8d6zNDfJn"
       }
     ]
   },
@@ -208,7 +242,7 @@
     "act-type": [
       "Artist"
     ],
-    "description": "Backyard Fr",
+    "description": "Backyard Freitag",
     "image": null,
     "tags": [
       {
@@ -242,6 +276,10 @@
       {
         "name": "Instagram",
         "url": "https://www.instagram.com/atticstories"
+      },
+      {
+        "name": "Spotify",
+        "url": "https://open.spotify.com/intl-de/artist/6WLBHcOEiXfOt5mrREFth2"
       }
     ]
   },
@@ -253,7 +291,7 @@
     "act-type": [
       "Artist"
     ],
-    "description": "Backyard Sa",
+    "description": "Backyard Samstag",
     "image": null,
     "tags": [
       {
@@ -283,7 +321,12 @@
         "visible": true
       }
     ],
-    "weblinks": []
+    "weblinks": [
+      {
+        "name": "Spotify",
+        "url": "https://open.spotify.com/intl-de/artist/67BCUCn0nfMCbH7OnLX9AY"
+      }
+    ]
   },
   {
     "id": 210,
@@ -309,6 +352,10 @@
       {
         "name": "Instagram",
         "url": "https://www.instagram.com/bochowmusik"
+      },
+      {
+        "name": "Spotify",
+        "url": "https://open.spotify.com/intl-de/artist/44juGuQ5WOpkTHfWhwiTSk"
       }
     ]
   },
@@ -332,6 +379,10 @@
       {
         "name": "Instagram",
         "url": "https://www.instagram.com/burningnations"
+      },
+      {
+        "name": "Spotify",
+        "url": "https://open.spotify.com/intl-de/artist/5M0ORLSVTqs2JfpBhjF6uL"
       }
     ]
   },
@@ -363,6 +414,10 @@
       {
         "name": "Instagram",
         "url": "https://www.instagram.com/chaosbayofficial"
+      },
+      {
+        "name": "Spotify",
+        "url": "https://open.spotify.com/intl-de/artist/7GNTvmIi6DDF2XDJKYKoUk"
       }
     ]
   },
@@ -374,7 +429,7 @@
     "act-type": [
       "Artist"
     ],
-    "description": "Backyard Sa",
+    "description": "Backyard Samstag",
     "image": null,
     "tags": [
       {
@@ -386,7 +441,16 @@
         "visible": true
       }
     ],
-    "weblinks": []
+    "weblinks": [
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/chrgdmvmnt"
+      },
+      {
+        "name": "Spotify",
+        "url": "https://open.spotify.com/user/eawncq9boxd1ty2rehd382nhz"
+      }
+    ]
   },
   {
     "id": 214,
@@ -422,7 +486,7 @@
     "act-type": [
       "Artist"
     ],
-    "description": "Wohn Fr",
+    "description": "Wohnzimmer Freitag",
     "image": null,
     "tags": [
       {
@@ -456,6 +520,10 @@
       {
         "name": "Instagram",
         "url": "https://www.instagram.com/ell_offiziell"
+      },
+      {
+        "name": "Spotify",
+        "url": "https://open.spotify.com/intl-de/artist/36ovPmzv72ymjpEEwvDfTj"
       }
     ]
   },
@@ -510,6 +578,10 @@
       {
         "name": "Instagram",
         "url": "https://www.instagram.com/escape_the_madness_official"
+      },
+      {
+        "name": "Spotify",
+        "url": "https://open.spotify.com/intl-de/artist/6HbZEhts5nbYfDw5ueFJNn"
       }
     ]
   },
@@ -533,6 +605,10 @@
       {
         "name": "Instagram",
         "url": "https://www.instagram.com/focuspunkt"
+      },
+      {
+        "name": "Spotify",
+        "url": "https://open.spotify.com/intl-de/artist/5TbE0PiXvN5JKGA6W6JybO"
       }
     ]
   },
@@ -564,6 +640,10 @@
       {
         "name": "Instagram",
         "url": "https://www.instagram.com/gina_musaxx"
+      },
+      {
+        "name": "Spotify",
+        "url": "https://open.spotify.com/intl-de/artist/2ijKnmyMDK5KKxXuqnpzRU"
       }
     ]
   },
@@ -640,6 +720,10 @@
       {
         "name": "Instagram",
         "url": "https://www.instagram.com/healing.band"
+      },
+      {
+        "name": "Spotify",
+        "url": "https://open.spotify.com/intl-de/artist/1oFMAPEoTCmYdcBBBwAxs0"
       }
     ]
   },
@@ -663,6 +747,10 @@
       {
         "name": "Instagram",
         "url": "https://www.instagram.com/innerspacehc"
+      },
+      {
+        "name": "Spotify",
+        "url": "https://open.spotify.com/intl-de/artist/0riD4aDoOSnSbdkvO9zOeM"
       }
     ]
   },
@@ -694,6 +782,10 @@
       {
         "name": "Instagram",
         "url": "https://www.instagram.com/jagstermusic"
+      },
+      {
+        "name": "Spotify",
+        "url": "https://open.spotify.com/intl-de/artist/5s2w8TdjpKnHPpQp95qJYh"
       }
     ]
   },
@@ -705,7 +797,7 @@
     "act-type": [
       "DJ"
     ],
-    "description": "Backyard Sa",
+    "description": "Backyard Samstag",
     "image": "https://assetproxy.hoemepage.com/1747675888-3f55ba1917e3fff5fdf5022ea1357bb019bd2074?p=large",
     "tags": [
       {
@@ -763,7 +855,7 @@
     "act-type": [
       "Artist"
     ],
-    "description": "Backyard Fr",
+    "description": "Backyard Freitag",
     "image": null,
     "tags": [
       {
@@ -797,13 +889,17 @@
       {
         "name": "Instagram",
         "url": "https://www.instagram.com/dj_karla_blum"
+      },
+      {
+        "name": "Spotify",
+        "url": "https://open.spotify.com/intl-de/artist/5NSpferwNVudjza91NaBjO"
       }
     ]
   },
   {
     "id": 230,
     "id-name": null,
-    "name": "Kickers Dibs",
+    "name": "Kickers Dibsb  (Absage)",
     "subname": "",
     "act-type": [
       "Artist"
@@ -850,6 +946,10 @@
       {
         "name": "Instagram",
         "url": "https://www.instagram.com/kontraire"
+      },
+      {
+        "name": "Spotify",
+        "url": "https://open.spotify.com/intl-de/artist/63ddT4OFddkk5W3I5zULno"
       }
     ]
   },
@@ -881,6 +981,10 @@
       {
         "name": "Instagram",
         "url": "https://www.instagram.com/lenxa.music"
+      },
+      {
+        "name": "Spotify",
+        "url": "https://open.spotify.com/intl-de/artist/7MZAOHhevF8gQk9TP3vRDB"
       }
     ]
   },
@@ -904,6 +1008,10 @@
       {
         "name": "Instagram",
         "url": "https://www.instagram.com/lessoner.band"
+      },
+      {
+        "name": "Spotify",
+        "url": "https://open.spotify.com/intl-de/artist/4LfsZKDy9O03VQTxe1pYMI"
       }
     ]
   },
@@ -935,13 +1043,17 @@
       {
         "name": "Instagram",
         "url": "https://www.instagram.com/lionlionmusic"
+      },
+      {
+        "name": "Spotify",
+        "url": "https://open.spotify.com/intl-de/artist/39vMeaxc9e74z7v6HdSYC6"
       }
     ]
   },
   {
     "id": 235,
     "id-name": "lohrge",
-    "name": "Lohrge",
+    "name": "lohrge",
     "subname": "",
     "act-type": [
       "Artist"
@@ -958,6 +1070,10 @@
       {
         "name": "Instagram",
         "url": "https://www.instagram.com/lohrge"
+      },
+      {
+        "name": "Spotify",
+        "url": "https://open.spotify.com/intl-de/artist/6s0ROToQwdLLWnPjWkdgJb"
       }
     ]
   },
@@ -985,6 +1101,10 @@
       {
         "name": "Instagram",
         "url": "https://www.instagram.com/meijarband"
+      },
+      {
+        "name": "Spotify",
+        "url": "https://open.spotify.com/intl-de/artist/4AKArM59MGkkSKYBzlhPjC"
       }
     ]
   },
@@ -996,7 +1116,7 @@
     "act-type": [
       "Artist"
     ],
-    "description": "Backyard Do",
+    "description": "Backyard Donnerstag",
     "image": null,
     "tags": [
       {
@@ -1073,6 +1193,10 @@
       {
         "name": "Instagram",
         "url": "https://www.instagram.com/neveryoursband"
+      },
+      {
+        "name": "Spotify",
+        "url": "https://open.spotify.com/intl-de/artist/2cBtHfooO2982BDVUQSrlM"
       }
     ]
   },
@@ -1100,6 +1224,10 @@
       {
         "name": "Instagram",
         "url": "https://www.instagram.com/nicolazzmusic"
+      },
+      {
+        "name": "Spotify",
+        "url": "https://open.spotify.com/intl-de/artist/5vEYknHnp6giZ0PJfUXPOb"
       }
     ]
   },
@@ -1127,6 +1255,10 @@
       {
         "name": "Instagram",
         "url": "https://www.instagram.com/nidareblackmetal"
+      },
+      {
+        "name": "Spotify",
+        "url": "https://open.spotify.com/intl-de/artist/4Bl7Y3ePzm9KgxA0kFysBO"
       }
     ]
   },
@@ -1169,7 +1301,7 @@
     "act-type": [
       "Artist"
     ],
-    "description": "Backyard Fr",
+    "description": "Backyard Freitag",
     "image": null,
     "tags": [
       {
@@ -1195,7 +1327,7 @@
     "act-type": [
       "Artist"
     ],
-    "description": "Backyard Fr",
+    "description": "Backyard Freitag",
     "image": null,
     "tags": [
       {
@@ -1245,6 +1377,10 @@
       {
         "name": "Instagram",
         "url": "https://www.instagram.com/brunnermusik"
+      },
+      {
+        "name": "Spotify",
+        "url": "https://open.spotify.com/intl-de/artist/4VQra45UVmLnQWL4erEhwL"
       }
     ]
   },
@@ -1294,6 +1430,10 @@
       {
         "name": "Instagram",
         "url": "https://www.instagram.com/pennwoodrd"
+      },
+      {
+        "name": "Spotify",
+        "url": "https://open.spotify.com/intl-de/artist/59j4hpxuWf6ZuK4Ve7x5nY"
       }
     ]
   },
@@ -1366,7 +1506,12 @@
         "visible": true
       }
     ],
-    "weblinks": []
+    "weblinks": [
+      {
+        "name": "Spotify",
+        "url": "https://open.spotify.com/intl-de/artist/1ttR2d8NaAxeRdVyJpjaat"
+      }
+    ]
   },
   {
     "id": 251,
@@ -1423,6 +1568,10 @@
       {
         "name": "Instagram",
         "url": "https://www.instagram.com/tosche___"
+      },
+      {
+        "name": "Linktree",
+        "url": "https://linktr.ee/tosche?"
       }
     ]
   },
@@ -1442,7 +1591,12 @@
         "visible": true
       }
     ],
-    "weblinks": []
+    "weblinks": [
+      {
+        "name": "Spotify",
+        "url": "https://open.spotify.com/intl-de/artist/6yvjzXThVSwgikJgw6S26s"
+      }
+    ]
   },
   {
     "id": 254,
@@ -1522,6 +1676,10 @@
       {
         "name": "Instagram",
         "url": "https://www.instagram.com/two_fronts"
+      },
+      {
+        "name": "Spotify",
+        "url": "https://open.spotify.com/intl-de/artist/3IiaKp6VfVAxczuxrnPwSS"
       }
     ]
   },
@@ -1549,6 +1707,10 @@
       {
         "name": "Instagram",
         "url": "https://www.instagram.com/waffellobbyist"
+      },
+      {
+        "name": "Spotify",
+        "url": "https://open.spotify.com/intl-de/artist/1c2RjkFV7phv3BxRPj7hzI"
       }
     ]
   },

@@ -106,22 +106,7 @@
   overflow: hidden;
 }
 
-.act-detail-view-img {
-  /* Ring-color in base.css */
-  border: 4px solid var(--bg-space);
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-top: -60px;
 
-  /*left: 40%;
-  top: -70px;*/ /* Dont Work ??? */
-
-  /*width: 100%;
-  height: auto;
-  /*display: block;*/
-}
 
 .detail-space {
   background-color: var(--bg-space);
