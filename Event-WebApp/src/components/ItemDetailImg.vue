@@ -4,12 +4,22 @@
     :src="resolvedSrc"
     class="detail-view-img"
     @error="handleError"
+    @click="showBigImg = true"
   />
+  <PopupModal v-if="validImage" v-model="showBigImg" :show-default-close="false">
+    <img
+      v-if="validImage"
+      :src="resolvedSrc"
+    />
+  </PopupModal>
 </template>
 
 <script setup lang="ts">
 import { ref, computed, watch } from 'vue'
 import { baseUrl } from '@/scripts/functions';
+import PopupModal from './PopupModalTemp.vue';
+
+const showBigImg = ref(false)
 
 const props = defineProps<{
   image?: string

@@ -15,6 +15,7 @@
         <!-- About Section -->
         <div class="event-about">
           <RouterLink to="/about/map" class="back-link">Geländeplan</RouterLink>
+          <RouterLink to="/about/time" class="back-link">Timetable</RouterLink>
           <p>{{ formatDateTime(eventData.startDate, 'Date Short') }} - {{ formatDateTime(eventData.endDate, 'Date Long') }}</p>
           
           <p>{{ eventData.describtion }}</p>

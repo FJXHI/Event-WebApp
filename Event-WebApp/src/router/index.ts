@@ -75,6 +75,11 @@ const router = createRouter({
       component: () => import('../views/InfoMapView.vue'),
     },
     {
+      path: '/about/time',
+      name: 'infoTime',
+      component: () => import('../views/InfoTimeView.vue'),
+    },
+    {
       path: '/:pathMatch(.*)*',
       name: 'NotFound',
       component: () => import('../views/NotFoundView.vue'),
