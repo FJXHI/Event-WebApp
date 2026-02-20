@@ -1,1 +1,0 @@
-import{d as e,a as s,b as a,u as o,e as n,o as t}from"./index-B4V8xzw8.js";const c={class:"info-bg"},_=["src"],m=e({__name:"InfoMapView",setup(r){return(i,p)=>(t(),s("div",c,[a("img",{src:o(n)+"/HW25_map_1_250718.jpg",class:"info-img"},null,8,_)]))}});export{m as default};
