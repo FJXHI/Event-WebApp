@@ -4,7 +4,7 @@ import App from './App.vue';
 import { createPinia } from 'pinia';
 import i18n from './scripts/i18n.js';
 import { useMessagingStore } from './scripts/useMessagingStore';
-import { messaging, onMessage, getToken } from './scripts/firebase';
+import { messaging, messagingReady, onMessage, getToken } from './scripts/firebase';
 import './assets/main.css';
 import router from './router';
 import { baseUrl, applyTheme } from './scripts/functions.ts';
@@ -96,22 +96,32 @@ serviceWorkerRegistrationPromise
   });
 */
 
-// Receive messages when the app is in the foreground
-onMessage(messaging, (payload) => {
-  console.log('Received message:', payload);
-});
-
-// Get FCM registration token
-
-getToken(messaging, { vapidKey: import.meta.env.VITE_FIREBASE_VAPID_KEY }).then((currentToken) => {
-  if (currentToken) {
-    console.log('FCM Token:', currentToken);
-    messagingStore.setToken(currentToken);
-  } else {
-    console.log('No registration token available. Request permission to generate one.');
+messagingReady.then(async (supported) => {
+  if (!supported || !messaging) {
+    console.info('[FCM] Messaging is not supported in this browser.');
+    return;
   }
-}).catch((err) => {
-  console.log('An error occurred while retrieving token. ', err);
+
+  // Receive messages when the app is in the foreground
+  onMessage(messaging, (payload) => {
+    console.log('Received message:', payload);
+  });
+
+  if (!('Notification' in window) || Notification.permission === 'denied') {
+    return;
+  }
+
+  try {
+    const currentToken = await getToken(messaging, { vapidKey: import.meta.env.VITE_FIREBASE_VAPID_KEY });
+    if (currentToken) {
+      console.log('FCM Token:', currentToken);
+      messagingStore.setToken(currentToken);
+    } else {
+      console.log('No registration token available. Request permission to generate one.');
+    }
+  } catch (err) {
+    console.log('An error occurred while retrieving token. ', err);
+  }
 });
 
 // Vue App Mounten

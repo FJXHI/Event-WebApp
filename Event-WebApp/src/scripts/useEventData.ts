@@ -58,7 +58,7 @@ export interface Stage {
 // TicketInfo interface representing the ticket information for performances
 export interface TicketInfo {
   available?: boolean; // Whether tickets are available
-  price?: number; // Price of the ticket
+  price?: number; // Price of the ticket (supports decimals, e.g. 12.50)
   currency?: string; // Currency used for the ticket price (e.g., "EUR")
   url?: string; // URL to purchase tickets
 }

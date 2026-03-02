@@ -16,7 +16,13 @@
     "tags": [],
     "image": "https://www.homeward-festival.de/templates/yootheme/cache/60/spirtualit%C3%A4t-600c0f62.jpeg",
     "url": "",
-    "ticket": false
+    "ticket": true,
+    "ticket_info": {
+      "available": true,
+      "price": 0.0,
+      "currency": "EUR",
+      "url": "https://www.homeward-festival.de"
+    } 
   },
   {
     "id": 302,
@@ -35,7 +41,12 @@
     "tags": [],
     "image": "https://www.homeward-festival.de/templates/yootheme/cache/60/spirtualit%C3%A4t-600c0f62.jpeg",
     "url": "",
-    "ticket": false
+    "ticket": true,
+    "ticket_info": {
+      "available": false,
+      "price": null,
+      "currency": "EUR"
+    } 
   },
   {
     "id": 303,

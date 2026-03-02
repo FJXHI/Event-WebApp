@@ -59,6 +59,10 @@ const props = defineProps({
         type: String,
         default: 'stage'
     },
+    favoriteEventIds: {
+        type: Array as () => string[] | undefined,
+        default: undefined
+    }
 });
 
 const nowLine = ref<HTMLElement | null>(null);
@@ -99,6 +103,9 @@ const getActNamesLocal = (actsArr: (number | string)[]) => getActNames(actsArr, 
 const filteredPerformances = computed(() => {
     return performances.value
         .filter(event => {
+            const isFavoriteMatch = !props.favoriteEventIds || props.favoriteEventIds.includes(String(event.id));
+            if (!isFavoriteMatch) return false;
+
             const eventDate = new Date(event.start_time);
             const selectedDay = new Date(props.date);
 
@@ -329,6 +336,7 @@ const nowLineStyle = computed(() => {
 }
 
 .event {
+    text-decoration: none;
     position: absolute;
     left: 2.5px;
     right: 2.5px;

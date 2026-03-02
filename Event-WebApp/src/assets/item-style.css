@@ -1,13 +1,8 @@
-.pad {
+﻿.pad {
   padding: 0px 0.3rem 0px 0.5rem;
 }
 
 /* Scrolling */
-
-.scroll-head {
-  /* No longer needed */
-}
-
 .scroll-y-area {
   flex: 1 1 auto;
   overflow-y: auto;
@@ -59,7 +54,7 @@
 }
 
 .list-item-name {
-  font-size: 1.125rem;
+  font-size: clamp(1rem, 0.9rem + 0.6vw, 1.125rem);
   font-weight: bold;
   color: var(--text-item-name);
 }
@@ -81,13 +76,27 @@
   margin-right: 0.3rem;
 }
 
+.Link {
+  text-decoration: none;
+  color: green;
+  transition: 0.4s;
+  padding: 5px;
+  padding-left: 0px;
+  cursor: pointer;
+}
 
-/* ERROR-FIX */
-/* This dont work because of "a, .green" in main.css */
-/*
+.Link-NoUnderline a {
+  text-decoration: none;
+}
+
+.Link-Underline {
+  text-decoration: underline;
+
+}
+
 .LinkItem-list {
   width: 100%;
-  padding: 10px 0;
+  padding: 0px;
   box-sizing: border-box;
   margin-top: auto;
 }
@@ -98,9 +107,19 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 10px;
 }
-*/
+
+.LinkItem-list a, .LinkItem-list .linkitem-btn {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 12px;
+  color: var(--home-title); /* home nav Title Text Color */
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
 
 .detail-view {
   overflow: hidden;
@@ -121,11 +140,13 @@
 }
 
 .detail-header h3 {
-  font-size: 30px; /* ERROR-FIX change size */
+  font-size: clamp(1.25rem, 0.9rem + 1.6vw, 1.875rem);
+  /* 30px */
 }
 
 .detail-header h4 {
-  font-size: 16px;
+  font-size: clamp(0.95rem, 0.88rem + 0.35vw, 1rem);
+  /* 16px */
 }
 
 .detail-content-text {
@@ -133,20 +154,36 @@
 }
 
 .detail-content p {
-  font-size: 14px;
+  font-size: clamp(0.875rem, 0.83rem + 0.2vw, 0.95rem);
+  /* 14px */
   line-height: 1.6;
 }
 
 /* ERROR-FIX Do Styling in favBtn.vue and do restyle */
+.detail-view-groupBtn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  z-index: 3;
+}
+
+.detail-view-Btn {
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+}
+
 .detail-view-favBtn {
   position: absolute;
   top: 10px;
   right: 20px;
   border: none;
-  padding: 10px;
-  border-radius: 50%;
-  cursor: pointer;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
 }
 
 .detail-line {
@@ -154,7 +191,7 @@
 }
 
 .event-detail-time, h4 {
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 0.9rem + 0.5vw, 1.2rem);
   font-weight: bold;
 }
 
@@ -169,7 +206,7 @@
 }
 
 .sett-title {
-  font-size: 1.1rem;
+  font-size: clamp(1rem, 0.92rem + 0.35vw, 1.1rem);
 }
 
 .sett-button-group button {
@@ -216,4 +253,3 @@
 .btn-header .left, .right {
   width: 50%;
 }
-

@@ -6,7 +6,7 @@
     <div class="detail-space"></div>
     <div class="detail-header">
       <ItemDetailImg :image="act.image" />
-      <FavoriteButton :itemId="String(act.id)" itemType="act" class="detail-view-favBtn" />
+      <FavoriteButton :itemId="String(act.id)" itemType="act" class="detail-view-favBtn detail-view-Btn" />
 
       <div class="detail-title">
         <h3>{{ act.name }}</h3>

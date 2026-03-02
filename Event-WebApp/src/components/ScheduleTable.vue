@@ -28,6 +28,7 @@
                     ref="scheduleRef"
                     :date="day" 
                     :stageTypeFilter="stageTypeFilter"
+                    :favoriteEventIds="favOnly ? favoriteEventIds : undefined"
                 />
             </div>
         </div>
@@ -43,12 +44,21 @@ import FlowBtn from '@/components/FlowBtn.vue';
 import ScheduleTableItem from "@/components/ScheduleTableItem.vue";
 import DateHead from '@/components/DateHead.vue';
 import { dayStartTime, testNow } from '@/scripts/config.ts';
-import { formatDateTime, useScrollToDate } from '@/scripts/functions.ts';
-import { useRouter } from 'vue-router';
+import { useScrollToDate } from '@/scripts/functions.ts';
+import { useRouter, useRoute } from 'vue-router';
 
+const route = useRoute();
 const router = useRouter();
+const favOnly = computed(() => route.query.fav === 'true');
 const { scrollToDate } = useScrollToDate()
 const { performances } = useEventData();
+
+// Get favorite event IDs from localStorage
+const favoriteEventIds = computed<string[]>(() => {
+  const ids = JSON.parse(localStorage.getItem('event') || '[]');
+  return ids.map((id: string | number) => String(id));
+});
+
 
 //const stageTypeOptions = ['stage', 'workshop', 'all'];
 const stageTypeOptions = ['stage', 'all'];
@@ -78,10 +88,16 @@ const toggleStageType = () => {
   stageTypeFilter.value = stageTypeOptions[(currentIndex + 1) % stageTypeOptions.length];
 };
 
+const sourcePerformances = computed(() =>
+  favOnly.value
+    ? performances.value.filter(p => favoriteEventIds.value.includes(String(p.id)))
+    : performances.value
+);
+
 const days = computed<string[]>(() => {
     const shownDays = new Set<string>();
 
-    performances.value.forEach(event => {
+    sourcePerformances.value.forEach(event => {
         const eventDate = new Date(event.start_time);
         const eventHour = eventDate.getHours();
 

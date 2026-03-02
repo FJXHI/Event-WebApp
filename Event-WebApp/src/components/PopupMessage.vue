@@ -18,7 +18,7 @@
 
 <script setup lang="ts">
 import { ref, onMounted } from 'vue';
-import { messaging, onMessage } from '@/scripts/firebase';
+import { messaging, messagingReady, onMessage } from '@/scripts/firebase';
 
 const visible = ref(false);
 const notification = ref<{ title: string; body: string } | null>(null);
@@ -42,7 +42,10 @@ function close() {
   if (timeout) clearTimeout(timeout);
 }
 
-onMounted(() => {
+onMounted(async () => {
+  const supported = await messagingReady;
+  if (!supported || !messaging) return;
+
   onMessage(messaging, (payload) => {
     console.log('[FCM] Message received:', payload);
     showPopup(payload);

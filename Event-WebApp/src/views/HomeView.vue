@@ -16,7 +16,7 @@
           </div>
         </div>
       </div>
-      <div class="center">
+      <div class="LinkItem-list">
         <ul>
           <LinkItem to="/acts" :icon="IconActs" title="nav-acts" subtext="nav-acts-subtext" />
           <LinkItem to="/schedule" :icon="IconClock" title="nav-timetable" :subtext="formattedDateRange" />
@@ -95,18 +95,4 @@ main {
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
 }
 
-.center {
-  width: 100%;
-  padding: 0px;
-  box-sizing: border-box;
-  margin-top: auto;
-}
-
-.center ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-}
 </style>

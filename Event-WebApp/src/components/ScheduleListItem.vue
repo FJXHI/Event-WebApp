@@ -25,9 +25,8 @@
           >
             {{ time }}
           </h3>
-          
+
           <ul class="list-item-ul">
-            <!--<li v-for="performance in performances" :key="performance.id" class="list-item-obj">-->
             <li
               v-for="performance in performances"
               :key="performance.id"
@@ -41,9 +40,6 @@
                   <strong class="list-item-name">
                     <div v-if="performance.name">
                       {{ performance.name }}
-                      <!--<span v-if="performance.actsIDArr.length">
-                        ({{ getActNamesLocal(performance.actsIDArr) }})
-                      </span>-->
                     </div>
                     <div v-else-if="performance.actsIDArr.length">
                       {{ getActNamesLocal(performance.actsIDArr) }}
@@ -66,6 +62,7 @@
                         class="tag-label-item"
                       />
                       <!--<TagLabel :name="capitalize(performance.type)" class="tag-label-item" />-->
+                      <TicketBadge :ticket="performance.ticket" :ticket_info="performance.ticket_info"/>
                     </span>
                   </span>
                 </div>
@@ -93,10 +90,10 @@ import TagLabel from '@/components/TagLabel.vue';
 import NoEntries from '@/components/NoEntries.vue';
 import DateHead from '@/components/DateHead.vue';
 import FlowBtn from '@/components/FlowBtn.vue';
-import type { Act, Stage, Performance } from '@/scripts/useEventData';
-import { useRouter, useRoute } from 'vue-router'
-import { onMounted } from 'vue'
+import type { Stage, Performance } from '@/scripts/useEventData';
+import { useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n';
+import TicketBadge from './TicketBadge.vue';
 
 const { t } = useI18n();
 

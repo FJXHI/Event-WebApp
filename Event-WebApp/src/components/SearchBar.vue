@@ -1,6 +1,5 @@
 <!-- SearchBar.vue-->
 <!-- A SearchBar for the Lists -->
-<!-- ERROR-FIX Instant search does not work on mobile -->
 
 <template>
   <div class="search-bar">
@@ -12,7 +11,15 @@
         type="text"
         v-model="searchQuery" 
         @input="onInput" 
+        @change="onInput"
+        @keyup="onInput"
+        @compositionstart="onCompositionStart"
+        @compositionend="onCompositionEnd"
         :placeholder="$t('search-placeholder')" 
+        autocapitalize="none"
+        autocomplete="off"
+        autocorrect="off"
+        spellcheck="false"
       />
     </div>
   </div>
@@ -25,10 +32,22 @@ import IconSearch from './icons/IconSearch.vue';
 const emit = defineEmits(['apply']);
 
 const searchQuery = ref('');
+const isComposing = ref(false);
 
 // Call this function when the input changes
 const onInput = () => {
-emit('apply', searchQuery.value);
+  if (isComposing.value) return;
+  emit('apply', searchQuery.value);
+};
+
+// Handle composition events for IME input (e.g., for Chinese, Japanese, Korean)
+const onCompositionEnd = () => {
+  isComposing.value = false;
+  onInput();
+};
+
+const onCompositionStart = () => {
+  isComposing.value = true;
 };
 </script>
 

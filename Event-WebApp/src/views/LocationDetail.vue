@@ -10,22 +10,17 @@
         }"></div>
     </div>
     <div class="detail-header">
-      <FavoriteButton :itemId="String(stage.id)" itemType="stage" class="detail-view-favBtn"/>
+      <FavoriteButton :itemId="String(stage.id)" itemType="stage" class="detail-view-favBtn detail-view-Btn"/>
       <div class="detail-title">
         <div class="detail-space2"></div>
         <h3>{{ stage.name }}</h3>
         <!--<p>{{ formatAddress(stage.address, 'noCountry') }}</p>-->
       </div>
-      <!--<OvalLink 
+      <OvalLink 
         v-if="stage.location && stage.location.length === 2"  
         :link="{ name: 'map', query: { stage: stage.id }}"
         :icon="IconGeo"
-        :name="stage.location.toString()" />-->
-        <OvalLink 
-        v-if="stage.location && stage.location.length === 2"  
-        :link="{ name: 'map', query: { stage: stage.id }}"
-        :icon="IconGeo"
-        name="Karte" /><!-- ERROR-FIX i18n -->
+        :name="$t('nav-map')" />
       <Countdown v-if="nextPerformance" :time="nextPerformance.start_time" />
     </div>
     <div class="detail-content full-height">
@@ -78,20 +73,13 @@ const route = useRoute();
 const { stages, performances, acts } = useEventData();
 
 const stage = computed(() => {
-  //const stageId = route.params.id;
   const selectedStage = stages.value.find(
     stage => stage['id-name'] === route.params.id || stage.id === Number(route.params.id)
   );
 
   if (selectedStage) {
     // Find all performances for the selected stage
-    const stagePerformances = performances.value
-      .filter(perf => perf.stageID === selectedStage.id) 
-      .map(perf => ({
-        ...perf,
-        act: acts.value.find(act => act.id === perf.actsIDArr[0]), // ERROR-FIX Why we need this here?
-      }));
-
+    const stagePerformances = performances.value.filter(perf => perf.stageID === selectedStage.id);
     return { ...selectedStage, performances: stagePerformances };
   }
 

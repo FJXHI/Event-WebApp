@@ -2,7 +2,7 @@
 <!-- A Oval with Icon, Text and Link -->
 
 <template>
-  <div class="oval-link-div">
+  <div class="oval-link-div Link-NoUnderline">
     <component :is="link ? 'router-link' : 'div'" :to="link" class="oval-link-item">
       <component :is="icon" /><span class="oval-link-item-span">{{ name }}</span>
     </component>
@@ -11,8 +11,6 @@
 <!-- &#x1F4CD; -->
 
 <script setup>
-import { defineProps } from 'vue';
-
 const props = defineProps({
   link: {
     type: [String, Object],

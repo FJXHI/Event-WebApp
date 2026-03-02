@@ -8,8 +8,6 @@
     <LangSwitch class="pad"/>
     <div class="pad">
       <label class="sett-title">{{ $t('favorites') }}</label>
-    
-      <!--<label>Favoriten:</label>-->
       <div class="sett-button-group">
         <button @click="clearFavorites('act')">Fav. Acts löschen</button>
         <button @click="clearFavorites('stage')">Fav. Bühnen löschen</button>
@@ -24,12 +22,11 @@
     <BadgeAuthor position="fixed"/>
     <div class="pad">
       <p>Build Time: {{ buildDate }}</p>
-      <!--<p v-if="fcmToken">FCM Token: {{ fcmToken }}</p>-->
       <div v-if="fcmToken" >
         <p class="fcm-token-label" @click="copyToken">FCM Token: {{ fcmToken }}</p>
-        <!--<div v-if="copied" class="show-up">{{ $t('copied') }}</div>--><!--ERROR-FIX: Copy Animation-->
+      <!--<div v-if="copied" class="show-up">{{ $t('copied') }}</div>--><!--ERROR-FIX: Copy Animation-->
       </div>
-    <p v-else>FCM Token: {{ $t('loading') }}</p>
+      <p v-else>FCM Token: {{ $t('loading') }}</p>
     </div>
   </div>
 </template>

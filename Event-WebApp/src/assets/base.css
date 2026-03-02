@@ -41,6 +41,16 @@
   -vt-th-org: #0066ff #ffcc00 #993a00 #033a99;*/
   /*background: #f3f3f3; #f0506e*/
 
+
+  /* Homeward Colors 2026 */
+  --vt-homeward-darkblue: rgb(16,8,45);
+  /* 169 168 25 16 8 45 */
+  --vt-homeward-lightblue: rgb(66,88,174);
+  /* 152 108 113 66 88 174 */
+  --vt-homeward-yellow: rgb(242,190,78);
+  /* 27 207 151 242 190 78  */
+  --vt-homeward-orange: rgb(228,80,54);
+  /* 6 183 133 228 80 54 */
 }
 
 /* semantic color variables for this project */
@@ -108,6 +118,8 @@
   --btn-normal-bg: #d3d3d3;
   --btn-normal-text: var(--vt-c-black);
   --filter-line: #ddd;
+
+  --btn-change-text: var(--vt-c-black);
 }
 
 
@@ -167,6 +179,7 @@
   --btn-normal-text: var(--vt-c-black);
   --filter-line: var(--vt-c-text-dark-2);
 
+  --btn-change-text: var(--vt-c-text-dark-2);
 }
 
 *,

@@ -17,7 +17,19 @@
             {{ formatDateTime(performance.start_time, 'Date Long') }}
           </h4>     
         </div>
-        <FavoriteButton :itemId="String(performance.id)" itemType="event" class="detail-view-favBtn"/>
+        <div class="detail-view-groupBtn">
+          <FavoriteButton 
+            :itemId="String(performance.id)" 
+            itemType="event" 
+            class="detail-view-Btn" />
+          <CalendarButton 
+            :title="calendarTitle"
+            :description="fallbackDescription"
+            :location="calendarLocation"
+            :start-time="performance.start_time"
+            :end-time="performance.end_time"
+            :details-url="performance.url"  />
+        </div>
         <div class="detail-title">
           <h3>
             <template v-if="performance.name">
@@ -35,8 +47,12 @@
         </div>
         <OvalLink :link="'/location/' + (performance.stage['id-name']?.trim() ? performance.stage['id-name'] : performance.stage.id)"
             :icon="IconGeo"
-            :name="performance.stage.name" />
+            :name="performance.stage.name"  />
         <Countdown :time="performance.start_time" />
+        <TicketBadge
+            :ticket="performance.ticket"
+            :ticket_info="performance.ticket_info"
+          />
       </div>
       <div class="detail-content">
         <div v-for="(act, index) in performance.acts" :key="act.id" class="list-item-obj">
@@ -51,6 +67,8 @@
         </div>
         <div class="detail-content-text">
           <!--<ExpandableText :text="fallbackDescription" />-->
+          
+        
           <p>{{ fallbackDescription }}</p>
           <p v-if="performance?.url">
             <a :href="performance.url" target="_blank" rel="noopener noreferrer">
@@ -82,12 +100,14 @@
 
 <script setup lang="ts">
 import { useRoute } from 'vue-router';
-import { baseUrl, formatDateTime } from '@/scripts/functions';
+import { formatDateTime } from '@/scripts/functions';
 import { useEventData } from '@/scripts/useEventData';
 import { computed } from 'vue';
 import IconGeo from '@/components/icons/IconGeo.vue';
 import OvalLink from '@/components/OvalLink.vue';
+import TicketBadge from '@/components/TicketBadge.vue';
 import FavoriteButton from '@/components/FavBtn.vue';
+import CalendarButton from '@/components/CalendarBtn.vue';
 import type { Act, Stage, Performance } from '@/scripts/useEventData';
 import TagLabel from '@/components/TagLabel.vue';
 import Countdown from '@/components/Countdown.vue';
@@ -135,6 +155,17 @@ const fallbackDescription = computed(() => {
   );
 });
 
+// Export Calendar informations
+const calendarTitle = computed(() => {
+  if (!performance.value) return 'Event';
+  if (performance.value.name?.trim()) return performance.value.name.trim();
+  if (performance.value.acts.length > 0) {
+    return performance.value.acts.map(act => act.name).join(', ');
+  }
+  return 'Event';
+});
+
+const calendarLocation = computed(() => performance.value?.stage?.name ?? '');
 
 // Create array of unique act-tags
 const visibleUniqueActTags = computed(() => {

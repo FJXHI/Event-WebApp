@@ -1,7 +1,7 @@
 // src/scripts/firebase.ts
 import { initializeApp } from 'firebase/app';
 import { getAnalytics, isSupported as analyticsSupported } from 'firebase/analytics';
-import { getMessaging, getToken, onMessage } from 'firebase/messaging';
+import { getMessaging, getToken, onMessage, isSupported as messagingSupported, type Messaging } from 'firebase/messaging';
 
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
@@ -25,6 +25,14 @@ analyticsSupported().then((supported) => {
 });
 
 // Get Firebase Messaging instance
-const messaging = getMessaging(app);
+let messaging: Messaging | null = null;
+const messagingReady = messagingSupported()
+  .then((supported) => {
+    if (supported) {
+      messaging = getMessaging(app);
+    }
+    return supported;
+  })
+  .catch(() => false);
 
-export { app, analytics, messaging, getToken, onMessage };
+export { app, analytics, messaging, messagingReady, getToken, onMessage };

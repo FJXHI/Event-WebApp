@@ -4,7 +4,6 @@
 import { ref } from 'vue';
 import type { Ref } from 'vue';
 import { useRoute, useRouter } from 'vue-router'
-import { useI18n } from 'vue-i18n';
 import { colorPalette } from './config'; // List of colors for TagLabel
 
 //BaseURL for routing
@@ -156,25 +155,31 @@ export function getFavoriteItems(itemKey: string, itemData: any[]): any[] {
   }
 
 
-// render string for Subtext in the favorites page
-export function getFavoriteSubtext(count: number): string {
-    if (count === 0) return 'Keine Favoriten';
-    if (count === 1) return '1 Favorit';
-    return `${count} Favoriten`;
+// count favorites from local storage
+export function getFavoriteCount(itemKey: string): number {
+    try {
+        const raw = localStorage.getItem(itemKey);
+        if (!raw) return 0;
+
+        const parsed = JSON.parse(raw);
+        if (!Array.isArray(parsed)) return 0;
+
+        return parsed.length;
+    } catch {
+        return 0;
+    }
 }
 
 
 // count favorites with i18n support
-export function getFavoriteSubtext2(count: number): string {
-    const { t } = useI18n(); // access the i18n instance
-
+export function getFavoriteSubtext(count: number, t: (key: string, params?: Record<string, unknown>) => string): string {
     if (count === 0) {
-    return t('count-favorites.none');  // Transation for "No Favorites"
+    return t('count-favorites.none');
     }
     if (count === 1) {
-    return t('count-favorites.one');  // Transation for "one Favorites"
+    return t('count-favorites.one');
     }
-    return t('count-favorites.many', { count });  // Transation for "more Favorites"
+    return t('count-favorites.many', { count });
 }
 
 

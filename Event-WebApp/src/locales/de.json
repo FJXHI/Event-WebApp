@@ -1,4 +1,4 @@
-{
+﻿{
     "nav-home": "Home",
     "nav-acts": "Künstler",
     "nav-locations": "Locations",
@@ -8,6 +8,7 @@
     "nav-map": "Karte",
     "nav-settings": "Einstellungen",
     "nav-news": "News",
+    "news-read-more": "Mehr erfahren",
     "nav-acts-subtext": "",
     "nav-locations-subtext": "",
     "nav-locations-stages": "{count} Locations",
@@ -29,7 +30,7 @@
     "Time": "Zeit",
     "kategorien": "Kategorien",
     "apply-filter": "Filter anwenden",
-    "open-filter": "Filter auswählen",
+    "open-filter": "Filter auswÃ¤hlen",
     "search-placeholder": "Suchen",
     "Performance-Types": "Event Art",
     "Performance-Tags": "Performance-Tages",
@@ -53,6 +54,13 @@
     "event": "Event",
     "share-it": "Share it!",
     "share-fav": "Favoriten teilen",
+    "calendar": {
+        "add": "Zum Kalender hinzufügen",
+        "google": "Google",
+        "outlook": "Outlook",
+        "yahoo": "Yahoo",
+        "ics": "ICS downloaden"
+    },
     "show-more": "Mehr anzeigen",
     "show-less": "Weniger anzeigen",
     "Unknown": "Unbekannt",
@@ -68,7 +76,7 @@
     "count-favorites": {
         "none": "Keine Favoriten",
         "one": "1 Favorit",
-        "many": "{{count}} Favoriten"
+        "many": "{count} Favoriten"
     },
     "favorite": "Favorit",
     "favorites": "Favoriten",
@@ -77,5 +85,9 @@
     "artists": "Künstler",
     "languages": "Sprachen",
     "stageNotFound": "Unbekannte Bühne",
+    "ticket-label": "Ticket",
+    "tickets-label": "Tickets",
+    "ticket-sold-out": "Ausverkauft",
     "appearance": "Erscheinungsbild"
 }
+

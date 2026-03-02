@@ -14,18 +14,20 @@
         </div>
         <!-- About Section -->
         <div class="event-about">
-          <RouterLink to="/about/map" class="back-link">Geländeplan</RouterLink>
-          <RouterLink to="/about/time" class="back-link">Timetable</RouterLink>
+          <RouterLink to="/about/map" class="back-link, Link">Geländeplan</RouterLink>
+          <RouterLink to="/about/time" class="back-link, Link">Timetable</RouterLink>
           <p>{{ formatDateTime(eventData.startDate, 'Date Short') }} - {{ formatDateTime(eventData.endDate, 'Date Long') }}</p>
           
           <p>{{ eventData.describtion }}</p>
           
           <p>{{ eventData.location.name }}: {{ formatAddress(eventData.location.address) }}
             <a :href="`geo:${eventData.location.gps.latitude},${eventData.location.gps.longitude}`"
-              v-if="true"><!--ERROR-FIX isMobile dont work-->
+              class="Link"
+              v-if="isMobile">
               ({{ eventData.location.gps.latitude }}, {{ eventData.location.gps.longitude }})
             </a>
             <a :href="`https://www.google.com/maps/search/?api=1&query=${eventData.location.gps.latitude},${eventData.location.gps.longitude}`"
+              class="Link"
               v-else>
               ({{ eventData.location.gps.latitude }}, {{ eventData.location.gps.longitude }})
             </a>
@@ -48,8 +50,6 @@
               :url="link.url"
             />
           </ul>
-          <!------------------------------------------------<br/>
-          eventData: {{ eventData }}-->
         </div>
       </div>
     </div>
@@ -57,20 +57,27 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from "vue";
+import { computed, ref } from "vue";
 import { useEventData } from "@/scripts/useEventData";
 import { formatDateTime, formatAddress } from "@/scripts/functions";
-import BadgeAuthor from "@/components/BadgeAuthor.vue";
 import SocialMediaLink from "@/components/SocialMediaLink.vue";
 
 const { eventInfo, isLoading, error } = useEventData();
 const eventData = computed(() => eventInfo.value[0] ?? {});
 
-import { ref } from "vue";
-import OvalLink from "@/components/OvalLink.vue";
-
 // IDs from currently expanded sections
 const expandedAboutIds = ref<number[]>([]);
+
+const isMobile = computed(() => {
+  if (typeof navigator === "undefined") return false;
+
+  const ua = navigator.userAgent || "";
+  const mobileUa = /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(ua);
+  const iPad = /\biPad\b/i.test(ua);
+  const iPadOs = /Macintosh/i.test(ua) && /Mobile/i.test(ua) && navigator.maxTouchPoints > 1;
+
+  return mobileUa || iPad || iPadOs;
+});
 
 function toggleAbout(id: number) {
   const index = expandedAboutIds.value.indexOf(id);

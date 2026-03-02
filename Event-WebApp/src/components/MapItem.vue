@@ -36,8 +36,7 @@
         :zoom="zoom"
         class="map-area"
         
-      ><!-- ERROR-FIX Fix l-map auto height (style="height: 500px")
-        Maybe map should be fixed at the bottom. -->
+      >
         <l-tile-layer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution="&copy; OpenStreetMap contributors"

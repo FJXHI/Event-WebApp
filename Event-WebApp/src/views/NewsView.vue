@@ -9,7 +9,7 @@
           <p class="news-date">{{ formatDateTime(notification.date, "Date Long") }}</p>
           <h2 class="news-title">{{ notification.title }}</h2>
           <p class="news-content">{{ notification.content }}</p>
-          <a v-if="notification.url" :href="notification.url" target="_blank">Mehr erfahren</a>
+          <a v-if="notification.url" :href="notification.url" target="_blank" class="Link Link-Underline">{{ $t('news-read-more') }}</a>
           <img v-if="notification.image" :src="notification.image" alt="News Image" style="max-width: 100%; height: auto;" />
         </li>
       </ul>
@@ -74,16 +74,9 @@ onMounted(fetchNews)
   white-space: pre-line;
 }
 
-a {
-  color: #0077cc;
-  text-decoration: underline;
-}
 /*
 .news-item:hover {
   transform: translateY(-2px);
 }
-
-a:hover {
-  text-decoration: none;
-}*/
+*/
 </style>
