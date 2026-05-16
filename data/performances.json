@@ -1,181 +1,3154 @@
 [
   {
-    "id": 201,
-    "actsIDArr": [103],
+    "id": 301,
+    "actsIDArr": [
+      111
+    ],
     "stageID": 1,
-    "id-name": "",
+    "id-name": null,
     "name": "",
-    "short-description": "A night of amazing music with the best bands in the world.",
-    "description": "A night of amazing music with the best bands in the world.",
-    "start_time": "2025-07-24T17:00:00Z",
-    "end_time": "2025-07-24T20:00:00Z",
-    "date": "2025-07-24",
-    "status": "active",
-    "type": "Concert",
-    "tags": ["concert", "music"],
-    "ticket": true,
-    "ticket_info": {
-      "available": true,
-      "price": 20,
-      "currency": "EUR",
-      "url": "https://www.ticketmaster.com/"
-    },
-    "url": "https://www.live-music-festival.com/base"
+    "description": "Marc Freudenberg auf der Bühne Melone",
+    "start_time": "2026-05-29T15:30:00Z",
+    "end_time": "2026-05-29T16:00:00Z",
+    "date": "2026-05-29",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
   },
   {
-    "id": 202,
-    "actsIDArr": [102],
-    "stageID": 2,
-    "id-name": "electro-night",
-    "name": "ElectroNight",
-    "short-description": "An electrifying experience with the best DJs.",
-    "description": "Experience the best electronic music with top DJs. A night of high energy and great vibes.",
-    "start_time": "2026-06-21T21:00:00Z",
-    "end_time": "2026-06-21T23:00:00Z",
-    "date": "2026-03-21",
-    "status": "active",
-    "type": "DJ Set",
-    "tags": ["electronic", "dj", "party"],
-    "ticket": true,
-    "ticket_info": {
-      "available": true,
-      "price": 15,
-      "currency": "EUR",
-      "url": "https://www.ticketmaster.com/"
-    },
-    "url": "https://www.live-music-festival.com/electro-night"
-  },
-  {
-    "id": 203,
-    "actsIDArr": [104, 105],
-    "stageID": 3,
-    "id-name": "",
-    "name": "Jazz Revolution",
-    "short-description": "A powerful rock night with legendary bands.",
-    "description": "Join us for an explosive rock night featuring legendary bands that have shaped the genre.",
-    "start_time": "2026-03-21T17:00:00Z",
-    "end_time": "2026-03-21T20:30:00Z",
-    "date": "2026-03-22",
-    "status": "active",
-    "type": "Concert",
-    "tags": ["rock", "concert", "music"],
-    "ticket": true,
-    "ticket_info": {
-      "available": true,
-      "price": 25,
-      "currency": "EUR",
-      "url": "https://www.ticketmaster.com/"
-    },
-    "url": "https://www.live-music-festival.com/rock-revolution"
-  },
-  {
-    "id": 204,
-    "actsIDArr": [101, 103],
+    "id": 302,
+    "actsIDArr": [
+      112
+    ],
     "stageID": 1,
-    "id-name": "indie-beats",
-    "name": "Indie Beats",
-    "short-description": "Indie music with unique sounds from upcoming artists.",
-    "description": "Get ready for an evening of fresh indie beats, featuring some of the most promising new artists.",
-    "start_time": "2026-03-21T21:00:00Z",
-    "end_time": "2026-03-22T00:00:00Z",
-    "date": "2026-03-22",
-    "status": "active",
-    "type": "Concert",
-    "tags": ["indie", "music", "live"],
-    "ticket": true,
-    "ticket_info": {
-      "available": true,
-      "price": 18,
-      "currency": "EUR",
-      "url": "https://www.ticketmaster.com/"
-    },
-    "url": "https://www.live-music-festival.com/indie-beats"
-  },
-  {
-    "id": 205,
-    "actsIDArr": [],
-    "stageID": 1,
-    "id-name": "",
+    "id-name": null,
     "name": "",
-    "short-description": "Indie music with unique sounds from upcoming artists.",
-    "description": "Get ready for an evening of fresh indie beats, featuring some of the most promising new artists.",
-    "start_time": "2026-03-22T08:00:00Z",
-    "end_time": "2026-03-22T10:50:00Z",
-    "date": "2026-03-22",
-    "status": "active",
-    "type": "Concert",
-    "tags": ["indie", "music", "live"],
-    "ticket": true,
-    "ticket_info": {
-      "available": true,
-      "price": 18,
-      "currency": "EUR",
-      "url": "https://www.ticketmaster.com/"
-    },
-    "url": "https://www.live-music-festival.com/indie-beats"
+    "description": "Tridiculous auf der Bühne Melone",
+    "start_time": "2026-05-29T16:30:00Z",
+    "end_time": "2026-05-29T17:00:00Z",
+    "date": "2026-05-29",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
   },
   {
-    "id": 299,
-    "actsIDArr": [],
+    "id": 303,
+    "actsIDArr": [
+      113
+    ],
+    "stageID": 1,
+    "id-name": null,
+    "name": "",
+    "description": "Anna Ki auf der Bühne Melone",
+    "start_time": "2026-05-29T17:30:00Z",
+    "end_time": "2026-05-29T18:00:00Z",
+    "date": "2026-05-29",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 304,
+    "actsIDArr": [
+      114
+    ],
+    "stageID": 1,
+    "id-name": null,
+    "name": "",
+    "description": "Duo Lolly Pop auf der Bühne Melone",
+    "start_time": "2026-05-29T18:30:00Z",
+    "end_time": "2026-05-29T19:00:00Z",
+    "date": "2026-05-29",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 305,
+    "actsIDArr": [
+      115
+    ],
     "stageID": 2,
-    "id-name": "",
-    "name": "Openingshow",
-    "short-description": "",
-    "description": "Laser Openingshow",
-    "start_time": "2026-03-21T20:45:00Z",
-    "end_time": "2026-03-21T21:00:00Z",
-    "date": "2026-03-21",
-    "status": "active",
-    "type": "Concert",
-    "tags": ["indie", "music", "live"],
-    "ticket": false,
-    "url": ""
+    "id-name": null,
+    "name": "",
+    "description": "Satya Bella auf der Bühne Glockenhut",
+    "start_time": "2026-05-29T16:00:00Z",
+    "end_time": "2026-05-29T16:30:00Z",
+    "date": "2026-05-29",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
   },
   {
-    "id": 213,
-    "actsIDArr": [104],
-    "stageID": 3,
-    "id-name": "",
-    "name": "Jazz",
-    "short-description": "A powerful rock night with legendary bands.",
-    "description": "Join us for an explosive rock night featuring legendary bands that have shaped the genre.",
-    "start_time": "2026-03-22T01:00:00Z",
-    "end_time": "2026-03-22T02:00:00Z",
-    "date": "2026-03-21",
-    "status": "active",
-    "type": "Concert",
-    "tags": ["rock", "concert", "music"],
-    "ticket": true,
-    "ticket_info": {
-      "available": true,
-      "price": 25,
-      "currency": "EUR",
-      "url": "https://www.ticketmaster.com/"
-    },
-    "url": "https://www.live-music-festival.com/rock-revolution"
+    "id": 306,
+    "actsIDArr": [
+      114
+    ],
+    "stageID": 2,
+    "id-name": null,
+    "name": "",
+    "description": "Duo Lolly Pop auf der Bühne Glockenhut",
+    "start_time": "2026-05-29T17:00:00Z",
+    "end_time": "2026-05-29T17:30:00Z",
+    "date": "2026-05-29",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
   },
   {
-    "id": 214,
-    "actsIDArr": [103],
+    "id": 307,
+    "actsIDArr": [
+      111
+    ],
+    "stageID": 2,
+    "id-name": null,
+    "name": "",
+    "description": "Marc Freudenberg auf der Bühne Glockenhut",
+    "start_time": "2026-05-29T18:00:00Z",
+    "end_time": "2026-05-29T18:30:00Z",
+    "date": "2026-05-29",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 308,
+    "actsIDArr": [
+      116
+    ],
+    "stageID": 2,
+    "id-name": null,
+    "name": "",
+    "description": "Marcos Luis Masetti auf der Bühne Glockenhut",
+    "start_time": "2026-05-29T19:00:00Z",
+    "end_time": "2026-05-29T19:30:00Z",
+    "date": "2026-05-29",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 309,
+    "actsIDArr": [
+      117
+    ],
     "stageID": 3,
-    "id-name": "",
-    "name": "PreNight",
-    "short-description": "A powerful rock night with legendary bands.",
-    "description": "Join us for an explosive rock night featuring legendary bands that have shaped the genre.",
-    "start_time": "2025-07-24T04:00:00Z",
-    "end_time": "2025-07-24T07:30:00Z",
-    "date": "2026-03-21",
-    "status": "active",
-    "type": "Concert",
-    "tags": ["rock", "concert", "music"],
-    "ticket": true,
-    "ticket_info": {
-      "available": true,
-      "price": 25,
-      "currency": "EUR",
-      "url": "https://www.ticketmaster.com/"
-    },
-    "url": "https://www.live-music-festival.com/rock-revolution"
+    "id-name": null,
+    "name": "",
+    "description": "Kuutenkidou auf der Bühne Zylinder",
+    "start_time": "2026-05-29T15:30:00Z",
+    "end_time": "2026-05-29T16:00:00Z",
+    "date": "2026-05-29",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 310,
+    "actsIDArr": [
+      118
+    ],
+    "stageID": 3,
+    "id-name": null,
+    "name": "",
+    "description": "Duo Masawa auf der Bühne Zylinder",
+    "start_time": "2026-05-29T16:30:00Z",
+    "end_time": "2026-05-29T17:00:00Z",
+    "date": "2026-05-29",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 311,
+    "actsIDArr": [
+      119
+    ],
+    "stageID": 3,
+    "id-name": null,
+    "name": "",
+    "description": "Zinzi & Evertjan auf der Bühne Zylinder",
+    "start_time": "2026-05-29T17:30:00Z",
+    "end_time": "2026-05-29T18:00:00Z",
+    "date": "2026-05-29",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 312,
+    "actsIDArr": [
+      112
+    ],
+    "stageID": 3,
+    "id-name": null,
+    "name": "",
+    "description": "Tridiculous auf der Bühne Zylinder",
+    "start_time": "2026-05-29T18:30:00Z",
+    "end_time": "2026-05-29T19:00:00Z",
+    "date": "2026-05-29",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 313,
+    "actsIDArr": [
+      120
+    ],
+    "stageID": 3,
+    "id-name": null,
+    "name": "",
+    "description": "The Funky Monkeys auf der Bühne Zylinder",
+    "start_time": "2026-05-29T19:30:00Z",
+    "end_time": "2026-05-29T20:00:00Z",
+    "date": "2026-05-29",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 314,
+    "actsIDArr": [],
+    "stageID": 4,
+    "id-name": "opening",
+    "name": "Eröffnung",
+    "description": "Eröffnung auf der Bühne Sombrero",
+    "start_time": "2026-05-29T15:00:00Z",
+    "end_time": "2026-05-29T15:30:00Z",
+    "date": "2026-05-29",
+    "status": "",
+    "type": "spezial",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 315,
+    "actsIDArr": [
+      122
+    ],
+    "stageID": 4,
+    "id-name": null,
+    "name": "",
+    "description": "Circus unARTiq auf der Bühne Sombrero",
+    "start_time": "2026-05-29T15:30:00Z",
+    "end_time": "2026-05-29T16:00:00Z",
+    "date": "2026-05-29",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 316,
+    "actsIDArr": [
+      123
+    ],
+    "stageID": 4,
+    "id-name": null,
+    "name": "",
+    "description": "Duo flexoncirc auf der Bühne Sombrero",
+    "start_time": "2026-05-29T16:00:00Z",
+    "end_time": "2026-05-29T16:30:00Z",
+    "date": "2026-05-29",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 317,
+    "actsIDArr": [
+      120
+    ],
+    "stageID": 4,
+    "id-name": null,
+    "name": "",
+    "description": "The Funky Monkeys auf der Bühne Sombrero",
+    "start_time": "2026-05-29T17:00:00Z",
+    "end_time": "2026-05-29T17:30:00Z",
+    "date": "2026-05-29",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 318,
+    "actsIDArr": [
+      117
+    ],
+    "stageID": 4,
+    "id-name": null,
+    "name": "",
+    "description": "Kuutenkidou auf der Bühne Sombrero",
+    "start_time": "2026-05-29T18:00:00Z",
+    "end_time": "2026-05-29T18:30:00Z",
+    "date": "2026-05-29",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 319,
+    "actsIDArr": [
+      122
+    ],
+    "stageID": 4,
+    "id-name": null,
+    "name": "",
+    "description": "Circus unARTiq auf der Bühne Sombrero",
+    "start_time": "2026-05-29T18:30:00Z",
+    "end_time": "2026-05-29T19:00:00Z",
+    "date": "2026-05-29",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 320,
+    "actsIDArr": [
+      124
+    ],
+    "stageID": 4,
+    "id-name": null,
+    "name": "",
+    "description": "sound gurus auf der Bühne Sombrero",
+    "start_time": "2026-05-29T19:00:00Z",
+    "end_time": "2026-05-29T20:00:00Z",
+    "date": "2026-05-29",
+    "status": "",
+    "type": "Musik",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 321,
+    "actsIDArr": [
+      125
+    ],
+    "stageID": 5,
+    "id-name": null,
+    "name": "",
+    "description": "enVivo auf der Bühne Porkpie",
+    "start_time": "2026-05-29T15:30:00Z",
+    "end_time": "2026-05-29T16:00:00Z",
+    "date": "2026-05-29",
+    "status": "",
+    "type": "Musik",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 322,
+    "actsIDArr": [
+      126
+    ],
+    "stageID": 5,
+    "id-name": null,
+    "name": "",
+    "description": "two chords auf der Bühne Porkpie",
+    "start_time": "2026-05-29T16:30:00Z",
+    "end_time": "2026-05-29T17:00:00Z",
+    "date": "2026-05-29",
+    "status": "",
+    "type": "Musik",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 323,
+    "actsIDArr": [
+      124
+    ],
+    "stageID": 5,
+    "id-name": null,
+    "name": "",
+    "description": "sound gurus auf der Bühne Porkpie",
+    "start_time": "2026-05-29T17:30:00Z",
+    "end_time": "2026-05-29T18:00:00Z",
+    "date": "2026-05-29",
+    "status": "",
+    "type": "Musik",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 324,
+    "actsIDArr": [
+      125
+    ],
+    "stageID": 5,
+    "id-name": null,
+    "name": "",
+    "description": "enVivo auf der Bühne Porkpie",
+    "start_time": "2026-05-29T18:30:00Z",
+    "end_time": "2026-05-29T19:00:00Z",
+    "date": "2026-05-29",
+    "status": "",
+    "type": "Musik",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 325,
+    "actsIDArr": [
+      119
+    ],
+    "stageID": 6,
+    "id-name": null,
+    "name": "",
+    "description": "Zinzi & Evertjan auf der Bühne Cowboyhut",
+    "start_time": "2026-05-29T16:00:00Z",
+    "end_time": "2026-05-29T16:30:00Z",
+    "date": "2026-05-29",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 326,
+    "actsIDArr": [
+      117
+    ],
+    "stageID": 6,
+    "id-name": null,
+    "name": "",
+    "description": "Kuutenkidou auf der Bühne Cowboyhut",
+    "start_time": "2026-05-29T17:00:00Z",
+    "end_time": "2026-05-29T17:30:00Z",
+    "date": "2026-05-29",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 327,
+    "actsIDArr": [
+      127
+    ],
+    "stageID": 6,
+    "id-name": null,
+    "name": "",
+    "description": "This Maag auf der Bühne Cowboyhut",
+    "start_time": "2026-05-29T18:00:00Z",
+    "end_time": "2026-05-29T18:30:00Z",
+    "date": "2026-05-29",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 328,
+    "actsIDArr": [
+      118
+    ],
+    "stageID": 6,
+    "id-name": null,
+    "name": "",
+    "description": "Duo Masawa auf der Bühne Cowboyhut",
+    "start_time": "2026-05-29T19:00:00Z",
+    "end_time": "2026-05-29T19:30:00Z",
+    "date": "2026-05-29",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 329,
+    "actsIDArr": [
+      128
+    ],
+    "stageID": 7,
+    "id-name": null,
+    "name": "",
+    "description": "Mika und Elena auf der Bühne Strohhut",
+    "start_time": "2026-05-29T15:30:00Z",
+    "end_time": "2026-05-29T16:00:00Z",
+    "date": "2026-05-29",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 330,
+    "actsIDArr": [
+      127
+    ],
+    "stageID": 7,
+    "id-name": null,
+    "name": "",
+    "description": "This Maag auf der Bühne Strohhut",
+    "start_time": "2026-05-29T16:30:00Z",
+    "end_time": "2026-05-29T17:00:00Z",
+    "date": "2026-05-29",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 331,
+    "actsIDArr": [
+      118
+    ],
+    "stageID": 7,
+    "id-name": null,
+    "name": "",
+    "description": "Duo Masawa auf der Bühne Strohhut",
+    "start_time": "2026-05-29T17:30:00Z",
+    "end_time": "2026-05-29T18:00:00Z",
+    "date": "2026-05-29",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 332,
+    "actsIDArr": [
+      128
+    ],
+    "stageID": 7,
+    "id-name": null,
+    "name": "",
+    "description": "Mika und Elena auf der Bühne Strohhut",
+    "start_time": "2026-05-29T18:30:00Z",
+    "end_time": "2026-05-29T19:00:00Z",
+    "date": "2026-05-29",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 333,
+    "actsIDArr": [
+      113
+    ],
+    "stageID": 8,
+    "id-name": null,
+    "name": "",
+    "description": "Anna Ki auf der Bühne Zauberhut",
+    "start_time": "2026-05-29T16:00:00Z",
+    "end_time": "2026-05-29T16:30:00Z",
+    "date": "2026-05-29",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 334,
+    "actsIDArr": [
+      116
+    ],
+    "stageID": 8,
+    "id-name": null,
+    "name": "",
+    "description": "Marcos Luis Masetti auf der Bühne Zauberhut",
+    "start_time": "2026-05-29T17:00:00Z",
+    "end_time": "2026-05-29T17:30:00Z",
+    "date": "2026-05-29",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 335,
+    "actsIDArr": [
+      115
+    ],
+    "stageID": 8,
+    "id-name": null,
+    "name": "",
+    "description": "Satya Bella auf der Bühne Zauberhut",
+    "start_time": "2026-05-29T18:00:00Z",
+    "end_time": "2026-05-29T18:30:00Z",
+    "date": "2026-05-29",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 336,
+    "actsIDArr": [
+      129
+    ],
+    "stageID": 9,
+    "id-name": null,
+    "name": "",
+    "description": "Noah Chorny auf der Inneren Klosterstraße",
+    "start_time": "2026-05-29T16:00:00Z",
+    "end_time": "2026-05-29T16:30:00Z",
+    "date": "2026-05-29",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 337,
+    "actsIDArr": [
+      129
+    ],
+    "stageID": 9,
+    "id-name": null,
+    "name": "",
+    "description": "Noah Chorny auf der Inneren Klosterstraße",
+    "start_time": "2026-05-29T18:00:00Z",
+    "end_time": "2026-05-29T18:30:00Z",
+    "date": "2026-05-29",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 338,
+    "actsIDArr": [
+      129
+    ],
+    "stageID": 9,
+    "id-name": null,
+    "name": "",
+    "description": "Noah Chorny auf der Inneren Klosterstraße",
+    "start_time": "2026-05-29T19:30:00Z",
+    "end_time": "2026-05-29T20:00:00Z",
+    "date": "2026-05-29",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 339,
+    "actsIDArr": [
+      130
+    ],
+    "stageID": 9,
+    "id-name": null,
+    "name": "",
+    "description": "Superheroes auf der Inneren Klosterstraße",
+    "start_time": "2026-05-29T17:00:00Z",
+    "end_time": "2026-05-29T17:30:00Z",
+    "date": "2026-05-29",
+    "status": "",
+    "type": "Walkact",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 340,
+    "actsIDArr": [
+      130
+    ],
+    "stageID": 9,
+    "id-name": null,
+    "name": "",
+    "description": "Superheroes auf der Inneren Klosterstraße",
+    "start_time": "2026-05-29T19:00:00Z",
+    "end_time": "2026-05-29T19:30:00Z",
+    "date": "2026-05-29",
+    "status": "",
+    "type": "Walkact",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 341,
+    "actsIDArr": [
+      131
+    ],
+    "stageID": 10,
+    "id-name": null,
+    "name": "",
+    "description": "Toc de Fusta auf dem Düßeldorfer Platz",
+    "start_time": "2026-05-29T15:00:00Z",
+    "end_time": "2026-05-29T19:00:00Z",
+    "date": "2026-05-29",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 342,
+    "actsIDArr": [
+      132
+    ],
+    "stageID": 10,
+    "id-name": null,
+    "name": "",
+    "description": "Siebdruck mit Spangeltangel auf dem Düßeldorfer Platz",
+    "start_time": "2026-05-29T15:00:00Z",
+    "end_time": "2026-05-29T18:00:00Z",
+    "date": "2026-05-29",
+    "status": "",
+    "type": "spezial",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 343,
+    "actsIDArr": [
+      133
+    ],
+    "stageID": 10,
+    "id-name": null,
+    "name": "",
+    "description": "Walkact Last Minute auf dem Düßeldorfer Platz",
+    "start_time": "2026-05-29T15:30:00Z",
+    "end_time": "2026-05-29T16:00:00Z",
+    "date": "2026-05-29",
+    "status": "",
+    "type": "Walkact",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 344,
+    "actsIDArr": [
+      133
+    ],
+    "stageID": 10,
+    "id-name": null,
+    "name": "",
+    "description": "Walkact Last Minute auf dem Düßeldorfer Platz",
+    "start_time": "2026-05-29T17:00:00Z",
+    "end_time": "2026-05-29T17:30:00Z",
+    "date": "2026-05-29",
+    "status": "",
+    "type": "Walkact",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 345,
+    "actsIDArr": [
+      133
+    ],
+    "stageID": 10,
+    "id-name": null,
+    "name": "",
+    "description": "Walkact Last Minute auf dem Düßeldorfer Platz",
+    "start_time": "2026-05-29T19:00:00Z",
+    "end_time": "2026-05-29T19:30:00Z",
+    "date": "2026-05-29",
+    "status": "",
+    "type": "Walkact",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 346,
+    "actsIDArr": [
+      134
+    ],
+    "stageID": 1,
+    "id-name": null,
+    "name": "",
+    "description": "Hibiki Daiko auf der Bühne Melone",
+    "start_time": "2026-05-30T12:00:00Z",
+    "end_time": "2026-05-30T12:30:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 347,
+    "actsIDArr": [
+      123
+    ],
+    "stageID": 1,
+    "id-name": null,
+    "name": "",
+    "description": "Duo flexoncirc auf der Bühne Melone",
+    "start_time": "2026-05-30T13:00:00Z",
+    "end_time": "2026-05-30T13:30:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 348,
+    "actsIDArr": [
+      116
+    ],
+    "stageID": 1,
+    "id-name": null,
+    "name": "",
+    "description": "Marcos Luis Masetti auf der Bühne Melone",
+    "start_time": "2026-05-30T14:00:00Z",
+    "end_time": "2026-05-30T14:30:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 349,
+    "actsIDArr": [
+      118
+    ],
+    "stageID": 1,
+    "id-name": null,
+    "name": "",
+    "description": "Duo Masawa auf der Bühne Melone",
+    "start_time": "2026-05-30T15:00:00Z",
+    "end_time": "2026-05-30T15:30:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 350,
+    "actsIDArr": [
+      135
+    ],
+    "stageID": 1,
+    "id-name": null,
+    "name": "",
+    "description": "Crepes Sucette auf der Bühne Melone",
+    "start_time": "2026-05-30T16:00:00Z",
+    "end_time": "2026-05-30T16:30:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Musik",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 351,
+    "actsIDArr": [
+      113
+    ],
+    "stageID": 1,
+    "id-name": null,
+    "name": "",
+    "description": "Anna Ki auf der Bühne Melone",
+    "start_time": "2026-05-30T17:00:00Z",
+    "end_time": "2026-05-30T17:30:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 352,
+    "actsIDArr": [
+      127
+    ],
+    "stageID": 1,
+    "id-name": null,
+    "name": "",
+    "description": "This Maag auf der Bühne Melone",
+    "start_time": "2026-05-30T18:00:00Z",
+    "end_time": "2026-05-30T18:30:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 353,
+    "actsIDArr": [
+      117
+    ],
+    "stageID": 1,
+    "id-name": null,
+    "name": "",
+    "description": "Kuutenkidou auf der Bühne Melone",
+    "start_time": "2026-05-30T19:00:00Z",
+    "end_time": "2026-05-30T19:30:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 354,
+    "actsIDArr": [
+      116
+    ],
+    "stageID": 2,
+    "id-name": null,
+    "name": "",
+    "description": "Marcos Luis Masetti auf der Bühne Glockenhut",
+    "start_time": "2026-05-30T12:30:00Z",
+    "end_time": "2026-05-30T13:00:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 355,
+    "actsIDArr": [
+      111
+    ],
+    "stageID": 2,
+    "id-name": null,
+    "name": "",
+    "description": "Marc Freudenberg auf der Bühne Glockenhut",
+    "start_time": "2026-05-30T13:30:00Z",
+    "end_time": "2026-05-30T14:00:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 356,
+    "actsIDArr": [
+      119
+    ],
+    "stageID": 2,
+    "id-name": null,
+    "name": "",
+    "description": "Zinzi & Evertjan auf der Bühne Glockenhut",
+    "start_time": "2026-05-30T14:30:00Z",
+    "end_time": "2026-05-30T15:00:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 357,
+    "actsIDArr": [
+      115
+    ],
+    "stageID": 2,
+    "id-name": null,
+    "name": "",
+    "description": "Satya Bella auf der Bühne Glockenhut",
+    "start_time": "2026-05-30T15:30:00Z",
+    "end_time": "2026-05-30T16:00:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 358,
+    "actsIDArr": [
+      111
+    ],
+    "stageID": 2,
+    "id-name": null,
+    "name": "",
+    "description": "Marc Freudenberg auf der Bühne Glockenhut",
+    "start_time": "2026-05-30T16:30:00Z",
+    "end_time": "2026-05-30T17:00:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 359,
+    "actsIDArr": [
+      114
+    ],
+    "stageID": 2,
+    "id-name": null,
+    "name": "",
+    "description": "Duo Lolly Pop auf der Bühne Glockenhut",
+    "start_time": "2026-05-30T17:30:00Z",
+    "end_time": "2026-05-30T18:00:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 360,
+    "actsIDArr": [
+      136
+    ],
+    "stageID": 3,
+    "id-name": null,
+    "name": "",
+    "description": "Soul expreßion auf der Bühne Zylinder",
+    "start_time": "2026-05-30T11:30:00Z",
+    "end_time": "2026-05-30T12:00:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 361,
+    "actsIDArr": [
+      137
+    ],
+    "stageID": 3,
+    "id-name": null,
+    "name": "",
+    "description": "paßion life auf der Bühne Zylinder",
+    "start_time": "2026-05-30T12:30:00Z",
+    "end_time": "2026-05-30T13:00:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 362,
+    "actsIDArr": [
+      112
+    ],
+    "stageID": 3,
+    "id-name": null,
+    "name": "",
+    "description": "Tridiculous auf der Bühne Zylinder",
+    "start_time": "2026-05-30T13:30:00Z",
+    "end_time": "2026-05-30T14:00:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 363,
+    "actsIDArr": [
+      123
+    ],
+    "stageID": 3,
+    "id-name": null,
+    "name": "",
+    "description": "Duo flexoncirc auf der Bühne Zylinder",
+    "start_time": "2026-05-30T14:30:00Z",
+    "end_time": "2026-05-30T15:00:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 364,
+    "actsIDArr": [
+      124
+    ],
+    "stageID": 3,
+    "id-name": null,
+    "name": "",
+    "description": "sound gurus auf der Bühne Zylinder",
+    "start_time": "2026-05-30T15:30:00Z",
+    "end_time": "2026-05-30T16:00:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Musik",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 365,
+    "actsIDArr": [
+      117
+    ],
+    "stageID": 3,
+    "id-name": null,
+    "name": "",
+    "description": "Kuutenkidou auf der Bühne Zylinder",
+    "start_time": "2026-05-30T16:30:00Z",
+    "end_time": "2026-05-30T17:00:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 366,
+    "actsIDArr": [
+      120
+    ],
+    "stageID": 3,
+    "id-name": null,
+    "name": "",
+    "description": "The Funky Monkeys auf der Bühne Zylinder",
+    "start_time": "2026-05-30T17:30:00Z",
+    "end_time": "2026-05-30T18:00:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 367,
+    "actsIDArr": [
+      118
+    ],
+    "stageID": 3,
+    "id-name": null,
+    "name": "",
+    "description": "Duo Masawa auf der Bühne Zylinder",
+    "start_time": "2026-05-30T18:30:00Z",
+    "end_time": "2026-05-30T19:00:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 368,
+    "actsIDArr": [
+      112
+    ],
+    "stageID": 3,
+    "id-name": null,
+    "name": "",
+    "description": "Tridiculous auf der Bühne Zylinder",
+    "start_time": "2026-05-30T19:30:00Z",
+    "end_time": "2026-05-30T20:00:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 369,
+    "actsIDArr": [
+      138
+    ],
+    "stageID": 4,
+    "id-name": null,
+    "name": "",
+    "description": "Tanzensemble Chemnitz auf der Bühne Sombrero",
+    "start_time": "2026-05-30T11:00:00Z",
+    "end_time": "2026-05-30T11:30:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 370,
+    "actsIDArr": [
+      122
+    ],
+    "stageID": 4,
+    "id-name": null,
+    "name": "",
+    "description": "Circus unARTiq auf der Bühne Sombrero",
+    "start_time": "2026-05-30T12:00:00Z",
+    "end_time": "2026-05-30T12:30:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 371,
+    "actsIDArr": [
+      139
+    ],
+    "stageID": 4,
+    "id-name": null,
+    "name": "",
+    "description": "sleepwalker's station auf der Bühne Sombrero",
+    "start_time": "2026-05-30T13:00:00Z",
+    "end_time": "2026-05-30T13:30:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Musik",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 372,
+    "actsIDArr": [
+      115
+    ],
+    "stageID": 4,
+    "id-name": null,
+    "name": "",
+    "description": "Satya Bella auf der Bühne Sombrero",
+    "start_time": "2026-05-30T14:00:00Z",
+    "end_time": "2026-05-30T14:30:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 373,
+    "actsIDArr": [
+      117
+    ],
+    "stageID": 4,
+    "id-name": null,
+    "name": "",
+    "description": "Kuutenkidou auf der Bühne Sombrero",
+    "start_time": "2026-05-30T15:00:00Z",
+    "end_time": "2026-05-30T15:30:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 374,
+    "actsIDArr": [
+      122
+    ],
+    "stageID": 4,
+    "id-name": null,
+    "name": "",
+    "description": "Circus unARTiq auf der Bühne Sombrero",
+    "start_time": "2026-05-30T16:00:00Z",
+    "end_time": "2026-05-30T16:30:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 375,
+    "actsIDArr": [
+      140
+    ],
+    "stageID": 4,
+    "id-name": null,
+    "name": "",
+    "description": "teget auf der Bühne Sombrero",
+    "start_time": "2026-05-30T17:00:00Z",
+    "end_time": "2026-05-30T17:30:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Musik",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 376,
+    "actsIDArr": [
+      122
+    ],
+    "stageID": 4,
+    "id-name": null,
+    "name": "",
+    "description": "Circus unARTiq auf der Bühne Sombrero",
+    "start_time": "2026-05-30T18:00:00Z",
+    "end_time": "2026-05-30T18:30:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 377,
+    "actsIDArr": [
+      124
+    ],
+    "stageID": 4,
+    "id-name": null,
+    "name": "",
+    "description": "sound gurus auf der Bühne Sombrero",
+    "start_time": "2026-05-30T19:00:00Z",
+    "end_time": "2026-05-30T20:00:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Musik",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 378,
+    "actsIDArr": [
+      141
+    ],
+    "stageID": 5,
+    "id-name": null,
+    "name": "",
+    "description": "Akkordeon Harmonists auf der Bühne Porkpie",
+    "start_time": "2026-05-30T13:00:00Z",
+    "end_time": "2026-05-30T13:30:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Musik",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 379,
+    "actsIDArr": [
+      126
+    ],
+    "stageID": 5,
+    "id-name": null,
+    "name": "",
+    "description": "two chords auf der Bühne Porkpie",
+    "start_time": "2026-05-30T14:00:00Z",
+    "end_time": "2026-05-30T14:30:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Musik",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 380,
+    "actsIDArr": [
+      140
+    ],
+    "stageID": 5,
+    "id-name": null,
+    "name": "",
+    "description": "teget auf der Bühne Porkpie",
+    "start_time": "2026-05-30T15:00:00Z",
+    "end_time": "2026-05-30T15:30:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Musik",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 381,
+    "actsIDArr": [
+      142
+    ],
+    "stageID": 5,
+    "id-name": null,
+    "name": "",
+    "description": "Andreas Liebert auf der Bühne Porkpie",
+    "start_time": "2026-05-30T16:00:00Z",
+    "end_time": "2026-05-30T16:30:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Musik",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 382,
+    "actsIDArr": [
+      139
+    ],
+    "stageID": 5,
+    "id-name": null,
+    "name": "",
+    "description": "sleepwalker's station auf der Bühne Porkpie",
+    "start_time": "2026-05-30T17:00:00Z",
+    "end_time": "2026-05-30T17:30:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Musik",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 383,
+    "actsIDArr": [
+      135
+    ],
+    "stageID": 5,
+    "id-name": null,
+    "name": "",
+    "description": "Crepes Sucette auf der Bühne Porkpie",
+    "start_time": "2026-05-30T18:00:00Z",
+    "end_time": "2026-05-30T18:30:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Musik",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 384,
+    "actsIDArr": [
+      142
+    ],
+    "stageID": 5,
+    "id-name": null,
+    "name": "",
+    "description": "Andreas Liebert auf der Bühne Porkpie",
+    "start_time": "2026-05-30T19:00:00Z",
+    "end_time": "2026-05-30T19:30:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Musik",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 385,
+    "actsIDArr": [
+      127
+    ],
+    "stageID": 6,
+    "id-name": null,
+    "name": "",
+    "description": "This Maag auf der Bühne Cowboyhut",
+    "start_time": "2026-05-30T12:00:00Z",
+    "end_time": "2026-05-30T12:30:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 386,
+    "actsIDArr": [
+      114
+    ],
+    "stageID": 6,
+    "id-name": null,
+    "name": "",
+    "description": "Duo Lolly Pop auf der Bühne Cowboyhut",
+    "start_time": "2026-05-30T13:00:00Z",
+    "end_time": "2026-05-30T13:30:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 387,
+    "actsIDArr": [
+      120
+    ],
+    "stageID": 6,
+    "id-name": null,
+    "name": "",
+    "description": "The Funky Monkeys auf der Bühne Cowboyhut",
+    "start_time": "2026-05-30T14:00:00Z",
+    "end_time": "2026-05-30T14:30:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 388,
+    "actsIDArr": [
+      113
+    ],
+    "stageID": 6,
+    "id-name": null,
+    "name": "",
+    "description": "Anna Ki auf der Bühne Cowboyhut",
+    "start_time": "2026-05-30T15:00:00Z",
+    "end_time": "2026-05-30T15:30:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 389,
+    "actsIDArr": [
+      116
+    ],
+    "stageID": 6,
+    "id-name": null,
+    "name": "",
+    "description": "Marcos Luis Masetti auf der Bühne Cowboyhut",
+    "start_time": "2026-05-30T16:00:00Z",
+    "end_time": "2026-05-30T16:30:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 390,
+    "actsIDArr": [
+      124
+    ],
+    "stageID": 6,
+    "id-name": null,
+    "name": "",
+    "description": "sound gurus auf der Bühne Cowboyhut",
+    "start_time": "2026-05-30T17:00:00Z",
+    "end_time": "2026-05-30T17:30:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Musik",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 391,
+    "actsIDArr": [
+      123
+    ],
+    "stageID": 6,
+    "id-name": null,
+    "name": "",
+    "description": "Duo flexoncirc auf der Bühne Cowboyhut",
+    "start_time": "2026-05-30T18:00:00Z",
+    "end_time": "2026-05-30T18:30:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 392,
+    "actsIDArr": [
+      143
+    ],
+    "stageID": 7,
+    "id-name": null,
+    "name": "",
+    "description": "KTV auf der Bühne Strohhut",
+    "start_time": "2026-05-30T11:30:00Z",
+    "end_time": "2026-05-30T12:00:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 393,
+    "actsIDArr": [
+      128
+    ],
+    "stageID": 7,
+    "id-name": null,
+    "name": "",
+    "description": "Mika und Elena auf der Bühne Strohhut",
+    "start_time": "2026-05-30T12:30:00Z",
+    "end_time": "2026-05-30T13:00:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 394,
+    "actsIDArr": [
+      124
+    ],
+    "stageID": 7,
+    "id-name": null,
+    "name": "",
+    "description": "sound gurus auf der Bühne Strohhut",
+    "start_time": "2026-05-30T13:30:00Z",
+    "end_time": "2026-05-30T14:00:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Musik",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 395,
+    "actsIDArr": [
+      127
+    ],
+    "stageID": 7,
+    "id-name": null,
+    "name": "",
+    "description": "This Maag auf der Bühne Strohhut",
+    "start_time": "2026-05-30T14:30:00Z",
+    "end_time": "2026-05-30T15:00:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 396,
+    "actsIDArr": [
+      120
+    ],
+    "stageID": 7,
+    "id-name": null,
+    "name": "",
+    "description": "The Funky Monkeys auf der Bühne Strohhut",
+    "start_time": "2026-05-30T15:30:00Z",
+    "end_time": "2026-05-30T16:00:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 397,
+    "actsIDArr": [
+      119
+    ],
+    "stageID": 7,
+    "id-name": null,
+    "name": "",
+    "description": "Zinzi & Evertjan auf der Bühne Strohhut",
+    "start_time": "2026-05-30T16:30:00Z",
+    "end_time": "2026-05-30T17:00:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 398,
+    "actsIDArr": [
+      112
+    ],
+    "stageID": 7,
+    "id-name": null,
+    "name": "",
+    "description": "Tridiculous auf der Bühne Strohhut",
+    "start_time": "2026-05-30T17:30:00Z",
+    "end_time": "2026-05-30T18:00:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 399,
+    "actsIDArr": [
+      128
+    ],
+    "stageID": 7,
+    "id-name": null,
+    "name": "",
+    "description": "Mika und Elena auf der Bühne Strohhut",
+    "start_time": "2026-05-30T18:30:00Z",
+    "end_time": "2026-05-30T19:00:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 400,
+    "actsIDArr": [
+      144
+    ],
+    "stageID": 8,
+    "id-name": null,
+    "name": "",
+    "description": "Chem. Lachfalten auf der Bühne Zauberhut",
+    "start_time": "2026-05-30T12:00:00Z",
+    "end_time": "2026-05-30T12:30:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 401,
+    "actsIDArr": [
+      145
+    ],
+    "stageID": 8,
+    "id-name": null,
+    "name": "",
+    "description": "Salto Salcin auf der Bühne Zauberhut",
+    "start_time": "2026-05-30T13:00:00Z",
+    "end_time": "2026-05-30T13:30:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 402,
+    "actsIDArr": [
+      146
+    ],
+    "stageID": 8,
+    "id-name": null,
+    "name": "",
+    "description": "Clown Fridolin auf der Bühne Zauberhut",
+    "start_time": "2026-05-30T14:00:00Z",
+    "end_time": "2026-05-30T14:30:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 403,
+    "actsIDArr": [
+      114
+    ],
+    "stageID": 8,
+    "id-name": null,
+    "name": "",
+    "description": "Duo LollyPop auf der Bühne Zauberhut",
+    "start_time": "2026-05-30T15:00:00Z",
+    "end_time": "2026-05-30T15:30:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 404,
+    "actsIDArr": [
+      128
+    ],
+    "stageID": 8,
+    "id-name": null,
+    "name": "",
+    "description": "Mika und Elena auf der Bühne Zauberhut",
+    "start_time": "2026-05-30T16:00:00Z",
+    "end_time": "2026-05-30T16:30:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 405,
+    "actsIDArr": [
+      146
+    ],
+    "stageID": 8,
+    "id-name": null,
+    "name": "",
+    "description": "Clown Fridolin auf der Bühne Zauberhut",
+    "start_time": "2026-05-30T17:00:00Z",
+    "end_time": "2026-05-30T17:30:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 406,
+    "actsIDArr": [
+      129
+    ],
+    "stageID": 9,
+    "id-name": null,
+    "name": "",
+    "description": "Noah Chorny auf der Inneren Klosterstraße",
+    "start_time": "2026-05-30T13:30:00Z",
+    "end_time": "2026-05-30T14:00:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 407,
+    "actsIDArr": [
+      129
+    ],
+    "stageID": 9,
+    "id-name": null,
+    "name": "",
+    "description": "Noah Chorny auf der Inneren Klosterstraße",
+    "start_time": "2026-05-30T15:30:00Z",
+    "end_time": "2026-05-30T16:00:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 408,
+    "actsIDArr": [
+      129
+    ],
+    "stageID": 9,
+    "id-name": null,
+    "name": "",
+    "description": "Noah Chorny auf der Inneren Klosterstraße",
+    "start_time": "2026-05-30T18:30:00Z",
+    "end_time": "2026-05-30T19:00:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 409,
+    "actsIDArr": [
+      130
+    ],
+    "stageID": 9,
+    "id-name": null,
+    "name": "",
+    "description": "Superheroes auf der Inneren Klosterstraße",
+    "start_time": "2026-05-30T12:00:00Z",
+    "end_time": "2026-05-30T12:30:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Walkact",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 410,
+    "actsIDArr": [
+      130
+    ],
+    "stageID": 9,
+    "id-name": null,
+    "name": "",
+    "description": "Superheroes auf der Inneren Klosterstraße",
+    "start_time": "2026-05-30T14:00:00Z",
+    "end_time": "2026-05-30T14:30:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Walkact",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 411,
+    "actsIDArr": [
+      130
+    ],
+    "stageID": 9,
+    "id-name": null,
+    "name": "",
+    "description": "Superheroes auf der Inneren Klosterstraße",
+    "start_time": "2026-05-30T17:00:00Z",
+    "end_time": "2026-05-30T17:30:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Walkact",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 412,
+    "actsIDArr": [
+      131
+    ],
+    "stageID": 10,
+    "id-name": null,
+    "name": "",
+    "description": "Toc de Fusta auf dem Düßeldorfer Platz",
+    "start_time": "2026-05-30T12:00:00Z",
+    "end_time": "2026-05-30T18:00:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 413,
+    "actsIDArr": [
+      132
+    ],
+    "stageID": 10,
+    "id-name": null,
+    "name": "",
+    "description": "Siebdruck mit Spangeltangel auf dem Düßeldorfer Platz",
+    "start_time": "2026-05-30T12:00:00Z",
+    "end_time": "2026-05-30T17:00:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "spezial",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 414,
+    "actsIDArr": [
+      133
+    ],
+    "stageID": 10,
+    "id-name": null,
+    "name": "",
+    "description": "Walkact Last Minute auf dem Düßeldorfer Platz",
+    "start_time": "2026-05-30T13:00:00Z",
+    "end_time": "2026-05-30T13:30:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Walkact",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 415,
+    "actsIDArr": [
+      133
+    ],
+    "stageID": 10,
+    "id-name": null,
+    "name": "",
+    "description": "Walkact Last Minute auf dem Düßeldorfer Platz",
+    "start_time": "2026-05-30T15:30:00Z",
+    "end_time": "2026-05-30T16:00:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Walkact",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 416,
+    "actsIDArr": [
+      133
+    ],
+    "stageID": 10,
+    "id-name": null,
+    "name": "",
+    "description": "Walkact Last Minute auf dem Düßeldorfer Platz",
+    "start_time": "2026-05-30T18:00:00Z",
+    "end_time": "2026-05-30T18:30:00Z",
+    "date": "2026-05-30",
+    "status": "",
+    "type": "Walkact",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 417,
+    "actsIDArr": [
+      123
+    ],
+    "stageID": 1,
+    "id-name": null,
+    "name": "",
+    "description": "Duo flexoncirc auf der Bühne Melone",
+    "start_time": "2026-05-31T11:00:00Z",
+    "end_time": "2026-05-31T11:30:00Z",
+    "date": "2026-05-31",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 418,
+    "actsIDArr": [
+      127
+    ],
+    "stageID": 1,
+    "id-name": null,
+    "name": "",
+    "description": "This Maag auf der Bühne Melone",
+    "start_time": "2026-05-31T12:00:00Z",
+    "end_time": "2026-05-31T12:30:00Z",
+    "date": "2026-05-31",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 419,
+    "actsIDArr": [
+      114
+    ],
+    "stageID": 1,
+    "id-name": null,
+    "name": "",
+    "description": "Duo Lolly Pop auf der Bühne Melone",
+    "start_time": "2026-05-31T13:00:00Z",
+    "end_time": "2026-05-31T13:30:00Z",
+    "date": "2026-05-31",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 420,
+    "actsIDArr": [
+      119
+    ],
+    "stageID": 1,
+    "id-name": null,
+    "name": "",
+    "description": "Zinzi & Evertjan auf der Bühne Melone",
+    "start_time": "2026-05-31T14:00:00Z",
+    "end_time": "2026-05-31T14:30:00Z",
+    "date": "2026-05-31",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 421,
+    "actsIDArr": [
+      113
+    ],
+    "stageID": 1,
+    "id-name": null,
+    "name": "",
+    "description": "Anna Ki auf der Bühne Melone",
+    "start_time": "2026-05-31T15:00:00Z",
+    "end_time": "2026-05-31T15:30:00Z",
+    "date": "2026-05-31",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 422,
+    "actsIDArr": [
+      116
+    ],
+    "stageID": 2,
+    "id-name": null,
+    "name": "",
+    "description": "Marcos Luis Masetti auf der Bühne Glockenhut",
+    "start_time": "2026-05-31T11:30:00Z",
+    "end_time": "2026-05-31T12:00:00Z",
+    "date": "2026-05-31",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 423,
+    "actsIDArr": [
+      119
+    ],
+    "stageID": 2,
+    "id-name": null,
+    "name": "",
+    "description": "Zinzi & Evertjan auf der Bühne Glockenhut",
+    "start_time": "2026-05-31T12:30:00Z",
+    "end_time": "2026-05-31T13:00:00Z",
+    "date": "2026-05-31",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 424,
+    "actsIDArr": [
+      111
+    ],
+    "stageID": 2,
+    "id-name": null,
+    "name": "",
+    "description": "Marc Freudenberg auf der Bühne Glockenhut",
+    "start_time": "2026-05-31T13:30:00Z",
+    "end_time": "2026-05-31T14:00:00Z",
+    "date": "2026-05-31",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 425,
+    "actsIDArr": [
+      117
+    ],
+    "stageID": 2,
+    "id-name": null,
+    "name": "",
+    "description": "Kuutenkidou auf der Bühne Glockenhut",
+    "start_time": "2026-05-31T14:30:00Z",
+    "end_time": "2026-05-31T15:00:00Z",
+    "date": "2026-05-31",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 426,
+    "actsIDArr": [
+      127
+    ],
+    "stageID": 2,
+    "id-name": null,
+    "name": "",
+    "description": "This Maag auf der Bühne Glockenhut",
+    "start_time": "2026-05-31T15:30:00Z",
+    "end_time": "2026-05-31T16:00:00Z",
+    "date": "2026-05-31",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 427,
+    "actsIDArr": [
+      147
+    ],
+    "stageID": 3,
+    "id-name": null,
+    "name": "",
+    "description": "Sportensemble auf der Bühne Zylinder",
+    "start_time": "2026-05-31T11:00:00Z",
+    "end_time": "2026-05-31T11:30:00Z",
+    "date": "2026-05-31",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 428,
+    "actsIDArr": [
+      117
+    ],
+    "stageID": 3,
+    "id-name": null,
+    "name": "",
+    "description": "Kuutenkidou auf der Bühne Zylinder",
+    "start_time": "2026-05-31T12:00:00Z",
+    "end_time": "2026-05-31T12:30:00Z",
+    "date": "2026-05-31",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 429,
+    "actsIDArr": [
+      120
+    ],
+    "stageID": 3,
+    "id-name": null,
+    "name": "",
+    "description": "The Funky Monkeys auf der Bühne Zylinder",
+    "start_time": "2026-05-31T13:00:00Z",
+    "end_time": "2026-05-31T13:30:00Z",
+    "date": "2026-05-31",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 430,
+    "actsIDArr": [
+      118
+    ],
+    "stageID": 3,
+    "id-name": null,
+    "name": "",
+    "description": "Duo Masawa auf der Bühne Zylinder",
+    "start_time": "2026-05-31T14:00:00Z",
+    "end_time": "2026-05-31T14:30:00Z",
+    "date": "2026-05-31",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 431,
+    "actsIDArr": [
+      112
+    ],
+    "stageID": 3,
+    "id-name": null,
+    "name": "",
+    "description": "Tridiculous auf der Bühne Zylinder",
+    "start_time": "2026-05-31T15:00:00Z",
+    "end_time": "2026-05-31T15:30:00Z",
+    "date": "2026-05-31",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 432,
+    "actsIDArr": [
+      111
+    ],
+    "stageID": 4,
+    "id-name": null,
+    "name": "",
+    "description": "Marc Freudenberg auf der Bühne Sombrero",
+    "start_time": "2026-05-31T11:30:00Z",
+    "end_time": "2026-05-31T12:00:00Z",
+    "date": "2026-05-31",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 433,
+    "actsIDArr": [
+      122
+    ],
+    "stageID": 4,
+    "id-name": null,
+    "name": "",
+    "description": "Circus unARTiq auf der Bühne Sombrero",
+    "start_time": "2026-05-31T12:00:00Z",
+    "end_time": "2026-05-31T12:30:00Z",
+    "date": "2026-05-31",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 434,
+    "actsIDArr": [
+      135
+    ],
+    "stageID": 4,
+    "id-name": null,
+    "name": "",
+    "description": "Crepes Sucette auf der Bühne Sombrero",
+    "start_time": "2026-05-31T12:30:00Z",
+    "end_time": "2026-05-31T13:00:00Z",
+    "date": "2026-05-31",
+    "status": "",
+    "type": "Musik",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 435,
+    "actsIDArr": [
+      117
+    ],
+    "stageID": 4,
+    "id-name": null,
+    "name": "",
+    "description": "Kuutenkidou auf der Bühne Sombrero",
+    "start_time": "2026-05-31T13:30:00Z",
+    "end_time": "2026-05-31T14:00:00Z",
+    "date": "2026-05-31",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 436,
+    "actsIDArr": [
+      122
+    ],
+    "stageID": 4,
+    "id-name": null,
+    "name": "",
+    "description": "Circus unARTiq auf der Bühne Sombrero",
+    "start_time": "2026-05-31T14:30:00Z",
+    "end_time": "2026-05-31T15:00:00Z",
+    "date": "2026-05-31",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 437,
+    "actsIDArr": [
+      139
+    ],
+    "stageID": 4,
+    "id-name": null,
+    "name": "",
+    "description": "sleepwalker's station auf der Bühne Sombrero",
+    "start_time": "2026-05-31T15:30:00Z",
+    "end_time": "2026-05-31T16:00:00Z",
+    "date": "2026-05-31",
+    "status": "",
+    "type": "Musik",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 438,
+    "actsIDArr": [
+      148
+    ],
+    "stageID": 5,
+    "id-name": null,
+    "name": "",
+    "description": "Almost Charlie auf der Bühne Porkpie",
+    "start_time": "2026-05-31T11:00:00Z",
+    "end_time": "2026-05-31T11:30:00Z",
+    "date": "2026-05-31",
+    "status": "",
+    "type": "Musik",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 439,
+    "actsIDArr": [
+      139
+    ],
+    "stageID": 5,
+    "id-name": null,
+    "name": "",
+    "description": "sleepwalker's station auf der Bühne Porkpie",
+    "start_time": "2026-05-31T12:00:00Z",
+    "end_time": "2026-05-31T12:30:00Z",
+    "date": "2026-05-31",
+    "status": "",
+    "type": "Musik",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 440,
+    "actsIDArr": [
+      140
+    ],
+    "stageID": 5,
+    "id-name": null,
+    "name": "",
+    "description": "teget auf der Bühne Porkpie",
+    "start_time": "2026-05-31T13:00:00Z",
+    "end_time": "2026-05-31T13:30:00Z",
+    "date": "2026-05-31",
+    "status": "",
+    "type": "Musik",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 441,
+    "actsIDArr": [
+      135
+    ],
+    "stageID": 5,
+    "id-name": null,
+    "name": "",
+    "description": "Crepes Sucette auf der Bühne Porkpie",
+    "start_time": "2026-05-31T14:00:00Z",
+    "end_time": "2026-05-31T14:30:00Z",
+    "date": "2026-05-31",
+    "status": "",
+    "type": "Musik",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 442,
+    "actsIDArr": [
+      148
+    ],
+    "stageID": 5,
+    "id-name": null,
+    "name": "",
+    "description": "Almost Charlie auf der Bühne Porkpie",
+    "start_time": "2026-05-31T15:00:00Z",
+    "end_time": "2026-05-31T15:30:00Z",
+    "date": "2026-05-31",
+    "status": "",
+    "type": "Musik",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 443,
+    "actsIDArr": [
+      115
+    ],
+    "stageID": 6,
+    "id-name": null,
+    "name": "",
+    "description": "Satya Bella auf der Bühne Cowboyhut",
+    "start_time": "2026-05-31T12:00:00Z",
+    "end_time": "2026-05-31T12:30:00Z",
+    "date": "2026-05-31",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 444,
+    "actsIDArr": [
+      112
+    ],
+    "stageID": 6,
+    "id-name": null,
+    "name": "",
+    "description": "Tridiculous auf der Bühne Cowboyhut",
+    "start_time": "2026-05-31T13:00:00Z",
+    "end_time": "2026-05-31T13:30:00Z",
+    "date": "2026-05-31",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 445,
+    "actsIDArr": [
+      123
+    ],
+    "stageID": 6,
+    "id-name": null,
+    "name": "",
+    "description": "Duo flexoncirc auf der Bühne Cowboyhut",
+    "start_time": "2026-05-31T14:00:00Z",
+    "end_time": "2026-05-31T14:30:00Z",
+    "date": "2026-05-31",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 446,
+    "actsIDArr": [
+      120
+    ],
+    "stageID": 6,
+    "id-name": null,
+    "name": "",
+    "description": "The Funky Monkeys auf der Bühne Cowboyhut",
+    "start_time": "2026-05-31T15:00:00Z",
+    "end_time": "2026-05-31T15:30:00Z",
+    "date": "2026-05-31",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 447,
+    "actsIDArr": [
+      120
+    ],
+    "stageID": 7,
+    "id-name": null,
+    "name": "",
+    "description": "The Funky Monkeys auf der Bühne Strohhut",
+    "start_time": "2026-05-31T11:30:00Z",
+    "end_time": "2026-05-31T12:00:00Z",
+    "date": "2026-05-31",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 448,
+    "actsIDArr": [
+      118
+    ],
+    "stageID": 7,
+    "id-name": null,
+    "name": "",
+    "description": "Duo Masawa auf der Bühne Strohhut",
+    "start_time": "2026-05-31T12:30:00Z",
+    "end_time": "2026-05-31T13:00:00Z",
+    "date": "2026-05-31",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 449,
+    "actsIDArr": [
+      127
+    ],
+    "stageID": 7,
+    "id-name": null,
+    "name": "",
+    "description": "This Maag auf der Bühne Strohhut",
+    "start_time": "2026-05-31T13:30:00Z",
+    "end_time": "2026-05-31T14:00:00Z",
+    "date": "2026-05-31",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 450,
+    "actsIDArr": [
+      116
+    ],
+    "stageID": 7,
+    "id-name": null,
+    "name": "",
+    "description": "Marcos Luis Masetti auf der Bühne Strohhut",
+    "start_time": "2026-05-31T14:30:00Z",
+    "end_time": "2026-05-31T15:00:00Z",
+    "date": "2026-05-31",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 451,
+    "actsIDArr": [
+      114
+    ],
+    "stageID": 7,
+    "id-name": null,
+    "name": "",
+    "description": "Duo Lolly Pop auf der Bühne Strohhut",
+    "start_time": "2026-05-31T15:30:00Z",
+    "end_time": "2026-05-31T16:00:00Z",
+    "date": "2026-05-31",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 452,
+    "actsIDArr": [
+      128
+    ],
+    "stageID": 8,
+    "id-name": null,
+    "name": "",
+    "description": "Mika und Elena auf der Bühne Zauberhut",
+    "start_time": "2026-05-31T12:00:00Z",
+    "end_time": "2026-05-31T12:30:00Z",
+    "date": "2026-05-31",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 453,
+    "actsIDArr": [
+      113
+    ],
+    "stageID": 8,
+    "id-name": null,
+    "name": "",
+    "description": "Anna Ki auf der Bühne Zauberhut",
+    "start_time": "2026-05-31T13:00:00Z",
+    "end_time": "2026-05-31T13:30:00Z",
+    "date": "2026-05-31",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 454,
+    "actsIDArr": [
+      115
+    ],
+    "stageID": 8,
+    "id-name": null,
+    "name": "",
+    "description": "Satya Bella auf der Bühne Zauberhut",
+    "start_time": "2026-05-31T14:00:00Z",
+    "end_time": "2026-05-31T14:30:00Z",
+    "date": "2026-05-31",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 455,
+    "actsIDArr": [
+      128
+    ],
+    "stageID": 8,
+    "id-name": null,
+    "name": "",
+    "description": "Mika und Elena auf der Bühne Zauberhut",
+    "start_time": "2026-05-31T15:00:00Z",
+    "end_time": "2026-05-31T15:30:00Z",
+    "date": "2026-05-31",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 456,
+    "actsIDArr": [
+      129
+    ],
+    "stageID": 9,
+    "id-name": null,
+    "name": "",
+    "description": "Noah Chorny auf der Inneren Klosterstraße",
+    "start_time": "2026-05-31T11:30:00Z",
+    "end_time": "2026-05-31T12:00:00Z",
+    "date": "2026-05-31",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 457,
+    "actsIDArr": [
+      129
+    ],
+    "stageID": 9,
+    "id-name": null,
+    "name": "",
+    "description": "Noah Chorny auf der Inneren Klosterstraße",
+    "start_time": "2026-05-31T13:30:00Z",
+    "end_time": "2026-05-31T14:00:00Z",
+    "date": "2026-05-31",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 458,
+    "actsIDArr": [
+      129
+    ],
+    "stageID": 9,
+    "id-name": null,
+    "name": "",
+    "description": "Noah Chorny auf der Inneren Klosterstraße",
+    "start_time": "2026-05-31T15:30:00Z",
+    "end_time": "2026-05-31T16:00:00Z",
+    "date": "2026-05-31",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 459,
+    "actsIDArr": [
+      130
+    ],
+    "stageID": 9,
+    "id-name": null,
+    "name": "",
+    "description": "Superheroes auf der Inneren Klosterstraße",
+    "start_time": "2026-05-31T11:00:00Z",
+    "end_time": "2026-05-31T11:30:00Z",
+    "date": "2026-05-31",
+    "status": "",
+    "type": "Walkact",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 460,
+    "actsIDArr": [
+      130
+    ],
+    "stageID": 9,
+    "id-name": null,
+    "name": "",
+    "description": "Superheroes auf der Inneren Klosterstraße",
+    "start_time": "2026-05-31T13:00:00Z",
+    "end_time": "2026-05-31T13:30:00Z",
+    "date": "2026-05-31",
+    "status": "",
+    "type": "Walkact",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 461,
+    "actsIDArr": [
+      130
+    ],
+    "stageID": 9,
+    "id-name": null,
+    "name": "",
+    "description": "Superheroes auf der Inneren Klosterstraße",
+    "start_time": "2026-05-31T15:00:00Z",
+    "end_time": "2026-05-31T15:30:00Z",
+    "date": "2026-05-31",
+    "status": "",
+    "type": "Walkact",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 462,
+    "actsIDArr": [
+      131
+    ],
+    "stageID": 10,
+    "id-name": null,
+    "name": "",
+    "description": "Toc de Fusta auf dem Düßeldorfer Platz",
+    "start_time": "2026-05-31T12:00:00Z",
+    "end_time": "2026-05-31T16:00:00Z",
+    "date": "2026-05-31",
+    "status": "",
+    "type": "Performance",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 463,
+    "actsIDArr": [
+      132
+    ],
+    "stageID": 10,
+    "id-name": null,
+    "name": "",
+    "description": "Siebdruck mit Spangeltangel auf dem Düßeldorfer Platz",
+    "start_time": "2026-05-31T11:00:00Z",
+    "end_time": "2026-05-31T16:00:00Z",
+    "date": "2026-05-31",
+    "status": "",
+    "type": "spezial",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 464,
+    "actsIDArr": [
+      133
+    ],
+    "stageID": 10,
+    "id-name": null,
+    "name": "",
+    "description": "Walkact Last Minute auf dem Düßeldorfer Platz",
+    "start_time": "2026-05-31T11:00:00Z",
+    "end_time": "2026-05-31T11:30:00Z",
+    "date": "2026-05-31",
+    "status": "",
+    "type": "Walkact",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 465,
+    "actsIDArr": [
+      133
+    ],
+    "stageID": 10,
+    "id-name": null,
+    "name": "",
+    "description": "Walkact Last Minute auf dem Düßeldorfer Platz",
+    "start_time": "2026-05-31T13:30:00Z",
+    "end_time": "2026-05-31T14:00:00Z",
+    "date": "2026-05-31",
+    "status": "",
+    "type": "Walkact",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
+  },
+  {
+    "id": 466,
+    "actsIDArr": [
+      133
+    ],
+    "stageID": 10,
+    "id-name": null,
+    "name": "",
+    "description": "Walkact Last Minute auf dem Düßeldorfer Platz",
+    "start_time": "2026-05-31T15:00:00Z",
+    "end_time": "2026-05-31T15:30:00Z",
+    "date": "2026-05-31",
+    "status": "",
+    "type": "Walkact",
+    "tags": [],
+    "image": null,
+    "url": "",
+    "ticket": false
   }
 ]
-  

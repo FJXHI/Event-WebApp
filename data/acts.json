@@ -1,173 +1,698 @@
 [
-    {
-        "id": 101,
-        "name": "Classic Band",
-        "subname": "The Band",
-        "act-type": ["Artist"],
-        "tags": [
-        {
-            "name": "Classic",
-            "visible": true
-        },
-        {
-            "name": "Chill",
-            "visible": false
-        },
-        {
-            "name": "Pop",
-            "visible": true
-        }
-        ],
-        "id-name": "Band-A",
-        "short-description": null,
-        "description": "Classic Band is a legendary group known for their vibrant performances and timeless hits. With a mix of classic music and modern flair, they captivate audiences of all ages. Their energy on stage is infectious, making every show a memorable experience.",
-        "image": "images-demo/AdobeStock_97772696_light.jpg",
-        "weblinks": [
-        {
-            "name": "Facebook",
-            "url": "https://www.facebook.com/classicband"
-        },
-        {
-            "name": "Instagram",
-            "url": "https://www.instagram.com/classicband"
-        }
-        ]
-    },
-    {
-        "id": 102,
-        "name": "DJ Electro",
-        "subname": "Markus Electro",
-        "act-type": ["DJ"],
-        "tags": [
-        {
-            "name": "Techno",
-            "visible": true
-        },
-        {
-            "name": "Club",
-            "visible": false
-        },
-        {
-            "name": "Late-Night",
-            "visible": true
-        }
-        ],
-        "id-name": "DJ-Electro",
-        "short-description": "Pioneering techno DJ with a passion for deep bass.",
-        "description": "DJ Electro has been rocking the underground techno scene for over a decade, bringing deep bass and euphoric beats.",
-        "image": "https://as2.ftcdn.net/v2/jpg/00/69/39/29/1000_F_69392962_aAVYsSSDPXhU8nW96PagSFwtIvHOCA9d.jpg",
-        "weblinks": [
-        {
-            "name": "SoundCloud",
-            "url": "https://www.soundcloud.com/dj-electro"
-        },
-        {
-            "name": "Twitter-x",
-            "url": "https://www.twitter.com/dj-electro"
-        }
-        ]
-    },
-    {
-        "id": 103,
-        "name": "The Rockstars",
-        "subname": "",
-        "act-type": ["Artist"],
-        "tags": [
-        {
-            "name": "Rock",
-            "visible": false
-        },
-        {
-            "name": "Hard Rock",
-            "visible": true
-        },
-        {
-            "name": "Mainstage",
-            "visible": false
-        }
-        ],
-        "id-name": "The-Rockstars",
-        "short-description": "High-energy rock band known for their electrifying performances.",
-        "description": "The Rockstars have toured globally, delivering unforgettable performances that get crowds jumping and singing along.",
-        "image": "images-demo/AdobeStock_148366032_light.jpg",
-        "weblinks": [
-        {
-            "name": "Facebook",
-            "url": "https://www.facebook.com/the-rockstars"
-        },
-        {
-            "name": "Instagram",
-            "url": "https://www.instagram.com/the-rockstars"
-        }
-        ]
-    },
-    {
-        "id": 104,
-        "name": "Lucy Sax",
-        "subname": "Saxophonist Lucy",
-        "act-type": ["Artist"],
-        "tags": [
-        {
-            "name": "Jazz",
-            "visible": true
-        },
-        {
-            "name": "Chill",
-            "visible": true
-        },
-        {
-            "name": "Acoustic",
-            "visible": true
-        }
-        ],
-        "id-name": "Lucy-Sax",
-        "short-description": "Sultry saxophone sounds that bring a smooth vibe.",
-        "description": "Lucy Sax combines jazz, blues, and soul for an unforgettable musical experience with a soothing touch.",
-        "image": "https://as1.ftcdn.net/v2/jpg/07/33/12/20/1000_F_733122056_kdsgOJePMEs8bO9pPJ9OM4919Ok5efrK.jpg",
-        "weblinks": [
-        {
-            "name": "YouTube",
-            "url": "https://www.youtube.com/LucySax"
-        },
-        {
-            "name": "Instagram",
-            "url": "https://www.instagram.com/lucysax"
-        }
-        ]
-    },
-    {
-        "id": 105,
-        "name": "Vocal Vibes",
-        "subname": "Vocal Vibes Choir",
-        "act-type": ["Artist"],
-        "tags": [
-        {
-            "name": "Pop",
-            "visible": true
-        },
-        {
-            "name": "Indie",
-            "visible": true
-        },
-        {
-            "name": "Mainstage",
-            "visible": false
-        }
-        ],
-        "id-name": "Vocal-Vibes",
-        "short-description": "Indie pop duo with powerful vocal harmonies.",
-        "description": "Vocal Vibes creates catchy pop anthems with heartfelt lyrics and harmonious vocals that leave a lasting impression.",
-        "image": null,
-        "weblinks": [
-        {
-            "name": "Spotify",
-            "url": "https://www.spotify.com/vocal-vibes"
-        },
-        {
-            "name": "YouTube",
-            "url": "https://www.youtube.com/vocalvibes"
-        }
-        ]
-    }
+  {
+    "id": 111,
+    "id-name": "marc-freudenberg",
+    "name": "Marc Freudenberg",
+    "subname": "",
+    "act-type": [
+      "Performance"
+    ],
+    "description": "Marc Freudenberg auf dem Hutfestival 2026",
+    "image": "https://www.hutfestival.de/?eID=iotf&f=11722&hash=17a5bb3637ce472b7932ce90923f8fcec7&ts=1778586293&cHash=92d5c780918e1892e6fd88048536fd7b&h=250",
+    "tags": [
+      {
+        "name": "Straßenkunst",
+        "visible": true
+      }
+    ],
+    "weblinks": []
+  },
+  {
+    "id": 112,
+    "id-name": "tridiculous",
+    "name": "Tridiculous",
+    "subname": "",
+    "act-type": [
+      "Performance"
+    ],
+    "description": "Tridiculous auf dem Hutfestival 2026",
+    "image": "https://www.hutfestival.de/?eID=iotf&f=11553&hash=1791757524ba2547a56b058dc5bf3ac121&ts=1775639683&cHash=c169b53d909d2f0cea1af886b1efdd10&h=250",
+    "tags": [
+      {
+        "name": "Straßenkunst",
+        "visible": true
+      }
+    ],
+    "weblinks": [
+      {
+        "name": "Website",
+        "url": "https://www.3dcls.com/"
+      }
+    ]
+  },
+  {
+    "id": 113,
+    "id-name": "anna-ki",
+    "name": "Anna Ki",
+    "subname": "",
+    "act-type": [
+      "Performance"
+    ],
+    "description": "Anna Ki auf dem Hutfestival 2026",
+    "image": "https://www.hutfestival.de/?eID=iotf&f=11716&hash=177ebfbcb05b441bf31f2fa083357d2285&ts=1778586315&cHash=bb0c951f58fa4cce806f55b13037e72d&h=250",
+    "tags": [
+      {
+        "name": "Straßenkunst",
+        "visible": true
+      }
+    ],
+    "weblinks": [
+      {
+        "name": "Website",
+        "url": "https://www.annakristinmccarthy.com/"
+      }
+    ]
+  },
+  {
+    "id": 114,
+    "id-name": "duo-lolly-pop",
+    "name": "Duo Lolly Pop",
+    "subname": "",
+    "act-type": [
+      "Performance"
+    ],
+    "description": "Duo Lolly Pop auf dem Hutfestival 2026",
+    "image": "https://www.hutfestival.de/?eID=iotf&f=11735&hash=17cbae098b683c3e5a1175cc544887e7d8&ts=1778492423&cHash=2bd003fc33982db9742d1a8985cfa810&h=250",
+    "tags": [
+      {
+        "name": "Straßenkunst",
+        "visible": true
+      },
+      {
+        "name": "Show",
+        "visible": true
+      }
+    ],
+    "weblinks": []
+  },
+  {
+    "id": 115,
+    "id-name": "satya-bella",
+    "name": "Satya Bella",
+    "subname": "",
+    "act-type": [
+      "Performance"
+    ],
+    "description": "Satya Bella auf dem Hutfestival 2026",
+    "image": "https://www.hutfestival.de/?eID=iotf&f=11725&hash=17a9efb9df2cbd8baa3dc9fab3088b3715&ts=1778240794&cHash=e4ae15b87b385fe313f585b1f321e7b4&h=250",
+    "tags": [
+      {
+        "name": "Straßenkunst",
+        "visible": true
+      }
+    ],
+    "weblinks": []
+  },
+  {
+    "id": 116,
+    "id-name": "marcos-luis-masetti",
+    "name": "Marcos Luis Masetti",
+    "subname": "",
+    "act-type": [
+      "Performance"
+    ],
+    "description": "Marcos Luis Masetti auf dem Hutfestival 2026",
+    "image": null,
+    "tags": [
+      {
+        "name": "Straßenkunst",
+        "visible": true
+      }
+    ],
+    "weblinks": []
+  },
+  {
+    "id": 117,
+    "id-name": "kuutenkidou",
+    "name": "Kuutenkidou",
+    "subname": "",
+    "act-type": [
+      "Performance"
+    ],
+    "description": "Kuutenkidou auf dem Hutfestival 2026",
+    "image": null,
+    "tags": [
+      {
+        "name": "Straßenkunst",
+        "visible": true
+      }
+    ],
+    "weblinks": []
+  },
+  {
+    "id": 118,
+    "id-name": "duo-masawa",
+    "name": "Duo Masawa",
+    "subname": "",
+    "act-type": [
+      "Performance"
+    ],
+    "description": "Duo Masawa auf dem Hutfestival 2026",
+    "image": "https://www.hutfestival.de/?eID=iotf&f=11743&hash=17ff6307cd873f1217ce4ce4388dff2fec&ts=1778586980&cHash=d33ac2e71d429190ac7165f91cc81383&w=350",
+    "tags": [
+      {
+        "name": "Straßenkunst",
+        "visible": true
+      }
+    ],
+    "weblinks": []
+  },
+  {
+    "id": 119,
+    "id-name": "zinzi-evertjan",
+    "name": "Zinzi & Evertjan",
+    "subname": "",
+    "act-type": [
+      "Musik"
+    ],
+    "description": "Zinzi & Evertjan auf dem Hutfestival 2026",
+    "image": "https://www.hutfestival.de/?eID=iotf&f=11550&hash=1705e1d333023b9211933d6a35ca687ec9&ts=1775639518&cHash=efea21e44e28827cf159e9ea27ae7cb2&h=250",
+    "tags": [
+      {
+        "name": "Straßenkunst",
+        "visible": true
+      }
+    ],
+    "weblinks": []
+  },
+  {
+    "id": 120,
+    "id-name": "the-funky-monkeys",
+    "name": "The Funky Monkeys",
+    "subname": "",
+    "act-type": [
+      "Performance"
+    ],
+    "description": "The Funky Monkeys auf dem Hutfestival 2026",
+    "image": null,
+    "tags": [
+      {
+        "name": "Straßenkunst",
+        "visible": true
+      }
+    ],
+    "weblinks": []
+  },
+  {
+    "id": 122,
+    "id-name": "circus-unartiq",
+    "name": "Circus unARTiq",
+    "subname": "",
+    "act-type": [
+      "Performance"
+    ],
+    "description": "Circus unARTiq auf dem Hutfestival 2026",
+    "image": "https://www.hutfestival.de/?eID=iotf&f=11551&hash=17b87092adf88bc3e210d3093dc55e2318&ts=1775639666&cHash=a8293c9166c2927d5e4a3fea48152ced&h=250",
+    "tags": [
+      {
+        "name": "Straßenkunst",
+        "visible": true
+      }
+    ],
+    "weblinks": []
+  },
+  {
+    "id": 123,
+    "id-name": "duo-flexoncirc",
+    "name": "Duo flexoncirc",
+    "subname": "",
+    "act-type": [
+      "Performance"
+    ],
+    "description": "Duo flexoncirc auf dem Hutfestival 2026",
+    "image": "https://www.hutfestival.de/?eID=iotf&f=11719&hash=17f4497571e750e1ca03b4b8a5bbce550f&ts=1778235204&cHash=444447d9b07d52beb0803ff1bc1d71d3&h=250",
+    "tags": [
+      {
+        "name": "Straßenkunst",
+        "visible": true
+      }
+    ],
+    "weblinks": []
+  },
+  {
+    "id": 124,
+    "id-name": "sound-gurus",
+    "name": "Sound Gurus",
+    "subname": "",
+    "act-type": [
+      "Musik"
+    ],
+    "description": "sound gurus auf dem Hutfestival 2026",
+    "image": "https://www.hutfestival.de/?eID=iotf&f=11736&hash=172d488af2cdd347a1c8be9772222c1716&ts=1778493888&cHash=389760cf9913477c27b89cae491fa7e4&h=250",
+    "tags": [
+      {
+        "name": "Straßenkunst",
+        "visible": true
+      }
+    ],
+    "weblinks": []
+  },
+  {
+    "id": 125,
+    "id-name": "envivo",
+    "name": "enVivo",
+    "subname": "",
+    "act-type": [
+      "Musik"
+    ],
+    "description": "enVivo auf dem Hutfestival 2026",
+    "image": "https://www.hutfestival.de/?eID=iotf&f=11720&hash=17995538b76336d98cbe859c7661e4fe59&ts=1778235772&cHash=12b8ef459ed09d838256de9fbb578d67&h=250",
+    "tags": [
+      {
+        "name": "Straßenkunst",
+        "visible": true
+      }
+    ],
+    "weblinks": []
+  },
+  {
+    "id": 126,
+    "id-name": "two-chords",
+    "name": "two chords",
+    "subname": "",
+    "act-type": [
+      "Musik"
+    ],
+    "description": "two chords auf dem Hutfestival 2026",
+    "image": "https://www.hutfestival.de/?eID=iotf&f=11730&hash=1787f70359969c84b21a5641d27ab8d57d&ts=1778586350&cHash=95d8dc6c4d97ab9a1528cd60be521d3e&h=250",
+    "tags": [
+      {
+        "name": "Acoustic",
+        "visible": true
+      },
+      {
+        "name": "Straßenkunst",
+        "visible": true
+      }
+    ],
+    "weblinks": []
+  },
+  {
+    "id": 127,
+    "id-name": "this-maag",
+    "name": "This Maag",
+    "subname": "",
+    "act-type": [
+      "Performance"
+    ],
+    "description": "This Maag auf dem Hutfestival 2026",
+    "image": "https://www.hutfestival.de/?eID=iotf&f=11728&hash=175b27a1afed361dd6b22182b4d31dd858&ts=1778242565&cHash=9c6d52386debd667e60e8752e9588b58&h=250",
+    "tags": [
+      {
+        "name": "Straßenkunst",
+        "visible": true
+      }
+    ],
+    "weblinks": []
+  },
+  {
+    "id": 128,
+    "id-name": "mika-und-elena",
+    "name": "Mika und Elena",
+    "subname": "",
+    "act-type": [
+      "Performance"
+    ],
+    "description": "Mika und Elena auf dem Hutfestival 2026",
+    "image": "https://www.hutfestival.de/?eID=iotf&f=11723&hash=17188946cbdffb316f540b0187f00f96db&ts=1778236798&cHash=df15ebffe48d7d8cf945fb0156362596&h=250",
+    "tags": [
+      {
+        "name": "Straßenkunst",
+        "visible": true
+      }
+    ],
+    "weblinks": []
+  },
+  {
+    "id": 129,
+    "id-name": "noah-chorny",
+    "name": "Noah Chorny",
+    "subname": "",
+    "act-type": [
+      "Performance"
+    ],
+    "description": "Noah Chorny auf dem Hutfestival 2026",
+    "image": "https://www.hutfestival.de/?eID=iotf&f=11724&hash=171c2417da16e16afe3eed4e575a70c37b&ts=1778237272&cHash=b26d3262bbe28d640a2ff6746b69f766&h=250",
+    "tags": [
+      {
+        "name": "Straßenkunst",
+        "visible": true
+      }
+    ],
+    "weblinks": []
+  },
+  {
+    "id": 130,
+    "id-name": "superheroes",
+    "name": "Superheroes",
+    "subname": "",
+    "act-type": [
+      "Performance"
+    ],
+    "description": "Superheroes auf dem Hutfestival 2026",
+    "image": "https://www.hutfestival.de/?eID=iotf&f=11727&hash=171ad1f6ffd4070f661ef25e42b96bec5b&ts=1778241985&cHash=afb620c33b414452cf741ab291835eea&h=250",
+    "tags": [
+      {
+        "name": "Walkact",
+        "visible": true
+      }
+    ],
+    "weblinks": []
+  },
+  {
+    "id": 131,
+    "id-name": "toc-de-fusta",
+    "name": "Toc de Fusta",
+    "subname": "",
+    "act-type": [
+      "Performance"
+    ],
+    "description": "Toc de Fusta auf dem Hutfestival 2026",
+    "image": null,
+    "tags": [
+      {
+        "name": "Spezial",
+        "visible": true
+      }
+    ],
+    "weblinks": []
+  },
+  {
+    "id": 132,
+    "id-name": "siebdruck-mit-spangeltangel",
+    "name": "Siebdruck mit Spangeltangel",
+    "subname": "",
+    "act-type": [
+      "Arts & Crafts"
+    ],
+    "description": "Siebdruck mit Spangeltangel auf dem Hutfestival 2026",
+    "image": null,
+    "tags": [
+      {
+        "name": "Spezial",
+        "visible": true
+      },
+      {
+        "name": "Mitmachaktion",
+        "visible": true
+      }
+    ],
+    "weblinks": []
+  },
+  {
+    "id": 133,
+    "id-name": "walkact-last-minute",
+    "name": "Walkact Last Minute",
+    "subname": "",
+    "act-type": [
+      "Performance"
+    ],
+    "description": "Walkact Last Minute auf dem Hutfestival 2026",
+    "image": null,
+    "tags": [
+      {
+        "name": "Walkact",
+        "visible": true
+      }
+    ],
+    "weblinks": []
+  },
+  {
+    "id": 134,
+    "id-name": "hibiki-daiko",
+    "name": "Hibiki Daiko",
+    "subname": "",
+    "act-type": [
+      "Musik"
+    ],
+    "description": "Hibiki Daiko auf dem Hutfestival 2026",
+    "image": "https://www.hutfestival.de/?eID=iotf&f=8938&hash=179f6da1f260803a45b12ff79a56371145&ts=1744642307&cHash=ba5177a200325d3fac6d03b03172dd8d&w=350",
+    "tags": [
+      {
+        "name": "Musik",
+        "visible": true
+      }
+    ],
+    "weblinks": []
+  },
+  {
+    "id": 135,
+    "id-name": "crepes-sucette",
+    "name": "Crepes Sucette",
+    "subname": "",
+    "act-type": [
+      "Musik"
+    ],
+    "description": "Crepes Sucette auf dem Hutfestival 2026",
+    "image": "https://www.hutfestival.de/?eID=iotf&f=11718&hash=17d9db3323fc3f336dd037c254d5cbac85&ts=1778234962&cHash=e24231ff5c4c0a8afe0ecf96bd7a3f6f&w=350",
+    "tags": [
+      {
+        "name": "Straßenkunst",
+        "visible": true
+      }
+    ],
+    "weblinks": []
+  },
+  {
+    "id": 136,
+    "id-name": "soul-expression",
+    "name": "Soul expression",
+    "subname": "",
+    "act-type": [
+      "Performance"
+    ],
+    "description": "Soul expression auf dem Hutfestival 2026",
+    "image": "https://www.hutfestival.de/?eID=iotf&f=8843&hash=17d724b61bdc995e7bfdfee6e6252a2871&ts=1743082577&cHash=385dd6f23f86afbb3ee1516d128c3366&h=250",
+    "tags": [
+      {
+        "name": "Straßenkunst",
+        "visible": true
+      }
+    ],
+    "weblinks": []
+  },
+  {
+    "id": 137,
+    "id-name": "passion-life",
+    "name": "passion life",
+    "subname": "",
+    "act-type": [
+      "Performance"
+    ],
+    "description": "passion life auf dem Hutfestival 2026",
+    "image": "https://www.hutfestival.de/?eID=iotf&f=8838&hash=176ca1f21bb386e7410b32b2ee71e68d9f&ts=1743081216&cHash=259de137d4d584ef10761b05003f7f22&w=350",
+    "tags": [
+      {
+        "name": "Tanz",
+        "visible": true
+      }
+    ],
+    "weblinks": []
+  },
+  {
+    "id": 138,
+    "id-name": "tanzensemble-chemnitz",
+    "name": "Tanzensemble Chemnitz",
+    "subname": "",
+    "act-type": [
+      "Performance"
+    ],
+    "description": "Tanzensemble Chemnitz auf dem Hutfestival 2026",
+    "image": null,
+    "tags": [
+      {
+        "name": "Tanz",
+        "visible": true
+      }
+    ],
+    "weblinks": []
+  },
+  {
+    "id": 139,
+    "id-name": "sleepwalkers-station",
+    "name": "sleepwalker's station",
+    "subname": "",
+    "act-type": [
+      "Musik"
+    ],
+    "description": "sleepwalker's station auf dem Hutfestival 2026",
+    "image": "https://www.hutfestival.de/?eID=iotf&f=11726&hash=1708dad214cd7f7134c37fe16fb4cd4494&ts=1778241345&cHash=96d3a9baa4f5690c5de57383370d44e0&h=250",
+    "tags": [
+      {
+        "name": "Straßenkunst",
+        "visible": true
+      }
+    ],
+    "weblinks": []
+  },
+  {
+    "id": 140,
+    "id-name": "teget",
+    "name": "Teget",
+    "subname": "",
+    "act-type": [
+      "Musik"
+    ],
+    "description": "Teget auf dem Hutfestival 2026",
+    "image": "https://www.hutfestival.de/?eID=iotf&f=11554&hash=17f96dc544e8e7e243c9a1f69a55f05eb3&ts=1775639701&cHash=d7b741d9e0022bbb973f6448099c76a6&h=250",
+    "tags": [
+      {
+        "name": "Straßenkunst",
+        "visible": true
+      }
+    ],
+    "weblinks": []
+  },
+  {
+    "id": 141,
+    "id-name": "akkordeon-harmonists",
+    "name": "Akkordeon Harmonists",
+    "subname": "",
+    "act-type": [
+      "Musik"
+    ],
+    "description": "Akkordeon Harmonists auf dem Hutfestival 2026",
+    "image": "https://www.hutfestival.de/?eID=iotf&f=8761&hash=17028d3006d03005f0c3e537c823189456&ts=1744639873&cHash=b048d3ccc0484beb6b5f648893ff4b45&w=350",
+    "tags": [
+      {
+        "name": "Musik",
+        "visible": true
+      }
+    ],
+    "weblinks": []
+  },
+  {
+    "id": 142,
+    "id-name": "andreas-liebert",
+    "name": "Andreas Liebert",
+    "subname": "",
+    "act-type": [
+      "Musik"
+    ],
+    "description": "Andreas Liebert auf dem Hutfestival 2026",
+    "image": "https://www.hutfestival.de/?eID=iotf&f=8763&hash=17a78adb74176cd86a2d7be57709e2b422&ts=1742904494&cHash=2867b77ec844740350a3ce21af1a1996&w=350",
+    "tags": [
+      {
+        "name": "Musik",
+        "visible": true
+      }
+    ],
+    "weblinks": []
+  },
+  {
+    "id": 143,
+    "id-name": "ktv",
+    "name": "KTV",
+    "subname": "",
+    "act-type": [
+      "Performance"
+    ],
+    "description": "KTV auf dem Hutfestival 2026",
+    "image": null,
+    "tags": [
+      {
+        "name": "Straßenkunst",
+        "visible": true
+      }
+    ],
+    "weblinks": []
+  },
+  {
+    "id": 144,
+    "id-name": "chem-lachfalten",
+    "name": "Chemnitzer Lachfalten",
+    "subname": "",
+    "act-type": [
+      "Performance"
+    ],
+    "description": "Chem. Lachfalten auf dem Hutfestival 2026",
+    "image": "https://www.hutfestival.de/?eID=iotf&f=11744&hash=17e9edf730dccba41bc9c86510d2f9e6bd&ts=1778588627&cHash=7fe24d2bf7a6c39e9bdada2bb66960cd&h=250",
+    "tags": [
+      {
+        "name": "Straßenkunst",
+        "visible": true
+      }
+    ],
+    "weblinks": []
+  },
+  {
+    "id": 145,
+    "id-name": "salto-salcin",
+    "name": "Salto Salcin",
+    "subname": "",
+    "act-type": [
+      "Performance"
+    ],
+    "description": "Salto Salcin auf dem Hutfestival 2026",
+    "image": "https://www.hutfestival.de/?eID=iotf&f=8812&hash=172592989dfe5881f138abd2eb4cc813d5&ts=1743071811&cHash=77d6a812cc72881e37765ff09a882b07&h=250",
+    "tags": [
+      {
+        "name": "Straßenkunst",
+        "visible": true
+      }
+    ],
+    "weblinks": []
+  },
+  {
+    "id": 146,
+    "id-name": "clown-fridolin",
+    "name": "Clown Fridolin",
+    "subname": "",
+    "act-type": [
+      "Performance"
+    ],
+    "description": "Clown Fridolin auf dem Hutfestival 2026",
+    "image": "https://www.hutfestival.de/?eID=iotf&f=11717&hash=17ac80f59e25d7e399600d75142fcb1ae9&ts=1778234693&cHash=49b4373a9b8bc01f74e9111471f85ff6&w=350",
+    "tags": [
+      {
+        "name": "Straßenkunst",
+        "visible": true
+      },
+      {
+        "name": "Clownerie",
+        "visible": false
+      }
+    ],
+    "weblinks": []
+  },
+  {
+    "id": 147,
+    "id-name": "sportensemble",
+    "name": "Sportensemble",
+    "subname": "",
+    "act-type": [
+      "Performance"
+    ],
+    "description": "Sportensemble auf dem Hutfestival 2026",
+    "image": null,
+    "tags": [
+      {
+        "name": "Straßenkunst",
+        "visible": true
+      },
+      {
+        "name": "Sport",
+        "visible": true
+      }
+    ],
+    "weblinks": []
+  },
+  {
+    "id": 148,
+    "id-name": "almost-charlie",
+    "name": "Almost Charlie",
+    "subname": "",
+    "act-type": [
+      "Musik"
+    ],
+    "description": "Almost Charlie auf dem Hutfestival 2026",
+    "image": null,
+    "tags": [
+      {
+        "name": "Straßenkunst",
+        "visible": true
+      }
+    ],
+    "weblinks": []
+  }
 ]
-  

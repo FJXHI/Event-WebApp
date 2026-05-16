@@ -2,35 +2,30 @@
     {
         "id": 1,
         "type": "point",
-        "name": "Veggi Food",
-        "kategori": "Food",
-        "location": [50.9390, 6.9603],
-        "openingTimes": [
-        {
-            "from": "2025-04-30T14:00",
-            "to": "2025-04-30T18:00",
-            "note": "Essensmarkenverkauf"
-        },
-        {
-            "from": "2025-05-01T12:00",
-            "to": "2025-05-01T18:00"
-        }
-        ],
-        "description": "Am Veggi Food Stand gibt es veganes Essen und Getränke."
+        "name": "Info-Stand",
+        "kategori": "Info",
+        "location": [50.833, 12.9206]
     },
     {
         "id": 2,
         "type": "point",
-        "name": "WC-1",
-        "kategori": "Sanitär",
-        "location": [50.9390, 6.9610]
+        "name": "Erste-Hilfe-Station",
+        "kategori": "Info",
+        "location": [50.834045, 12.919614]
     },
     {
-        "id": 3,
+        "id": 11,
         "type": "point",
-        "name": "Handbrot",
-        "kategori": "Food",
-        "location": [51.000, 6.9630],
-        "noinclude": true
+        "name": "WC Jakobikirchplatz",
+        "kategori": "Sanitär",
+        "location": [50.833226, 12.919391]
+    },
+    {
+        "id": 12,
+        "type": "point",
+        "name": "WC Bretgasse",
+        "kategori": "Sanitär",
+        "location": [50.832157, 12.919278],
+        "description": "Barrierefreie Toilettenanlage"
     }
 ]
