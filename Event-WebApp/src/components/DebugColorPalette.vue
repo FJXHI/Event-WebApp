@@ -3,9 +3,9 @@
 
 <template>
     <div class="space-y-6">
-        <h2 class="text-xl font-semibold">Color Palette Debug ({{ colorPalette.length }})</h2>
+        <!--<h2 class="text-xl font-semibold">Color Palette Debug ({{ colorPalette.length }})</h2>-->
         <div class="space-y-2 mt-6">
-            <label class="block font-medium text-sm">Testing Color: </label>
+            <!--<label class="block font-medium text-sm">Color: </label>-->
             <input
             v-model="tagName"
             type="text"
@@ -17,11 +17,11 @@
             class="color-preview"
             :style="{ backgroundColor: tagColor }"
             >
-            <span>{{ tagColor }}</span>
+              <span>{{ tagColor }}</span>
             </div>
             <div class="about-section">
               <h4 @click="toggleAbout(1)" class="about-toggle">
-                Color Palette
+                Color Palette ({{ colorPalette.length }})
                 <span>{{ expandedAboutIds.includes(1) ? '▲' : '▼' }}</span>
               </h4>
               <transition name="fade">

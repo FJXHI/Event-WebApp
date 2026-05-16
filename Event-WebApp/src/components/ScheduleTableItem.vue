@@ -215,7 +215,7 @@ const getTimeSlotStyle = (hour) => {
 };
 
 const getEventTypeClass = (type) => {
-  const knownTypes = ['concert', 'spezial', 'workshop', 'Musik', 'Kunst', 'Gesellschaft', 'Sport', 'Wirtschaft'];
+  const knownTypes = ['Performance', 'spezial', 'Musik', 'Walkact'];
   return knownTypes.includes(type) ? type : 'default';
 };
 
@@ -349,14 +349,17 @@ const nowLineStyle = computed(() => {
     padding: 0;
 }
 
-.event.concert {
+.event.Performance {
   background-color: #3B82F6;
 }
 .event.spezial {
   background-color: #F59E0B;
 }
-.event.workshop {
+.event.Musik {
   background-color: #10B981;
+}
+.event.Walkact {
+  background-color: #EF4444;
 }
 
 .event.default {

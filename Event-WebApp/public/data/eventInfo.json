@@ -1,20 +1,20 @@
 [
     {
         "id": 1,
-        "title": "Festival Demo 2025",
-        "subtitle": "Festival Demo 2025 App",
-        "short-describtion": "Ein großartiges Rock-Konzert mit vielen bekannten Bands.",
-        "describtion":  "Ein großartiges Rock-Konzert mit vielen bekannten Bands.",
+        "title": "Hutfestival 2026",
+        "subtitle": "Strassenkunst Chemnitz",
+        "short-describtion": "Hut ab, oder besser Hut auf! 3 Tage volles Programm mit einigen der besten Straßenkünstler und Acts.",
+        "describtion":  "Das 9. HUTFESTIVAL – das Festival der Straßenkunst, verwandelt vom 29. bis 31. Mai 2026 drei Tage lang die Gassen und Plätze in der Chemnitzer Innenstadt in eine große Freilichtbühne voller Live-Musik, Clownerie, Artistik, Jonglage, Feuershows, Walk-Acts, Kunst und Streetfood. Mit vielseitigen Straßenkünstlern und Acts aus vielen europäischen Nationen, darunter auch lokale Künstler, verspricht das Festival ein Spektakel voller Überraschungen, Staunen und Magie. An jeder Ecke entdeckt man Witziges, Unterhaltsames, Berührendes, Kunstvolles sowie Kulinarisches.",
         "backgroundImage": "images-demo/AdobeStock_430202524_light.jpg",
         "logo": "demo-festival-bg.jpg",
-        "startDate": "2025-07-24",
-        "endDate": "2025-07-27",
+        "startDate": "2026-05-29",
+        "endDate": "2025-05-31",
         "location": {
-            "name": "Stadium X",
+            "name": "Innenstadt Chemnitz",
             "address": {
-                "street": "Festivalstraße 123",
-                "postal_code": "12345",
-                "city": "Festivalstadt",
+                "street": "Markt 1",
+                "postal_code": "09111",
+                "city": "Chemnitz",
                 "country": "Deutschland"
               },
             "gps": {
@@ -28,24 +28,28 @@
             "name": "Foto/Videografie",
             "subtitle": "FotoVideo",
             "icon": null,
-            "text": "Alle Teilnehmenden erklären sich damit einverstanden, dass die im Zusammenhang mit der Veranstaltung gemachten Fotos und Filmaufnahmen ohne einen Vergütungsanspruch des*der Teilnehmer*in verbreitet und veröffentlicht werden können. Wenn das nicht gewünscht ist, bitte direkt an medien@demo-festival.com schreiben."
+            "text": "Alle Teilnehmenden erklären sich damit einverstanden, dass die im Zusammenhang mit der Veranstaltung gemachten Fotos und Filmaufnahmen ohne einen Vergütungsanspruch des*der Teilnehmer*in verbreitet und veröffentlicht werden können."
         },
         {
             "id": 1002,
-            "name": "Feuer",
-            "subtitle": "Feuer",
+            "name": "Fetsival Unterstützen",
+            "subtitle": "Unterstützen",
             "icon": null,
-            "text": "Offenes Feuer, Gaskocher und Grillen ist nicht erlaubt. Auf dem Gelände herrscht absolute Brandgefahr, sodass wir mit offenem Feuer wirklich aufpassen müssen!"
+            "text": "Das HUTFESTIVAL ist ein eintrittsfreies Festival. Ohne unsere zahlreichen Sponsoren und Partner sowie die Unterstützung der Besucher ist solch ein Projekt jedoch nicht finanzierbar. Wir freuen uns deshalb über jeden freiwilligen Obolus, der seinen Weg in einen der Hüte auf dem Festival-Gelände findet."
         }
         ],
         "weblinks": [
         {
             "name": "Facebook",
-            "url": "https://www.facebook.com/demofestival"
+            "url": "https://www.facebook.com/hutfestival.chemnitz"
         },
         {
             "name": "Instagram",
-            "url": "https://www.instagram.com/demofestival"
+            "url": "https://www.instagram.com/hutfestival"
+        },
+        {
+            "name": "Webseite",
+            "url": "https://www.hutfestival.de/"
         }
         ]
     }

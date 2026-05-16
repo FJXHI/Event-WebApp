@@ -1,63 +1,233 @@
 [
   {
     "id": 1,
-    "name": "Mainstage",
-    "id-name": "Mainstage",
-    "short-description": "Main Stage auf der Großenwiese",
-    "description": "Main Stage auf der Großenwiese, bekannt für die größten Acts des Festivals.",
-    "location": [50.9375, 6.9603],
+    "id-name": "melone",
+    "name": "Melone",
+    "description": "Bei den Pinguinen",
+    "image": null,
+    "visible": true,
+    "type": "stage",
+    "location": [
+      50.8347,
+      12.9181
+    ],
     "address": {
-      "street": "Festivalstraße 123",
-      "postal_code": "12345",
-      "city": "Festivalstadt",
+      "street": "",
+      "postal_code": "",
+      "city": "Chemnitz",
       "country": "Deutschland"
     },
-    "image": "demo-festival-bg.jpg",
-    "capacity": 5000,
-    "visible": true,
-    "type": "Open-Air",
-    "features": ["Audio-System", "Light-System", "VIP-Area"],
-    "url": "https://www.live-music-festival.com/mainstage"
+    "url": "",
+    "features": [
+      "Hut"
+    ]
   },
   {
     "id": 2,
-    "name": "Second Stage",
-    "id-name": "Second-Stage",
-    "short-description": "Nebenbühne mit alternativen Acts",
-    "description": "Die Second Stage bietet eine intime Atmosphäre für aufstrebende Künstler.",
-    "location": [50.9380, 6.9610],
+    "id-name": "glockenhut",
+    "name": "Glockenhut",
+    "description": "Innere Klosterstraße Kreuzung Börnichsgasse",
+    "image": null,
+    "visible": true,
+    "type": "stage",
+    "location": [
+      50.8337,
+      12.9182
+    ],
     "address": {
-      "street": "Hauptstraße 45",
-      "postal_code": "54321",
-      "city": "Kunststadt",
+      "street": "",
+      "postal_code": "",
+      "city": "Chemnitz",
       "country": "Deutschland"
     },
-    "image": "url-secondstage.jpg",
-    "capacity": 1500,
-    "visible": true,
-    "type": "Indoor",
-    "features": ["Sound-System", "Licht-System"],
-    "url": "https://www.live-music-festival.com/secondstage"
+    "url": "",
+    "features": [
+      "Hut"
+    ]
   },
   {
     "id": 3,
-    "name": "Silent Disco",
-    "id-name": "",
-    "short-description": "Silent Disco für alle, die es ruhig mögen",
-    "description": "Erlebe die einzigartige Silent Disco mit Kopfhörern und einer tollen Auswahl an DJ-Sets.",
-    "location": [50.9390, 6.9620],
+    "id-name": "zylinder",
+    "name": "Zylinder",
+    "description": "Am Marktbrunnen",
+    "image": null,
+    "visible": true,
+    "type": "stage",
+    "location": [
+      50.8324,
+      12.9192
+    ],
     "address": {
-      "street": "Einsame-Straße 7",
-      "postal_code": "67890",
-      "city": "Relaxburg",
+      "street": "",
+      "postal_code": "",
+      "city": "Chemnitz",
       "country": "Deutschland"
     },
-    "image": "url-disco.jpg",
-    "capacity": 800,
+    "url": "",
+    "features": [
+      "Hut"
+    ]
+  },
+  {
+    "id": 4,
+    "id-name": "sombrero",
+    "name": "Sombrero",
+    "description": "Neumarkt",
+    "image": null,
     "visible": true,
-    "type": "Zelt",
-    "features": ["Kopfhörer", "Licht-System", "Snack-Bar"],
-    "url": "https://www.live-music-festival.com/silentdisco"
+    "type": "stage",
+    "location": [
+      50.833,
+      12.9203
+    ],
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "Chemnitz",
+      "country": "Deutschland"
+    },
+    "url": "",
+    "features": [
+      "Hut"
+    ]
+  },
+  {
+    "id": 5,
+    "id-name": "porkpie",
+    "name": "Porkpie",
+    "description": "Jakobikirchehof",
+    "image": null,
+    "visible": true,
+    "type": "stage",
+    "location": [
+      50.8332,
+      12.9192
+    ],
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "Chemnitz",
+      "country": "Deutschland"
+    },
+    "url": "",
+    "features": [
+      "Hut",
+      "Musik"
+    ]
+  },
+  {
+    "id": 6,
+    "id-name": "cowboyhut",
+    "name": "Cowboyhut",
+    "description": "Am Wall",
+    "image": null,
+    "visible": true,
+    "type": "stage",
+    "location": [
+      50.8345,
+      12.9204
+    ],
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "Chemnitz",
+      "country": "Deutschland"
+    },
+    "url": "",
+    "features": [
+      "Hut"
+    ]
+  },
+  {
+    "id": 7,
+    "id-name": "strohhut",
+    "name": "Strohhut",
+    "description": "Roter Turm",
+    "image": null,
+    "visible": true,
+    "type": "stage",
+    "location": [
+      50.8343,
+      12.9213
+    ],
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "Chemnitz",
+      "country": "Deutschland"
+    },
+    "url": "",
+    "features": [
+      "Hut"
+    ]
+  },
+  {
+    "id": 8,
+    "id-name": "zauberhut",
+    "name": "Zauberhut",
+    "description": "Rosenhof",
+    "image": null,
+    "visible": true,
+    "type": "stage",
+    "location": [
+      50.8316,
+      12.9174
+    ],
+    "address": {
+      "street": "",
+      "postal_code": "",
+      "city": "Chemnitz",
+      "country": "Deutschland"
+    },
+    "url": "",
+    "features": [
+      "Hut"
+    ]
+  },
+  {
+    "id": 9,
+    "id-name": "innere-klosterstrasse",
+    "name": "Innere Klosterstraße",
+    "description": "Aktionsfläche für Sonderaktionen",
+    "image": null,
+    "visible": true,
+    "type": "stage",
+    "location": [
+      50.8328,
+      12.9184
+    ],
+    "address": {
+      "street": "Innere Klosterstraße",
+      "postal_code": "",
+      "city": "Chemnitz",
+      "country": "Deutschland"
+    },
+    "url": "",
+    "features": [
+      "Aktionsfläche"
+    ]
+  },
+  {
+    "id": 10,
+    "id-name": "duesseldorfer-platz",
+    "name": "Düsseldorfer Platz",
+    "description": "Aktionsfläche für Sonderaktionen",
+    "image": null,
+    "visible": true,
+    "type": "stage",
+    "location": [
+      50.834,
+      12.9195
+    ],
+    "address": {
+      "street": "Düsseldorfer Platz",
+      "postal_code": "",
+      "city": "Chemnitz",
+      "country": "Deutschland"
+    },
+    "url": "",
+    "features": [
+      "Aktionsfläche"
+    ]
   }
 ]
-  

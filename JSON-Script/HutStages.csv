@@ -1,0 +1,11 @@
+id;id-name;name;visible;type;capacity;image;description;location;add-street;zipcode;city;country;url;features
+1;melone;Melone;true;stage;;;Bei den Pinguinen;50.8347, 12.9181;;;Chemnitz;Deutschland;;Hut
+2;glockenhut;Glockenhut;true;stage;;;Innere Klosterstra[sz]e Kreuzung B[oe]rnichsgasse;50.8337, 12.9182;;;Chemnitz;Deutschland;;Hut
+3;zylinder;Zylinder;true;stage;;;Am Marktbrunnen;50.8324, 12.9192;;;Chemnitz;Deutschland;;Hut
+4;sombrero;Sombrero;true;stage;;;Neumarkt;50.8330, 12.9203;;;Chemnitz;Deutschland;;Hut
+5;porkpie;Porkpie;true;stage;;;Jakobikirchehof;50.8332, 12.9192;;;Chemnitz;Deutschland;;Hut,Musik
+6;cowboyhut;Cowboyhut;true;stage;;;Am Wall;50.8345, 12.9204;;;Chemnitz;Deutschland;;Hut
+7;strohhut;Strohhut;true;stage;;;Roter Turm;50.8343, 12.9213;;;Chemnitz;Deutschland;;Hut
+8;zauberhut;Zauberhut;true;stage;;;Rosenhof;50.8316, 12.9174;;;Chemnitz;Deutschland;;Hut
+9;innere-klosterstrasse;Innere Klosterstra[sz]e;true;stage;;;Aktionsfl[ae]che für Sonderaktionen;50.8328, 12.9184;Innere Klosterstra[sz]e;;Chemnitz;Deutschland;;Aktionsfl[ae]che
+10;duesseldorfer-platz;D[ue]sseldorfer Platz;true;stage;;;Aktionsfl[ae]che für Sonderaktionen;50.834, 12.9195;D[ue]sseldorfer Platz;;Chemnitz;Deutschland;;Aktionsfl[ae]che

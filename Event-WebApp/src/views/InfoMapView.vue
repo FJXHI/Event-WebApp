@@ -1,7 +1,7 @@
 <template>
   <div class="info-bg">
     <img 
-      :src="baseUrl + '/HW25_map_1_250718.jpg'"
+      :src="baseUrl + '/Hut26_map_1_260517.jpg'"
       class="info-img"
     />
   </div>

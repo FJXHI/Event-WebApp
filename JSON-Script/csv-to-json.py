@@ -5,14 +5,14 @@ from datetime import datetime
 from zoneinfo import ZoneInfo  # Requires Python 3.9+
 
 # ==== Konfiguration ====
-ACTS_CSV = 'JSON-Script/HWacts.csv'
-ACTS_JSON = 'Event-WebApp/public/data/HWacts.json'
+ACTS_CSV = 'JSON-Script/HutActs.csv'
+ACTS_JSON = 'Event-WebApp/public/data/acts.json'
 
-EVENTS_CSV = 'JSON-Script/HWevents.csv'
-EVENTS_JSON = 'Event-WebApp/public/data/HWperformances.json'
+EVENTS_CSV = 'JSON-Script/HutEvents.csv'
+EVENTS_JSON = 'Event-WebApp/public/data/performances.json'
 
-STAGES_CSV = 'JSON-Script/HWstages.csv'
-STAGES_JSON = 'Event-WebApp/public/data/HWstages.json'
+STAGES_CSV = 'JSON-Script/HutStages.csv'
+STAGES_JSON = 'Event-WebApp/public/data/stages.json'
 
 TIME_ZONE = ZoneInfo("Europe/Berlin")
 
