@@ -21,11 +21,11 @@
   --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
 
   /* Color Theme */
-  --vt-theme-1: #55295C; /* Theme1 (TopNav+Space) */
-  --vt-theme-1-soft: #9b589e; /* TopNav Button Header */
-  --vt-theme-1-mute: #65306f; /* TopNav (Search) */
-  --vt-theme-2: #F3CA58; /* Theme2 (Header) */
-  --vt-theme-3: #27102c; /* Theme3 (Sidenav) */
+  --vt-theme-1: var(--vt-hut-pink2); /* Theme1 (TopNav+Space) */
+  --vt-theme-1-soft: var(--vt-hut-green); /* TopNav Button Header */
+  --vt-theme-1-mute: var(--vt-hut-green); /* TopNav (Search) */
+  --vt-theme-2: var(--vt-hut-green); /* Theme2 (Header) */
+  --vt-theme-3: var(--vt-hut-purple); /* Theme3 (Sidenav) */
   --vt-body-line: #ddd;
   --vt-body-bg: var(--vt-c-white-soft); /* Not in use */
 
@@ -35,11 +35,23 @@
   --vt-theme-1-dark: #27102c;
   --vt-theme-1-dark-mute: #38173f; /* TopNav Button Header */
   --vt-theme-2-dark: #c38200;
-
+  
   /*--vt-theme-2-dark: #bb6611;
   --vt-hw: #55295C #9b589e #27102c #A8A7B7 #F3CA58 #55295C0A #f0506e;
   -vt-th-org: #0066ff #ffcc00 #993a00 #033a99;*/
   /*background: #f3f3f3; #f0506e*/
+
+  /* Hutfestival 2026 Colors */
+  --vt-hut-green: #82c17a;
+  --vt-hut-green2: #97c094;
+  --vt-hut-blue: #4dbdc6;
+  --vt-hut-blue2: #4ABCC2;
+  --vt-hut-blue3: #a3d1e9;
+  --vt-hut-purple: #8c368b;
+  --vt-hut-purple2: #8a3589;
+  --vt-hut-pink: #ec6090;
+  --vt-hut-pink2: #d48bb8;
+
 
 
   /* Homeward Colors 2026 */

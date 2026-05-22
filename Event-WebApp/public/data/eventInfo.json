@@ -18,8 +18,8 @@
                 "country": "Deutschland"
               },
             "gps": {
-                "latitude": 12.345678,
-                "longitude": 23.456789
+                "latitude": 50.833,
+                "longitude": 12.920
             }
         },
         "about": [
@@ -48,7 +48,7 @@
             "url": "https://www.instagram.com/hutfestival"
         },
         {
-            "name": "Webseite",
+            "name": "Website",
             "url": "https://www.hutfestival.de/"
         }
         ]

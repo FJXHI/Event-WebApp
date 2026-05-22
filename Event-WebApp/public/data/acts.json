@@ -60,6 +60,10 @@
       {
         "name": "Website",
         "url": "https://www.annakristinmccarthy.com/"
+      },
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/annakr.eations/"
       }
     ]
   },
@@ -83,7 +87,16 @@
         "visible": true
       }
     ],
-    "weblinks": []
+    "weblinks": [
+      {
+        "name": "Website",
+        "url": "https://alerisorio.com/en/duo-lollypop-fr-3-2-2/"
+      },
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/alerisorio/"
+      }
+    ]
   },
   {
     "id": 115,
@@ -101,7 +114,12 @@
         "visible": true
       }
     ],
-    "weblinks": []
+    "weblinks": [
+      {
+        "name": "Website",
+        "url": "https://www.satyahoop.com/"
+      }
+    ]
   },
   {
     "id": 116,
@@ -155,7 +173,12 @@
         "visible": true
       }
     ],
-    "weblinks": []
+    "weblinks": [
+      {
+        "name": "Website",
+        "url": "https://www.ciemasawa.com/"
+      }
+    ]
   },
   {
     "id": 119,
@@ -163,7 +186,7 @@
     "name": "Zinzi & Evertjan",
     "subname": "",
     "act-type": [
-      "Musik"
+      "Performance"
     ],
     "description": "Zinzi & Evertjan auf dem Hutfestival 2026",
     "image": "https://www.hutfestival.de/?eID=iotf&f=11550&hash=1705e1d333023b9211933d6a35ca687ec9&ts=1775639518&cHash=efea21e44e28827cf159e9ea27ae7cb2&h=250",
@@ -173,7 +196,12 @@
         "visible": true
       }
     ],
-    "weblinks": []
+    "weblinks": [
+      {
+        "name": "Website",
+        "url": "https://zinzi-evertjan.com/"
+      }
+    ]
   },
   {
     "id": 120,
@@ -209,7 +237,16 @@
         "visible": true
       }
     ],
-    "weblinks": []
+    "weblinks": [
+      {
+        "name": "Website",
+        "url": "http://www.circus-unartiq.de/home.html"
+      },
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/circus_unartiq/"
+      }
+    ]
   },
   {
     "id": 123,
@@ -227,7 +264,12 @@
         "visible": true
       }
     ],
-    "weblinks": []
+    "weblinks": [
+      {
+        "name": "Website",
+        "url": "https://www.flexoncirc.com/"
+      }
+    ]
   },
   {
     "id": 124,
@@ -243,9 +285,22 @@
       {
         "name": "Straßenkunst",
         "visible": true
+      },
+      {
+        "name": "Musik",
+        "visible": true
       }
     ],
-    "weblinks": []
+    "weblinks": [
+      {
+        "name": "Website",
+        "url": "https://www.soundgurus.at/"
+      },
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/soundgurus/"
+      }
+    ]
   },
   {
     "id": 125,
@@ -261,9 +316,18 @@
       {
         "name": "Straßenkunst",
         "visible": true
+      },
+      {
+        "name": "Musik",
+        "visible": true
       }
     ],
-    "weblinks": []
+    "weblinks": [
+      {
+        "name": "Website",
+        "url": "https://envivo-music.com/home-felanitx-deutsch"
+      }
+    ]
   },
   {
     "id": 126,
@@ -285,7 +349,12 @@
         "visible": true
       }
     ],
-    "weblinks": []
+    "weblinks": [
+      {
+        "name": "Website",
+        "url": "https://twochords.de/"
+      }
+    ]
   },
   {
     "id": 127,
@@ -303,7 +372,12 @@
         "visible": true
       }
     ],
-    "weblinks": []
+    "weblinks": [
+      {
+        "name": "Website",
+        "url": "https://www.this-maag.de/"
+      }
+    ]
   },
   {
     "id": 128,
@@ -339,7 +413,16 @@
         "visible": true
       }
     ],
-    "weblinks": []
+    "weblinks": [
+      {
+        "name": "Website",
+        "url": "https://www.vertical-theater.com/"
+      },
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/powerpole1/"
+      }
+    ]
   },
   {
     "id": 130,
@@ -357,7 +440,12 @@
         "visible": true
       }
     ],
-    "weblinks": []
+    "weblinks": [
+      {
+        "name": "Website",
+        "url": "https://www.jessierose.co.uk/superheroes-interrupted"
+      }
+    ]
   },
   {
     "id": 131,
@@ -433,7 +521,12 @@
         "visible": true
       }
     ],
-    "weblinks": []
+    "weblinks": [
+      {
+        "name": "Website",
+        "url": "https://hibikidaiko.de/"
+      }
+    ]
   },
   {
     "id": 135,
@@ -449,9 +542,18 @@
       {
         "name": "Straßenkunst",
         "visible": true
+      },
+      {
+        "name": "Musik",
+        "visible": true
       }
     ],
-    "weblinks": []
+    "weblinks": [
+      {
+        "name": "Website",
+        "url": "https://crepessucette.de/"
+      }
+    ]
   },
   {
     "id": 136,
@@ -469,7 +571,16 @@
         "visible": true
       }
     ],
-    "weblinks": []
+    "weblinks": [
+      {
+        "name": "Website",
+        "url": "https://www.soul-expression.de/de"
+      },
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/soulexpression_chemnitz/"
+      }
+    ]
   },
   {
     "id": 137,
@@ -487,7 +598,12 @@
         "visible": true
       }
     ],
-    "weblinks": []
+    "weblinks": [
+      {
+        "name": "Website",
+        "url": "https://www.passion-life.de/web/"
+      }
+    ]
   },
   {
     "id": 138,
@@ -505,7 +621,12 @@
         "visible": true
       }
     ],
-    "weblinks": []
+    "weblinks": [
+      {
+        "name": "Website",
+        "url": "https://tanzensemble-chemnitz.jimdofree.com/"
+      }
+    ]
   },
   {
     "id": 139,
@@ -521,9 +642,22 @@
       {
         "name": "Straßenkunst",
         "visible": true
+      },
+      {
+        "name": "Musik",
+        "visible": true
       }
     ],
-    "weblinks": []
+    "weblinks": [
+      {
+        "name": "Website",
+        "url": "https://www.sleepwalkersstation.com/"
+      },
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/sleepwalkers_station/"
+      }
+    ]
   },
   {
     "id": 140,
@@ -539,9 +673,18 @@
       {
         "name": "Straßenkunst",
         "visible": true
+      },
+      {
+        "name": "Musik",
+        "visible": true
       }
     ],
-    "weblinks": []
+    "weblinks": [
+      {
+        "name": "Website",
+        "url": "https://www.tegetmusik.de/"
+      }
+    ]
   },
   {
     "id": 141,
@@ -559,7 +702,16 @@
         "visible": true
       }
     ],
-    "weblinks": []
+    "weblinks": [
+      {
+        "name": "Website",
+        "url": "https://www.akkordeon-harmonists.com/"
+      },
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/akkordeon_harmonists_chemnitz/"
+      }
+    ]
   },
   {
     "id": 142,
@@ -577,7 +729,12 @@
         "visible": true
       }
     ],
-    "weblinks": []
+    "weblinks": [
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/andreasliebertmusik/"
+      }
+    ]
   },
   {
     "id": 143,
@@ -631,7 +788,12 @@
         "visible": true
       }
     ],
-    "weblinks": []
+    "weblinks": [
+      {
+        "name": "Website",
+        "url": "http://circus-salto-salcin.de/"
+      }
+    ]
   },
   {
     "id": 146,
@@ -650,10 +812,15 @@
       },
       {
         "name": "Clownerie",
-        "visible": false
+        "visible": true
       }
     ],
-    "weblinks": []
+    "weblinks": [
+      {
+        "name": "Website",
+        "url": "https://clown-fridolin.de/"
+      }
+    ]
   },
   {
     "id": 147,
@@ -675,7 +842,12 @@
         "visible": true
       }
     ],
-    "weblinks": []
+    "weblinks": [
+      {
+        "name": "Website",
+        "url": "https://sportensemble.de/"
+      }
+    ]
   },
   {
     "id": 148,
@@ -690,6 +862,10 @@
     "tags": [
       {
         "name": "Straßenkunst",
+        "visible": true
+      },
+      {
+        "name": "Musik",
         "visible": true
       }
     ],
