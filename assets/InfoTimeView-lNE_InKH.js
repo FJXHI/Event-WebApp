@@ -1,0 +1,1 @@
+import{d as e,a as s,b as a,u as o,e as t,o as n}from"./index-BLm2oVYH.js";const c={class:"info-bg"},_=["src"],f=e({__name:"InfoTimeView",setup(r){return(i,l)=>(n(),s("div",c,[a("img",{src:o(t)+"/Hut26_timetable_1_260517.jpg",class:"info-img"},null,8,_)]))}});export{f as default};
